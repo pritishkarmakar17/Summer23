@@ -1,0 +1,2 @@
+\contentsline {section}{\numberline {1}Gaussian curve and its fourier transform}{1}{}%
+\contentsline {subsection}{\numberline {1.1}Fourier transform of Standard normal}{1}{}%

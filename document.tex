@@ -1,0 +1,79 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage[width=16.00cm, height=23.00cm]{geometry}
+\usepackage{float}
+\usepackage{indentfirst}
+\setlength{\parindent}{4mm}
+\setlength{\parskip}{1mm}
+
+%------------------------------------
+\usepackage{tikz}
+\usepackage{pgfplots}
+%\DeclareUnicodeCharacter{2212}{−}
+\usepgfplotslibrary{groupplots,dateplot}
+\usetikzlibrary{patterns,shapes.arrows}
+%\pgfplotsset{compat=newest}
+%------------------------------------------
+\usepackage{listings}
+\usepackage{verbatim}
+\usepackage{fancyvrb}
+%----------------------------------------------------------------------
+
+\author{Pritish Karmakar}
+
+	
+
+\begin{document}
+	\begin{titlepage}
+		\begin{center}
+			\Huge \textbf{Summer Project}
+			
+		\end{center}
+		\clearpage
+		\tableofcontents
+		\clearpage
+		\listoffigures
+		\listoftables
+	\end{titlepage}
+	
+\section{Gaussian curve and its fourier transform}
+	\begin{figure}[ht]
+		\centering
+		\scalebox{1.15}{\input{gaussian.tex}}
+		 \caption{Standard Normal curve}
+		\label{fig:gaussian}
+	\end{figure}
+
+%Figure \ref{fig:gaussian} shows a gaussian curve.
+
+\noindent \dotfill \textbf{Code Block} \noindent\dotfill
+%\verbatiminput{gaussian.py}
+\lstinputlisting[language=Python, firstline=1, lastline=14]{gaussian.py}
+\dotfill
+
+\subsection{Fourier transform of Standard normal}
+If $f(t)=\int_{-\infty}^{\infty}g(\omega)e^{i\omega t} d\omega$, then fourier transform of that is $g(\omega)=\frac{1}{2\pi}\int_{-\infty}^{\infty}f(t)e^{-i\omega t} dt$. Here, $f(x)=\frac{1}{\sqrt{2\pi}}e^{-x^2 /2}$\\
+
+\begin{align*}
+	g(\omega)&=\frac{1}{2\pi}\int_{-\infty}^{\infty}f(t)e^{-i\omega t} dt\\
+	&=\frac{1}{2\pi}\int_{-\infty}^{\infty}f(t)\cos(\omega t) dt - i \frac{1}{2\pi}\int_{-\infty}^{\infty}f(t)\sin(\omega t) dt
+\end{align*}
+
+\noindent \dotfill \textbf{Code Block} \noindent\dotfill
+\lstinputlisting[language=Python, firstline=1, lastline=21]{fft_gaussian.py}
+\dotfill
+
+\begin{figure}[ht]
+	\centering
+	\scalebox{1}{\input{fft_gaussian.tex}}
+	\caption{Fourier transform of Standard Normal}
+	\label{fig:fft_gaussian}
+\end{figure}
+
+
+\end{document}
