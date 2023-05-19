@@ -11,6 +11,14 @@
 \setlength{\parindent}{4mm}
 \setlength{\parskip}{1mm}
 
+\usepackage{color}   %May be necessary if you want to color links
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true, %set true if you want colored links
+	linktoc=all,     %set to all if you want both sections and subsections linked
+	linkcolor=blue,  %choose some color if you want links to stand out
+}
+
 %------------------------------------
 \usepackage{tikz}
 \usepackage{pgfplots}
@@ -30,10 +38,19 @@
 
 \begin{document}
 	\begin{titlepage}
-		\begin{center}
-			\Huge \textbf{Summer Project}
-			
-		\end{center}
+		\centering
+		\includegraphics[width=2.5cm]{iiserk.png}
+		
+		\vspace{4cm}
+		{\Huge\bfseries Summer Project 2023}
+		
+		\vspace{3cm}
+		{\LARGE Pritish Karmakar\\}
+		\vspace{0.3cm}
+		{21MS179}
+		\vfill
+		
+		
 		\clearpage
 		\tableofcontents
 		\clearpage
@@ -42,6 +59,8 @@
 	\end{titlepage}
 	
 \section{Gaussian curve and its fourier transform}
+
+\subsection{Standard normal}
 	\begin{figure}[ht]
 		\centering
 		\scalebox{1.15}{\input{gaussian.tex}}

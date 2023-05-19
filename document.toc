@@ -1,2 +1,3 @@
-\contentsline {section}{\numberline {1}Gaussian curve and its fourier transform}{1}{}%
-\contentsline {subsection}{\numberline {1.1}Fourier transform of Standard normal}{1}{}%
+\contentsline {section}{\numberline {1}Gaussian curve and its fourier transform}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Standard normal}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Fourier transform of Standard normal}{1}{subsection.1.2}%
