@@ -94,5 +94,29 @@ If $f(t)=\int_{-\infty}^{\infty}g(\omega)e^{i\omega t} d\omega$, then fourier tr
 	\label{fig:fft_gaussian}
 \end{figure}
 
+\section{Gaussian beam}
+
+\subsection{Intensity profile}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=7.5cm]{intensity.png}
+	\caption{Intensity variation in a cross section}
+	\label{fig:intensity}
+\end{figure}
+
+\noindent \dotfill \textbf{Code Block} \noindent\dotfill
+\lstinputlisting[language=Python, firstline=4, lastline=14]{intensity_gaussian.py}
+\dotfill
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=7.5cm]{intensity_var.png}
+	\caption{Intensity variation along z}
+	\label{fig:intensity_var}
+\end{figure}
+
+\noindent \dotfill \textbf{Code Block} \noindent\dotfill
+\lstinputlisting[language=Python, firstline=4, lastline=20]{intensity_var.py}
+\dotfill
 
 \end{document}
