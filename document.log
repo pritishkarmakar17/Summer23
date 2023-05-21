@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.22)  20 MAY 2023 17:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.22)  21 MAY 2023 14:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -792,24 +792,24 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 (./document.aux)
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -867,7 +867,7 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 39.
+Package hyperref Info: Link coloring ON on input line 68.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -879,9 +879,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count345
 )
-LaTeX Info: Redefining \ref on input line 39.
-LaTeX Info: Redefining \pageref on input line 39.
-LaTeX Info: Redefining \nameref on input line 39.
+LaTeX Info: Redefining \ref on input line 68.
+LaTeX Info: Redefining \pageref on input line 68.
+LaTeX Info: Redefining \nameref on input line 68.
 
 (./document.out) (./document.out)
 \@outlinefile=\write5
@@ -892,13 +892,13 @@ LaTeX Info: Redefining \nameref on input line 39.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 39.
+ on input line 68.
 
 \c@lstlisting=\count346
 <iiserk.png, id=27, 274.02374pt x 301.125pt>
 File: iiserk.png Graphic file (type png)
 <use iiserk.png>
-Package pdftex.def Info: iiserk.png  used on input line 42.
+Package pdftex.def Info: iiserk.png  used on input line 71.
 (pdftex.def)             Requested size: 71.13188pt x 78.16658pt.
 [1
 
@@ -928,80 +928,88 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  [3
 
-] (./gaussian.tex)
+]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 75.
- (./gaussian.py)
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
+nput line 99.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 9
+9.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) (./gaussian.py)
+(./gaussian.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
+(./fft_gaussian.pypdfTeX warning (ext4): destination with the same identifier (
+name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.84 \end{align*}
-                  [1] (./fft_gaussian.py) (./fft_gaussian.tex)
-<intensity.png, id=100, 462.528pt x 331.9602pt>
-File: intensity.png Graphic file (type png)
-<use intensity.png>
-Package pdftex.def Info: intensity.png  used on input line 102.
-(pdftex.def)             Requested size: 213.39566pt x 153.15941pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
-been already used, duplicate ignored
+l.5 def 
+        f(t): [1]) (./fft_gaussian.tex)pdfTeX warning (ext4): destination with 
+the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.105 \end{figure}
-                   [2] (./intensity_gaussian.py
+l.126 \clearpage
+                 [2] (./intensity_gaussian.py
 consecutive:
 )
-<intensity_var.png, id=127, 462.528pt x 331.9602pt>
-File: intensity_var.png Graphic file (type png)
-<use intensity_var.png>
-Package pdftex.def Info: intensity_var.png  used on input line 113.
-(pdftex.def)             Requested size: 213.39566pt x 153.15941pt.
+<intensity.png, id=126, 462.528pt x 346.896pt>
+File: intensity.png Graphic file (type png)
+<use intensity.png>
+Package pdftex.def Info: intensity.png  used on input line 136.
+(pdftex.def)             Requested size: 256.0748pt x 192.06375pt.
  (./intensity_var.py
 consecutive:
+)
+<intensity_var.png, id=128, 462.528pt x 331.9602pt>
+File: intensity_var.png Graphic file (type png)
+<use intensity_var.png>
+Package pdftex.def Info: intensity_var.png  used on input line 147.
+(pdftex.def)             Requested size: 256.0748pt x 183.79434pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.5 import 
-           matplotlib.pyplot as plt [3 <./intensity.png> <./intensity_var.png>]
-) [4] (./document.aux)
+l.151 
+       [3
+
+ <./intensity.png>] [4 <./intensity_var.png>] (./document.aux)
 Package rerunfilecheck Info: File `document.out' has not changed.
 (rerunfilecheck)             Checksum: D1AA0D05BEB043FA7C420301C23D876A;898.
  ) 
 Here is how much of TeX's memory you used:
- 34147 strings out of 480171
- 788659 string characters out of 5894489
- 1347949 words of memory out of 5000000
- 51448 multiletter control sequences out of 15000+600000
- 481197 words of font info for 56 fonts, out of 8000000 for 9000
+ 34182 strings out of 480171
+ 789468 string characters out of 5894489
+ 1461632 words of memory out of 5000000
+ 51472 multiletter control sequences out of 15000+600000
+ 483014 words of font info for 59 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  84i,13n,89p,744b,1991s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.6
-00pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx120
+ </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.6
+00pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm060
 0.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx
-1095.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/e
-cbx1440.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/e
-c/ecrm1095.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappe
-n/ec/ecrm1728.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jkna
-ppen/ec/ecbx2488.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on document.pdf (7 pages, 238066 bytes).
+1200.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/e
+cbx1095.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/e
+c/ecbx1440.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappe
+n/ec/ecrm1095.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jkna
+ppen/ec/ecrm1728.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/j
+knappen/ec/ecbx2488.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on document.pdf (7 pages, 258874 bytes).
 PDF statistics:
- 398 PDF objects out of 1000 (max. 8388607)
- 211 compressed objects within 3 object streams
- 83 named destinations out of 1000 (max. 500000)
+ 443 PDF objects out of 1000 (max. 8388607)
+ 221 compressed objects within 3 object streams
+ 88 named destinations out of 1000 (max. 500000)
  68 words of extra memory for PDF output out of 10000 (max. 10000000)
 

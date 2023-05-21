@@ -28,6 +28,35 @@
 %\pgfplotsset{compat=newest}
 %------------------------------------------
 \usepackage{listings}
+
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=true,                  
+	tabsize=2,
+}
+
+\lstset{style=mystyle}
+
 \usepackage{verbatim}
 \usepackage{fancyvrb}
 %----------------------------------------------------------------------
@@ -59,21 +88,22 @@
 	\end{titlepage}
 	
 \section{Gaussian curve and its fourier transform}
-
-\subsection{Standard normal}
-	\begin{figure}[ht]
-		\centering
-		\scalebox{1.15}{\input{gaussian.tex}}
-		 \caption{Standard Normal curve}
-		\label{fig:gaussian}
-	\end{figure}
-
 %Figure \ref{fig:gaussian} shows a gaussian curve.
 
-\noindent \dotfill \textbf{Code Block} \noindent\dotfill
+%\noindent \dotfill \textbf{Code Block} \noindent\dotfill
 %\verbatiminput{gaussian.py}
+
+%\dotfill
+
+\subsection{Standard normal}
 \lstinputlisting[language=Python, firstline=1, lastline=14]{gaussian.py}
-\dotfill
+\begin{figure}[ht]
+	\centering
+	\scalebox{1}{\input{gaussian.tex}}
+	\caption{Standard Normal curve}
+	\label{fig:gaussian}
+\end{figure}
+
 
 \subsection{Fourier transform of Standard normal}
 If $f(t)=\int_{-\infty}^{\infty}g(\omega)e^{i\omega t} d\omega$, then fourier transform of that is $g(\omega)=\frac{1}{2\pi}\int_{-\infty}^{\infty}f(t)e^{-i\omega t} dt$. Here, $f(x)=\frac{1}{\sqrt{2\pi}}e^{-x^2 /2}$\\
@@ -83,9 +113,9 @@ If $f(t)=\int_{-\infty}^{\infty}g(\omega)e^{i\omega t} d\omega$, then fourier tr
 	&=\frac{1}{2\pi}\int_{-\infty}^{\infty}f(t)\cos(\omega t) dt - i \frac{1}{2\pi}\int_{-\infty}^{\infty}f(t)\sin(\omega t) dt
 \end{align*}
 
-\noindent \dotfill \textbf{Code Block} \noindent\dotfill
+
 \lstinputlisting[language=Python, firstline=1, lastline=21]{fft_gaussian.py}
-\dotfill
+
 
 \begin{figure}[ht]
 	\centering
@@ -93,30 +123,33 @@ If $f(t)=\int_{-\infty}^{\infty}g(\omega)e^{i\omega t} d\omega$, then fourier tr
 	\caption{Fourier transform of Standard Normal}
 	\label{fig:fft_gaussian}
 \end{figure}
+\clearpage
 
 \section{Gaussian beam}
 
 \subsection{Intensity profile}
-\begin{figure}[ht]
+
+\lstinputlisting[language=Python, firstline=4, lastline=19]{intensity_gaussian.py}
+
+\begin{figure}[htbp]
 	\centering
-	\includegraphics[width=7.5cm]{intensity.png}
-	\caption{Intensity variation in a cross section}
+	\includegraphics[width=9cm]{intensity.png}
+	\caption{Intensity variation in a cross section ($z=0,z_0=1$)}
 	\label{fig:intensity}
 \end{figure}
 
-\noindent \dotfill \textbf{Code Block} \noindent\dotfill
-\lstinputlisting[language=Python, firstline=4, lastline=14]{intensity_gaussian.py}
-\dotfill
 
-\begin{figure}[ht]
+
+\lstinputlisting[language=Python, firstline=4, lastline=20]{intensity_var.py}
+
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=7.5cm]{intensity_var.png}
-	\caption{Intensity variation along z}
+	\includegraphics[width=9cm]{intensity_var.png}
+	\caption{Intensity variation along z ($z_0=1$)}
 	\label{fig:intensity_var}
 \end{figure}
 
-\noindent \dotfill \textbf{Code Block} \noindent\dotfill
-\lstinputlisting[language=Python, firstline=4, lastline=20]{intensity_var.py}
-\dotfill
+
+
 
 \end{document}
