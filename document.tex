@@ -59,6 +59,8 @@
 
 \usepackage{verbatim}
 \usepackage{fancyvrb}
+\usepackage{caption}
+\usepackage{subcaption}
 %----------------------------------------------------------------------
 
 \author{Pritish Karmakar}
@@ -66,6 +68,7 @@
 	
 
 \begin{document}
+	\iffalse
 	\begin{titlepage}
 		\centering
 		\includegraphics[width=2.5cm]{iiserk.png}
@@ -86,8 +89,8 @@
 		\listoffigures
 		\listoftables
 	\end{titlepage}
-	
-\section{Gaussian curve and its fourier transform}
+	\fi
+\section{GAUSSIAN and ITS FOURIER TRANSFORM}
 %Figure \ref{fig:gaussian} shows a gaussian curve.
 
 %\noindent \dotfill \textbf{Code Block} \noindent\dotfill
@@ -96,6 +99,7 @@
 %\dotfill
 
 \subsection{Standard normal}
+Standard normal curve is $$f(t)=\frac{1}{\sqrt{2\pi}}e^{-t^2 /2}$$
 \lstinputlisting[language=Python, firstline=1, lastline=14]{gaussian.py}
 \begin{figure}[ht]
 	\centering
@@ -106,7 +110,7 @@
 
 
 \subsection{Fourier transform of Standard normal}
-If $f(t)=\int_{-\infty}^{\infty}g(\omega)e^{i\omega t} d\omega$, then fourier transform of that is $g(\omega)=\frac{1}{2\pi}\int_{-\infty}^{\infty}f(t)e^{-i\omega t} dt$. Here, $f(x)=\frac{1}{\sqrt{2\pi}}e^{-x^2 /2}$\\
+If $f(t)=\int_{-\infty}^{\infty}g(\omega)e^{i\omega t} d\omega$, then fourier transform of that is $g(\omega)=\frac{1}{2\pi}\int_{-\infty}^{\infty}f(t)e^{-i\omega t} dt$. Here, $f(t)=\frac{1}{\sqrt{2\pi}}e^{-t^2 /2}$\\
 
 \begin{align*}
 	g(\omega)&=\frac{1}{2\pi}\int_{-\infty}^{\infty}f(t)e^{-i\omega t} dt\\
@@ -125,19 +129,23 @@ If $f(t)=\int_{-\infty}^{\infty}g(\omega)e^{i\omega t} d\omega$, then fourier tr
 \end{figure}
 \clearpage
 
-\section{Gaussian beam}
+\section{GAUSSIAN BEAMS}
 
 \subsection{Intensity profile}
+Intensity of Gaussian beam is given by,
+$$I(x,y,z)=\frac{c\epsilon}{2} |A|^2 \exp{\left(-2(x^2+y^2)/w^2(z)\right)}$$ 
+where
+$$w(z)= w_0\sqrt{1+z^2/z_02} \;\; \text{and} \;\; z_0=\pi w_0^2/\lambda$$
 
 \lstinputlisting[language=Python, firstline=4, lastline=19]{intensity_gaussian.py}
 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=9cm]{intensity.png}
-	\caption{Intensity variation in a cross section ($z=0,z_0=1$)}
+	\caption{Intensity variation in a cross section ($z=0,z_0=1,w_0=1$)}
 	\label{fig:intensity}
 \end{figure}
-
+\clearpage
 
 
 \lstinputlisting[language=Python, firstline=4, lastline=20]{intensity_var.py}
@@ -145,11 +153,73 @@ If $f(t)=\int_{-\infty}^{\infty}g(\omega)e^{i\omega t} d\omega$, then fourier tr
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=9cm]{intensity_var.png}
-	\caption{Intensity variation along z ($z_0=1$)}
+	\caption{Intensity variation along z ($z_0=1,w_0=1$)}
 	\label{fig:intensity_var}
 \end{figure}
+\clearpage
 
+\section{HERMITE–GAUSSIAN BEAMS}
+\subsection{Intensity profile}
+Intensity of Hermite-Gaussian beam is given by,
+$$I_{m,n}(x,y,z)=\frac{c\epsilon}{2} |A|^2 \left[H_m(\sqrt{2}x/w(z)) \right]^2 \left[H_n(\sqrt{2}y/w(z)) \right]^2 \exp{\left(-2(x^2+y^2)/w^2(z)\right)}$$ 
+where
+\begin{align}
+	w(z)&= w_0\sqrt{1+z^2/z_02}\\
+	z_0&=\pi w_0^2/\lambda\\
+	H_n&= \text{n-th order Hermite polynomial}
+\end{align}
 
+\lstinputlisting[language=Python, firstline=4, lastline=21]{intensity_hg.py}
 
+\begin{figure}[H]
+
+\foreach \n in {0,1,2}{
+	\foreach \m in {0,1,2}{
+		\begin{subfigure}[htbp]{0.32\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{intensity_hg\n\m}
+			\caption{$TEM_{\n\m}$}
+			%\label{fig:hg\n\m}
+		\end{subfigure}
+	\hfill
+	}
+}
+\\
+\caption{Intensity variation for different TEM in a cross section ($z=0,z_0=1,w_0=1$)}
+\label{fig:hgmn}
+\end{figure}
+\clearpage
+
+\section{LAGUERRE–GAUSSIAN BEAMS}
+\subsection{Intensity profile}
+Intensity of Hermite-Gaussian beam is given by,
+$$I_{p,l}(r,z)=\frac{c\epsilon}{2} |A|^2 \left[\frac{w_0}{w(z)}\right]^2 \left[\frac{r\sqrt{2}}{w(z)}\right]^{2|l|} \left[ L_p^{|l|}\left(\frac{2r^2}{w^2(z)}\right) \right]^2 \exp{\left(-2(x^2+y^2)/w^2(z)\right)}$$ 
+where
+\begin{align*}
+	r^2&=x^2+y^2\\
+	w(z)&= w_0\sqrt{1+z^2/z_02}\\
+	z_0&=\pi w_0^2/\lambda\\
+	L_p^{|l|}&= \text{Associated Laguerre polynomial}
+\end{align*}
+
+\lstinputlisting[language=Python, firstline=4, lastline=21]{intensity_lg.py}
+
+\begin{figure}[H]
+	
+	\foreach \n in {0,1,2}{
+		\foreach \m in {0,1,2}{
+			\begin{subfigure}[htbp]{0.32\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{intensity_lg\n\m}
+				\caption{$p=\n,|l|=\m$}
+				%\label{fig:hg\n\m}
+			\end{subfigure}
+			\hfill
+		}
+	}
+	\\
+	\caption{Intensity variation for different modes in a cross section ($z=0,z_0=1,w_0=1$)}
+	\label{fig:lgmn}
+\end{figure}
 
 \end{document}
