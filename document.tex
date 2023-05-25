@@ -68,15 +68,16 @@
 	
 
 \begin{document}
-	\iffalse
+%	\iffalse
 	\begin{titlepage}
+		\vspace*{3.5cm}
 		\centering
+		{\Huge\bfseries Summer Project 2023}\\
+		\vspace{5cm}
 		\includegraphics[width=2.5cm]{iiserk.png}
 		
-		\vspace{4cm}
-		{\Huge\bfseries Summer Project 2023}
+		\vspace{5cm}
 		
-		\vspace{3cm}
 		{\LARGE Pritish Karmakar\\}
 		\vspace{0.3cm}
 		{21MS179}
@@ -87,9 +88,9 @@
 		\tableofcontents
 		\clearpage
 		\listoffigures
-		\listoftables
+%		\listoftables
 	\end{titlepage}
-	\fi
+	
 \section{GAUSSIAN and ITS FOURIER TRANSFORM}
 %Figure \ref{fig:gaussian} shows a gaussian curve.
 
@@ -133,7 +134,7 @@ If $f(t)=\int_{-\infty}^{\infty}g(\omega)e^{i\omega t} d\omega$, then fourier tr
 
 \subsection{Intensity profile}
 Intensity of Gaussian beam is given by,
-$$I(x,y,z)=\frac{c\epsilon}{2} |A|^2 \exp{\left(-2(x^2+y^2)/w^2(z)\right)}$$ 
+$$I(x,y,z)=\frac{c\epsilon}{2} |A|^2 \left[\frac{w_0}{w(z)}\right]^2\exp{\left(-2(x^2+y^2)/w^2(z)\right)}$$ 
 where
 $$w(z)= w_0\sqrt{1+z^2/z_02} \;\; \text{and} \;\; z_0=\pi w_0^2/\lambda$$
 
@@ -157,6 +158,7 @@ $$w(z)= w_0\sqrt{1+z^2/z_02} \;\; \text{and} \;\; z_0=\pi w_0^2/\lambda$$
 	\label{fig:intensity_var}
 \end{figure}
 \clearpage
+
 
 \section{HERMITE–GAUSSIAN BEAMS}
 \subsection{Intensity profile}
@@ -189,6 +191,7 @@ where
 \label{fig:hgmn}
 \end{figure}
 \clearpage
+
 
 \section{LAGUERRE–GAUSSIAN BEAMS}
 \subsection{Intensity profile}

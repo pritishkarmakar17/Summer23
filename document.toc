@@ -1,5 +1,9 @@
-\contentsline {section}{\numberline {1}Gaussian curve and its fourier transform}{1}{section.1}%
+\contentsline {section}{\numberline {1}GAUSSIAN and ITS FOURIER TRANSFORM}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Standard normal}{1}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Fourier transform of Standard normal}{1}{subsection.1.2}%
-\contentsline {section}{\numberline {2}Gaussian beam}{3}{section.2}%
+\contentsline {section}{\numberline {2}GAUSSIAN BEAMS}{3}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Intensity profile}{3}{subsection.2.1}%
+\contentsline {section}{\numberline {3}HERMITE–GAUSSIAN BEAMS}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Intensity profile}{5}{subsection.3.1}%
+\contentsline {section}{\numberline {4}LAGUERRE–GAUSSIAN BEAMS}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Intensity profile}{7}{subsection.4.1}%

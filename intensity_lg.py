@@ -11,7 +11,7 @@ p=int(input("p="))
 l=int(input("l="))
 
 R=lambda p,l,x,y: ((np.sqrt(2*(x**2+y**2)))**(2*np.abs(l)))*(L(2*(x**2+y**2),p,np.abs(l)))**2*np.exp(-2*(x**2+y**2))
-a=2
+a=2.5
 a1=np.linspace(-a,a,200)
 xv,yv=np.meshgrid(a1,a1)
 zv=R(p,l,xv,yv)
@@ -21,6 +21,4 @@ plt.ylabel("y")
 #plt.colorbar()
 
 #plt.show()
-#for i in range(n+1):
-#    for j in range(l+1):
 plt.savefig(f"intensity_lg{p}{l}.png")
