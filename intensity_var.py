@@ -4,6 +4,7 @@ mpl.rcParams['figure.dpi'] = 150
 import numpy as np
 import matplotlib.pyplot as plt
 
+# define intensity at z_0=1
 R=lambda x,z: np.exp(-2*x**2/(1+z**2))/(1+z**2)
 a1=np.linspace(-1.5,1.5,500)
 a2=np.linspace(-3,3,500)

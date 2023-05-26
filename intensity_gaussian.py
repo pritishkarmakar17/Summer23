@@ -4,6 +4,7 @@ mpl.rcParams['figure.dpi'] = 150
 import numpy as np
 import matplotlib.pyplot as plt
 
+# define intensity at z=0, z_0=1
 R=lambda r: np.exp(-2*r**2)
 a1=np.linspace(-1.7,1.7,200)
 xv,yv=np.meshgrid(a1,a1)

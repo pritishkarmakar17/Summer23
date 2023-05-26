@@ -2,8 +2,12 @@
 \contentsline {subsection}{\numberline {1.1}Standard normal}{1}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Fourier transform of Standard normal}{1}{subsection.1.2}%
 \contentsline {section}{\numberline {2}GAUSSIAN BEAMS}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Intensity profile}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.1}Solutions of the paraxial wave equation}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Intensity profile}{3}{subsection.2.2}%
 \contentsline {section}{\numberline {3}HERMITE–GAUSSIAN BEAMS}{5}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Intensity profile}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.1}Solutions of the paraxial wave equation}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Intensity profile}{5}{subsection.3.2}%
 \contentsline {section}{\numberline {4}LAGUERRE–GAUSSIAN BEAMS}{7}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Intensity profile}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.1}Solutions of the paraxial wave equation}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Intensity profile}{7}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Phase plot}{8}{subsection.4.3}%
