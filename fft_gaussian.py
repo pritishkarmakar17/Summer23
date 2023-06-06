@@ -6,8 +6,8 @@ def f(t):
     return np.exp(-(t)**2/2)/(np.sqrt(2*np.pi))
 
 def ft(y):
-    int_re = lambda t: f(t)*np.sin(y*t)
-    int_im = lambda t: f(t)*np.cos(y*t)
+    int_re = lambda t: f(t)*np.cos(y*t)
+    int_im = lambda t: f(t)*np.sin(y*t)
     g_re = quad(int_re,-np.inf,np.inf)[0]/(2*np.pi)
     g_im = quad(int_im,-np.inf,np.inf)[0]/(2*np.pi)
     return g_re - 1j*g_im

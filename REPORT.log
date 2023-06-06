@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.31)  6 JUN 2023 17:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.31)  7 JUN 2023 04:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**document.tex
-(./document.tex
+**REPORT.tex
+(./REPORT.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -716,32 +716,65 @@ Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
 \c@subfigure=\count315
 \c@subtable=\count316
 )
+(/usr/share/texlive/texmf-dist/tex/latex/physics/physics.sty
+Package: physics 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-01-21 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count317
+\l__pdf_internal_box=\box67
+))
+Package: xparse 2022-01-12 L3 Experimental document command parser
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip53
+\LTright=\skip54
+\LTpre=\skip55
+\LTpost=\skip56
+\LTchunksize=\count318
+\LTcapwidth=\dimen281
+\LT@head=\box68
+\LT@firsthead=\box69
+\LT@foot=\box70
+\LT@lastfoot=\box71
+\LT@gbox=\box72
+\LT@cols=\count319
+\LT@rows=\count320
+\c@LT@tables=\count321
+\c@LT@chunks=\count322
+\LT@p@ftn=\toks44
+)
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count317
-\Gm@cntv=\count318
-\c@Gm@tempcnt=\count319
-\Gm@bindingoffset=\dimen281
-\Gm@wd@mp=\dimen282
-\Gm@odd@mp=\dimen283
-\Gm@even@mp=\dimen284
-\Gm@layoutwidth=\dimen285
-\Gm@layoutheight=\dimen286
-\Gm@layouthoffset=\dimen287
-\Gm@layoutvoffset=\dimen288
-\Gm@dimlist=\toks44
+\Gm@cnth=\count323
+\Gm@cntv=\count324
+\c@Gm@tempcnt=\count325
+\Gm@bindingoffset=\dimen282
+\Gm@wd@mp=\dimen283
+\Gm@odd@mp=\dimen284
+\Gm@even@mp=\dimen285
+\Gm@layoutwidth=\dimen286
+\Gm@layoutheight=\dimen287
+\Gm@layouthoffset=\dimen288
+\Gm@layoutvoffset=\dimen289
+\Gm@dimlist=\toks45
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 16.
+Package hyperref Info: Option `colorlinks' set `true' on input line 10.
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.gr
 oupplots.code.tex
-\pgfplots@group@current@plot=\count320
-\pgfplots@group@current@row=\count321
-\pgfplots@group@current@column=\count322
+\pgfplots@group@current@plot=\count326
+\pgfplots@group@current@row=\count327
+\pgfplots@group@current@column=\count328
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarycalc.code.tex
@@ -754,17 +787,17 @@ teplot.code.tex
 File: pgfcalendar.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
-\pgfcalendarcurrentjulian=\count323
-\pgf@cal@easter@Y=\count324
-\pgf@cal@easter@G=\count325
-\pgf@cal@easter@C=\count326
-\pgf@cal@easter@X=\count327
-\pgf@cal@easter@Z=\count328
-\pgf@cal@easter@D=\count329
-\pgf@cal@easter@E=\count330
-\pgf@cal@easter@N=\count331
-\pgf@cal@easter@M=\count332
-\pgf@cal@easter@julianday=\count333
+\pgfcalendarcurrentjulian=\count329
+\pgf@cal@easter@Y=\count330
+\pgf@cal@easter@G=\count331
+\pgf@cal@easter@C=\count332
+\pgf@cal@easter@X=\count333
+\pgf@cal@easter@Z=\count334
+\pgf@cal@easter@D=\count335
+\pgf@cal@easter@E=\count336
+\pgf@cal@easter@N=\count337
+\pgf@cal@easter@M=\count338
+\pgf@cal@easter@julianday=\count339
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarypatterns.code.tex
@@ -783,70 +816,63 @@ s.arrows.code.tex
 File: pgflibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count334
-\lst@gtempboxa=\box67
-\lst@token=\toks45
-\lst@length=\count335
-\lst@currlwidth=\dimen289
-\lst@column=\count336
-\lst@pos=\count337
-\lst@lostspace=\dimen290
-\lst@width=\dimen291
-\lst@newlines=\count338
-\lst@lineno=\count339
-\lst@maxwidth=\dimen292
+\lst@mode=\count340
+\lst@gtempboxa=\box73
+\lst@token=\toks46
+\lst@length=\count341
+\lst@currlwidth=\dimen290
+\lst@column=\count342
+\lst@pos=\count343
+\lst@lostspace=\dimen291
+\lst@width=\dimen292
+\lst@newlines=\count344
+\lst@lineno=\count345
+\lst@maxwidth=\dimen293
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count340
-\lst@skipnumbers=\count341
-\lst@framebox=\box68
+\c@lstnumber=\count346
+\lst@skipnumbers=\count347
+\lst@framebox=\box74
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (./REPORT.aux)
+\openout1 = `REPORT.aux'.
 
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count342
-\l__pdf_internal_box=\box69
-)
-(./document.aux)
-\openout1 = `document.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count343
-\scratchdimen=\dimen293
-\scratchbox=\box70
-\nofMPsegments=\count344
-\nofMParguments=\count345
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count346
-\MPscratchDim=\dimen294
-\MPnumerator=\count347
-\makeMPintoPDFobject=\count348
-\everyMPtoPDFconversion=\toks47
+\scratchcounter=\count348
+\scratchdimen=\dimen294
+\scratchbox=\box75
+\nofMPsegments=\count349
+\nofMParguments=\count350
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count351
+\MPscratchDim=\dimen295
+\MPnumerator=\count352
+\makeMPintoPDFobject=\count353
+\everyMPtoPDFconversion=\toks48
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -856,7 +882,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 52.
+Package hyperref Info: Link coloring ON on input line 41.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -867,26 +893,31 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count349
+\c@section@level=\count354
 )
-LaTeX Info: Redefining \ref on input line 52.
-LaTeX Info: Redefining \pageref on input line 52.
-LaTeX Info: Redefining \nameref on input line 52.
+LaTeX Info: Redefining \ref on input line 41.
+LaTeX Info: Redefining \pageref on input line 41.
+LaTeX Info: Redefining \nameref on input line 41.
 
-(./document.out) (./document.out)
+(./REPORT.out) (./REPORT.out)
 \@outlinefile=\write5
-\openout5 = `document.out'.
+\openout5 = `REPORT.out'.
 
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 52.
+ on input line 41.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
+)
 Package caption Info: End \AtBeginDocument code.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -895,14 +926,14 @@ Package caption Info: End \AtBeginDocument code.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(71.1319pt, 455.24408pt, 71.1319pt)
+* h-part:(L,W,R)=(85.35826pt, 426.79134pt, 85.35828pt)
 * v-part:(T,H,B)=(76.25339pt, 654.41338pt, 114.38008pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=455.24408pt
+* \textwidth=426.79134pt
 * \textheight=654.41338pt
-* \oddsidemargin=-1.13809pt
-* \evensidemargin=-1.13809pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
 * \topmargin=-33.0166pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -921,16 +952,16 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count350
-<iiserk.png, id=59, 274.02374pt x 301.125pt>
+\c@lstlisting=\count355
+<iiserk.png, id=163, 274.02374pt x 301.125pt>
 File: iiserk.png Graphic file (type png)
 <use iiserk.png>
-Package pdftex.def Info: iiserk.png  used on input line 59.
+Package pdftex.def Info: iiserk.png  used on input line 49.
 (pdftex.def)             Requested size: 71.13188pt x 78.16658pt.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./iiserk.png>]
-(./document.toc
+(./REPORT.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -939,290 +970,73 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+) [2
+
+])
 \tf@toc=\write6
-\openout6 = `document.toc'.
+\openout6 = `REPORT.toc'.
 
- [2
+ [3]
+(./REPORT.lot)
+\tf@lot=\write7
+\openout7 = `REPORT.lot'.
 
-] (./document.lol)
-\tf@lol=\write7
-\openout7 = `document.lol'.
+ (./REPORT.lol)
+\tf@lol=\write8
+\openout8 = `REPORT.lol'.
 
- [3
-
-] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 80.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 8
-0.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) (./gaussian.py)
-(./gaussian.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
-
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.95 \end{align*}
-                  [1] (./fft_gaussian.py) (./fft_gaussian.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
-
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.115 \end{align*}
-                   [2]pdfTeX warning (ext4): destination with the same identifi
-er (name{page.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.117 \clearpage
-                 [3] (./intensity_gaussian.py
-consecutive:
-)
-<intensity.png, id=186, 462.528pt x 346.896pt>
-File: intensity.png Graphic file (type png)
-<use intensity.png>
-Package pdftex.def Info: intensity.png  used on input line 142.
-(pdftex.def)             Requested size: 256.0748pt x 192.06375pt.
  [4
 
-] (./intensity_var.py
-consecutive:
-)
-<intensity_var.png, id=210, 462.528pt x 331.9602pt>
-File: intensity_var.png Graphic file (type png)
-<use intensity_var.png>
-Package pdftex.def Info: intensity_var.png  used on input line 153.
-(pdftex.def)             Requested size: 256.0748pt x 183.79434pt.
- [5 <./intensity.png> <./intensity_var.png>] (./intensity_hg.py
-consecutive:
-)
-<intensity_hg00.png, id=236, 462.528pt x 346.896pt>
-File: intensity_hg00.png Graphic file (type png)
-<use intensity_hg00.png>
-Package pdftex.def Info: intensity_hg00.png  used on input line 194.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
-<intensity_hg01.png, id=237, 462.528pt x 346.896pt>
-File: intensity_hg01.png Graphic file (type png)
-<use intensity_hg01.png>
-Package pdftex.def Info: intensity_hg01.png  used on input line 194.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
-<intensity_hg02.png, id=238, 462.528pt x 346.896pt>
-File: intensity_hg02.png Graphic file (type png)
-<use intensity_hg02.png>
-Package pdftex.def Info: intensity_hg02.png  used on input line 194.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
-<intensity_hg10.png, id=239, 462.528pt x 346.896pt>
-File: intensity_hg10.png Graphic file (type png)
-<use intensity_hg10.png>
-Package pdftex.def Info: intensity_hg10.png  used on input line 194.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
-<intensity_hg11.png, id=240, 462.528pt x 346.896pt>
-File: intensity_hg11.png Graphic file (type png)
-<use intensity_hg11.png>
-Package pdftex.def Info: intensity_hg11.png  used on input line 194.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
-<intensity_hg12.png, id=241, 462.528pt x 346.896pt>
-File: intensity_hg12.png Graphic file (type png)
-<use intensity_hg12.png>
-Package pdftex.def Info: intensity_hg12.png  used on input line 194.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
-<intensity_hg20.png, id=242, 462.528pt x 346.896pt>
-File: intensity_hg20.png Graphic file (type png)
-<use intensity_hg20.png>
-Package pdftex.def Info: intensity_hg20.png  used on input line 194.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
-<intensity_hg21.png, id=243, 462.528pt x 346.896pt>
-File: intensity_hg21.png Graphic file (type png)
-<use intensity_hg21.png>
-Package pdftex.def Info: intensity_hg21.png  used on input line 194.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
-<intensity_hg22.png, id=244, 462.528pt x 346.896pt>
-File: intensity_hg22.png Graphic file (type png)
-<use intensity_hg22.png>
-Package pdftex.def Info: intensity_hg22.png  used on input line 194.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
+] [1] [2] [3
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--196
+] [4
 
- []
+] [5
 
+] (./REPORT.aux)
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--196
+Package rerunfilecheck Warning: File `REPORT.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
- []
-
-[6
-
-] [7 <./intensity_hg00.png> <./intensity_hg01.png> <./intensity_hg02.png> <./in
-tensity_hg10.png> <./intensity_hg11.png> <./intensity_hg12.png> <./intensity_hg
-20.png> <./intensity_hg21.png> <./intensity_hg22.png>] (./intensity_lg.py
-consecutive:
-)
-<intensity_lg00.png, id=286, 462.528pt x 346.896pt>
-File: intensity_lg00.png Graphic file (type png)
-<use intensity_lg00.png>
-Package pdftex.def Info: intensity_lg00.png  used on input line 233.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
-<intensity_lg01.png, id=287, 462.528pt x 346.896pt>
-File: intensity_lg01.png Graphic file (type png)
-<use intensity_lg01.png>
-Package pdftex.def Info: intensity_lg01.png  used on input line 233.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
-<intensity_lg02.png, id=288, 462.528pt x 346.896pt>
-File: intensity_lg02.png Graphic file (type png)
-<use intensity_lg02.png>
-Package pdftex.def Info: intensity_lg02.png  used on input line 233.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
-<intensity_lg10.png, id=289, 462.528pt x 346.896pt>
-File: intensity_lg10.png Graphic file (type png)
-<use intensity_lg10.png>
-Package pdftex.def Info: intensity_lg10.png  used on input line 233.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
-<intensity_lg11.png, id=290, 462.528pt x 346.896pt>
-File: intensity_lg11.png Graphic file (type png)
-<use intensity_lg11.png>
-Package pdftex.def Info: intensity_lg11.png  used on input line 233.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
-<intensity_lg12.png, id=291, 462.528pt x 346.896pt>
-File: intensity_lg12.png Graphic file (type png)
-<use intensity_lg12.png>
-Package pdftex.def Info: intensity_lg12.png  used on input line 233.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
-<intensity_lg20.png, id=292, 462.528pt x 346.896pt>
-File: intensity_lg20.png Graphic file (type png)
-<use intensity_lg20.png>
-Package pdftex.def Info: intensity_lg20.png  used on input line 233.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
-<intensity_lg21.png, id=293, 462.528pt x 346.896pt>
-File: intensity_lg21.png Graphic file (type png)
-<use intensity_lg21.png>
-Package pdftex.def Info: intensity_lg21.png  used on input line 233.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
-<intensity_lg22.png, id=294, 462.528pt x 346.896pt>
-File: intensity_lg22.png Graphic file (type png)
-<use intensity_lg22.png>
-Package pdftex.def Info: intensity_lg22.png  used on input line 233.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 233--235
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 233--235
-
- []
-
-[8
-
-] (./phase_lg.py
-consecutive:
-[9 <./intensity_lg00.png> <./intensity_lg01.png> <./intensity_lg02.png> <./inte
-nsity_lg10.png> <./intensity_lg11.png> <./intensity_lg12.png> <./intensity_lg20
-.png> <./intensity_lg21.png> <./intensity_lg22.png>])
-<phase_lg00.png, id=345, 462.528pt x 346.896pt>
-File: phase_lg00.png Graphic file (type png)
-<use phase_lg00.png>
-Package pdftex.def Info: phase_lg00.png  used on input line 257.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
-<phase_lg01.png, id=346, 462.528pt x 346.896pt>
-File: phase_lg01.png Graphic file (type png)
-<use phase_lg01.png>
-Package pdftex.def Info: phase_lg01.png  used on input line 257.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
-<phase_lg02.png, id=347, 462.528pt x 346.896pt>
-File: phase_lg02.png Graphic file (type png)
-<use phase_lg02.png>
-Package pdftex.def Info: phase_lg02.png  used on input line 257.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
-<phase_lg10.png, id=348, 462.528pt x 346.896pt>
-File: phase_lg10.png Graphic file (type png)
-<use phase_lg10.png>
-Package pdftex.def Info: phase_lg10.png  used on input line 257.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
-<phase_lg11.png, id=349, 462.528pt x 346.896pt>
-File: phase_lg11.png Graphic file (type png)
-<use phase_lg11.png>
-Package pdftex.def Info: phase_lg11.png  used on input line 257.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
-<phase_lg12.png, id=350, 462.528pt x 346.896pt>
-File: phase_lg12.png Graphic file (type png)
-<use phase_lg12.png>
-Package pdftex.def Info: phase_lg12.png  used on input line 257.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
-<phase_lg20.png, id=351, 462.528pt x 346.896pt>
-File: phase_lg20.png Graphic file (type png)
-<use phase_lg20.png>
-Package pdftex.def Info: phase_lg20.png  used on input line 257.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
-<phase_lg21.png, id=352, 462.528pt x 346.896pt>
-File: phase_lg21.png Graphic file (type png)
-<use phase_lg21.png>
-Package pdftex.def Info: phase_lg21.png  used on input line 257.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
-<phase_lg22.png, id=353, 462.528pt x 346.896pt>
-File: phase_lg22.png Graphic file (type png)
-<use phase_lg22.png>
-Package pdftex.def Info: phase_lg22.png  used on input line 257.
-(pdftex.def)             Requested size: 145.68143pt x 109.26222pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 257--259
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 257--259
-
- []
-
-[10 <./phase_lg00.png> <./phase_lg01.png> <./phase_lg02.png> <./phase_lg10.png>
- <./phase_lg11.png> <./phase_lg12.png> <./phase_lg20.png> <./phase_lg21.png> <.
-/phase_lg22.png>] (./document.aux)
-Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: C99D9FB03A801334B0F03233E63C1D2C;2398.
+Package rerunfilecheck Info: Checksums for `REPORT.out':
+(rerunfilecheck)             Before: 2D1E3395D37C66AC12E0EEC8ECCF5F9C;7746
+(rerunfilecheck)             After:  9C0F4EC16F02ACC80CAFC80A6A43900D;7933.
  ) 
 Here is how much of TeX's memory you used:
- 35889 strings out of 480171
- 823026 string characters out of 5894489
- 1460076 words of memory out of 5000000
- 53075 multiletter control sequences out of 15000+600000
- 486240 words of font info for 69 fonts, out of 8000000 for 9000
+ 35358 strings out of 480171
+ 807865 string characters out of 5894489
+ 1176006 words of memory out of 5000000
+ 52654 multiletter control sequences out of 15000+600000
+ 490594 words of font info for 74 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 84i,13n,89p,704b,2018s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.6
-00pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt090
+ 84i,17n,89p,754b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti0900.6
+00pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx090
 0.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm
-0600.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/e
-cbx1200.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/e
-c/ecbx1095.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappe
-n/ec/ecbx1440.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jkna
-ppen/ec/ecrm1095.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/j
-knappen/ec/ecrm1728.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfou
-r/jknappen/ec/ecbx2488.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on document.pdf (13 pages, 1865419 bytes).
+0900.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/e
+crm0600.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/e
+c/ecti1095.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappe
+n/ec/ecrm0800.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jkna
+ppen/ec/ecbx1200.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/j
+knappen/ec/ecbx1095.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfou
+r/jknappen/ec/ecbx1440.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/lj
+four/jknappen/ec/ecrm1095.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk
+/ljfour/jknappen/ec/ecrm1728.600pk> </home/pritish/.texlive2021/texmf-var/fonts
+/pk/ljfour/jknappen/ec/ecbx2488.600pk></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on REPORT.pdf (9 pages, 215760 bytes).
 PDF statistics:
- 731 PDF objects out of 1000 (max. 8388607)
- 392 compressed objects within 4 object streams
- 176 named destinations out of 1000 (max. 500000)
- 267 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 700 PDF objects out of 1000 (max. 8388607)
+ 394 compressed objects within 4 object streams
+ 72 named destinations out of 1000 (max. 500000)
+ 330 words of extra memory for PDF output out of 10000 (max. 10000000)
 

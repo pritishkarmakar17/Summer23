@@ -69,21 +69,15 @@
 		\clearpage
 		\tableofcontents
 		\clearpage
-		\listoffigures
+		\lstlistoflistings
 %		\listoftables
 	\end{titlepage}
 	
 \section{GAUSSIAN and ITS FOURIER TRANSFORM}
-%Figure \ref{fig:gaussian} shows a gaussian curve.
-
-%\noindent \dotfill \textbf{Code Block} \noindent\dotfill
-%\verbatiminput{gaussian.py}
-
-%\dotfill
 
 \subsection{Standard normal}
 Standard normal curve is $$f(t)=\frac{1}{\sqrt{2\pi}}e^{-t^2 /2}$$
-\lstinputlisting[language=Python, firstline=1, lastline=14]{gaussian.py}
+\lstinputlisting[language=Python, firstline=1, lastline=14, caption= Standard Normal curve]{gaussian.py}
 \begin{figure}[ht]
 	\centering
 	\scalebox{1}{\input{gaussian.tex}}
@@ -101,7 +95,7 @@ If $f(t)=\int_{-\infty}^{\infty}g(\omega)e^{i\omega t} d\omega$, then fourier tr
 \end{align*}
 
 
-\lstinputlisting[language=Python, firstline=1, lastline=21]{fft_gaussian.py}
+\lstinputlisting[language=Python, firstline=1, lastline=21, caption=Fourier transform of Standard normal]{fft_gaussian.py}
 
 
 \begin{figure}[ht]
@@ -110,6 +104,16 @@ If $f(t)=\int_{-\infty}^{\infty}g(\omega)e^{i\omega t} d\omega$, then fourier tr
 	\caption{Fourier transform of Standard Normal}
 	\label{fig:fft_gaussian}
 \end{figure}
+Mathematically,\\
+\begin{align*}
+	g(\omega)\;\;&=\frac{1}{2\pi}\int_{-\infty}^{\infty}f(t)e^{-i\omega t} dt = \frac{1}{2\pi}\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}e^{-t^2 /2}e^{-i\omega t} dt\\
+	&= \frac{1}{2\pi}\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}e^{-t^2/2-i\omega t} dt
+	= \frac{1}{2\pi}\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}e^{-(t^2/2+i\omega t)} dt\\
+	&= \frac{1}{2\pi}\frac{1}{\sqrt{2\pi}}e^{-\omega^2/2} \int_{-\infty}^{\infty}e^{-(t/\sqrt{2}+i\omega/\sqrt{2})^2} dt\\
+	&= \frac{1}{2\pi}\frac{1}{\sqrt{\pi}}e^{-\omega^2/2} \int_{-\infty}^{\infty}e^{-\zeta^2} d\zeta \;\;\text{[\;substitute $\zeta=t/\sqrt{2}+i\omega/\sqrt{2}$\;]}\\
+	&=\frac{1}{2\pi}e^{-\omega^2/2} \;\;\text{[\;as $\int_{-\infty}^{\infty}e^{-\zeta^2} d\zeta=\sqrt{\pi}$ \;]}
+\end{align*}
+
 \clearpage
 
 \section{GAUSSIAN BEAMS}
@@ -211,7 +215,7 @@ where,
 \end{align*}
 \subsection{Intensity profile}
 Intensity of Hermite-Gaussian beam is given by,
-$$I_{p,l}(r,z)=\frac{c\epsilon}{2} |A|^2 \left[\frac{w_0}{w(z)}\right]^2 \left[\frac{r\sqrt{2}}{w(z)}\right]^{2|l|} \left[ L_p^{|l|}\left(\frac{2r^2}{w^2(z)}\right) \right]^2 \exp{\left(-2(x^2+y^2)/w^2(z)\right)}$$ 
+$$I_{p,l}(r,z)=\frac{c\epsilon}{2} |A|^2 \left[\frac{w_0}{w(z)}\right]^2 \left[\frac{r\sqrt{2}}{w(z)}\right]^{2|l|} \left[ L_p^{|l|}\left(\frac{2r^2}{w^2(z)}\right) \right]^2 \exp{\left(-2r^2/w^2(z)\right)}$$ 
 \lstinputlisting[language=Python, firstline=4, lastline=23]{intensity_lg.py}
 
 \begin{figure}[H]

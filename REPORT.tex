@@ -1,0 +1,334 @@
+% !TeX spellcheck = en_GB_oxendict
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,makeidx,graphicx,float,indentfirst,color,hyperref,tikz,
+	pgfplots,verbatim,fancyvrb,caption,subcaption,physics,longtable}
+\usepackage[width=15.00cm, height=23.00cm]{geometry}
+\setlength{\parindent}{4mm}
+\setlength{\parskip}{1mm}
+\hypersetup{colorlinks=true, linktoc=all, linkcolor=blue,}
+\usepgfplotslibrary{groupplots,dateplot}
+\usetikzlibrary{patterns,shapes.arrows}
+\usepackage{listings,xcolor}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=true,                  
+	tabsize=2,
+}
+\lstset{style=mystyle}
+%----------------------------------------------------------------------
+
+\author{Pritish Karmakar}
+
+\begin{document}
+	%\iffalse\fi
+	\begin{titlepage}
+		\pagenumbering{roman}
+		\vspace*{3.5cm}
+		\centering
+		{\Huge\bfseries Summer Project}\\
+		\vspace{5cm}
+		\includegraphics[width=2.5cm]{iiserk.png}
+
+		\vspace{5cm}
+		
+		{\LARGE Pritish Karmakar\\}
+		\vspace{0.3cm}
+		{21MS179}
+		\vfill
+		
+		
+		\clearpage
+		\tableofcontents
+		\clearpage
+		\listoftables
+		\lstlistoflistings
+		
+	\end{titlepage}
+\pagenumbering{arabic}
+
+\section{POLARIZATION}
+\subsection{Introduction}
+
+\subsection{Jones formalism}
+\subsubsection{Jones Vector}
+Vector form of electric field of fully polarized EM wave propagating along z-axis is given by
+\begin{align}
+	\textbf{E}(\textbf{x},t)=
+	\begin{bmatrix}
+		E_x(\textbf{x},t)\\
+		E_y(\textbf{x},t)\\
+		E_z(\textbf{x},t)
+	\end{bmatrix} =
+\begin{bmatrix}
+	A_x(\textbf{x}) e^{-i(kz-\omega t-\phi_x)}\\
+	A_y(\textbf{x}) e^{-i(kz-\omega t-\phi_y)}\\
+	0
+\end{bmatrix}=
+\begin{bmatrix}
+	A_x(\textbf{x})e^{-i\phi_x}\\
+	A_y(\textbf{x})e^{-i\phi_y}\\
+	0
+\end{bmatrix}e^{-i(kz-\omega t)}
+\end{align}
+
+We define normalized\footnote{normalized as $\textbf{J}\:\textbf{J}^\ast=1$} \textit{Jones vector} as
+\begin{align}
+	\textbf{J}(\textbf{x},t)=\frac{1}{\sqrt{A_x^2+A_y^2}}
+	\begin{bmatrix}
+		A_x(\textbf{x})e^{i\phi_x}\\
+		A_y(\textbf{x})e^{i\phi_y}
+	\end{bmatrix}
+\end{align}
+
+Such examples of usual polarization states are given below,
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ c c } 
+		\hline
+		\hline
+		Polarization state & \textbf{J}\\
+		\hline
+		$\ket{H}$ & $\begin{bmatrix}1\\0\end{bmatrix}$ \\ 
+		$\ket{v}$ & $\begin{bmatrix}1\\0\end{bmatrix}$ \\ 
+		$\ket{P}$ & $\frac{1}{\sqrt{2}}\begin{bmatrix}1\\1\end{bmatrix}$ \\
+		$\ket{M}$ & $\frac{1}{\sqrt{2}}\begin{bmatrix}1\\-1\end{bmatrix}$ \\
+		$\ket{L}$ & $\frac{1}{\sqrt{2}}\begin{bmatrix}1\\i\end{bmatrix}$ \\
+		$\ket{R}$ & $\frac{1}{\sqrt{2}}\begin{bmatrix}1\\-i\end{bmatrix}$ \\ 
+		\hline
+		\hline
+	\end{tabular}
+	\caption{Usual polarization state}
+	\label{table:1}
+\end{table}
+
+Some properties of Jones vector are
+\begin{enumerate}
+	\item The intensity of the EM wave is given by $I= \frac{1}{2}c\epsilon_0(A_x^2+A_y^2) = \frac{1}{2}c\epsilon_0 (E^\ast E)$
+	\item For general elliptically polarized light we can measure the azimuth ($\alpha$) ellipticity ($\epsilon$) of the polarization ellipse by comparing Jones vector $\textbf{J}$ with
+	\begin{align*}
+		\begin{bmatrix}
+			\cos\alpha\cos\epsilon- i \sin\alpha\sin\epsilon \\
+			\sin\alpha\cos\epsilon- i \cos\alpha\sin\epsilon
+		\end{bmatrix}
+	\end{align*}
+\end{enumerate}
+
+\subsubsection{Jones Matrix \& evolution of Jones vector}
+\textit{Jones matrix} is a $2\times2$ matrix assigned for a particular optical element. let $\textbf{M}$ be Jones matrix \textit{s.t.} 
+\begin{align}
+	\begin{bmatrix}
+		m_{11} & m_{12}\\
+		m_{21} & m_{22}
+	\end{bmatrix}
+\end{align}
+then if a polarized light of Jones vector $\textbf{J}_{in}$ passes through that optical element then the Jones vector of output light is given by 
+\begin{align}
+	\textbf{J}_{out}=\textbf{M}\;\textbf{J}_{in}
+\end{align}
+
+To determine $m_{ij}$ in $\textbf{M}$,
+\begin{enumerate}
+	\item Pass x-polarized light and determine $\textbf{J}_{out}$, then 
+	\begin{align}
+		\textbf{J}_{out}=
+		\begin{bmatrix}
+			m_{11} & m_{12}\\
+			m_{21} & m_{22}
+		\end{bmatrix}
+		\begin{bmatrix}
+			1\\
+			0
+		\end{bmatrix}=
+	\begin{bmatrix}
+		m_{11}\\
+		m_{21}
+	\end{bmatrix}
+	\end{align}
+
+\item Pass y-polarized light and determine $\textbf{J}_{out}$, then 
+\begin{align}
+	\textbf{J}_{out}=
+	\begin{bmatrix}
+		m_{11} & m_{12}\\
+		m_{21} & m_{22}
+	\end{bmatrix}
+	\begin{bmatrix}
+		0\\
+		1
+	\end{bmatrix}=
+	\begin{bmatrix}
+		m_{12}\\
+		m_{22}
+	\end{bmatrix}
+\end{align}
+\end{enumerate}
+
+Such examples of usual Jones matrix \footnote{For polariser the Jones matrix $\textbf{M} = \textbf{J}\;\textbf{J}^\ast$ where $\textbf{J}$ is normalized Jones vector corresponding polarization state \textit{s.t.} $\textbf{J}_{out}= \textbf{M}\textbf{J} = (\textbf{J}\textbf{J}^\ast)\textbf{J}=\textbf{J}(\textbf{J}^\ast\textbf{J})=\textbf{J}$} are given below,
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ c c } 
+		\hline
+		\hline
+		Optical element & \textbf{M}\\
+		\hline
+		Free space & $\begin{bmatrix}
+			1 & 0 \\ 
+			0 & 1
+		\end{bmatrix}$\\ \hline
+		x-Polariser & $\begin{bmatrix}
+			1 & 0 \\ 
+			0 & 0
+		\end{bmatrix}$\\\hline
+		y-Polariser & $\begin{bmatrix}
+			0 & 0 \\ 
+			0 & 1
+		\end{bmatrix}$\\\hline
+		Right circular polariser & $\frac{1}{2}\begin{bmatrix}
+			1 & i \\ 
+			-i & 1
+		\end{bmatrix}$\\\hline
+		Left circular polariser & $\frac{1}{2}\begin{bmatrix}
+			1 & -i \\ 
+			i & 1
+		\end{bmatrix}$\\\hline
+		Linear di-attenuator & $\begin{bmatrix}
+			a & 0 \\ 
+			0 & b
+		\end{bmatrix}$\\\hline
+		\begin{tabular}{c}
+			Half-wave plate\\
+			with fast axis horizontal
+		\end{tabular} & $e^{-i\pi/2}\begin{bmatrix}
+			1 & 0 \\ 
+			0 & -1
+		\end{bmatrix}$\\\hline
+		\begin{tabular}{c}
+			Quarter-wave plate\\
+			with fast axis horizontal
+		\end{tabular} & $e^{-i\pi/4}\begin{bmatrix}
+			1 & 0 \\ 
+			0 & i
+		\end{bmatrix}$\\\hline
+		General phase retarder &  $\begin{bmatrix}
+			e^{i\phi_x} & 0 \\ 
+			0 & e^{i\phi_y}
+		\end{bmatrix}$\\
+	\hline
+	\hline
+	\end{tabular}
+	\caption{Jones matrix related to usual optical element}
+	\label{table:2}
+\end{table}
+
+\clearpage
+Some properties of Jones matrix are 
+\begin{enumerate}
+	\item Resultant Jones matrix for composition of $n$ optical element is given by
+	\begin{align}
+		\textbf{M}=\textbf{M}_1\;\textbf{M}_2\dots\textbf{M}_n
+	\end{align}
+	\item For an optical element when its optical axis aligned at an angle $\theta$ \textit{w.r.t.} x-axis then resultant Jones matrix for this rotated optical element is given by
+	\begin{align}
+		\textbf{M}_\theta = R(-\theta)\;\textbf{M}\;R(\theta)
+	\end{align}
+where $R(\theta)$ is passive rotation matrix \textit{s.t.}
+\begin{align}
+	R(\theta)=
+	\begin{bmatrix}
+		\cos\theta & \sin\theta \\
+		-\sin\theta & \cos\theta
+	\end{bmatrix}
+\end{align}
+\end{enumerate}
+
+\subsubsection{Drawback of Jones formalism}
+Main drawback of Jones formalism is that its application is restricted in fully polarized light. This formalism cannot explain the partially polarized or unpolished light which we frequently observe in practical use.
+
+\subsection{Stokes-Muller formalism}
+\subsubsection{Coherence matrix}
+
+\subsubsection{Stokes parameters and Stokes vector}
+
+\subsubsection{Measurement of Stokes parameters}
+
+\subsubsection{Poincare sphere representation}
+
+\subsubsection{Degree of Polarization}
+
+\subsubsection{Muller matrix}
+
+\subsubsection{Muller Matrix \& evolution of Stokes vector}
+
+\subsubsection{Jones vs Muller matrix}
+
+\subsection{More on Elliptically polarized light}
+\subsubsection{Jones vector of elliptically polarized light}
+
+\subsubsection{Stokes vector and corresponding Poincare representation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\section{GAUSSIAN BEAM}
+\subsection{Introduction}
+g
+\subsection{Parallax wave equaion and solutions}
+\subsubsection{Scalar wave solution (without polrisation)}
+
+\subsubsection{Vector wave solution (with polrisation)}
+
+\subsection{Gaussian Beam properties}
+
+\subsection{Differenrt modes of Gaussian beams}
+
+\subsection{LG vs HG beam}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\section{SPIN-ORBIT INTERACTION}
+\subsection{Introduction}
+soi
+\subsection{Angular momentum of Light}
+
+\subsection{Orbital Angular Momentum (OAM)}
+\subsubsection{Intrinsic vs Extrinsic OAM}
+
+\subsubsection{OAM of LG Beam}
+
+\subsection{Spin Angular Momentum (SAM)}
+
+\subsection{Spin orbit energy}
+
+\subsection{Geometric phase of light}
+\subsubsection{Spin redirection Berry phase}
+
+\subsubsection{Pancharatnam-Berry Phase}
+
+\subsubsection{LG-HG Mode transformation}
+
+\subsection{Types of SOI}
+
+\subsection{SOI in inhomogeneous anisotropic medium}
+
+
+
+
+\end{document}
