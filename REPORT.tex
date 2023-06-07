@@ -4,6 +4,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{amsmath,amssymb,makeidx,graphicx,float,indentfirst,color,hyperref,tikz,
 	pgfplots,verbatim,fancyvrb,caption,subcaption,physics,longtable}
+\numberwithin{equation}{section}
 \usepackage[width=15.00cm, height=23.00cm]{geometry}
 \setlength{\parindent}{4mm}
 \setlength{\parskip}{1mm}
@@ -66,6 +67,7 @@
 \pagenumbering{arabic}
 
 \section{POLARIZATION}
+
 \subsection{Introduction}
 
 \subsection{Jones formalism}
@@ -79,13 +81,13 @@ Vector form of electric field of fully polarized EM wave propagating along z-axi
 		E_z(\textbf{x},t)
 	\end{bmatrix} =
 \begin{bmatrix}
-	A_x(\textbf{x}) e^{-i(kz-\omega t-\phi_x)}\\
-	A_y(\textbf{x}) e^{-i(kz-\omega t-\phi_y)}\\
+	A_x(\textbf{x}) e^{-i(kz-\omega t-\delta_x)}\\
+	A_y(\textbf{x}) e^{-i(kz-\omega t-\delta_y)}\\
 	0
 \end{bmatrix}=
 \begin{bmatrix}
-	A_x(\textbf{x})e^{-i\phi_x}\\
-	A_y(\textbf{x})e^{-i\phi_y}\\
+	A_x(\textbf{x})e^{i\delta_x}\\
+	A_y(\textbf{x})e^{i\delta_y}\\
 	0
 \end{bmatrix}e^{-i(kz-\omega t)}
 \end{align}
@@ -94,12 +96,12 @@ We define normalized\footnote{normalized as $\textbf{J}\:\textbf{J}^\ast=1$} \te
 \begin{align}
 	\textbf{J}(\textbf{x},t)=\frac{1}{\sqrt{A_x^2+A_y^2}}
 	\begin{bmatrix}
-		A_x(\textbf{x})e^{i\phi_x}\\
-		A_y(\textbf{x})e^{i\phi_y}
+		A_x(\textbf{x})e^{i\delta_x}\\
+		A_y(\textbf{x})e^{i\delta_y}
 	\end{bmatrix}
 \end{align}
 
-Such examples of usual polarization states are given below,
+Such examples of usual polarization states are given below\cite{jones},
 \begin{table}[H]
 	\centering
 	\begin{tabular}{ c c } 
@@ -107,23 +109,26 @@ Such examples of usual polarization states are given below,
 		\hline
 		Polarization state & \textbf{J}\\
 		\hline
-		$\ket{H}$ & $\begin{bmatrix}1\\0\end{bmatrix}$ \\ 
-		$\ket{v}$ & $\begin{bmatrix}1\\0\end{bmatrix}$ \\ 
-		$\ket{P}$ & $\frac{1}{\sqrt{2}}\begin{bmatrix}1\\1\end{bmatrix}$ \\
-		$\ket{M}$ & $\frac{1}{\sqrt{2}}\begin{bmatrix}1\\-1\end{bmatrix}$ \\
-		$\ket{L}$ & $\frac{1}{\sqrt{2}}\begin{bmatrix}1\\i\end{bmatrix}$ \\
+		$\ket{H}$ & $\begin{bmatrix}1\\0\end{bmatrix}$ \\ \hline
+		$\ket{V}$ & $\begin{bmatrix}0\\1\end{bmatrix}$ \\ \hline
+		$\ket{P}$ & $\frac{1}{\sqrt{2}}\begin{bmatrix}1\\1\end{bmatrix}$ \\ \hline
+		$\ket{M}$ & $\frac{1}{\sqrt{2}}\begin{bmatrix}1\\-1\end{bmatrix}$ \\ \hline
+		$\ket{L}$ & $\frac{1}{\sqrt{2}}\begin{bmatrix}1\\i\end{bmatrix}$ \\ \hline
 		$\ket{R}$ & $\frac{1}{\sqrt{2}}\begin{bmatrix}1\\-i\end{bmatrix}$ \\ 
 		\hline
 		\hline
 	\end{tabular}
-	\caption{Usual polarization state}
+	\caption{Jones vector of usual polarization state}
 	\label{table:1}
 \end{table}
 
 Some properties of Jones vector are
 \begin{enumerate}
-	\item The intensity of the EM wave is given by $I= \frac{1}{2}c\epsilon_0(A_x^2+A_y^2) = \frac{1}{2}c\epsilon_0 (E^\ast E)$
-	\item For general elliptically polarized light we can measure the azimuth ($\alpha$) ellipticity ($\epsilon$) of the polarization ellipse by comparing Jones vector $\textbf{J}$ with
+	\item The intensity of the EM wave is given by 
+	\begin{align}
+		I= \frac{1}{2}c\epsilon_0(A_x^2+A_y^2) = \frac{1}{2}c\epsilon_0 (E^\ast E)
+	\end{align}
+	\item For general elliptically polarized light we can measure the azimuth ($\alpha$) ellipticity ($\epsilon$) of the polarization ellipse by comparing Jones vector $\textbf{J}$ with \cite{WO}
 	\begin{align*}
 		\begin{bmatrix}
 			\cos\alpha\cos\epsilon- i \sin\alpha\sin\epsilon \\
@@ -134,21 +139,22 @@ Some properties of Jones vector are
 
 \subsubsection{Jones Matrix \& evolution of Jones vector}
 \textit{Jones matrix} is a $2\times2$ matrix assigned for a particular optical element. let $\textbf{M}$ be Jones matrix \textit{s.t.} 
-\begin{align}
+\begin{align*}
 	\begin{bmatrix}
 		m_{11} & m_{12}\\
 		m_{21} & m_{22}
 	\end{bmatrix}
-\end{align}
+\end{align*}
 then if a polarized light of Jones vector $\textbf{J}_{in}$ passes through that optical element then the Jones vector of output light is given by 
 \begin{align}
-	\textbf{J}_{out}=\textbf{M}\;\textbf{J}_{in}
+	\textbf{J}_{out}&=\textbf{M}\;\textbf{J}_{in}\\
+	\Rightarrow \textbf{E}_{out}&=\textbf{M}\;\textbf{E}_{in} \label{eq:1.5}
 \end{align}
 
 To determine $m_{ij}$ in $\textbf{M}$,
 \begin{enumerate}
 	\item Pass x-polarized light and determine $\textbf{J}_{out}$, then 
-	\begin{align}
+	\begin{align*}
 		\textbf{J}_{out}=
 		\begin{bmatrix}
 			m_{11} & m_{12}\\
@@ -162,10 +168,10 @@ To determine $m_{ij}$ in $\textbf{M}$,
 		m_{11}\\
 		m_{21}
 	\end{bmatrix}
-	\end{align}
+	\end{align*}
 
 \item Pass y-polarized light and determine $\textbf{J}_{out}$, then 
-\begin{align}
+\begin{align*}
 	\textbf{J}_{out}=
 	\begin{bmatrix}
 		m_{11} & m_{12}\\
@@ -179,10 +185,10 @@ To determine $m_{ij}$ in $\textbf{M}$,
 		m_{12}\\
 		m_{22}
 	\end{bmatrix}
-\end{align}
+\end{align*}
 \end{enumerate}
 
-Such examples of usual Jones matrix \footnote{For polariser the Jones matrix $\textbf{M} = \textbf{J}\;\textbf{J}^\ast$ where $\textbf{J}$ is normalized Jones vector corresponding polarization state \textit{s.t.} $\textbf{J}_{out}= \textbf{M}\textbf{J} = (\textbf{J}\textbf{J}^\ast)\textbf{J}=\textbf{J}(\textbf{J}^\ast\textbf{J})=\textbf{J}$} are given below,
+Such examples of usual Jones matrix \footnote{For polariser the Jones matrix $\textbf{M} = \textbf{J}\;\textbf{J}^\ast$ where $\textbf{J}$ is normalized Jones vector corresponding polarization state \textit{s.t.} $\textbf{J}_{out}= \textbf{M}\textbf{J} = (\textbf{J}\textbf{J}^\ast)\textbf{J}=\textbf{J}(\textbf{J}^\ast\textbf{J})=\textbf{J}$} are given below,\cite{jones}
 \begin{table}[H]
 	\centering
 	\begin{tabular}{ c c } 
@@ -264,10 +270,133 @@ where $R(\theta)$ is passive rotation matrix \textit{s.t.}
 Main drawback of Jones formalism is that its application is restricted in fully polarized light. This formalism cannot explain the partially polarized or unpolished light which we frequently observe in practical use.
 
 \subsection{Stokes-Muller formalism}
-\subsubsection{Coherence matrix}
+\subsubsection{Coherency matrix and coherency vector}
+\textit{Coherency matrix} of a EM wave is defined as \cite{WO} 
+\begin{align}
+	\textbf{C}=\expval{\textbf{E}\otimes\textbf{E}^\dagger}= \expval{\textbf{E}\textbf{E}^\dagger}=
+	\begin{bmatrix}
+		\expval{E_xE_x^\ast} & \expval{E_xE_y^\ast}\\
+		\expval{E_yE_x^\ast} & \expval{E_yE_y^\ast}
+	\end{bmatrix}=
+\begin{bmatrix}
+	{A_x^2} & {A_xA_ye^{-i\delta}}\\
+	{A_xA_ye^{i\delta}} & {A_y^2}
+\end{bmatrix}
+\end{align}
+where $\otimes$ denotes Kronecker product, $\expval{\cdot}$ denotes the temporal avg of the corresponding quantity and $\delta= \delta_y-\delta_x$.
+And coherency vector is defined as 
+
+Examples of coherency matrix of usual polarization states are given below \cite{coherency},
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ c c c } 
+		\hline
+		\hline
+		Polarization state & \textbf{J} & \textbf{C}\\
+		\hline
+		$\ket{H}$ & $\begin{bmatrix}1\\0\end{bmatrix}$ & $\begin{bmatrix}1&0\\0&0\end{bmatrix}$\\ \hline
+		$\ket{V}$ & $\begin{bmatrix}0\\1\end{bmatrix}$ & $\begin{bmatrix}0&0\\0&1\end{bmatrix}$\\ \hline
+		$\ket{P}$ & $\frac{1}{\sqrt{2}}\begin{bmatrix}1\\1\end{bmatrix}$ & $\frac{1}{2}\begin{bmatrix}1&1\\1&1\end{bmatrix}$\\ \hline
+		$\ket{M}$ & $\frac{1}{\sqrt{2}}\begin{bmatrix}1\\-1\end{bmatrix}$ & $\frac{1}{2}\begin{bmatrix}1&-1\\-1&1\end{bmatrix}$\\ \hline
+		$\ket{L}$ & $\frac{1}{\sqrt{2}}\begin{bmatrix}1\\i\end{bmatrix}$ & $\frac{1}{2}\begin{bmatrix}1&-i\\i&1\end{bmatrix}$\\ \hline
+		$\ket{R}$ & $\frac{1}{\sqrt{2}}\begin{bmatrix}1\\-i\end{bmatrix}$ & $\frac{1}{2}\begin{bmatrix}1&i\\-i&1\end{bmatrix}$\\ \hline
+		Un-polarized & $-$ &  $\frac{1}{2}\begin{bmatrix}1&0\\0&1\end{bmatrix}$\\
+		\hline
+		\hline
+	\end{tabular}
+	\caption{coherency matrix of usual polarization state}
+	\label{table:3}
+\end{table}
+
+
+Some properties of coherency matrix are
+\begin{enumerate}
+	\item It is a hermitian matrix \textit{i.e.} $\textbf{C}=\textbf{C}^\dagger$
+	\item Trace and determinant off the matrix are non-negative\footnote{Proofs to be done} \textit{i.e.} $\tr(\textbf{C})>0$ \& $\det(\textbf{C})\ge0$.
+	\item $\Tr(\textbf{C}) = \expval{E_x E_x^\ast} +\expval{E_y E_y^\ast}$ is the time averaged intensity of input light.
+	\item let the polarized light (of electric field $\textbf{E}_{in}$ \& coherency matrix $\textbf{C}_{in}$) passes through an optical element (of Jones matrix \textbf{M}) then let output electric field be $\textbf{E}_{out}$ by the equation \ref{eq:1.5}, then output coherency matrix $\textbf{C}_{out}$ is given by 
+	\begin{align}
+		\textbf{C}_{out} = \expval{\textbf{E}_{out}\textbf{E}_{out}^\dagger} &= \expval{\left(\textbf{M}\textbf{E}_{in} \right) \left(\textbf{M}\textbf{E}_{in}\right)^\dagger}\nonumber\\
+		&= \expval{\left(\textbf{M}\textbf{E}_{in} \right) \left(\textbf{E}_{in}^\dagger\textbf{M}^\dagger\right)}\nonumber \\
+		&= \textbf{M}\expval{\textbf{E}_{in} \textbf{E}_{in}^\dagger}\textbf{M}^\dagger \nonumber\\
+		&= \textbf{M}\:\textbf{C}_{in}\:\textbf{M}^\dagger
+	\end{align}
+\end{enumerate}
 
 \subsubsection{Stokes parameters and Stokes vector}
+Now we see that coherency matrix \textbf{C} of any polarization state in table \ref{table:3} can be written in the linear combination of the 4 basis given below
+\begin{align}
+	\beta = \left\{
+	\underbrace{\begin{bmatrix}1 & 0 \\ 0 & 1\\\end{bmatrix}}_{\boldsymbol{V_0}},
+	\underbrace{\begin{bmatrix}1 & 0 \\ 0 & -1\\\end{bmatrix}}_{\boldsymbol{V_1}},
+	\underbrace{\begin{bmatrix}0 & 1 \\ 1 & 0\\\end{bmatrix}}_{\boldsymbol{V_2}},
+	\underbrace{\begin{bmatrix}0 & i \\ -i & 1\\\end{bmatrix}}_{\boldsymbol{V_3}}
+	\right\}
+\end{align}
+Now we can write any coherency matrix \textbf{C} as 
+\begin{align}
+\textbf{C} = \frac{1}{2} \sum_{i=0}^{3} S_i \boldsymbol{V_i} \label{eq:1.12}
+\end{align}
+Note that all $V_i$'s are Hermitian, so obviously is \textbf{C}.
 
+We call $\{S_0, S_1, S_2, S_3\}$ as a \textit{Stokes parameter} and the values of $S_i$'s are experimentally measurable.
+
+A \textit{Stokes vector} \textbf{S} is defined as\footnote{for intensity normalised Stokes vector, $\textbf{S}= \begin{bmatrix} 1& s_1& s_2& s_3\end{bmatrix}$ where $s_i=S_i/S_0$}
+
+\begin{align}
+	\textbf{S}= \begin{bmatrix} S_0\\ S_1\\ S_2\\S_3	\end{bmatrix}
+\end{align}
+
+Examples of Stokes vector for different polarization states are given below
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ c c c } 
+		\hline
+		\hline
+		Polarization state &  \textbf{C} & \textbf{S}\\
+		\hline
+		$\ket{H}$ & $\begin{bmatrix}1&0\\0&0\end{bmatrix}$ & $\begin{bmatrix}1&1&0&0\end{bmatrix}^T$\\ \hline
+		$\ket{V}$ & $\begin{bmatrix}0&0\\0&1\end{bmatrix}$ & $\begin{bmatrix}1&-1&0&0\end{bmatrix}^T$\\ \hline
+		$\ket{P}$ & $\frac{1}{2}\begin{bmatrix}1&1\\1&1\end{bmatrix}$ & $\begin{bmatrix}1&0&1&0\end{bmatrix}^T$\\ \hline
+		$\ket{M}$ & $\frac{1}{2}\begin{bmatrix}1&-1\\-1&1\end{bmatrix}$ & $\begin{bmatrix}1&0&-1&0\end{bmatrix}^T$\\ \hline
+		$\ket{L}$ & $\frac{1}{2}\begin{bmatrix}1&-i\\i&1\end{bmatrix}$ & $\begin{bmatrix}1&0&0&1\end{bmatrix}^T$\\ \hline
+		$\ket{R}$ & $\frac{1}{2}\begin{bmatrix}1&i\\-i&1\end{bmatrix}$ & $\begin{bmatrix}1&0&0&-1\end{bmatrix}^T$\\ \hline
+		Un-polarized &  $\frac{1}{2}\begin{bmatrix}1&0\\0&1\end{bmatrix}$ & $\begin{bmatrix}1&0&0&0\end{bmatrix}^T$\\
+		\hline
+		\hline
+	\end{tabular}
+	\caption{coherency matrix of usual polarization state}
+	\label{table:4}
+\end{table}
+
+Now we see from the equation \ref{eq:1.12}
+\begin{align}
+	\begin{bmatrix}
+		\expval{E_xE_x^\ast} & \expval{E_xE_y^\ast}\\
+		\expval{E_yE_x^\ast} & \expval{E_yE_y^\ast}
+	\end{bmatrix}=
+	\textbf{C} = \frac{1}{2} \sum_{i=0}^{3} S_i \boldsymbol{V_i} = \frac{1}{2}
+	\begin{bmatrix}
+		S_0+S_1 & S_2+iS_3\\
+		S_2-iS_3 & S_0-iS_3
+	\end{bmatrix}
+\end{align}
+From there we can write
+\begin{align}
+	\boldsymbol{S}= \begin{bmatrix} S_0\\ S_1\\ S_2\\S_3\end{bmatrix} =
+	\begin{bmatrix}
+		\expval{E_xE_x^\ast} + \expval{E_xE_y^\ast}\\
+		\expval{E_xE_x^\ast} - \expval{E_xE_y^\ast}\\
+		\expval{E_yE_x^\ast} + \expval{E_xE_y^\ast}\\
+		i\left(\expval{E_yE_x^\ast} + \expval{E_xE_y^\ast}\right)
+	\end{bmatrix}=
+	\begin{bmatrix}
+		{A_x^2 + A_y^2}\\
+		{A_x^2 - A_y^2}\\
+		{2A_yA_y\cos\delta}\\
+		{2A_yA_y\sin\delta}
+	\end{bmatrix}
+\end{align}
 \subsubsection{Measurement of Stokes parameters}
 
 \subsubsection{Poincare sphere representation}
@@ -278,13 +407,15 @@ Main drawback of Jones formalism is that its application is restricted in fully 
 
 \subsubsection{Muller Matrix \& evolution of Stokes vector}
 
-\subsubsection{Jones vs Muller matrix}
+\subsubsection{Relationship between Jones \& Muller matrix}
 
 \subsection{More on Elliptically polarized light}
 \subsubsection{Jones vector of elliptically polarized light}
 
 \subsubsection{Stokes vector and corresponding Poincare representation}
 
+\bibliographystyle{acm}
+\bibliography{refs}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
 \section{GAUSSIAN BEAM}
@@ -299,7 +430,7 @@ g
 
 \subsection{Differenrt modes of Gaussian beams}
 
-\subsection{LG vs HG beam}
+\subsection{Relationship between 1st order LG \& HG beam}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
