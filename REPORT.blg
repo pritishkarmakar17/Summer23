@@ -6,48 +6,50 @@ Database file #1: refs.bib
 Warning--entry type for "jones" isn't style-file defined
 --line 8 of file refs.bib
 Warning--to sort, need author or key in jones
+Warning--to sort, need author or key in coherency
+Warning--empty author in coherency
+Warning--empty journal in coherency
 Warning--empty publisher in WO
 Warning--empty year in WO
-Warning--empty journal in coherency
 You've used 3 entries,
             2253 wiz_defined-function locations,
-            536 strings with 4086 characters,
-and the built_in function-call counts, 566 in all, are:
-= -- 45
-> -- 15
+            535 strings with 4138 characters,
+and the built_in function-call counts, 518 in all, are:
+= -- 41
+> -- 9
 < -- 0
-+ -- 8
-- -- 4
-* -- 30
-:= -- 92
-add.period$ -- 5
++ -- 5
+- -- 2
+* -- 31
+:= -- 75
+add.period$ -- 4
 call.type$ -- 3
-change.case$ -- 10
+change.case$ -- 9
 chr.to.int$ -- 0
-cite$ -- 7
-duplicate$ -- 28
+cite$ -- 9
+duplicate$ -- 27
 empty$ -- 60
-format.name$ -- 4
-if$ -- 116
+format.name$ -- 2
+if$ -- 110
 int.to.chr$ -- 0
 int.to.str$ -- 3
 missing$ -- 3
-newline$ -- 14
-num.names$ -- 4
+newline$ -- 13
+num.names$ -- 2
 pop$ -- 24
 preamble$ -- 1
-purify$ -- 8
+purify$ -- 7
 quote$ -- 0
 skip$ -- 19
 stack$ -- 0
-substring$ -- 16
-swap$ -- 4
+substring$ -- 15
+swap$ -- 3
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 10
-warning$ -- 4
-while$ -- 4
+warning$ -- 6
+while$ -- 2
 width$ -- 4
-write$ -- 21
-(There were 5 warnings)
+write$ -- 19
+(There were 7 warnings)

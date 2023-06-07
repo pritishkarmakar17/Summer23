@@ -188,7 +188,7 @@ To determine $m_{ij}$ in $\textbf{M}$,
 \end{align*}
 \end{enumerate}
 
-Such examples of usual Jones matrix \footnote{For polariser the Jones matrix $\textbf{M} = \textbf{J}\;\textbf{J}^\ast$ where $\textbf{J}$ is normalized Jones vector corresponding polarization state \textit{s.t.} $\textbf{J}_{out}= \textbf{M}\textbf{J} = (\textbf{J}\textbf{J}^\ast)\textbf{J}=\textbf{J}(\textbf{J}^\ast\textbf{J})=\textbf{J}$} are given below,\cite{jones}
+Such examples of usual Jones matrix \footnote{For polariser the Jones matrix $\textbf{M} = \textbf{J}\;\textbf{J}^\ast$ where $\textbf{J}$ is normalized Jones vector corresponding polarization state \textit{s.t.} $\textbf{J}_{out}= \textbf{M}\textbf{J} = (\textbf{J}\textbf{J}^\ast)\textbf{J}=\textbf{J}(\textbf{J}^\ast\textbf{J})=\textbf{J}$ \label{fn:1}} are given below,\cite{jones}
 \begin{table}[H]
 	\centering
 	\begin{tabular}{ c c } 
@@ -254,7 +254,7 @@ Some properties of Jones matrix are
 	\end{align}
 	\item For an optical element when its optical axis aligned at an angle $\theta$ \textit{w.r.t.} x-axis then resultant Jones matrix for this rotated optical element is given by
 	\begin{align}
-		\textbf{M}_\theta = R(-\theta)\;\textbf{M}\;R(\theta)
+		\textbf{M}_\theta = R(-\theta)\;\textbf{M}\;R(\theta) \label{eq:1.7}
 	\end{align}
 where $R(\theta)$ is passive rotation matrix \textit{s.t.}
 \begin{align}
@@ -279,8 +279,8 @@ Main drawback of Jones formalism is that its application is restricted in fully 
 		\expval{E_yE_x^\ast} & \expval{E_yE_y^\ast}
 	\end{bmatrix}=
 \begin{bmatrix}
-	{A_x^2} & {A_xA_ye^{-i\delta}}\\
-	{A_xA_ye^{i\delta}} & {A_y^2}
+	c_{xx} & c_{xy}\\
+	c_{yx} & c_{yy}
 \end{bmatrix}
 \end{align}
 where $\otimes$ denotes Kronecker product, $\expval{\cdot}$ denotes the temporal avg of the corresponding quantity and $\delta= \delta_y-\delta_x$.
@@ -319,12 +319,12 @@ Some properties of coherency matrix are
 		\textbf{C}_{out} = \expval{\textbf{E}_{out}\textbf{E}_{out}^\dagger} &= \expval{\left(\textbf{M}\textbf{E}_{in} \right) \left(\textbf{M}\textbf{E}_{in}\right)^\dagger}\nonumber\\
 		&= \expval{\left(\textbf{M}\textbf{E}_{in} \right) \left(\textbf{E}_{in}^\dagger\textbf{M}^\dagger\right)}\nonumber \\
 		&= \textbf{M}\expval{\textbf{E}_{in} \textbf{E}_{in}^\dagger}\textbf{M}^\dagger \nonumber\\
-		&= \textbf{M}\:\textbf{C}_{in}\:\textbf{M}^\dagger
+		&= \textbf{M}\:\textbf{C}_{in}\:\textbf{M}^\dagger \label{eq:1.10}
 	\end{align}
 \end{enumerate}
 
 \subsubsection{Stokes parameters and Stokes vector}
-Now we see that coherency matrix \textbf{C} of any polarization state in table \ref{table:3} can be written in the linear combination of the 4 basis given below
+Now we see that coherency matrix \textbf{C} of any polarization state in table \ref{table:3} can be written in the linear combination of the 4 basis given below \cite{yt video}
 \begin{align}
 	\beta = \left\{
 	\underbrace{\begin{bmatrix}1 & 0 \\ 0 & 1\\\end{bmatrix}}_{\boldsymbol{V_0}},
@@ -344,7 +344,7 @@ We call $\{S_0, S_1, S_2, S_3\}$ as a \textit{Stokes parameter} and the values o
 A \textit{Stokes vector} \textbf{S} is defined as\footnote{for intensity normalised Stokes vector, $\textbf{S}= \begin{bmatrix} 1& s_1& s_2& s_3\end{bmatrix}$ where $s_i=S_i/S_0$}
 
 \begin{align}
-	\textbf{S}= \begin{bmatrix} S_0\\ S_1\\ S_2\\S_3	\end{bmatrix}
+	\textbf{S}= \begin{bmatrix} S_0\\ S_1\\ S_2\\S_3\end{bmatrix}
 \end{align}
 
 Examples of Stokes vector for different polarization states are given below
@@ -378,7 +378,7 @@ Now we see from the equation \ref{eq:1.12}
 	\textbf{C} = \frac{1}{2} \sum_{i=0}^{3} S_i \boldsymbol{V_i} = \frac{1}{2}
 	\begin{bmatrix}
 		S_0+S_1 & S_2+iS_3\\
-		S_2-iS_3 & S_0-iS_3
+		S_2-iS_3 & S_0-S_1
 	\end{bmatrix}
 \end{align}
 From there we can write
@@ -389,19 +389,144 @@ From there we can write
 		\expval{E_xE_x^\ast} - \expval{E_xE_y^\ast}\\
 		\expval{E_yE_x^\ast} + \expval{E_xE_y^\ast}\\
 		i\left(\expval{E_yE_x^\ast} + \expval{E_xE_y^\ast}\right)
-	\end{bmatrix}=
+	\end{bmatrix}
+\end{align}
+
+Now for a polarized light, 
+\begin{align}
+	\textbf{C}=
 	\begin{bmatrix}
-		{A_x^2 + A_y^2}\\
-		{A_x^2 - A_y^2}\\
-		{2A_yA_y\cos\delta}\\
-		{2A_yA_y\sin\delta}
+		\expval{A_x^2} & \expval{A_xA_ye^{-i\delta}}\\
+		\expval{A_xA_ye^{i\delta}} & \expval{A_y^2}
+	\end{bmatrix} \text{ and }
+	\boldsymbol{S}= \begin{bmatrix} S_0\\ S_1\\ S_2\\S_3\end{bmatrix} =
+	\begin{bmatrix}
+		\expval{A_x^2 + A_y^2}\\
+		\expval{A_x^2 - A_y^2}\\
+		\expval{2A_yA_y\cos\delta}\\
+		\expval{2A_yA_y\sin\delta}
 	\end{bmatrix}
 \end{align}
 \subsubsection{Measurement of Stokes parameters}
+ To measure the 4 Stokes parameter of EM wave associated with, we have to do 4 steps experiment. In each case, we pass the light through various optical elements and measure the (time-averaged) intensity \cite{stokes},
+ \begin{enumerate}
+ 	\item[\textbf{Step I}] 
+ 	Pass the light through homogenous isotropic medium (or, free space) and measure the intensity. From table \ref{table:2} and eq. \ref{eq:1.10}, we get,
+ 	\begin{align}
+ 		\textbf{C}_{out} &= \textbf{M}\:\textbf{C}_{in}\:\textbf{M}^\dagger\nonumber\\
+ 		&=\begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} 
+ 		\frac{1}{2} \begin{bmatrix} S_0+S_1 & S_2+iS_3 \\ S_2-iS_3 & S_0-S_1\end{bmatrix}
+ 		\begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}\nonumber\\
+ 		&= \frac{1}{2} \begin{bmatrix} S_0+S_1 & 0 \\ 0 & S_0-S_3\end{bmatrix}
+ 	\end{align}
+ 	So the measured intensity will be 
+ 	\begin{align}
+ 		I_0 = \tr(\textbf{C}_{out}) = S_0 \label{s I}
+ 	\end{align}
+ 
+ \item[\textbf{Step II}] 
+ Pass the light through x-polariser and measure the intensity. From table \ref{table:2} and eq. \ref{eq:1.10}, we get,
+ \begin{align}
+ 	\textbf{C}_{out} &= \textbf{M}\:\textbf{C}_{in}\:\textbf{M}^\dagger\nonumber\\
+ 	&=\begin{bmatrix} 1 & 0 \\ 0 & 0 \end{bmatrix} 
+ 	\frac{1}{2} \begin{bmatrix} S_0+S_1 & S_2+iS_3 \\ S_2-iS_3 & S_0-S_1\end{bmatrix}
+ 	\begin{bmatrix} 1 & 0 \\ 0 & 0 \end{bmatrix}\nonumber\\
+ 	&= \frac{1}{2} \begin{bmatrix} S_0+S_1 & 0 \\ 0 & 0\end{bmatrix}
+ \end{align}
+ So the measured intensity will be 
+ \begin{align}
+ 	I_1 = \tr(\textbf{C}_{out}) = \frac{1}{2} (S_0+S_1) \label{s II}
+ \end{align}
 
+\item[\textbf{Step III}] 
+Pass the light through the polariser with transmission axis is at $45^\circ$ and measure the intensity. Then from eq. \ref{eq:1.7}, \textbf{M} for this polariser will be
+\begin{align}
+	\textbf{M}= R(-45^\circ) \begin{bmatrix} 1 & 0 \\ 0 & 0 \end{bmatrix} R(45^\circ) =\frac{1}{2}\begin{bmatrix} 1 & 1 \\ 1 & 1 \end{bmatrix}
+\end{align}
+From eq. \ref{eq:1.10}, we get,
+\begin{align}
+	\textbf{C}_{out} &= \textbf{M}\:\textbf{C}_{in}\:\textbf{M}^\dagger\nonumber\\
+	&= \textbf{M}\:\textbf{C}_{in}\:\textbf{M}^\dagger\nonumber\\
+	&=\frac{1}{2}\begin{bmatrix} 1 & 1 \\ 1 & 1 \end{bmatrix} 
+	\frac{1}{2} \begin{bmatrix} S_0+S_1 & S_2+iS_3 \\ S_2-iS_3 & S_0-S_1\end{bmatrix}
+	\frac{1}{2}\begin{bmatrix} 1 & 1 \\ 1 & 1 \end{bmatrix}\nonumber\\
+	&= \frac{1}{4} \begin{bmatrix} S_0+S_2 & S_0+S_2 \\ S_0+S_2 & S_0+S_2\end{bmatrix}
+\end{align}
+So the measured intensity will be 
+\begin{align}
+	I_1 = \tr(\textbf{C}_{out}) = \frac{1}{2} (S_0+S_2) \label{s III}
+\end{align}
+ 
+  \item[\textbf{Step IV}] 
+ Pass the light through right circular polariser and measure the intensity. From table \ref{table:2} and eq. \ref{eq:1.10}, we get,
+ \begin{align}
+ 	\textbf{C}_{out} &= \textbf{M}\:\textbf{C}_{in}\:\textbf{M}^\dagger\nonumber\\
+ 	&=\frac{1}{2}\begin{bmatrix} 1 & i \\ -i & 1 \end{bmatrix} 
+ 	\frac{1}{2} \begin{bmatrix} S_0+S_1 & S_2+iS_3 \\ S_2-iS_3 & S_0-S_1\end{bmatrix}
+ 	\frac{1}{2}\begin{bmatrix} 1 & i \\ -i & 1 \end{bmatrix}
+ \end{align}
+ So the measured intensity will be 
+ \begin{align}
+ 	I_1 = \tr(\textbf{C}_{out}) = \frac{1}{2} (S_0+S_3) \label{s IV}
+ \end{align}
+ \end{enumerate}
+
+from equations \ref{s I}, \ref{s II}, \ref{s III} and \ref{s IV}, we can get the values of all $S_i$'s.
 \subsubsection{Poincare sphere representation}
+For total intensity normalised Stokes vector is $\textbf{S}= \begin{bmatrix} 1& s_1& s_2& s_3\end{bmatrix}$ where $s_i=S_i/S_0$. Observe that \textbf{S} is a 3-dimensional quantity. Therefore we can write, 
+\begin{align*}
+	\begin{bmatrix} 1\\ s_1\\ s_2\\ s_3\end{bmatrix} \rightarrow 
+	\begin{bmatrix} s_1\\ s_2\\ s_3\end{bmatrix}
+\end{align*}
+
+\textit{Poincare sphere representation} is a coordinate system to define the state of polarization of light where the mutually orthogonal coordinate axes are $\{ s_1, s_2, s_3 \}$.
+\begin{center}
+	\begin{tikzpicture}
+		\draw[thick,->] (0,0) -- (2,0) node[anchor=west] {$s_2$};
+		\draw[thick,->] (0,0) -- (0,2) node[anchor=south] {$s_3$};
+		\draw[thick,->] (0,0) -- (-1.2,-1.2) node[anchor=north east] {$s_1$};
+	\end{tikzpicture}
+	\label{fig:poincare}
+\end{center}
+
+Example of special cases are
+\begin{enumerate}
+	\item[\textbf{Case I}] For fully polarized light
+	\begin{align}
+		s_1&=\frac{A_x^2 - A_y^2}{A_x^2 + A_y^2}\\
+		s_2&=\frac{2A_yA_y\cos\delta}{A_x^2 + A_y^2}\\
+		s_3&=\frac{2A_yA_y\sin\delta}{A_x^2 + A_y^2}
+	\end{align}
+from there we can see
+\begin{align}
+	s_1^2+s_2^2+s_3^2=1
+\end{align}
+which implies that fully polarized has the locus at any point in the sphere of radius 1 in Poincare sphere representation.
+
+\item[\textbf{Case II}] For fully un-polarized light
+\begin{align}
+	s_1=s_2=s_3=0
+\end{align}
+which implies that fully un-polarized has the locus at any the centre $(0,0,0)$ in the sphere of radius 1 in Poincare sphere representation.
+\end{enumerate}
 
 \subsubsection{Degree of Polarization}
+\textit{Degree of Polarization} is the measure of polarisation of light.
+
+We define
+\begin{itemize}
+	\item Total degree of polarization, $DOP = \sqrt{s_1^2+s_2^2+s_3^2}$
+	\item Degree of linear polarization = $\sqrt{s_1^2+s_2^2}$
+	\item Degree of circular polarization = $\sqrt{s_1^2+s_2^2+s_3^2}$
+\end{itemize}
+
+For any mixed polarization state we can decompose the Stokes vector into fullu polarized and un polarized components,
+
+\begin{align}
+	\begin{bmatrix} 1\\ s_1\\ s_2\\ s_3\end{bmatrix} = 
+	\underbrace{\begin{bmatrix} \sqrt{s_1^2+s_2^2+s_3^2}\\ s_1\\ s_2\\ s_3\end{bmatrix}}_{\text{fully polarised, } DOP = 1} +
+	\underbrace{\begin{bmatrix} 1-\sqrt{s_1^2+s_2^2+s_3^2}\\0\\ 0\\ 0\end{bmatrix}}_{\text{un-polarised}}
+\end{align}
 
 \subsubsection{Muller matrix}
 
@@ -414,8 +539,22 @@ From there we can write
 
 \subsubsection{Stokes vector and corresponding Poincare representation}
 
-\bibliographystyle{acm}
-\bibliography{refs}
+\begin{thebibliography}{99}
+	\bibitem{WO}
+	Gupta, S.D., Ghosh, N., \& Banerjee, A. (2015). Wave Optics: Basic Concepts and Contemporary Trends (1st ed.). CRC Press. https://doi.org/10.1201/b19330
+	
+	\bibitem{jones}
+	\href{https://en.wikipedia.org/wiki/Jones_calculus}{Jones Calculus}
+	
+	\bibitem{coherency}
+	Wang Jizhong (1986). A matrix method for describing unpolarized light and its applications. , 2(4), 362–372. doi:10.1007/bf02488478
+	
+	\bibitem{yt video}
+	\href{https://www.youtube.com/watch?v=RowMxWt4mVE&list=LL&index=5}{Polarization (Jones vectors and matrices, partial polarization, Stokes parameters)}
+	
+	\bibitem{stokes}
+	Hecht, Eugene (1970). Note on an Operational Definition of the Stokes Parameters. American Journal of Physics, 38(9), 1156–. doi:10.1119/1.1976574     
+\end{thebibliography}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
 \section{GAUSSIAN BEAM}

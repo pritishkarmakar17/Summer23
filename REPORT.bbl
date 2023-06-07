@@ -3,13 +3,12 @@
 \bibitem{jones}
 \href{https://en.wikipedia.org/wiki/Jones_calculus}{Jones Calculus}.
 
+\bibitem{coherency}
+Wang jizhong (1986). a matrix method for describing unpolarized light and its
+  applications. , 2(4), 362–372. doi:10.1007/bf02488478.
+
 \bibitem{WO}
 {\sc A.~Banerjee, N.~Ghosh, S. D.~G.}
 \newblock {\em Wave Optics}.
-
-\bibitem{coherency}
-{\sc Jizhong, W.}
-\newblock A matrix method for describing unpolarized light and its
-  applications.
 
 \end{thebibliography}
