@@ -4,16 +4,17 @@
 \contentsline {subsubsection}{\numberline {1.2.1}Jones Vector}{1}{subsubsection.1.2.1}%
 \contentsline {subsubsection}{\numberline {1.2.2}Jones Matrix \& evolution of Jones vector}{2}{subsubsection.1.2.2}%
 \contentsline {subsubsection}{\numberline {1.2.3}Drawback of Jones formalism}{3}{subsubsection.1.2.3}%
-\contentsline {subsubsection}{\numberline {1.2.4}Coherency matrix}{3}{subsubsection.1.2.4}%
-\contentsline {subsubsection}{\numberline {1.2.5}Stokes parameters and Stokes vector}{5}{subsubsection.1.2.5}%
-\contentsline {subsubsection}{\numberline {1.2.6}Measurement of Stokes parameters}{6}{subsubsection.1.2.6}%
-\contentsline {subsubsection}{\numberline {1.2.7}Poincare sphere representation}{7}{subsubsection.1.2.7}%
-\contentsline {subsubsection}{\numberline {1.2.8}Degree of Polarization}{8}{subsubsection.1.2.8}%
-\contentsline {subsubsection}{\numberline {1.2.9}Muller Matrix \& evolution of Stokes vector}{9}{subsubsection.1.2.9}%
-\contentsline {subsubsection}{\numberline {1.2.10}Relationship between Jones \& Stokes-Muller formalism}{10}{subsubsection.1.2.10}%
-\contentsline {subsection}{\numberline {1.3}More on Elliptically polarized light}{10}{subsection.1.3}%
-\contentsline {subsubsection}{\numberline {1.3.1}Jones vector of elliptically polarized light}{10}{subsubsection.1.3.1}%
-\contentsline {subsubsection}{\numberline {1.3.2}Stokes vector and corresponding Poincare representation}{12}{subsubsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3}Stokes-Muller formalism}{4}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Coherency matrix}{4}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}Stokes parameters and Stokes vector}{5}{subsubsection.1.3.2}%
+\contentsline {subsubsection}{\numberline {1.3.3}Measurement of Stokes parameters}{6}{subsubsection.1.3.3}%
+\contentsline {subsubsection}{\numberline {1.3.4}Poincare sphere representation}{7}{subsubsection.1.3.4}%
+\contentsline {subsubsection}{\numberline {1.3.5}Degree of Polarization}{8}{subsubsection.1.3.5}%
+\contentsline {subsubsection}{\numberline {1.3.6}Muller Matrix \& evolution of Stokes vector}{9}{subsubsection.1.3.6}%
+\contentsline {subsubsection}{\numberline {1.3.7}Relationship between Jones \& Stokes-Muller formalism}{10}{subsubsection.1.3.7}%
+\contentsline {subsection}{\numberline {1.4}More on Elliptically polarized light}{10}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}Jones vector of elliptically polarized light}{10}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.2}Stokes vector and corresponding Poincare representation}{12}{subsubsection.1.4.2}%
 \contentsline {section}{\numberline {2}GAUSSIAN BEAM}{14}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Introduction}{14}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Parallax wave equation and solutions}{14}{subsection.2.2}%
