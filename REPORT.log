@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.31)  8 JUN 2023 19:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.31)  9 JUN 2023 00:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -956,10 +956,10 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count345
-<iiserk.png, id=163, 274.02374pt x 301.125pt>
+<iiserk.png, id=159, 274.02374pt x 301.125pt>
 File: iiserk.png Graphic file (type png)
 <use iiserk.png>
-Package pdftex.def Info: iiserk.png  used on input line 51.
+Package pdftex.def Info: iiserk.png  used on input line 50.
 (pdftex.def)             Requested size: 71.13188pt x 78.16658pt.
 [1
 
@@ -979,13 +979,13 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 2.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-) [2
-
-])
+))
 \tf@toc=\write6
 \openout6 = `REPORT.toc'.
 
- [3]
+ [2
+
+] [3]
 (./REPORT.lof)
 \tf@lof=\write7
 \openout7 = `REPORT.lof'.
@@ -1000,45 +1000,44 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
  [4
 
-] [1] [2] [3
-
-] [4] [5] [6]
-[7]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 534
+] [1] [2] [3] [4] [5] [6]
+[7] [8]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 530
 .
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [8] [9]
-<ellipse.png, id=456, 198.0pt x 117.15pt>
+) [9]
+<ellipse.png, id=442, 198.0pt x 117.15pt>
 File: ellipse.png Graphic file (type png)
 <use ellipse.png>
-Package pdftex.def Info: ellipse.png  used on input line 664.
+Package pdftex.def Info: ellipse.png  used on input line 660.
 (pdftex.def)             Requested size: 227.62204pt x 134.68568pt.
- [10 <./ellipse.png>]
-<ellipse_new.png, id=479, 2313.53223pt x 1429.34pt>
+ [10]
+[11 <./ellipse.png>]
+<ellipse_new.png, id=485, 2313.53223pt x 1429.34pt>
 File: ellipse_new.png Graphic file (type png)
 <use ellipse_new.png>
-Package pdftex.def Info: ellipse_new.png  used on input line 782.
+Package pdftex.def Info: ellipse_new.png  used on input line 755.
 (pdftex.def)             Requested size: 184.37096pt x 113.89153pt.
-<poincare.png, id=480, 1596.18556pt x 1522.1311pt>
+<poincare.png, id=486, 1596.18556pt x 1522.1311pt>
 File: poincare.png Graphic file (type png)
 <use poincare.png>
-Package pdftex.def Info: poincare.png  used on input line 788.
+Package pdftex.def Info: poincare.png  used on input line 761.
 (pdftex.def)             Requested size: 143.39998pt x 136.7304pt.
- [11] [12 <./ellipse_new.png> <./poincare.png>] [13
-
-] [14
+ [12 <./ellipse_new.png> <./poincare.png>] [13] [14
 
 ]
-(./REPORT.aux)
+[15
+
+] (./REPORT.aux)
 Package rerunfilecheck Info: File `REPORT.out' has not changed.
-(rerunfilecheck)             Checksum: 0C4FB825B6748F7AE38825F6F564D18E;8121.
+(rerunfilecheck)             Checksum: ABA3E289D21785C6A32B341B36C345EB;7946.
  ) 
 Here is how much of TeX's memory you used:
- 35842 strings out of 480171
- 811037 string characters out of 5894489
- 1190988 words of memory out of 5000000
- 53038 multiletter control sequences out of 15000+600000
+ 35852 strings out of 480171
+ 811148 string characters out of 5894489
+ 1190076 words of memory out of 5000000
+ 53040 multiletter control sequences out of 15000+600000
  495990 words of font info for 93 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  84i,22n,89p,734b,651s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1049,8 +1048,8 @@ Here is how much of TeX's memory you used:
 cbx0900.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/e
 c/ecrm0900.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappe
 n/ec/ecrm0600.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jkna
-ppen/ec/ecti1095.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/j
-knappen/ec/ecrm0800.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfou
+ppen/ec/ecrm0800.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/j
+knappen/ec/ecti1095.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfou
 r/jknappen/ec/ecbx1200.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/lj
 four/jknappen/ec/ecbx1095.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk
 /ljfour/jknappen/ec/ecbx1440.600pk> </home/pritish/.texlive2021/texmf-var/fonts
@@ -1074,10 +1073,10 @@ s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
 c/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/eul
 er/eufb10.pfb>
-Output written on REPORT.pdf (18 pages, 664319 bytes).
+Output written on REPORT.pdf (19 pages, 669483 bytes).
 PDF statistics:
- 1007 PDF objects out of 1200 (max. 8388607)
- 594 compressed objects within 6 object streams
- 150 named destinations out of 1000 (max. 500000)
- 345 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1026 PDF objects out of 1200 (max. 8388607)
+ 606 compressed objects within 7 object streams
+ 158 named destinations out of 1000 (max. 500000)
+ 337 words of extra memory for PDF output out of 10000 (max. 10000000)
 

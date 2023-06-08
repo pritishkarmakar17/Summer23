@@ -41,7 +41,6 @@
 \author{Pritish Karmakar}
 
 \begin{document}
-	%\iffalse\fi
 	\begin{titlepage}
 		\pagenumbering{roman}
 		\vspace*{3.5cm}
@@ -70,8 +69,8 @@
 \pagenumbering{arabic}
 
 \section{POLARIZATION}
-
 \subsection{Introduction}
+We know, in EM wave, the electric field and magnetic field oscillating perpendicularly in the transverse plane \textit{w.r.t.} the propagation direction. \textit{Polarization} is the property of an EM wave, which deals with the temporal and spatial variation of the orientation of field vector (mainly,  electric field) of the EM wave. Here we mainly discuss Jones formalism, Stokes-Muller formalism and finally apply those thing in elliptically polarized light.
 
 \subsection{Jones formalism}
 \subsubsection{Jones Vector}
@@ -135,7 +134,7 @@ Some properties of Jones vector are
 	\begin{align*}
 		\begin{bmatrix}
 			\cos\alpha\cos\epsilon- i \sin\alpha\sin\epsilon \\
-			\sin\alpha\cos\epsilon- i \cos\alpha\sin\epsilon
+			\sin\alpha\cos\epsilon+ i \cos\alpha\sin\epsilon
 		\end{bmatrix}
 	\end{align*}
 \end{enumerate}
@@ -247,7 +246,6 @@ Such examples of usual Jones matrix \footnote{For polariser the Jones matrix $\t
 	\label{table:2}
 \end{table}
 
-\clearpage
 Some properties of Jones matrix are 
 \begin{enumerate}
 	\item Resultant Jones matrix for composition of $n$ optical elements is given by
@@ -269,9 +267,7 @@ where $R(\theta)$ is passive rotation matrix \textit{s.t.}
 \end{enumerate}
 
 \subsubsection{Drawback of Jones formalism}
-Main drawback of Jones formalism is that its application is restricted in fully polarized light. This formalism cannot explain the partially polarized or unpolished light which we frequently observe in practical use.
-
-\subsection{Stokes-Muller formalism}
+Main drawback of Jones formalism is that its application is restricted in fully polarized light. This formalism cannot explain the partially polarized or unpolished light which we frequently observe in practical use.{Stokes-Muller formalism}
 \subsubsection{Coherency matrix}
 \textit{Coherency matrix} of a EM wave is defined as \cite{WO} 
 \begin{align}
@@ -552,7 +548,7 @@ Some properties of Jones matrix are
 	\end{align}
 	\item When th optical element is aligned at an angle $\theta$ \textit{w.r.t.} x-axis then resultant Muller matrix (similar to Jones matrix) for this rotated optical element is given by
 	\begin{align}
-		\textbf{M}_\theta = T^(-1)(\theta)\;\textbf{M}\;T(\theta)
+		\boldsymbol{\mathfrak{M}}_\theta = T^(-1)(\theta)\;\boldsymbol{\mathfrak{M}}\;T(\theta)
 	\end{align}
 	where $T(\theta)$ is passive rotation matrix in Poincare sphere representation \textit{w.r.t} $s_3$ axis, \textit{s.t.}
 	\begin{align}
@@ -651,7 +647,7 @@ Now we do the change of basis $\{E_x,E_y\}\longmapsto\{E_\xi,E_\eta\}$ (See fig.
 	\textbf{E}\rightarrow&\textbf{F}\nonumber\\
 	&\textbf{F} =
 	\begin{bmatrix}
-		E_\xi\\F_\chi
+		E_\xi\\E_\eta
 	\end{bmatrix}=
 	\begin{bmatrix}
 		a \cos(\tau+\delta_0)\\
@@ -669,7 +665,7 @@ which is parametric form of canonical ellipse\footnote{$\pm$ before $b$ denotes 
 Let $\psi$ be the azimuth angle of the ellipse then 
 \begin{align}
 	\textbf{F}&= R(\psi)\:\textbf{E}\\
-	\Rightarrow\begin{bmatrix}E_\xi\\F_\chi\end{bmatrix}&= 
+	\Rightarrow\begin{bmatrix}E_\xi\\E_\eta\end{bmatrix}&= 
 	\begin{bmatrix}
 		\cos\psi & \sin\psi \\
 		-\sin\psi & \cos\psi
@@ -694,10 +690,10 @@ We want value of $a, b$, After some tedious calculation \cite{born-wolf}, we rea
 \begin{align}
 	& a^2 + b^2 = a_1^2 + a_2^2\\
 	&\pm ab = a_1a_2\sin\delta \label{eq:1.50}\\ 
-	&\tan 2\chi \vcentcolon= \pm\frac{b}{a} \label{eq:1.51}\text{ where } \chi\in[-\frac{\pi}{4},\frac{\pi}{4}]\\
-	&\tan 2\alpha \vcentcolon= \frac{a_2}{a_1} \text{ where } \alpha\in[0,\frac{\pi}{2}]\\
-	&\tan 2\psi = \tan 2\alpha \sin\delta\\
-	&\tan 2\chi = \sin 2\alpha \sin\delta
+	&\tan \chi \vcentcolon= \pm\frac{b}{a} \label{eq:1.51}\text{ where } \chi\in[-\frac{\pi}{4},\frac{\pi}{4}]\\
+	&\tan \alpha \vcentcolon= \frac{a_2}{a_1} \text{ where } \alpha\in[0,\frac{\pi}{2}]\\
+	&\tan 2\psi = \tan 2\alpha \cos\delta\\
+	&\sin 2\chi = \sin 2\alpha \sin\delta
 \end{align}
 where $\psi$ is the \textit{azimuth} and $\chi$ is \textit{ellipticity} of the polarization ellipse. 
 
@@ -705,47 +701,24 @@ To see the handedness of the rotation of electric field vector in transverse pla
 \begin{enumerate}
 	\item[\textbf{Case I}] 
 	For right-handed polarization, $\sin\delta>0$, then from equations \ref{eq:1.50}, and \ref{eq:1.51}, we can say 
-	$$\tan 2\chi \ge 0\Rightarrow \chi \in \left(0,\frac{\pi}{4}\right]$$
+	$$\tan \chi \ge 0\Rightarrow \chi \in \left(0,\frac{\pi}{4}\right]$$
 	
 	\item[\textbf{Case II}] 
 	Similarly for left-handed polarization, $\sin\delta<0$, then from equations \ref{eq:1.50}, and \ref{eq:1.51}, we can say 
-	$$\tan 2\chi \le 0\Rightarrow \chi \in \left[\frac{\pi}{4},0\right)$$
+	$$\tan \chi \le 0\Rightarrow \chi \in \left[-\frac{\pi}{4},0\right)$$
 \end{enumerate}
 	
-Now lets calculate the Jones vector of elliptical polarisation,
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Now the Jones vector of elliptical polarization in the form of ellipticity and azimuth\footnote{proof to be done} will be,
+\begin{align}
+	\textbf{J}= 
+		\begin{bmatrix}
+			\cos\psi\cos\chi- i \sin\psi\sin\chi \\
+			\sin\psi\cos\chi+ i \cos\psi\sin\chi
+		\end{bmatrix}
+\end{align}
 
 \subsubsection{Stokes vector and corresponding Poincare representation}
-From the eq. \ref{eq:1.16}, we can write for our case, 
+From the eq. \ref{eq:1.16}, we can write for our case\footnote{proof to be done}, 
 \begin{align}
 	\boldsymbol{S}= \begin{bmatrix} S_0\\ S_1\\ S_2\\S_3\end{bmatrix} =
 	\begin{bmatrix}
@@ -762,7 +735,7 @@ From the eq. \ref{eq:1.16}, we can write for our case,
 	\end{bmatrix}
 \end{align}
 
-So in Poincare sphere representation with axes ${S_1, S_2, S_3}$, the required vector is
+So in Poincare sphere representation with axes $\{S_1, S_2, S_3\}$, the required vector is
 \begin{align}
 	S_0
 	\begin{bmatrix}
@@ -794,7 +767,7 @@ The evolution of azimuth ($\psi$) and ellipticity ($\chi$) of the polarization s
 
 \begin{thebibliography}{99}
 	\bibitem{WO}
-	Gupta, S.D., Ghosh, N., \& Banerjee, A. (2015). Wave Optics: Basic Concepts and Contemporary Trends (1st ed.). CRC Press. https://doi.org/10.1201/b19330
+	Gupta, S.D., Ghosh, N., \& Banerjee, A. (2015). Wave Optics: Basic Concepts and Contemporary Trends (1st ed.). CRC Press. doi:10.1201/b19330
 	
 	\bibitem{born-wolf}
 	Born, Max; Wolf, Emil (1999). Principles of optics: electromagnetic theory of propagation, interference and diffraction of light (7th expanded ed.). Cambridge: Cambridge University Press. ISBN 0-521-64222-1. OCLC 1151058062
@@ -811,22 +784,41 @@ The evolution of azimuth ($\psi$) and ellipticity ($\chi$) of the polarization s
 	\bibitem{stokes}
 	Hecht, Eugene (1970). Note on an Operational Definition of the Stokes Parameters. American Journal of Physics, 38(9), 1156–. doi:10.1119/1.1976574     
 \end{thebibliography}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{GAUSSIAN BEAM}
 \subsection{Introduction}
-g
-\subsection{Parallax wave equaion and solutions}
+\subsection{Parallax wave equation and solutions}
+From Maxwell's 3-D wave equation for electric field in vacuum,
+\begin{align}
+	\nabla^2\boldsymbol{E}(\boldsymbol{r},t) - \frac{1}{c^2}\frac{\partial^2}{\partial t^2}\boldsymbol{E}(\boldsymbol{r},t)=0
+\end{align}
+
+
 \subsubsection{Scalar wave solution (without polrisation)}
 
 \subsubsection{Vector wave solution (with polrisation)}
 
 \subsection{Gaussian Beam properties}
 
-\subsection{Differenrt modes of Gaussian beams}
+\subsection{Different modes of Gaussian beams}
 
 \subsection{Relationship between 1st order LG \& HG beam}
 
+\begin{thebibliography}{99}
+	\bibitem{milonni}
+	Milonni, P.W. and Eberly, J.H. (2010) Laser Physics. Wiley \& Sons, Hoboken, Chapter 6. doi: 10.1002/9780470409718
+	
+	\bibitem{cornell}
+	\href{https://www.youtube.com/playlist?list=PLyWzPf87clvEb8T3Xf30tMaUqdbVchrNY}{Lasers and Optoelectronics: ECE 4300 Cornell University} \href{https://www.youtube.com/watch?v=OLczG3zUULQ&list=PLyWzPf87clvEb8T3Xf30tMaUqdbVchrNY&index=8}{(Lecture 8)}
+	
+	\bibitem{kogelnik 66}
+	Kogelnik, H., \& Li, T. (1966). Laser beams and resonators. Applied optics, 5(10), 1550-1567.
+	
+\end{thebibliography}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
 \section{SPIN-ORBIT INTERACTION}

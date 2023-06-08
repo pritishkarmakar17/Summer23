@@ -4,36 +4,35 @@
 \contentsline {subsubsection}{\numberline {1.2.1}Jones Vector}{1}{subsubsection.1.2.1}%
 \contentsline {subsubsection}{\numberline {1.2.2}Jones Matrix \& evolution of Jones vector}{2}{subsubsection.1.2.2}%
 \contentsline {subsubsection}{\numberline {1.2.3}Drawback of Jones formalism}{3}{subsubsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.3}Stokes-Muller formalism}{3}{subsection.1.3}%
-\contentsline {subsubsection}{\numberline {1.3.1}Coherency matrix}{3}{subsubsection.1.3.1}%
-\contentsline {subsubsection}{\numberline {1.3.2}Stokes parameters and Stokes vector}{4}{subsubsection.1.3.2}%
-\contentsline {subsubsection}{\numberline {1.3.3}Measurement of Stokes parameters}{5}{subsubsection.1.3.3}%
-\contentsline {subsubsection}{\numberline {1.3.4}Poincare sphere representation}{7}{subsubsection.1.3.4}%
-\contentsline {subsubsection}{\numberline {1.3.5}Degree of Polarization}{8}{subsubsection.1.3.5}%
-\contentsline {subsubsection}{\numberline {1.3.6}Muller Matrix \& evolution of Stokes vector}{8}{subsubsection.1.3.6}%
-\contentsline {subsubsection}{\numberline {1.3.7}Relationship between Jones \& Stokes-Muller formalism}{9}{subsubsection.1.3.7}%
-\contentsline {subsection}{\numberline {1.4}More on Elliptically polarized light}{10}{subsection.1.4}%
-\contentsline {subsubsection}{\numberline {1.4.1}Jones vector of elliptically polarized light}{10}{subsubsection.1.4.1}%
-\contentsline {subsubsection}{\numberline {1.4.2}Stokes vector and corresponding Poincare representation}{11}{subsubsection.1.4.2}%
-\contentsline {section}{\numberline {2}GAUSSIAN BEAM}{13}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Introduction}{13}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Parallax wave equaion and solutions}{13}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Scalar wave solution (without polrisation)}{13}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}Vector wave solution (with polrisation)}{13}{subsubsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.3}Gaussian Beam properties}{13}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Differenrt modes of Gaussian beams}{13}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Relationship between 1st order LG \& HG beam}{13}{subsection.2.5}%
-\contentsline {section}{\numberline {3}SPIN-ORBIT INTERACTION}{14}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Introduction}{14}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Angular momentum of Light}{14}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Orbital Angular Momentum (OAM)}{14}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Intrinsic vs Extrinsic OAM}{14}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}OAM of LG Beam}{14}{subsubsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.4}Spin Angular Momentum (SAM)}{14}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Spin orbit energy}{14}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Geometric phase of light}{14}{subsection.3.6}%
-\contentsline {subsubsection}{\numberline {3.6.1}Spin redirection Berry phase}{14}{subsubsection.3.6.1}%
-\contentsline {subsubsection}{\numberline {3.6.2}Pancharatnam-Berry Phase}{14}{subsubsection.3.6.2}%
-\contentsline {subsubsection}{\numberline {3.6.3}LG-HG Mode transformation}{14}{subsubsection.3.6.3}%
-\contentsline {subsection}{\numberline {3.7}Types of SOI}{14}{subsection.3.7}%
-\contentsline {subsection}{\numberline {3.8}SOI in inhomogeneous anisotropic medium}{14}{subsection.3.8}%
+\contentsline {subsubsection}{\numberline {1.2.4}Coherency matrix}{3}{subsubsection.1.2.4}%
+\contentsline {subsubsection}{\numberline {1.2.5}Stokes parameters and Stokes vector}{5}{subsubsection.1.2.5}%
+\contentsline {subsubsection}{\numberline {1.2.6}Measurement of Stokes parameters}{6}{subsubsection.1.2.6}%
+\contentsline {subsubsection}{\numberline {1.2.7}Poincare sphere representation}{7}{subsubsection.1.2.7}%
+\contentsline {subsubsection}{\numberline {1.2.8}Degree of Polarization}{8}{subsubsection.1.2.8}%
+\contentsline {subsubsection}{\numberline {1.2.9}Muller Matrix \& evolution of Stokes vector}{9}{subsubsection.1.2.9}%
+\contentsline {subsubsection}{\numberline {1.2.10}Relationship between Jones \& Stokes-Muller formalism}{10}{subsubsection.1.2.10}%
+\contentsline {subsection}{\numberline {1.3}More on Elliptically polarized light}{10}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Jones vector of elliptically polarized light}{10}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}Stokes vector and corresponding Poincare representation}{12}{subsubsection.1.3.2}%
+\contentsline {section}{\numberline {2}GAUSSIAN BEAM}{14}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Introduction}{14}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Parallax wave equation and solutions}{14}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Scalar wave solution (without polrisation)}{14}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Vector wave solution (with polrisation)}{14}{subsubsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.3}Gaussian Beam properties}{14}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Different modes of Gaussian beams}{14}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Relationship between 1st order LG \& HG beam}{14}{subsection.2.5}%
+\contentsline {section}{\numberline {3}SPIN-ORBIT INTERACTION}{15}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Introduction}{15}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Angular momentum of Light}{15}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Orbital Angular Momentum (OAM)}{15}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Intrinsic vs Extrinsic OAM}{15}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}OAM of LG Beam}{15}{subsubsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.4}Spin Angular Momentum (SAM)}{15}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Spin orbit energy}{15}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Geometric phase of light}{15}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}Spin redirection Berry phase}{15}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}Pancharatnam-Berry Phase}{15}{subsubsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.3}LG-HG Mode transformation}{15}{subsubsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.7}Types of SOI}{15}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}SOI in inhomogeneous anisotropic medium}{15}{subsection.3.8}%
