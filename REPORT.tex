@@ -2,8 +2,7 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{amsmath,amssymb,makeidx,graphicx,float,indentfirst,color,hyperref,tikz,
-	pgfplots,verbatim,fancyvrb,caption,subcaption,physics,longtable,mathrsfs, mathtools}
+\usepackage{amsmath,amssymb,makeidx,graphicx,float,indentfirst,color,hyperref,tikz, fancyref,pgfplots,verbatim,fancyvrb,caption,subcaption,physics,longtable,mathrsfs, mathtools}
 \numberwithin{equation}{section}
 \usepackage[width=15.00cm, height=23.00cm]{geometry}
 \setlength{\parindent}{4mm}
@@ -76,30 +75,30 @@ We know, in EM wave, the electric field and magnetic field oscillating perpendic
 \subsubsection{Jones Vector}
 Vector form of electric field of fully polarized EM wave propagating along z-axis is given by
 \begin{align}
-	\textbf{E}(\textbf{x},t)=
+	\boldsymbol{E}(\boldsymbol{x},t)=
 	\begin{bmatrix}
-		E_x(\textbf{x},t)\\
-		E_y(\textbf{x},t)\\
-		E_z(\textbf{x},t)
+		E_x(\boldsymbol{x},t)\\
+		E_y(\boldsymbol{x},t)\\
+		E_z(\boldsymbol{x},t)
 	\end{bmatrix} =
 \begin{bmatrix}
-	A_x(\textbf{x}) e^{-i(kz-\omega t-\delta_x)}\\
-	A_y(\textbf{x}) e^{-i(kz-\omega t-\delta_y)}\\
+	A_x(\boldsymbol{x}) e^{-i(kz-\omega t-\delta_x)}\\
+	A_y(\boldsymbol{x}) e^{-i(kz-\omega t-\delta_y)}\\
 	0
 \end{bmatrix}=
 \begin{bmatrix}
-	A_x(\textbf{x})e^{i\delta_x}\\
-	A_y(\textbf{x})e^{i\delta_y}\\
+	A_x(\boldsymbol{x})e^{i\delta_x}\\
+	A_y(\boldsymbol{x})e^{i\delta_y}\\
 	0
 \end{bmatrix}e^{-i(kz-\omega t)}
 \end{align}
 
-We define normalized\footnote{normalized as $\textbf{J}\:\textbf{J}^\ast=1$} \textit{Jones vector} as
+We define normalized\footnote{normalized as $\boldsymbol{J}\:\boldsymbol{J}^\ast=1$} \textit{Jones vector} as
 \begin{align}
-	\textbf{J}(\textbf{x},t)=\frac{1}{\sqrt{A_x^2+A_y^2}}
+	\boldsymbol{J}(\boldsymbol{x},t)=\frac{1}{\sqrt{A_x^2+A_y^2}}
 	\begin{bmatrix}
-		A_x(\textbf{x})e^{i\delta_x}\\
-		A_y(\textbf{x})e^{i\delta_y}
+		A_x(\boldsymbol{x})e^{i\delta_x}\\
+		A_y(\boldsymbol{x})e^{i\delta_y}
 	\end{bmatrix}
 \end{align}
 
@@ -109,7 +108,7 @@ Such examples of usual polarization states are given below \cite{jones},
 	\begin{tabular}{ c c } 
 		\hline
 		\hline
-		Polarization state & \textbf{J}\\
+		Polarization state & $\boldsymbol{J}$\\
 		\hline
 		$\ket{H}$ & $\begin{bmatrix}1\\0\end{bmatrix}$ \\ \hline
 		$\ket{V}$ & $\begin{bmatrix}0\\1\end{bmatrix}$ \\ \hline
@@ -130,7 +129,7 @@ Some properties of Jones vector are
 	\begin{align}
 		I= \frac{1}{2}c\epsilon_0(A_x^2+A_y^2) = \frac{1}{2}c\epsilon_0 (E^\ast E)
 	\end{align}
-	\item For general elliptically polarized light we can measure the azimuth ($\alpha$) ellipticity ($\epsilon$) of the polarization ellipse by comparing Jones vector $\textbf{J}$ with \cite{WO}
+	\item For general elliptically polarized light we can measure the azimuth ($\alpha$) ellipticity ($\epsilon$) of the polarization ellipse by comparing Jones vector $\boldsymbol{J}$ with \cite{WO}
 	\begin{align*}
 		\begin{bmatrix}
 			\cos\alpha\cos\epsilon- i \sin\alpha\sin\epsilon \\
@@ -140,23 +139,23 @@ Some properties of Jones vector are
 \end{enumerate}
 
 \subsubsection{Jones Matrix \& evolution of Jones vector}
-\textit{Jones matrix} is a $2\times2$ matrix assigned for a particular optical element. Let $\textbf{M}$ be the Jones matrix for an optical element \textit{s.t.} 
-\begin{align*}\textbf{M}=
+\textit{Jones matrix} is a $2\times2$ matrix assigned for a particular optical element. Let $\boldsymbol{M}$ be the Jones matrix for an optical element \textit{s.t.} 
+\begin{align*}\boldsymbol{M}=
 	\begin{bmatrix}
 		m_{11} & m_{12}\\
 		m_{21} & m_{22}
 	\end{bmatrix}
 \end{align*}
-then if a polarized light of Jones vector $\textbf{J}_{in}$ passes through that optical element then the Jones vector of output light is given by 
+then if a polarized light of Jones vector $\boldsymbol{J}_{in}$ passes through that optical element then the Jones vector of output light is given by 
 \begin{align}
-	\textbf{J}_{out}&=\textbf{M}\;\textbf{J}_{in}\label{eq:1.4}\\	\Rightarrow \textbf{E}_{out}&=\textbf{M}\;\textbf{E}_{in} \label{eq:1.5}
+	\boldsymbol{J}_{out}&=\boldsymbol{M}\;\boldsymbol{J}_{in}\label{eq:1.4}\\	\Rightarrow \boldsymbol{E}_{out}&=\boldsymbol{M}\;\boldsymbol{E}_{in} \label{eq:1.5}
 \end{align}
 
-To determine $m_{ij}$ in $\textbf{M}$,
+To determine $m_{ij}$ in $\boldsymbol{M}$,
 \begin{enumerate}
-	\item Pass x-polarized light and determine $\textbf{J}_{out}$, then 
+	\item Pass x-polarized light and determine $\boldsymbol{J}_{out}$, then 
 	\begin{align*}
-		\textbf{J}_{out}=
+		\boldsymbol{J}_{out}=
 		\begin{bmatrix}
 			m_{11} & m_{12}\\
 			m_{21} & m_{22}
@@ -171,9 +170,9 @@ To determine $m_{ij}$ in $\textbf{M}$,
 	\end{bmatrix}
 	\end{align*}
 
-\item Pass y-polarized light and determine $\textbf{J}_{out}$, then 
+\item Pass y-polarized light and determine $\boldsymbol{J}_{out}$, then 
 \begin{align*}
-	\textbf{J}_{out}=
+	\boldsymbol{J}_{out}=
 	\begin{bmatrix}
 		m_{11} & m_{12}\\
 		m_{21} & m_{22}
@@ -189,13 +188,13 @@ To determine $m_{ij}$ in $\textbf{M}$,
 \end{align*}
 \end{enumerate}
 
-Such examples of usual Jones matrix \footnote{For polariser the Jones matrix $\textbf{M} = \textbf{J}\;\textbf{J}^\ast$ where $\textbf{J}$ is normalized Jones vector corresponding polarization state \textit{s.t.} $\textbf{J}_{out}= \textbf{M}\textbf{J} = (\textbf{J}\textbf{J}^\ast)\textbf{J}=\textbf{J}(\textbf{J}^\ast\textbf{J})=\textbf{J}$ \label{fn:1}} are given below,\cite{jones}
+Such examples of usual Jones matrix \footnote{For polariser the Jones matrix $\boldsymbol{M} = \boldsymbol{J}\;\boldsymbol{J}^\ast$ where $\boldsymbol{J}$ is normalized Jones vector corresponding polarization state \textit{s.t.} $\boldsymbol{J}_{out}= \boldsymbol{M}\boldsymbol{J} = (\boldsymbol{J}\boldsymbol{J}^\ast)\boldsymbol{J}=\boldsymbol{J}(\boldsymbol{J}^\ast\boldsymbol{J})=\boldsymbol{J}$ \label{fn:1}} are given below,\cite{jones}
 \begin{table}[H]
 	\centering
 	\begin{tabular}{ c c } 
 		\hline
 		\hline
-		Optical element & \textbf{M}\\
+		Optical element & $\boldsymbol{M}$\\
 		\hline
 		Free space & $\begin{bmatrix}
 			1 & 0 \\ 
@@ -250,11 +249,11 @@ Some properties of Jones matrix are
 \begin{enumerate}
 	\item Resultant Jones matrix for composition of $n$ optical elements is given by
 	\begin{align}
-		\textbf{M}=\textbf{M}_1\;\textbf{M}_2\dots\textbf{M}_n
+		\boldsymbol{M}=\boldsymbol{M}_1\;\boldsymbol{M}_2\dots\boldsymbol{M}_n
 	\end{align}
 	\item For an optical element when its optical axis aligned at an angle $\theta$ \textit{w.r.t.} x-axis then resultant Jones matrix for this rotated optical element is given by
 	\begin{align}
-		\textbf{M}_\theta = R(-\theta)\;\textbf{M}\;R(\theta) \label{eq:1.7}
+		\boldsymbol{M}_\theta = R(-\theta)\;\boldsymbol{M}\;R(\theta) \label{eq:1.7}
 	\end{align}
 where $R(\theta)$ is passive rotation matrix \textit{s.t.}
 \begin{align}
@@ -272,7 +271,7 @@ Main drawback of Jones formalism is that its application is restricted in fully 
 \subsubsection{Coherency matrix}
 \textit{Coherency matrix} of a EM wave is defined as \cite{WO} 
 \begin{align}
-	\textbf{C}=\expval{\textbf{E}\otimes\textbf{E}^\dagger}= \expval{\textbf{E}\textbf{E}^\dagger}=
+	\boldsymbol{C}=\expval{\boldsymbol{E}\otimes\boldsymbol{E}^\dagger}= \expval{\boldsymbol{E}\boldsymbol{E}^\dagger}=
 	\begin{bmatrix}
 		\expval{E_xE_x^\ast} & \expval{E_xE_y^\ast}\\
 		\expval{E_yE_x^\ast} & \expval{E_yE_y^\ast}
@@ -290,7 +289,7 @@ Examples of coherency matrix of usual polarization states are given below \cite{
 	\begin{tabular}{ c c c } 
 		\hline
 		\hline
-		Polarization state & \textbf{J} & \textbf{C}\\
+		Polarization state & $\boldsymbol{J}$ & $\boldsymbol{C}$\\
 		\hline
 		$\ket{H}$ & $\begin{bmatrix}1\\0\end{bmatrix}$ & $\begin{bmatrix}1&0\\0&0\end{bmatrix}$\\ \hline
 		$\ket{V}$ & $\begin{bmatrix}0\\1\end{bmatrix}$ & $\begin{bmatrix}0&0\\0&1\end{bmatrix}$\\ \hline
@@ -309,20 +308,20 @@ Examples of coherency matrix of usual polarization states are given below \cite{
 
 Some properties of coherency matrix are
 \begin{enumerate}
-	\item It is a hermitian matrix \textit{i.e.} $\textbf{C}=\textbf{C}^\dagger$
-	\item Trace and determinant off the matrix are non-negative\footnote{Proofs to be done} \textit{i.e.} $\tr(\textbf{C})>0$ \& $\det(\textbf{C})\ge0$.
-	\item $\Tr(\textbf{C}) = \expval{E_x E_x^\ast} +\expval{E_y E_y^\ast}$ is the time averaged intensity of input light.
-	\item let the polarized light (of electric field $\textbf{E}_{in}$ \& coherency matrix $\textbf{C}_{in}$) passes through an optical element (of Jones matrix \textbf{M}) then let output electric field be $\textbf{E}_{out}$ by the equation \ref{eq:1.5}, then output coherency matrix $\textbf{C}_{out}$ is given by 
+	\item It is a hermitian matrix \textit{i.e.} $\boldsymbol{C}=\boldsymbol{C}^\dagger$
+	\item Trace and determinant off the matrix are non-negative\footnote{Proofs to be done} \textit{i.e.} $\tr(\boldsymbol{C})>0$ \& $\det(\boldsymbol{C})\ge0$.
+	\item $\Tr(\boldsymbol{C}) = \expval{E_x E_x^\ast} +\expval{E_y E_y^\ast}$ is the time averaged intensity of input light.
+	\item let the polarized light (of electric field $\boldsymbol{E}_{in}$ \& coherency matrix $\boldsymbol{C}_{in}$) passes through an optical element (of Jones matrix $\boldsymbol{M}$) then let output electric field be $\boldsymbol{E}_{out}$ by the equation \ref{eq:1.5}, then output coherency matrix $\boldsymbol{C}_{out}$ is given by 
 	\begin{align}
-		\textbf{C}_{out} = \expval{\textbf{E}_{out}\textbf{E}_{out}^\dagger} &= \expval{\left(\textbf{M}\textbf{E}_{in} \right) \left(\textbf{M}\textbf{E}_{in}\right)^\dagger}\nonumber\\
-		&= \expval{\left(\textbf{M}\textbf{E}_{in} \right) \left(\textbf{E}_{in}^\dagger\textbf{M}^\dagger\right)}\nonumber \\
-		&= \textbf{M}\expval{\textbf{E}_{in} \textbf{E}_{in}^\dagger}\textbf{M}^\dagger \nonumber\\
-		&= \textbf{M}\:\textbf{C}_{in}\:\textbf{M}^\dagger \label{eq:1.10}
+		\boldsymbol{C}_{out} = \expval{\boldsymbol{E}_{out}\boldsymbol{E}_{out}^\dagger} &= \expval{\left(\boldsymbol{M}\boldsymbol{E}_{in} \right) \left(\boldsymbol{M}\boldsymbol{E}_{in}\right)^\dagger}\nonumber\\
+		&= \expval{\left(\boldsymbol{M}\boldsymbol{E}_{in} \right) \left(\boldsymbol{E}_{in}^\dagger\boldsymbol{M}^\dagger\right)}\nonumber \\
+		&= \boldsymbol{M}\expval{\boldsymbol{E}_{in} \boldsymbol{E}_{in}^\dagger}\boldsymbol{M}^\dagger \nonumber\\
+		&= \boldsymbol{M}\:\boldsymbol{C}_{in}\:\boldsymbol{M}^\dagger \label{eq:1.10}
 	\end{align}
 \end{enumerate}
 
 \subsubsection{Stokes parameters and Stokes vector}
-Now we see that coherency matrix \textbf{C} of any polarization state in table \ref{table:3} can be written in the linear combination of the 4 basis given below \cite{yt video}
+Now we see that coherency matrix $\boldsymbol{C}$ of any polarization state in table \ref{table:3} can be written in the linear combination of the 4 basis given below \cite{yt video}
 \begin{align}
 	\beta = \left\{
 	\underbrace{\begin{bmatrix}1 & 0 \\ 0 & 1\\\end{bmatrix}}_{\boldsymbol{V_0}},
@@ -331,18 +330,18 @@ Now we see that coherency matrix \textbf{C} of any polarization state in table \
 	\underbrace{\begin{bmatrix}0 & i \\ -i & 1\\\end{bmatrix}}_{\boldsymbol{V_3}}
 	\right\}
 \end{align}
-Now we can write any coherency matrix \textbf{C} as 
+Now we can write any coherency matrix $ \boldsymbol{C} $ as 
 \begin{align}
-\textbf{C} = \frac{1}{2} \sum_{i=0}^{3} S_i \boldsymbol{V_i} \label{eq:1.12}
+\boldsymbol{C} = \frac{1}{2} \sum_{i=0}^{3} S_i \boldsymbol{V_i} \label{eq:1.12}
 \end{align}
-Note that all $V_i$'s are Hermitian, so obviously is \textbf{C}.
+Note that all $V_i$'s are Hermitian, so obviously is $ \boldsymbol{C} $.
 
 We call $\{S_0, S_1, S_2, S_3\}$ as a \textit{Stokes parameter} and the values of $S_i$'s are experimentally measurable.
 
-A \textit{Stokes vector} \textbf{S} is defined as\footnote{for intensity normalised Stokes vector, $\textbf{S}= \begin{bmatrix} 1& s_1& s_2& s_3\end{bmatrix}$ where $s_i=S_i/S_0$}
+A \textit{Stokes vector} $ \boldsymbol{S} $ is defined as\footnote{for intensity normalised Stokes vector, $\boldsymbol{s}= \begin{bmatrix} 1& s_1& s_2& s_3\end{bmatrix}$ where $s_i=S_i/S_0$}
 
 \begin{align}
-	\textbf{S}= \begin{bmatrix} S_0\\ S_1\\ S_2\\S_3\end{bmatrix}
+	\boldsymbol{S}= \begin{bmatrix} S_0\\ S_1\\ S_2\\S_3\end{bmatrix}
 \end{align}
 
 Examples of Stokes vector for different polarization states are given below
@@ -351,7 +350,7 @@ Examples of Stokes vector for different polarization states are given below
 	\begin{tabular}{ c c c } 
 		\hline
 		\hline
-		Polarization state &  \textbf{C} & \textbf{S}\\
+		Polarization state &  $\boldsymbol{C}$ & $\boldsymbol{S}$\\
 		\hline
 		$\ket{H}$ & $\begin{bmatrix}1&0\\0&0\end{bmatrix}$ & $\begin{bmatrix}1&1&0&0\end{bmatrix}^T$\\ \hline
 		$\ket{V}$ & $\begin{bmatrix}0&0\\0&1\end{bmatrix}$ & $\begin{bmatrix}1&-1&0&0\end{bmatrix}^T$\\ \hline
@@ -374,7 +373,7 @@ Now we see from the equation \ref{eq:1.12}
 		\expval{E_xE_x^\ast} & \expval{E_xE_y^\ast}\\
 		\expval{E_yE_x^\ast} & \expval{E_yE_y^\ast}
 	\end{bmatrix}=
-	\textbf{C} = \frac{1}{2} \sum_{i=0}^{3} S_i \boldsymbol{V_i} = \frac{1}{2}
+	\boldsymbol{C} = \frac{1}{2} \sum_{i=0}^{3} S_i \boldsymbol{V_i} = \frac{1}{2}
 	\begin{bmatrix}
 		S_0+S_1 & S_2+iS_3\\
 		S_2-iS_3 & S_0-S_1
@@ -393,7 +392,7 @@ From there we can write
 
 Now for a polarized light, 
 \begin{align}
-	\textbf{C}=
+	\boldsymbol{C}=
 	\begin{bmatrix}
 		\expval{A_x^2} & \expval{A_xA_ye^{-i\delta}}\\
 		\expval{A_xA_ye^{i\delta}} & \expval{A_y^2}
@@ -412,7 +411,7 @@ Now for a polarized light,
  	\item[\textbf{Step I}] 
  	Pass the light through homogenous isotropic medium (or, free space) and measure the intensity. From table \ref{table:2} and eq. \ref{eq:1.10}, we get,
  	\begin{align}
- 		\textbf{C}_{out} &= \textbf{M}\:\textbf{C}_{in}\:\textbf{M}^\dagger\nonumber\\
+ 		\boldsymbol{C}_{out} &= \boldsymbol{M}\:\boldsymbol{C}_{in}\:\boldsymbol{M}^\dagger\nonumber\\
  		&=\begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} 
  		\frac{1}{2} \begin{bmatrix} S_0+S_1 & S_2+iS_3 \\ S_2-iS_3 & S_0-S_1\end{bmatrix}
  		\begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}\nonumber\\
@@ -420,13 +419,13 @@ Now for a polarized light,
  	\end{align}
  	So the measured intensity will be 
  	\begin{align}
- 		I_0 = \tr(\textbf{C}_{out}) = S_0 \label{s I}
+ 		I_0 = \tr(\boldsymbol{C}_{out}) = S_0 \label{s I}
  	\end{align}
  
  \item[\textbf{Step II}] 
  Pass the light through x-polariser and measure the intensity. From table \ref{table:2} and eq. \ref{eq:1.10}, we get,
  \begin{align}
- 	\textbf{C}_{out} &= \textbf{M}\:\textbf{C}_{in}\:\textbf{M}^\dagger\nonumber\\
+ 	\boldsymbol{C}_{out} &= \boldsymbol{M}\:\boldsymbol{C}_{in}\:\boldsymbol{M}^\dagger\nonumber\\
  	&=\begin{bmatrix} 1 & 0 \\ 0 & 0 \end{bmatrix} 
  	\frac{1}{2} \begin{bmatrix} S_0+S_1 & S_2+iS_3 \\ S_2-iS_3 & S_0-S_1\end{bmatrix}
  	\begin{bmatrix} 1 & 0 \\ 0 & 0 \end{bmatrix}\nonumber\\
@@ -434,18 +433,18 @@ Now for a polarized light,
  \end{align}
  So the measured intensity will be 
  \begin{align}
- 	I_1 = \tr(\textbf{C}_{out}) = \frac{1}{2} (S_0+S_1) \label{s II}
+ 	I_1 = \tr(\boldsymbol{C}_{out}) = \frac{1}{2} (S_0+S_1) \label{s II}
  \end{align}
 
 \item[\textbf{Step III}] 
-Pass the light through the polariser with transmission axis is at $45^\circ$ and measure the intensity. Then from eq. \ref{eq:1.7}, \textbf{M} for this polariser will be
+Pass the light through the polariser with transmission axis is at $45^\circ$ and measure the intensity. Then from eq. \ref{eq:1.7}, $\boldsymbol{M}$ for this polariser will be
 \begin{align}
-	\textbf{M}= R(-45^\circ) \begin{bmatrix} 1 & 0 \\ 0 & 0 \end{bmatrix} R(45^\circ) =\frac{1}{2}\begin{bmatrix} 1 & 1 \\ 1 & 1 \end{bmatrix}
+	\boldsymbol{M}= R(-45^\circ) \begin{bmatrix} 1 & 0 \\ 0 & 0 \end{bmatrix} R(45^\circ) =\frac{1}{2}\begin{bmatrix} 1 & 1 \\ 1 & 1 \end{bmatrix}
 \end{align}
 From eq. \ref{eq:1.10}, we get,
 \begin{align}
-	\textbf{C}_{out} &= \textbf{M}\:\textbf{C}_{in}\:\textbf{M}^\dagger\nonumber\\
-	&= \textbf{M}\:\textbf{C}_{in}\:\textbf{M}^\dagger\nonumber\\
+	\boldsymbol{C}_{out} &= \boldsymbol{M}\:\boldsymbol{C}_{in}\:\boldsymbol{M}^\dagger\nonumber\\
+	&= \boldsymbol{M}\:\boldsymbol{C}_{in}\:\boldsymbol{M}^\dagger\nonumber\\
 	&=\frac{1}{2}\begin{bmatrix} 1 & 1 \\ 1 & 1 \end{bmatrix} 
 	\frac{1}{2} \begin{bmatrix} S_0+S_1 & S_2+iS_3 \\ S_2-iS_3 & S_0-S_1\end{bmatrix}
 	\frac{1}{2}\begin{bmatrix} 1 & 1 \\ 1 & 1 \end{bmatrix}\nonumber\\
@@ -453,26 +452,26 @@ From eq. \ref{eq:1.10}, we get,
 \end{align}
 So the measured intensity will be 
 \begin{align}
-	I_1 = \tr(\textbf{C}_{out}) = \frac{1}{2} (S_0+S_2) \label{s III}
+	I_1 = \tr(\boldsymbol{C}_{out}) = \frac{1}{2} (S_0+S_2) \label{s III}
 \end{align}
  
   \item[\textbf{Step IV}] 
  Pass the light through right circular polariser and measure the intensity. From table \ref{table:2} and eq. \ref{eq:1.10}, we get,
  \begin{align}
- 	\textbf{C}_{out} &= \textbf{M}\:\textbf{C}_{in}\:\textbf{M}^\dagger\nonumber\\
+ 	\boldsymbol{C}_{out} &= \boldsymbol{M}\:\boldsymbol{C}_{in}\:\boldsymbol{M}^\dagger\nonumber\\
  	&=\frac{1}{2}\begin{bmatrix} 1 & i \\ -i & 1 \end{bmatrix} 
  	\frac{1}{2} \begin{bmatrix} S_0+S_1 & S_2+iS_3 \\ S_2-iS_3 & S_0-S_1\end{bmatrix}
  	\frac{1}{2}\begin{bmatrix} 1 & i \\ -i & 1 \end{bmatrix}
  \end{align}
  So the measured intensity will be 
  \begin{align}
- 	I_1 = \tr(\textbf{C}_{out}) = \frac{1}{2} (S_0+S_3) \label{s IV}
+ 	I_1 = \tr(\boldsymbol{C}_{out}) = \frac{1}{2} (S_0+S_3) \label{s IV}
  \end{align}
  \end{enumerate}
 
 From the equations \ref{s I}, \ref{s II}, \ref{s III} and \ref{s IV}, we can get the values of all $S_i$'s.
 \subsubsection{Poincare sphere representation}
-For total intensity normalised Stokes vector is $\textbf{S}= \begin{bmatrix} 1& s_1& s_2& s_3\end{bmatrix}$ where $s_i=S_i/S_0$. Observe that \textbf{S} is a 3-dimensional quantity. Therefore we can write, 
+For total intensity normalised Stokes vector is $\boldsymbol{s}= \begin{bmatrix} 1& s_1& s_2& s_3\end{bmatrix}^T$ where $s_i=S_i/S_0$. Observe that $ \boldsymbol{s} $ is a 3-dimensional quantity. Therefore we can write, 
 \begin{align*}
 	\begin{bmatrix} 1\\ s_1\\ s_2\\ s_3\end{bmatrix} \rightarrow 
 	\begin{bmatrix} s_1\\ s_2\\ s_3\end{bmatrix}
@@ -519,7 +518,7 @@ We define
 	\item Degree of circular polarization = $\sqrt{s_1^2+s_2^2+s_3^2}$
 \end{itemize}
 
-For any mixed polarization state we can decompose the Stokes vector into fullu polarized and un polarized components,
+For any mixed polarization state we can decompose the Stokes vector into fully polarized and un-polarized components,
 
 \begin{align}
 	\begin{bmatrix} 1\\ s_1\\ s_2\\ s_3\end{bmatrix} = 
@@ -536,9 +535,9 @@ Similar to the Jones matrix, \textit{Muller matrix} is a $4\times4$ matrix assig
 		\mu_{41} & \cdots & \mu_{44}
 	\end{bmatrix}
 \end{align*}
-then if a light of Stokes vector $\textbf{S}_{in}$ passes through that optical element, then the Stokes vector of output light is given by 
+then if a light of Stokes vector $\boldsymbol{S}_{in}$ passes through that optical element, then the Stokes vector of output light is given by 
 \begin{align}
-	\textbf{S}_{out}&=\boldsymbol{\mathfrak{M}}\;\textbf{S}_{in}\label{eq:1.33}
+	\boldsymbol{S}_{out}&=\boldsymbol{\mathfrak{M}}\;\boldsymbol{S}_{in}\label{eq:1.33}
 \end{align}
 
 Some properties of Jones matrix are 
@@ -549,7 +548,7 @@ Some properties of Jones matrix are
 	\end{align}
 	\item When th optical element is aligned at an angle $\theta$ \textit{w.r.t.} x-axis then resultant Muller matrix (similar to Jones matrix) for this rotated optical element is given by
 	\begin{align}
-		\boldsymbol{\mathfrak{M}}_\theta = T^(-1)(\theta)\;\boldsymbol{\mathfrak{M}}\;T(\theta)
+		\boldsymbol{\mathfrak{M}}_\theta = T^{-1}(\theta)\;\boldsymbol{\mathfrak{M}}\;T(\theta)
 	\end{align}
 	where $T(\theta)$ is passive rotation matrix in Poincare sphere representation \textit{w.r.t} $s_3$ axis, \textit{s.t.}
 	\begin{align}
@@ -570,7 +569,7 @@ Note that, in eq. \ref{poincare rotation matrix}, if we write
 		0 & \cos2\theta & \sin2\theta & 0 \\
 		0 & -\sin2\theta & \cos2\theta & 0\\
 		0 & 0 & 0 & 1
-	\end{bmatrix} \rightarrow
+	\end{bmatrix} \longrightarrow
 	\begin{bmatrix}
 		\cos2\theta & \sin2\theta & 0 \\
 		-\sin2\theta & \cos2\theta & 0\\
@@ -580,32 +579,32 @@ Note that, in eq. \ref{poincare rotation matrix}, if we write
 we see that it is proper rotation matrix of rotation angle $2\theta$ in Poincare sphere \textit{w.r.t} $s_3$ axis. And as we know that rotation of $\theta$ of electric field results in rotation of $2\theta$ in azimuth angle of Stokes vector in Poincare sphere.
 
 \subsubsection{Relationship between Jones \& Stokes-Muller formalism}
-Let, \textbf{J} be jones vector, \textbf{M} be the Jones matrix, \textbf{S} be the Stokes vector and $\boldsymbol{\mathfrak{M}}$ be the Muller matrix \textit{s.t.} equations \ref{eq:1.4} and \ref{eq:1.33} is satisfied.
+Let, $\boldsymbol{J}$ be jones vector, $\boldsymbol{M}$ be the Jones matrix, $\boldsymbol{S}$ be the Stokes vector and $\boldsymbol{\mathfrak{M}}$ be the Muller matrix \textit{s.t.} equations \ref{eq:1.4} and \ref{eq:1.33} is satisfied.
 
 Let us define \textit{coherency vector} of \ref{coherency matrix} as 
 \begin{align}
-	\textbf{L}=
+	\boldsymbol{L}=
 	\begin{bmatrix}
 		c_{xx} & c_{xy} & c_{yx} & c_{yy}
 	\end{bmatrix}^T
 \end{align}
-and \textit{Wolf matrix} \textbf{W} as 
+and \textit{Wolf matrix} $\boldsymbol{W}$ as 
 \begin{align}
-	\textbf{L}_{out}=\textbf{W}\:\textbf{L}_{in}
+	\boldsymbol{L}_{out}=\boldsymbol{W}\:\boldsymbol{L}_{in}
 \end{align}
 then the relation between Jones and Wolf matrix\footnote{proof to be done} is
 \begin{align}
-	\textbf{W}=\textbf{J}\otimes\textbf{J}^\ast
+	\boldsymbol{W}=\boldsymbol{M}\otimes\boldsymbol{M}^\ast
 \end{align}
 
 
 Now from equations \ref{coherency matrix} and \ref{eq:1.15}, one can write
 \begin{align}
-	\textbf{S}=\textbf{A}\:\textbf{L}
+	\boldsymbol{S}=\boldsymbol{A}\:\boldsymbol{L}
 \end{align}
 where,
 \begin{align}
-	\textbf{A}=
+	\boldsymbol{A}=
 	\begin{bmatrix}
 		1 & 0 & 0 & 1 \\
 		1 & 0 & 0 & -1 \\
@@ -615,7 +614,7 @@ where,
 \end{align}
 then the relation between Jones and Muller matrix\footnote{proof to be done} is
 \begin{align}
-	\boldsymbol{\mathfrak{M}}=\textbf{A} \left(\textbf{J}\otimes\textbf{J}^\ast\right) \textbf{A}^{-1}
+	\boldsymbol{\mathfrak{M}}=\boldsymbol{A} \left(\boldsymbol{M}\otimes\boldsymbol{M}^\ast\right) \boldsymbol{A}^{-1}
 \end{align} 
 
 Note that this relationship is only possible in both ways, if the light is fully polarized light as all Jones vectors has Stokes vectors but converse need not to be true.
@@ -624,7 +623,7 @@ Note that this relationship is only possible in both ways, if the light is fully
 \subsubsection{Jones vector of elliptically polarized light}
 In this section we will discuss the generalized polarization ellipse of an EM wave. Let our electric field vector of EM wave is given by
 \begin{align}
-	\textbf{E} =
+	\boldsymbol{E} =
 	\begin{bmatrix}
 		E_x\\E_y
 	\end{bmatrix}=
@@ -645,8 +644,8 @@ The eq. \ref{pol ellipse} is equation of circle when $a_1 = a_2$, otherwise, of 
 
 Now we do the change of basis $\{E_x,E_y\}\longmapsto\{E_\xi,E_\eta\}$ (See fig. \ref{fig:pol ellipse}) \textit{s.t.} electric field in $\{E_\xi,E_\eta\}$ basis be
 \begin{align}
-	\textbf{E}\rightarrow&\textbf{F}\nonumber\\
-	&\textbf{F} =
+	\boldsymbol{E}\rightarrow&\boldsymbol{F}\nonumber\\
+	&\boldsymbol{F} =
 	\begin{bmatrix}
 		E_\xi\\E_\eta
 	\end{bmatrix}=
@@ -665,7 +664,7 @@ which is parametric form of canonical ellipse\footnote{$\pm$ before $b$ denotes 
 
 Let $\psi$ be the azimuth angle of the ellipse then 
 \begin{align}
-	\textbf{F}&= R(\psi)\:\textbf{E}\\
+	\boldsymbol{F}&= R(\psi)\:\boldsymbol{E}\\
 	\Rightarrow\begin{bmatrix}E_\xi\\E_\eta\end{bmatrix}&= 
 	\begin{bmatrix}
 		\cos\psi & \sin\psi \\
@@ -711,7 +710,7 @@ To see the handedness of the rotation of electric field vector in transverse pla
 	
 Now the Jones vector of elliptical polarization in the form of ellipticity and azimuth\footnote{proof to be done} will be,
 \begin{align}
-	\textbf{J}= 
+	\boldsymbol{J}= 
 		\begin{bmatrix}
 			\cos\psi\cos\chi- i \sin\psi\sin\chi \\
 			\sin\psi\cos\chi+ i \cos\psi\sin\chi
@@ -762,29 +761,10 @@ The evolution of azimuth ($\psi$) and ellipticity ($\chi$) of the polarization s
 		\includegraphics[width=0.7\textwidth]{poincare}
 		\caption{}
 	\end{subfigure}
-	\caption{polarisation ellipse and corresponding Poincare representation}
+	\caption{polarization ellipse and corresponding Poincare representation}
 	\label{fig:compare poincare}
 \end{figure}
 
-\begin{thebibliography}{99}
-	\bibitem{WO}
-	Gupta, S.D., Ghosh, N., \& Banerjee, A. (2015). Wave Optics: Basic Concepts and Contemporary Trends (1st ed.). CRC Press. doi:10.1201/b19330
-	
-	\bibitem{born-wolf}
-	Born, Max; Wolf, Emil (1999). Principles of optics: electromagnetic theory of propagation, interference and diffraction of light (7th expanded ed.). Cambridge: Cambridge University Press. ISBN 0-521-64222-1. OCLC 1151058062
-	
-	\bibitem{jones}
-	\href{https://en.wikipedia.org/wiki/Jones_calculus}{Jones Calculus - Wikipedia}
-	
-	\bibitem{coherency}
-	Wang Jizhong (1986). A matrix method for describing unpolarized light and its applications. , 2(4), 362–372. doi:10.1007/bf02488478
-	
-	\bibitem{yt video}
-	\href{https://www.youtube.com/watch?v=RowMxWt4mVE&list=LL&index=5}{Polarization (Jones vectors and matrices, partial polarization, Stokes parameters) - YouTube}
-	
-	\bibitem{stokes}
-	Hecht, Eugene (1970). Note on an Operational Definition of the Stokes Parameters. American Journal of Physics, 38(9), 1156–. doi:10.1119/1.1976574     
-\end{thebibliography}
 \clearpage
 
 
@@ -792,39 +772,442 @@ The evolution of azimuth ($\psi$) and ellipticity ($\chi$) of the polarization s
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{GAUSSIAN BEAM}
 \subsection{Introduction}
-\subsection{Parallax wave equation and solutions}
+\subsection{Paraxial wave equation and solutions}
 From Maxwell's 3-D wave equation for electric field in vacuum,
 \begin{align}
-	\nabla^2\boldsymbol{E}(\boldsymbol{r},t) - \frac{1}{c^2}\frac{\partial^2}{\partial t^2}\boldsymbol{E}(\boldsymbol{r},t)=0
+	\nabla^2\boldsymbol{E}(\boldsymbol{r},t) - \frac{1}{c^2}\frac{\partial^2}{\partial t^2}\boldsymbol{E}(\boldsymbol{r},t)=0 \label{eq:2.1}
+\end{align}
+Here we will consider the scalar form of the equation.
+
+To find the scalar solution, let our first ansatz be,
+\begin{align}
+	{E}= {F}(x,y,z) e^{i\omega t} \label{eq:2.2}
+\end{align}
+Putting it in eq. \ref{eq:2.1}, we get Helmholtz equation \textit{i.e.} 
+\begin{align}
+	\nabla^2{F}(x,y,z) + k^2{f}(x,y,z)=0
+	\text{ where }k^2 = \frac{\omega^2}{c^2} \label{eq:2.3}
+\end{align}
+
+For light to travel in z-direction, our 2nd ansatz be,
+\begin{align}
+	{F}(\boldsymbol{r}) = \psi(x,y,z)e^{-ikz}  \label{eq:2.4} 
+\end{align}
+Considering the slowly varying envelope approximation\cite{WO} that,
+\begin{align}
+	\lambda^2 \left|\frac{\partial^2\psi}{\partial z^2}\right|<<
+	\lambda \left|\frac{\partial\psi}{\partial z}\right| <<
+	\left|\psi\right|
+\end{align}
+and putting \ref{eq:2.4} in eq. \ref{eq:2.3} gives \textit{Paraxial wave equation},
+\begin{align}
+	\nabla_T ^2\psi -2ik \frac{\partial\psi}{\partial r}=0 \label{eq:2.6}
+\end{align}
+where transverse Laplacian, $\displaystyle\nabla_T = \frac{\partial^2}{\partial x^2}+\frac{\partial^2}{\partial y^2}$ or in cylindrical coordinate, $\displaystyle\nabla_T = \frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial}{\partial r}\right) + \frac{1}{r^2}\frac{\partial^2}{\partial \phi^2}$.
+
+\subsubsection{Scalar wave solution (without polarization)}
+We will solve the paraxial wave equation in cylindrical coordinate $\{r,\phi,z \}$.\cite{cornell}
+To get a solution for which intensity is of Gaussian like and radially symmetric (\textit{i.e.} no variation with $\phi$), our first ansatz be,\cite{kogelnik 66}\cite{cornell}
+\begin{align}
+	\psi(\boldsymbol{r},z)= A \exp\left[-i\left(p(z) + \frac{kr^2}{2q(z)}\right)\right]
+	=A\:\underbrace{\exp\left[-ip(z)\right]}_{\text{first term}} \:\underbrace{\exp\left[-i\frac{kr^2}{2q(z)}\right]} _{\text{second term}} \label{eq:2.7}
+\end{align} 
+where second term is related to Gaussian intensity and first term is additional phase factor. Putting this, in eq, \ref{eq:2.6}, we get
+\begin{align}
+	\left[\frac{k^2}{q^2}\left(\frac{dq}{dz}-1\right)r^2 -2k\left(\frac{dp}{dz}+\frac{i}{q}\right)\right]\psi= 0
+\end{align}
+To satisfy this, for all $r$, we get
+\begin{align}
+	\frac{dq}{dz}-1 &=0 \label{eq:2.9}\\
+	\frac{dp}{dz}+\frac{i}{q} &=0\label{eq:2.10}
+\end{align}
+
+Lets first calculate eq. \ref{eq:2.9}.
+\begin{align}
+	\frac{dq}{dz}-1 =0 
+	\Rightarrow q(z) = z + q_0 \label{eq:2.11}
+\end{align}
+putting this in the second term of expression \ref{eq:2.7} at $z=0$,
+\begin{align}
+	\exp\left[-i\frac{kr^2}{2q(0)}\right] = \exp\left[-i\frac{kr^2}{2q_0}\right]
+\end{align}
+which is a phase factor does not give Gaussian intensity. So to get Gaussian intensity, $q_0$ must be imaginary. Let $j_0=iz_0$, then 
+\begin{align}
+	\boxed{q(z) = z + iz_0} \label{eq:2.13}
+\end{align}
+
+Now, the second term of expression \ref{eq:2.7} at $z=0$ be,
+\begin{align}
+	\exp\left[-\frac{kr^2}{2z_0}\right] = \exp\left[-\frac{r^2}{w_0^2}\right]
+\end{align}
+where
+\begin{align}
+	w_0^2=\frac{2z_0}{k}=\frac{\lambda z_0}{\pi}
+	\Rightarrow \boxed{z_0 = \frac{\pi w_0^2}{\lambda} }
+\end{align}
+We call $z_0$ \textit{confocal parameter} or \textit{Rayleigh range} of the beam.
+
+Now from expression \ref{eq:2.13}, we calculate $1/q(z)$.
+\begin{align}
+	\frac{1}{q(z)} = \frac{1}{z + iz_0} = \frac{z}{z^2 + z_0^2} - i\:\frac{z_0}{z^2 + z_0^2} \label{eq:2.16}
+\end{align}
+Then the second term of expression \ref{eq:2.7} be,
+\begin{align}
+	\exp\left[-i\frac{kr^2}{2q(z)}\right] = 
+	\underbrace{\exp\left[-\frac{kr^2z_0}{2(z^2 + z_0^2)}\right]}_{\text{term A}}
+	\underbrace{\exp\left[-i\frac{kr^2z}{2(z^2 + z_0^2)}\right]}_{\text{term B}} 
+	\label{eq:2.17}
+\end{align}
+
+Write term A of \ref{eq:2.17} as 
+\begin{align}
+	\exp\left[-\frac{kr^2z_0}{2(z^2 + z_0^2)}\right] = \exp\left[-\frac{r^2}{w^2(z)}\right]
+\end{align}
+which is Gaussian, where
+\begin{align}
+	\boxed{w^2(z)= w_0^2\left[1+\left(\frac{z}{z_0}\right)^2\right]} \label{eq:2.19}
+\end{align}
+We call $w(z)$ \textit{physical radius/half-width} of the beam.
+
+Write term B of \ref{eq:2.17} as 
+\begin{align}
+	\exp\left[-i\frac{kr^2z}{2(z^2 + z_0^2)}\right] = \exp\left[-i\frac{kr^2}{2 R(z)}\right]
+\end{align}
+where
+\begin{align}
+	\boxed{R(z)= z\left[1+\left(\frac{z_0}{z}\right)^2\right]} \label{eq:2.21}
+\end{align}
+
+We know for spherical wave,
+\begin{align}
+	{E}(\boldsymbol{r},t) \sim \frac{1}{r} e^{i(\omega t -kr)} \label{eq:2.22}
+\end{align}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=7cm]{spherical wave.png}
+	\caption{Radius of curvature of spherical wavefront (Ref. \cite{milonni})}
+	\label{fig:sp wave}
+\end{figure}
+Let $R$ be the radius of curvature of spherical wavefront. 
+Now for any point $\boldsymbol{r}=(x,y,R)$ on $z=R$ plane, $r$ will be
+\begin{align}
+	r=\sqrt{x^2+y^2+R^2}
+\end{align}
+For collimated beam, we restrict radius of curvature measurement near $\boldsymbol{r}=(0,0,R)$, so
+\begin{align}
+	r=\sqrt{x^2+y^2+R^2}\approx R + \frac{x^2+y^2}{2R}
+\end{align}
+
+Now from \ref{eq:2.22},
+\begin{align}
+	E(\boldsymbol{r},t) &\sim \frac{1}{r} e^{i\omega t} e^{-ikr} {e^{-ik\frac{x^2+y^2}{2R}}}
+\end{align}
+comparing with \ref{eq:2.2}
+\begin{align}
+	\psi({x,y,z}) &\sim e^{-ik\frac{x^2+y^2}{2R}} \label{eq:2.26}
+\end{align}
+comparing \ref{eq:2.26} in the above expression with term B of \ref{eq:2.17}, we conclude that $R(z)$ in \ref{eq:2.21} is \textit{radius of curvature} of wavefront near $r=0$ of collimated beam in far field.
+
+
+Putting \ref{eq:2.19} and \ref{eq:2.21} in eq. \ref{eq:2.16},
+\begin{align}
+	\boxed{\frac{1}{q(z)} = \frac{1}{R(z)} - i\: \frac{\lambda}{\pi w^2(z)}} \label{eq:2.27}
 \end{align}
 
 
-\subsubsection{Scalar wave solution (without polrisation)}
+Now we simplify the first term in \ref{eq:2.7}. By solving the differential equation \ref{eq:2.10} and putting \ref{eq:2.13} we get,
+\begin{align}
+	\frac{dp}{dz}= \frac{-i}{q} =\frac{-i}{z+iz_0} \Rightarrow i\:p(z) = \ln\left[1- i \frac{z}{z_0}\right]
+\end{align}
+As we can write
+$$
+1- i \frac{z}{z_0} = \sqrt{1+ \left(\frac{z}{z_0}\right)^2} \exp\left[{-i\:\tan[-1](\frac{z}{z_0})}\right]
+$$
+putting this in the above expression of $i\:p(z)$, our final expression will be
+\begin{align}
+	i\:p(z)=\frac{1}{2}\ln\left[1+ \left(\frac{z}{z_0}\right)^2\right]-i\: \tan[-1](\frac{z}{z_0}) \label{eq:2.29}
+\end{align}
 
-\subsubsection{Vector wave solution (with polrisation)}
+Finally putting \ref{eq:2.27} and \ref{eq:2.29} in \ref{eq:2.7}, we get,\cite{kogelnik 66}\cite{cornell}
+\begin{align}
+	\psi(\boldsymbol{r},z)&= A\exp\left[-i\left(p(z) + \frac{kr^2}{2q(z)}\right)\right]\nonumber\\
+	&= A\exp\left[- \frac{1}{2}\ln\left[1+ \left(\frac{z}{z_0}\right)^2\right]+i\: \tan[-1](\frac{z}{z_0}) -i \frac{kr^2}{2}\left(\frac{1}{R(z)} - i\: \frac{\lambda}{\pi w^2(z)}\right) \right]\nonumber\\
+	&=\frac{A}{\sqrt{1+ \left(\frac{z}{z_0}\right)^2}} \exp(i\:\tan[-1](\frac{z}{z_0})) \exp(-i\frac{kr^2}{2R(z)}) \exp(-\frac{r^2}{w^2(z)}) \nonumber\\
+	\Rightarrow \psi(\boldsymbol{r},z)&=A\; 
+	\underbrace{\left(\frac{w_0}{w(z)}\right)}_{\text{term I}}\;
+	\underbrace{\exp(i{\:}\tan[-1](\frac{z}{z_0}))}_{\text{term II}}\; \underbrace{\exp(-i\frac{kr^2}{2R(z)})}_{\text{term III}}\;
+	\underbrace{\exp(-\frac{r^2}{w^2(z)})}_{\text{term IV}} \label{eq:2.30}
+\end{align} 
+In that expression,
+\begin{enumerate}
+	\item Term I $\longrightarrow$ related to spreading of beam along propagation in z.
+	\item Term II $\longrightarrow$ related to \textit{Gouy phase}.
+	\item Term III $\longrightarrow$ gives radius of curvature of beam wave front.
+	\item Term IV $\longrightarrow$ gives radially symmetric Gaussian intensity profile.
+	
+\end{enumerate}
 
-\subsection{Gaussian Beam properties}
+%\subsubsection{Vector wave solution (with polarization)}
+
+\subsection{Characteristics of Gaussian Beam }
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.90\textwidth]{beam.png}
+	\caption{A beam profile (Ref. \cite{milonni})}
+	\label{fig:beam}
+\end{figure}
+
+Some characteristics of Gaussian beam are
+\begin{enumerate}
+	\item 
+	\textit{Intensity} of Gaussian beam in any transverse plain is, 
+	\begin{align}
+		I(r,z)&= \frac{1}{2}\epsilon_0c\abs{E^\ast E} = \frac{1}{2}\epsilon_0c\abs{\psi^\ast \psi}\nonumber\\
+		&= \frac{1}{2} \epsilon_0c \abs{A}^2 \left(\frac{w_0}{w(z)}\right)^2  \exp(-\frac{2r^2}{w^2(z)})
+	\end{align}
+\begin{figure}[H]
+	\begin{subfigure}[H]{0.49\textwidth}
+		\centering
+		\includegraphics[width=0.9\textwidth]{intensity.png}
+		\caption{Intensity variation in a cross section}
+		\label{fig:g intensity}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[H]{0.49\textwidth}
+		\centering
+		\includegraphics[width=0.9\textwidth]{intensity_var.png}
+		\caption{Intensity variation along z-axis}
+		\label{fig:g intensity var}
+	\end{subfigure}
+\caption{Gaussian intensity profile for $z_0=1,w_0=1$}
+\end{figure}
+
+	\item
+	\textit{Rate of energy} of Gaussian beam passes through any transverse plain is given by
+	\begin{align}
+		W&= \iint_{-\infty}^{\infty} dx\:dy\:I(x,y,z)\nonumber\\
+		&= \frac{1}{2} \epsilon_0c \abs{A}^2 \left(\frac{w_0}{w(z)}\right)^2 \iint_{-\infty}^{\infty} dx\:dy\: \exp(-\frac{2(x^2+y^2)}{w^2(z)}\nonumber)\\
+		&= \frac{1}{2} \epsilon_0c \abs{A}^2 \left(\frac{w_0}{w(z)}\right)^2 \int_{-\infty}^{\infty} dx\: \exp(-\frac{2x^2}{w^2(z)})\: \int_{-\infty}^{\infty} dy\: \exp(-\frac{2y^2}{w^2(z)})\nonumber\\
+		&=  \frac{1}{2}\epsilon_0c \abs{A}^2 \left(\frac{w_0}{w(z)}\right)^2 (\sqrt{\pi} w(z))^2 = \frac{1}{2}\epsilon_0c \abs{A}^2 w_0^2
+	\end{align} which is constant throughout the propagation along z-axis.
+
+	\item
+	\textit{Radius of curvature} $R(z)$ of the wavefront is given by
+	\begin{align}
+		R(z)= z\left[1+\left(\frac{z_0}{z}\right)^2\right]
+	\end{align}
+	\subitem For $z=0$ $R\rightarrow\infty$
+	\subitem For $z>>z_0$, then $R\approx z$
+	
+	\begin{figure}[H]
+	\centering
+	\scalebox{0.7}{\input{R_vs_z.tex}}
+	\caption{Variation of radius of curvature with z ($z_0=1$)}
+	\label{fig:R vs z}
+	\end{figure}
+	
+	\item
+	\textit{Beam half-width} (see fig. \ref{fig:beam}) is given by 
+	\begin{align}
+		w^2(z)= w_0\sqrt{1+\left(\frac{z}{z_0}\right)^2}
+	\end{align}
+	\subitem For $z=0$ $w = w_0$ (\textit{Beam waist})
+	\subitem For $z>>z_0$, then $w(z)= w_0\frac{z}{z_0}$
+	\subitem \textit{Diffraction angle} at far field is given by 
+	\begin{align}
+		2\theta = 2\frac{dw}{dz} = 2\frac{w_0}{z_0} = \frac{2\lambda}{\pi w_0}
+	\end{align}
+	\subitem \textit{Effective area} of the beam in a cross section is $\displaystyle \frac{1}{2} \pi w^2(z)$
+	
+	\item 
+	\textit{Gouy phase} of a gaussian beam is given by
+	\begin{align}
+		\phi_g (z) = \tan[-1](\frac{z}{z_0})
+	\end{align}
+	The Gouy phase vary form $-\pi/2$ to $\pi/2$ continuously as $z$ goes from $-\infty$ to $\infty$, shown in fig. \ref{fig:gouy}
+	
+	\begin{figure}[H]
+		\centering
+		\scalebox{0.7}{\input{gouy.tex}}
+		\caption{Variation of Gouy phase with z}
+		\label{fig:gouy}
+	\end{figure}
+	
+	\item 
+	Inside Rayleigh length ($z_0$), the laser beam is highly collimated and intensity is also very high. So gain medium is kept in between $z=-z_0$ and $z_0$ to get maximum stimulated emission from gain medium.
+\end{enumerate}
+
+
+%\subsection{Beam Tracing}
+%\subsubsection{Resonator Stability}
 
 \subsection{Different modes of Gaussian beams}
+Here we will discuss mainly two types of higher order Gaussian beams \textit{i.e.}
+\begin{enumerate}
+	\item Hermite-Gaussian (HG) beam
+	\item Laguerre-Gaussian (LG) beam
+\end{enumerate}
 
-\subsection{Relationship between 1st order LG \& HG beam}
+\subsubsection{Hermite-Gaussian beam}
+In the expression \ref{eq:2.30}, we get the radially symmetric Gaussian beam solution. But we now seek higher order solution of Gaussian beam which is rectangular symmetric.
 
-\begin{thebibliography}{99}
-	\bibitem{milonni}
-	Milonni, P.W. and Eberly, J.H. (2010) Laser Physics. Wiley \& Sons, Hoboken, Chapter 6. doi: 10.1002/9780470409718
+Lets take the ansatz as,
+ \begin{align}
+ 	\psi(\boldsymbol{r},z)= A \: g\left(\frac{x}{w(z)}\right) h\left(\frac{y}{w(z)}\right) \exp\left[-i\left(p(z) + \frac{kr^2}{2q(z)}\right)\right]
+ \end{align}
+Putting this in Paraxial wave equation \ref{eq:2.6}, and solving the differential equation,\cite{milonni} we get,
+\begin{align}
+	\psi_{m,n}(\boldsymbol{r},z)&= A \frac{w_0}{w(z)} H_m\left(\frac{\sqrt{2} x}{w(z)}\right) H_n\left(\frac{\sqrt{2} y}{w(z)}\right)\exp( -\frac{r^2}{w^2(z)}) \cdot\nonumber\\ 
+	&\exp( i\:(m+n+1)\tan[-1](\frac{z}{z_0}) -i\frac{kr^2}{2R(z)})
+\end{align}
+where $H_i$ is \textit{i th order Hermite polynomial}and other symbols are as usual.
+See for $m=0=n$ we recover the Gaussian solution of \ref{eq:2.30} which we call as \textit{zero order} HG beam. For different values of $m$ an $n$, we will get diferent type of higher order HG beam, these are called \textit{transverse electromagnetic mode} of order $(m,n)$, notionally, $TEM_{mn}$. 
+
+Some characteristics of HG beams are given below,
+\begin{enumerate}
+	\item 
+	\textit{Intensity} of HG beam is given by
+	\begin{align}
+		I_{m,n}(x,y,z)=\frac{c\epsilon}{2} |A|^2 \left[H_m\left(\frac{\sqrt{2} x}{w(z)}\right) \right]^2 \left[H_n\left(\frac{\sqrt{2} y}{w(z)}\right) \right]^2 \exp(\frac{2(x^2+y^2)}{w^2(z)})
+	\end{align}
+	Due to the number of zeros equals the order of Hermite polynomial, we will see $m$ number of horizontal and $n$ number of vertical node in intensity profile of the $TEM_{mn}$ beam. See figure \ref{fig:hgmn}.
+
+	\item 
+	\textit{Rate of energy} of HG beam passes through any transverse plain is given by
+	\begin{align}
+		W&= \iint_{-\infty}^{\infty} dx\:dy\:I(x,y,z)\nonumber\\
+		%&= \frac{1}{2} \epsilon_0c \abs{A}^2 \left(\frac{w_0}{w(z)}\right)^2 \iint_{-\infty}^{\infty} dx\:dy\: \left[H_m\left(\frac{\sqrt{2} x}{w(z)}\right)\right]^2 \left[H_n\left(\frac{\sqrt{2} y}{w(z)}\right) \right]^2\exp(-\frac{2(x^2+y^2)}{w^2(z)})\nonumber\\
+		&= \frac{1}{2} \epsilon_0c \abs{A}^2 \left(\frac{w_0}{w(z)}\right)^2 \int_{-\infty}^{\infty} dx\: \exp(-\frac{2x^2}{w^2(z)}) \left[H_m\left(\frac{\sqrt{2} x}{w(z)}\right) \right]^2\nonumber\\ 
+		&\int_{-\infty}^{\infty} dy\: \exp(-\frac{2y^2}{w^2(z)})\left[H_n\left(\frac{\sqrt{2} y}{w(z)}\right) \right]^2 \label{eq:2.40}
+	\end{align}
+the integration terms of \ref{eq:2.40} are in the form of 
+$$\int_{-\infty}^{\infty} H_l \exp(-a\xi^2) d\xi=
+\int_{-\infty}^{\infty}\left(\sum_{k=0}^l c_k \xi_k\right)  \exp(-a\xi^2) d\xi = 
+\sum_{k=0}^l c_k\int_{-\infty}^{\infty} \xi_k \exp(-a\xi^2) d\xi
+$$
+as the values of $ \int_{-\infty}^{\infty} \xi_k \exp(-a\xi^2) d\xi $ is fixed\footnote{as $n_{th}$ moment of a random variable of Gaussian distribution has a fixed value for a periarticular integer values of $n$ \cite{n dist}} and for finite value of $l$, $W$ is finite and constant throughout the propagation along z-axis.
+
+
+\begin{figure}[t!]
+	\foreach \n in {0,1,2}{
+		\foreach \m in {0,1,2}{
+			\begin{subfigure}[htbp]{0.32\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{intensity_hg\n\m}
+				\caption{$TEM_{\n\m}$}
+				%\label{fig:hg\n\m}
+			\end{subfigure}
+			\hfill
+		}
+	}
+	\\
+	\caption{Intensity variation for different TEM in a cross section ($z=0,z_0=1,w_0=1$)}
+	\label{fig:hgmn}
+\end{figure}
+
+ 
+\item
+\textit{Radius of curvature} of HG beam is same as simple Gaussian beam for all modes.
+
+\item 
+\textit{Gouy phase} for different order HG beam is given by
+\begin{align}
+	\phi_g (\eta,z) = \eta \tan[-1](\frac{z}{z_0})\text{ where } \eta = m+n+1
+\end{align}
+
+\begin{figure}[H]
+	\centering
+	\scalebox{0.7}{\input{gouy_hg.tex}}
+	\caption{Variation of Gouy phase with z for HG beam}
+	\label{fig:gouy_hg}
+\end{figure}
+\end{enumerate}
+
+
+\subsubsection{Laguerre-Gaussian beam}
+In the expression \ref{eq:2.30}, we get the radially symmetric Gaussian beam solution. But we now seek higher order solution of Gaussian beam which is not radially symmetric {i.e.} vary with $\phi$.
+
+Lets take the ansatz as,
+\begin{align}
+	\psi(\boldsymbol{r},z)= A \: g\left(\frac{y}{w(z)}\right) \exp\left[-i\left(p(z) + \frac{kr^2}{2q(z)}+l\phi\right)\right]
+\end{align}
+Putting this in Paraxial wave equation \ref{eq:2.6}, and solving the differential equation,\cite{LG}\cite{kogelnik 66} we get,
+\begin{align}
+	\psi_{p,l}(\boldsymbol{r},z)=&A\:\frac{w_0}{w(z)} \left[\frac{r\sqrt{2}}{w(z)}\right]^{|l|} L_p^{|l|}\left(\frac{2r^2}{w^2(z)}\right)\exp(-\frac{r^2}{w^2(z)}) \cdot\nonumber\\ &\exp(-il\phi+i(2p+l+1)\arctan(\frac{z}{z_0})-i\frac{kr^2}{2R(z)}) \label{eq:2.43}
+\end{align}
+where $ L_p^{|l|} $ is  \textit{Associated Laguerre polynomial} and other terms are as usual.
+\begin{figure}[!t]
 	
-	\bibitem{cornell}
-	\href{https://www.youtube.com/playlist?list=PLyWzPf87clvEb8T3Xf30tMaUqdbVchrNY}{Lasers and Optoelectronics: ECE 4300 Cornell University} \href{https://www.youtube.com/watch?v=OLczG3zUULQ&list=PLyWzPf87clvEb8T3Xf30tMaUqdbVchrNY&index=8}{(Lecture 8)}
+	\foreach \n in {0,1,2}{
+		\foreach \m in {0,1,2}{
+			\begin{subfigure}[htbp]{0.32\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{intensity_lg\n\m}
+				\caption{$p=\n,|l|=\m$}
+				%\label{fig:hg\n\m}
+			\end{subfigure}
+			\hfill
+		}
+	}
+	\\
+	\caption{Intensity variation for different modes in a cross section ($z=0,z_0=1,w_0=1$)}
+	\label{fig:lgpl}
+\end{figure}
+
+
+Some characteristics of HG beams are given below,
+\begin{enumerate}
+	\item \textit{Intensity} of LG beam is given by 
+	\begin{align}
+		I_{p,l}(r,z)=\frac{c\epsilon}{2} |A|^2 \left[\frac{w_0}{w(z)}\right]^2 \left[\frac{r\sqrt{2}}{w(z)}\right]^{2|l|} \left[L_p^{|l|}\left(\frac{2r^2}{w^2(z)}\right) \right]^2 \exp(-\frac{2r^2}{w^2(z)})
+	\end{align}
+	See intensity plot for corresponding LG beam in figure \ref{fig:lgpl}. For $\abs{l}\ne 0$ the intensity of centre is zero and the value of $p$ denotes the number of radial nodes as $ L_p^{|l|} $ has $p$ number of zeros.
 	
-	\bibitem{kogelnik 66}
-	Kogelnik, H., \& Li, T. (1966). Laser beams and resonators. Applied optics, 5(10), 1550-1567.
+	\item 
+	\textit{Rate of energy} of HG beam passes through any transverse plain is given by
+	\begin{align}
+		W&= \iint_{-\infty}^{\infty} dx\:dy\:I(x,y,z)\nonumber\\
+		&= \frac{1}{2} \epsilon_0c \abs{A}^2 \left(\frac{w_0}{w(z)}\right)^2 \int_{-\infty}^{\infty} dx\: \left(\frac{2r^2}{w^2(z)}\right)^{\abs{l}} \left[L_p^{|l|}\left(\frac{2r^2}{w^2(z)}\right) \right]^2 \exp(-\frac{2r^2}{w^2(z)})
+	\end{align}
+	By same argument as HG beam, we can conclude $W$ is finite and constant throughout the propagation along z-axis
 	
-\end{thebibliography}
+	\item
+	\textit{Phase} of the LG beam, unlike Gaussian beam, not only depends on the $r$ and $z$, but also on $phi$. Phase of LG beam is given by
+	\begin{align}
+		\Phi_{LG}(r,\phi,z) = -il\phi+i(2p+l+1)\arctan(\frac{z}{z_0})-i\frac{kr^2}{2R(z)}
+	\end{align}
+	Phase plot for different order of LG beam at $z=0$ is given in figure \ref{fig:phase_lgpl}.
+\end{enumerate}
+\begin{figure}[!t]
+	
+	\foreach \n in {0,1,2}{
+		\foreach \m in {0,1,2}{
+			\begin{subfigure}[htbp]{0.32\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{phase_lg\n\m}
+				\caption{$p=\n,l=\m$}
+				%\label{fig:hg\n\m}
+			\end{subfigure}
+			\hfill
+		}
+	}
+	\\
+	\caption{Phase variation for different modes in a cross section ($z=0,z_0=1,w_0=1$)}
+	\label{fig:phase_lgpl}
+\end{figure}
+
+
+\subsection{Relationship between LG \& HG beam}
+\cite{beijers 93}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \clearpage
 \section{SPIN-ORBIT INTERACTION}
 \subsection{Introduction}
-soi
+
 \subsection{Angular momentum of Light}
 
 \subsection{Orbital Angular Momentum (OAM)}
@@ -848,6 +1231,45 @@ soi
 \subsection{SOI in inhomogeneous anisotropic medium}
 
 
+\clearpage
 
+\begin{thebibliography}{99}
+	\bibitem{WO}
+	Gupta, S.D., Ghosh, N., \& Banerjee, A. (2015). Wave Optics: Basic Concepts and Contemporary Trends (1st ed.). CRC Press. doi:10.1201/b19330
+	
+	\bibitem{born-wolf}
+	Born, Max; Wolf, Emil (1999). Principles of optics: electromagnetic theory of propagation, interference and diffraction of light (7th expanded ed.). Cambridge: Cambridge University Press. ISBN 0-521-64222-1. OCLC 1151058062
+	
+	\bibitem{jones}
+	\href{https://en.wikipedia.org/wiki/Jones_calculus}{Jones Calculus - Wikipedia}
+	
+	\bibitem{coherency}
+	Wang Jizhong (1986). A matrix method for describing unpolarized light and its applications. , 2(4), 362–372. doi:10.1007/bf02488478
+	
+	\bibitem{yt video}
+	\href{https://www.youtube.com/watch?v=RowMxWt4mVE&list=LL&index=5}{Polarization (Jones vectors and matrices, partial polarization, Stokes parameters) - YouTube}
+	
+	\bibitem{stokes}
+	Hecht, Eugene (1970). Note on an Operational Definition of the Stokes Parameters. American Journal of Physics, 38(9), 1156–. doi:10.1119/1.1976574    
+	
+	\bibitem{milonni}
+	Milonni, P.W. and Eberly, J.H. (2010). Laser Physics. Wiley \& Sons, Hoboken, Chapter 7. doi: 10.1002/9780470409718
+	
+	\bibitem{cornell}
+	\href{https://www.youtube.com/playlist?list=PLyWzPf87clvEb8T3Xf30tMaUqdbVchrNY}{Lasers and Optoelectronics: ECE 4300 Cornell University} 
+	
+	\bibitem{kogelnik 66}
+	Kogelnik, H., \& Li, T. (1966). Laser beams and resonators. Applied optics, 5(10), 1550-1567. 
+	
+	\bibitem{n dist}
+	\href{https://en.wikipedia.org/wiki/Normal_distribution}{Normal distribution - Wikipedia}
+	
+	\bibitem{LG}
+	\href{https://flex.phys.tohoku.ac.jp/~rsaito/saito20-GaussianBeam.pdf}{Introduction of Gaussian Beam - Tohoku University}
+	
+	\bibitem{beijers 93}
+	MW Beijersbergen, L Allen, H Van der Veen, and JP Woerdman (1993). Astigmatic laser mode converters and transfer of orbital angular momentum. Opt. Commun., 96(1):123–132.
+	
+\end{thebibliography}
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.31)  9 JUN 2023 01:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.31)  10 JUN 2023 14:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -567,6 +567,13 @@ File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
+(/usr/share/texlive/texmf-dist/tex/latex/fancyref/fancyref.sty
+Package: fancyref 1999/02/03 v0.9c Fancy cross-referencing
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/varioref.sty
+Package: varioref 2021/07/07 v1.6f package for extended references (FMi)
+\c@vrcnt=\count303
+))
 (/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
 Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
@@ -577,8 +584,8 @@ Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 \t@pgfplots@tokb=\toks39
 \t@pgfplots@tokc=\toks40
 \pgfplots@tmpa=\dimen260
-\c@pgfplots@coordindex=\count303
-\c@pgfplots@scanlineindex=\count304
+\c@pgfplots@coordindex=\count304
+\c@pgfplots@scanlineindex=\count305
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
 .tex))
@@ -595,13 +602,13 @@ tructure.code.tex)
 tructureext.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
 .code.tex
-\c@pgfplotsarray@tmp=\count305
+\c@pgfplotsarray@tmp=\count306
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
 x.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
 d.code.tex
-\c@pgfplotstable@counta=\count306
+\c@pgfplotstable@counta=\count307
 \t@pgfplotstable@a=\toks41
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
@@ -614,7 +621,7 @@ de.tex))
 .tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
 fshading.code.tex
-\c@pgfplotslibrarysurf@no=\count307
+\c@pgfplotslibrarysurf@no=\count308
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
 shading.pgfsys-pdftex.def)))
@@ -646,7 +653,7 @@ e.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen263
 \pgfdecoratedinputsegmentremainingdistance=\dimen264
 \pgf@decorate@distancetomove=\dimen265
-\pgf@decorate@repeatstate=\count308
+\pgf@decorate@repeatstate=\count309
 \pgfdecorationsegmentamplitude=\dimen266
 \pgfdecorationsegmentlength=\dimen267
 )
@@ -662,7 +669,7 @@ zlibrarydecorations.pathreplacing.code.tex
 decorations.pathreplacing.code.tex))
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.co
 ntourlua.code.tex)
-\pgfplots@numplots=\count309
+\pgfplots@numplots=\count310
 \pgfplots@xmin@reg=\dimen268
 \pgfplots@xmax@reg=\dimen269
 \pgfplots@ymin@reg=\dimen270
@@ -685,11 +692,11 @@ Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2021/12/21 4.1b verbatim text (tvz,hv)
-\FV@CodeLineNo=\count310
+\FV@CodeLineNo=\count311
 \FV@InFile=\read4
 \FV@TabBox=\box66
-\c@FancyVerbLine=\count311
-\FV@StepNumber=\count312
+\c@FancyVerbLine=\count312
+\FV@StepNumber=\count313
 \FV@OutFile=\write4
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
@@ -706,15 +713,15 @@ Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \caption@hangindent=\dimen280
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count313
-\c@continuedfloat=\count314
+\c@caption@flags=\count314
+\c@continuedfloat=\count315
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
-\c@subfigure=\count315
-\c@subtable=\count316
+\c@subfigure=\count316
+\c@subtable=\count317
 )
 (/usr/share/texlive/texmf-dist/tex/latex/physics/physics.sty
 Package: physics 
@@ -725,7 +732,7 @@ Package: expl3 2022-01-21 L3 programming layer (loader)
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count317
+\l__color_backend_stack_int=\count318
 \l__pdf_internal_box=\box67
 ))
 Package: xparse 2022-01-12 L3 Experimental document command parser
@@ -736,17 +743,17 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LTright=\skip54
 \LTpre=\skip55
 \LTpost=\skip56
-\LTchunksize=\count318
+\LTchunksize=\count319
 \LTcapwidth=\dimen281
 \LT@head=\box68
 \LT@firsthead=\box69
 \LT@foot=\box70
 \LT@lastfoot=\box71
 \LT@gbox=\box72
-\LT@cols=\count319
-\LT@rows=\count320
-\c@LT@tables=\count321
-\c@LT@chunks=\count322
+\LT@cols=\count320
+\LT@rows=\count321
+\c@LT@tables=\count322
+\c@LT@chunks=\count323
 \LT@p@ftn=\toks44
 )
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
@@ -758,21 +765,21 @@ Package: mathtools 2021/02/02 v1.28 mathematical typesetting tools
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count323
-\calc@Bcount=\count324
+\calc@Acount=\count324
+\calc@Bcount=\count325
 \calc@Adimen=\dimen282
 \calc@Bdimen=\dimen283
 \calc@Askip=\skip57
 \calc@Bskip=\skip58
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count325
+\calc@Ccount=\count326
 \calc@Cskip=\skip59
 )
 (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count326
+\g_MT_multlinerow_int=\count327
 \l_MT_multwidth_dim=\dimen284
 \origjot=\skip60
 \l_MT_shortvdotswithinadjustabove_dim=\dimen285
@@ -790,9 +797,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count327
-\Gm@cntv=\count328
-\c@Gm@tempcnt=\count329
+\Gm@cnth=\count328
+\Gm@cntv=\count329
+\c@Gm@tempcnt=\count330
 \Gm@bindingoffset=\dimen292
 \Gm@wd@mp=\dimen293
 \Gm@odd@mp=\dimen294
@@ -803,7 +810,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen299
 \Gm@dimlist=\toks45
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 11.
+Package hyperref Info: Option `colorlinks' set `true' on input line 10.
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarypatterns.code.tex
@@ -822,23 +829,23 @@ s.arrows.code.tex
 File: pgflibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count330
+\lst@mode=\count331
 \lst@gtempboxa=\box74
 \lst@token=\toks46
-\lst@length=\count331
+\lst@length=\count332
 \lst@currlwidth=\dimen300
-\lst@column=\count332
-\lst@pos=\count333
+\lst@column=\count333
+\lst@pos=\count334
 \lst@lostspace=\dimen301
 \lst@width=\dimen302
-\lst@newlines=\count334
-\lst@lineno=\count335
+\lst@newlines=\count335
+\lst@lineno=\count336
 \lst@maxwidth=\dimen303
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count336
-\lst@skipnumbers=\count337
+\c@lstnumber=\count337
+\lst@skipnumbers=\count338
 \lst@framebox=\box75
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -848,36 +855,36 @@ Package: listings 2020/03/24 1.8d (Carsten Heinz)
  (./REPORT.aux)
 \openout1 = `REPORT.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count338
+\scratchcounter=\count339
 \scratchdimen=\dimen304
 \scratchbox=\box76
-\nofMPsegments=\count339
-\nofMParguments=\count340
+\nofMPsegments=\count340
+\nofMParguments=\count341
 \everyMPshowfont=\toks47
-\MPscratchCnt=\count341
+\MPscratchCnt=\count342
 \MPscratchDim=\dimen305
-\MPnumerator=\count342
-\makeMPintoPDFobject=\count343
+\MPnumerator=\count343
+\makeMPintoPDFobject=\count344
 \everyMPtoPDFconversion=\toks48
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -888,7 +895,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 43.
+Package hyperref Info: Link coloring ON on input line 42.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -899,16 +906,18 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count344
+\c@section@level=\count345
+LaTeX Info: Redefining \Ref on input line 520.
 )
-LaTeX Info: Redefining \ref on input line 43.
-LaTeX Info: Redefining \pageref on input line 43.
-LaTeX Info: Redefining \nameref on input line 43.
+LaTeX Info: Redefining \ref on input line 42.
+LaTeX Info: Redefining \pageref on input line 42.
+LaTeX Info: Redefining \nameref on input line 42.
 
 (./REPORT.out) (./REPORT.out)
 \@outlinefile=\write5
 \openout5 = `REPORT.out'.
 
+LaTeX Info: Redefining \Ref on input line 42.
 
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.18} (current compat level: 1.15).
@@ -955,11 +964,11 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count345
-<iiserk.png, id=163, 274.02374pt x 301.125pt>
+\c@lstlisting=\count346
+<iiserk.png, id=167, 274.02374pt x 301.125pt>
 File: iiserk.png Graphic file (type png)
 <use iiserk.png>
-Package pdftex.def Info: iiserk.png  used on input line 50.
+Package pdftex.def Info: iiserk.png  used on input line 49.
 (pdftex.def)             Requested size: 71.13188pt x 78.16658pt.
 [1
 
@@ -1002,81 +1011,274 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 ] [1] [2] [3] [4] [5] [6]
 [7] [8]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 531
+LaTeX Font Info:    Trying to load font information for U+euf on input line 530
 .
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 ) [9]
-<ellipse.png, id=448, 198.0pt x 117.15pt>
+<ellipse.png, id=484, 198.0pt x 117.15pt>
 File: ellipse.png Graphic file (type png)
 <use ellipse.png>
-Package pdftex.def Info: ellipse.png  used on input line 661.
+Package pdftex.def Info: ellipse.png  used on input line 660.
 (pdftex.def)             Requested size: 227.62204pt x 134.68568pt.
  [10]
 [11 <./ellipse.png>]
-<ellipse_new.png, id=491, 2313.53223pt x 1429.34pt>
+<ellipse_new.png, id=527, 2313.53223pt x 1429.34pt>
 File: ellipse_new.png Graphic file (type png)
 <use ellipse_new.png>
-Package pdftex.def Info: ellipse_new.png  used on input line 756.
+Package pdftex.def Info: ellipse_new.png  used on input line 755.
 (pdftex.def)             Requested size: 184.37096pt x 113.89153pt.
-<poincare.png, id=492, 1596.18556pt x 1522.1311pt>
+<poincare.png, id=528, 1596.18556pt x 1522.1311pt>
 File: poincare.png Graphic file (type png)
 <use poincare.png>
-Package pdftex.def Info: poincare.png  used on input line 762.
+Package pdftex.def Info: poincare.png  used on input line 761.
 (pdftex.def)             Requested size: 143.39998pt x 136.7304pt.
- [12 <./ellipse_new.png> <./poincare.png>] [13] [14
+ [12 <./ellipse_new.png> <./poincare.png>]
+Overfull \hbox (15.04219pt too wide) in paragraph at lines 805--807
+\T1/cmr/m/n/10.95 where trans-verse Lapla-cian, $\OMS/cmsy/m/n/10.95 r[] \OT1/c
+mr/m/n/10.95 = [] + []$ \T1/cmr/m/n/10.95 or in cylin-dri-cal co-or-di-nate, $\
+OMS/cmsy/m/n/10.95 r[] \OT1/cmr/m/n/10.95 = [][] [] +
+ []
 
-]
-[15
+[13
+
+] [14]
+<spherical wave.png, id=586, 741.77126pt x 322.20375pt>
+File: spherical wave.png Graphic file (type png)
+<use spherical wave.png>
+Package pdftex.def Info: spherical wave.png  used on input line 888.
+(pdftex.def)             Requested size: 199.16928pt x 86.50945pt.
+ [15 <./spherical wave.png>]
+<beam.png, id=619, 1095.09125pt x 339.2675pt>
+File: beam.png Graphic file (type png)
+<use beam.png>
+Package pdftex.def Info: beam.png  used on input line 956.
+(pdftex.def)             Requested size: 384.10959pt x 118.99905pt.
+ [16 <./beam.png>]
+<intensity.png, id=634, 462.528pt x 346.896pt>
+File: intensity.png Graphic file (type png)
+<use intensity.png>
+Package pdftex.def Info: intensity.png  used on input line 972.
+(pdftex.def)             Requested size: 188.2158pt x 141.16434pt.
+<intensity_var.png, id=635, 462.528pt x 331.9602pt>
+File: intensity_var.png Graphic file (type png)
+<use intensity_var.png>
+Package pdftex.def Info: intensity_var.png  used on input line 979.
+(pdftex.def)             Requested size: 188.2158pt x 135.08643pt.
+ (./R_vs_z.tex) [17 <./intensity.png> <./intensity_var.png>] (./gouy.tex) [18] 
+[19]
+<intensity_hg00.png, id=681, 462.528pt x 346.896pt>
+File: intensity_hg00.png Graphic file (type png)
+<use intensity_hg00.png>
+Package pdftex.def Info: intensity_hg00.png  used on input line 1103.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+<intensity_hg01.png, id=682, 462.528pt x 346.896pt>
+File: intensity_hg01.png Graphic file (type png)
+<use intensity_hg01.png>
+Package pdftex.def Info: intensity_hg01.png  used on input line 1103.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+<intensity_hg02.png, id=683, 462.528pt x 346.896pt>
+File: intensity_hg02.png Graphic file (type png)
+<use intensity_hg02.png>
+Package pdftex.def Info: intensity_hg02.png  used on input line 1103.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+<intensity_hg10.png, id=684, 462.528pt x 346.896pt>
+File: intensity_hg10.png Graphic file (type png)
+<use intensity_hg10.png>
+Package pdftex.def Info: intensity_hg10.png  used on input line 1103.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+<intensity_hg11.png, id=685, 462.528pt x 346.896pt>
+File: intensity_hg11.png Graphic file (type png)
+<use intensity_hg11.png>
+Package pdftex.def Info: intensity_hg11.png  used on input line 1103.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+<intensity_hg12.png, id=686, 462.528pt x 346.896pt>
+File: intensity_hg12.png Graphic file (type png)
+<use intensity_hg12.png>
+Package pdftex.def Info: intensity_hg12.png  used on input line 1103.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+<intensity_hg20.png, id=687, 462.528pt x 346.896pt>
+File: intensity_hg20.png Graphic file (type png)
+<use intensity_hg20.png>
+Package pdftex.def Info: intensity_hg20.png  used on input line 1103.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+<intensity_hg21.png, id=688, 462.528pt x 346.896pt>
+File: intensity_hg21.png Graphic file (type png)
+<use intensity_hg21.png>
+Package pdftex.def Info: intensity_hg21.png  used on input line 1103.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+<intensity_hg22.png, id=689, 462.528pt x 346.896pt>
+File: intensity_hg22.png Graphic file (type png)
+<use intensity_hg22.png>
+Package pdftex.def Info: intensity_hg22.png  used on input line 1103.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1103--1105
+
+ []
+
+(./gouy_hg.tex) [20 <./intensity_hg00.png> <./intensity_hg01.png> <./intensity_
+hg02.png> <./intensity_hg10.png> <./intensity_hg11.png> <./intensity_hg12.png> 
+<./intensity_hg20.png> <./intensity_hg21.png> <./intensity_hg22.png>]
+<intensity_lg00.png, id=713, 462.528pt x 346.896pt>
+File: intensity_lg00.png Graphic file (type png)
+<use intensity_lg00.png>
+Package pdftex.def Info: intensity_lg00.png  used on input line 1152.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+<intensity_lg01.png, id=714, 462.528pt x 346.896pt>
+File: intensity_lg01.png Graphic file (type png)
+<use intensity_lg01.png>
+Package pdftex.def Info: intensity_lg01.png  used on input line 1152.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+<intensity_lg02.png, id=715, 462.528pt x 346.896pt>
+File: intensity_lg02.png Graphic file (type png)
+<use intensity_lg02.png>
+Package pdftex.def Info: intensity_lg02.png  used on input line 1152.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+<intensity_lg10.png, id=716, 462.528pt x 346.896pt>
+File: intensity_lg10.png Graphic file (type png)
+<use intensity_lg10.png>
+Package pdftex.def Info: intensity_lg10.png  used on input line 1152.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+<intensity_lg11.png, id=717, 462.528pt x 346.896pt>
+File: intensity_lg11.png Graphic file (type png)
+<use intensity_lg11.png>
+Package pdftex.def Info: intensity_lg11.png  used on input line 1152.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+<intensity_lg12.png, id=718, 462.528pt x 346.896pt>
+File: intensity_lg12.png Graphic file (type png)
+<use intensity_lg12.png>
+Package pdftex.def Info: intensity_lg12.png  used on input line 1152.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+<intensity_lg20.png, id=719, 462.528pt x 346.896pt>
+File: intensity_lg20.png Graphic file (type png)
+<use intensity_lg20.png>
+Package pdftex.def Info: intensity_lg20.png  used on input line 1152.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+<intensity_lg21.png, id=720, 462.528pt x 346.896pt>
+File: intensity_lg21.png Graphic file (type png)
+<use intensity_lg21.png>
+Package pdftex.def Info: intensity_lg21.png  used on input line 1152.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+<intensity_lg22.png, id=721, 462.528pt x 346.896pt>
+File: intensity_lg22.png Graphic file (type png)
+<use intensity_lg22.png>
+Package pdftex.def Info: intensity_lg22.png  used on input line 1152.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1152--1154
+
+ []
+
+[21]
+<phase_lg00.png, id=736, 462.528pt x 346.896pt>
+File: phase_lg00.png Graphic file (type png)
+<use phase_lg00.png>
+Package pdftex.def Info: phase_lg00.png  used on input line 1194.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+<phase_lg01.png, id=737, 462.528pt x 346.896pt>
+File: phase_lg01.png Graphic file (type png)
+<use phase_lg01.png>
+Package pdftex.def Info: phase_lg01.png  used on input line 1194.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+<phase_lg02.png, id=738, 462.528pt x 346.896pt>
+File: phase_lg02.png Graphic file (type png)
+<use phase_lg02.png>
+Package pdftex.def Info: phase_lg02.png  used on input line 1194.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+<phase_lg10.png, id=739, 462.528pt x 346.896pt>
+File: phase_lg10.png Graphic file (type png)
+<use phase_lg10.png>
+Package pdftex.def Info: phase_lg10.png  used on input line 1194.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+<phase_lg11.png, id=740, 462.528pt x 346.896pt>
+File: phase_lg11.png Graphic file (type png)
+<use phase_lg11.png>
+Package pdftex.def Info: phase_lg11.png  used on input line 1194.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+<phase_lg12.png, id=741, 462.528pt x 346.896pt>
+File: phase_lg12.png Graphic file (type png)
+<use phase_lg12.png>
+Package pdftex.def Info: phase_lg12.png  used on input line 1194.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+<phase_lg20.png, id=742, 462.528pt x 346.896pt>
+File: phase_lg20.png Graphic file (type png)
+<use phase_lg20.png>
+Package pdftex.def Info: phase_lg20.png  used on input line 1194.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+<phase_lg21.png, id=743, 462.528pt x 346.896pt>
+File: phase_lg21.png Graphic file (type png)
+<use phase_lg21.png>
+Package pdftex.def Info: phase_lg21.png  used on input line 1194.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+<phase_lg22.png, id=744, 462.528pt x 346.896pt>
+File: phase_lg22.png Graphic file (type png)
+<use phase_lg22.png>
+Package pdftex.def Info: phase_lg22.png  used on input line 1194.
+(pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1194--1196
+
+ []
+
+[22 <./intensity_lg00.png> <./intensity_lg01.png> <./intensity_lg02.png> <./int
+ensity_lg10.png> <./intensity_lg11.png> <./intensity_lg12.png> <./intensity_lg2
+0.png> <./intensity_lg21.png> <./intensity_lg22.png>] [23 <./phase_lg00.png> <.
+/phase_lg01.png> <./phase_lg02.png> <./phase_lg10.png> <./phase_lg11.png> <./ph
+ase_lg12.png> <./phase_lg20.png> <./phase_lg21.png> <./phase_lg22.png>]
+[24
+
+] [25
 
 ] (./REPORT.aux)
 Package rerunfilecheck Info: File `REPORT.out' has not changed.
-(rerunfilecheck)             Checksum: AA6A37423C5535E30441AD1D5AC6BAD2;8121.
+(rerunfilecheck)             Checksum: 1237D50ACF88F11EB0E155C4ECEB4F32;8197.
  ) 
 Here is how much of TeX's memory you used:
- 35854 strings out of 480171
- 811176 string characters out of 5894489
- 1190078 words of memory out of 5000000
- 53041 multiletter control sequences out of 15000+600000
- 495990 words of font info for 93 fonts, out of 8000000 for 9000
+ 36993 strings out of 480171
+ 835904 string characters out of 5894489
+ 1269225 words of memory out of 5000000
+ 54071 multiletter control sequences out of 15000+600000
+ 495334 words of font info for 101 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 84i,22n,89p,734b,651s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 84i,22n,89p,734b,2152s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.6
 00pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm109
 5.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti
 0900.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/e
-cbx0900.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/e
-c/ecrm0900.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappe
-n/ec/ecrm0600.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jkna
-ppen/ec/ecrm0800.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/j
-knappen/ec/ecti1095.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfou
-r/jknappen/ec/ecbx1200.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/lj
-four/jknappen/ec/ecbx1095.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk
-/ljfour/jknappen/ec/ecbx1440.600pk> </home/pritish/.texlive2021/texmf-var/fonts
-/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/pritish/.texlive2021/texmf-var/fo
-nts/pk/ljfour/jknappen/ec/ecrm1728.600pk> </home/pritish/.texlive2021/texmf-var
-/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/eul
-er/eufb10.pfb>
-Output written on REPORT.pdf (19 pages, 669118 bytes).
+crm0900.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/e
+c/ecrm0600.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappe
+n/ec/ecrm0800.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jkna
+ppen/ec/ecti1095.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/j
+knappen/ec/ecbx1200.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfou
+r/jknappen/ec/ecbx1095.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/lj
+four/jknappen/ec/ecbx1440.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk
+/ljfour/jknappen/ec/ecrm1095.600pk> </home/pritish/.texlive2021/texmf-var/fonts
+/pk/ljfour/jknappen/ec/ecrm1728.600pk> </home/pritish/.texlive2021/texmf-var/fo
+nts/pk/ljfour/jknappen/ec/ecbx2488.600pk></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmbx6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufb10.pf
+b>
+Output written on REPORT.pdf (29 pages, 2448374 bytes).
 PDF statistics:
- 1031 PDF objects out of 1200 (max. 8388607)
- 612 compressed objects within 7 object streams
- 159 named destinations out of 1000 (max. 500000)
- 345 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1361 PDF objects out of 1440 (max. 8388607)
+ 816 compressed objects within 9 object streams
+ 246 named destinations out of 1000 (max. 500000)
+ 508 words of extra memory for PDF output out of 10000 (max. 10000000)
 
