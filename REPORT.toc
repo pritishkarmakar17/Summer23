@@ -23,18 +23,18 @@
 \contentsline {subsection}{\numberline {2.4}Different modes of Gaussian beams}{19}{subsection.2.4}%
 \contentsline {subsubsection}{\numberline {2.4.1}Hermite-Gaussian beam}{19}{subsubsection.2.4.1}%
 \contentsline {subsubsection}{\numberline {2.4.2}Laguerre-Gaussian beam}{21}{subsubsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.5}Relationship between LG \& HG beam}{22}{subsection.2.5}%
-\contentsline {section}{\numberline {3}SPIN-ORBIT INTERACTION}{24}{section.3}%
+\contentsline {section}{\numberline {3}MOMENTUM OF LIGHT}{24}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Introduction}{24}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Angular momentum of Light}{24}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Orbital Angular Momentum (OAM)}{24}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Intrinsic vs Extrinsic OAM}{24}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}OAM of LG Beam}{24}{subsubsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.4}Spin Angular Momentum (SAM)}{24}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Spin orbit energy}{24}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Geometric phase of light}{24}{subsection.3.6}%
-\contentsline {subsubsection}{\numberline {3.6.1}Spin redirection Berry phase}{24}{subsubsection.3.6.1}%
-\contentsline {subsubsection}{\numberline {3.6.2}Pancharatnam-Berry Phase}{24}{subsubsection.3.6.2}%
-\contentsline {subsubsection}{\numberline {3.6.3}LG-HG Mode transformation}{24}{subsubsection.3.6.3}%
-\contentsline {subsection}{\numberline {3.7}Types of SOI}{24}{subsection.3.7}%
-\contentsline {subsection}{\numberline {3.8}SOI in inhomogeneous anisotropic medium}{24}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.2}Linear and angular momentum of light}{24}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}More on angular momentum}{26}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Orbital Angular Momentum (OAM)}{26}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Intrinsic vs Extrinsic OAM}{27}{subsubsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.5}Spin Angular Momentum (SAM)}{27}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Spin orbit energy}{27}{subsection.3.6}%
+\contentsline {section}{\numberline {4}SPIN-ORBIT INTERACTION}{27}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Geometric phase of light}{27}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Spin redirection Berry phase}{27}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Pancharatnam-Berry Phase}{27}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}LG-HG Mode transformation}{27}{subsubsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.2}Types of SOI}{27}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}SOI in inhomogeneous anisotropic medium}{27}{subsection.4.3}%

@@ -61,7 +61,7 @@
 		\clearpage
 		\listoffigures
 		\listoftables
-		\lstlistoflistings
+		%\lstlistoflistings
 		
 	\end{titlepage}
 
@@ -916,7 +916,7 @@ Putting \ref{eq:2.19} and \ref{eq:2.21} in eq. \ref{eq:2.16},
 \end{align}
 
 
-Now we simplify the first term in \ref{eq:2.7}. By solving the differential equation \ref{eq:2.10} and putting \ref{eq:2.13} we get,
+Now we simplify the first term in \ref{eq:2.7}. Putting \ref{eq:2.13} in \ref{eq:2.10} and by solving the differential equation,  we get,
 \begin{align}
 	\frac{dp}{dz}= \frac{-i}{q} =\frac{-i}{z+iz_0} \Rightarrow i\:p(z) = \ln\left[1- i \frac{z}{z_0}\right]
 \end{align}
@@ -1010,7 +1010,7 @@ Some characteristics of Gaussian beam are
 	\item
 	\textit{Beam half-width} (see fig. \ref{fig:beam}) is given by 
 	\begin{align}
-		w^2(z)= w_0\sqrt{1+\left(\frac{z}{z_0}\right)^2}
+		w(z)= w_0\sqrt{1+\left(\frac{z}{z_0}\right)^2}
 	\end{align}
 	\subitem For $z=0$ $w = w_0$ (\textit{Beam waist})
 	\subitem For $z>>z_0$, then $w(z)= w_0\frac{z}{z_0}$
@@ -1122,6 +1122,9 @@ as the values of $ \int_{-\infty}^{\infty} \xi_k \exp(-a\xi^2) d\xi $ is fixed\f
 	\caption{Variation of Gouy phase with z for HG beam}
 	\label{fig:gouy_hg}
 \end{figure}
+
+\item 
+\color{red}{\textit{Orthogonal property} of different modes of HG beams }
 \end{enumerate}
 
 
@@ -1178,6 +1181,9 @@ Some characteristics of HG beams are given below,
 		\Phi_{LG}(r,\phi,z) = -il\phi+i(2p+l+1)\arctan(\frac{z}{z_0})-i\frac{kr^2}{2R(z)}
 	\end{align}
 	Phase plot for different order of LG beam at $z=0$ is given in figure \ref{fig:phase_lgpl}.
+	
+	\item 
+	As we will see later section, unlike the HG beam, LG bream carry orbital angular momentum due to its phase variation \textit{w.r.t.} $\phi$.
 \end{enumerate}
 \begin{figure}[!t]
 	
@@ -1198,26 +1204,170 @@ Some characteristics of HG beams are given below,
 \end{figure}
 
 
-\subsection{Relationship between LG \& HG beam}
-\cite{beijers 93}
+%\subsection{Relationship between LG \& HG beam}
+% will do later\cite{beijers allen 93}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
-\section{SPIN-ORBIT INTERACTION}
+
+\section{MOMENTUM OF LIGHT}
+
 \subsection{Introduction}
+We know EM wave carries energy as well as momentum. Momentum can be two types, linear and angular momentum. The \textit{momentum density} of EM wave is momentum per unit volume.
 
-\subsection{Angular momentum of Light}
+\subsection{Linear and angular momentum of light}
+If linear momentum density is $\boldsymbol{p}$ and linear momentum is $\boldsymbol{P}$ then,
+\begin{align}
+	\boldsymbol{p} &= \frac{1}{c^2}\boldsymbol{S} = \epsilon_0 \boldsymbol{E} \times \boldsymbol{B}\label{eq:3.1}\\
+	\boldsymbol{P} &= \int \boldsymbol{p} \:d\tau \label{eq:3.2}
+\end{align}
 
+Now let the monochromatic field with angular frequency $\omega$, then
+\begin{align}
+	\boldsymbol{\mathcal{E}}(\boldsymbol{r},t) &= \Re{\boldsymbol{E}(\boldsymbol{r}) e^{-i \omega t }} = \frac{1}{2}(\boldsymbol{E} e^{-i \omega t } +\boldsymbol{E}^\ast e^{i \omega t})\\
+	\boldsymbol{\mathcal{B}}(\boldsymbol{r},t) &= \Re{\boldsymbol{B}(\boldsymbol{r}) e^{-i \omega t }} = \frac{1}{2}(\boldsymbol{B} e^{-i \omega t } +\boldsymbol{B}^\ast e^{i \omega t})
+\end{align}
+
+From Maxwell-Faraday equation in free space, we know that, \cite{haus}
+\iffalse
+\begin{align}
+	\nabla\times\boldsymbol{E}&= - \frac{\partial}{\partial t}\boldsymbol{B}\\
+	\Rightarrow \nabla\times\boldsymbol{E}&= i\omega \boldsymbol{B}\label{eq:3.6}
+\end{align}
+\fi
+\begin{align}
+	\nabla\times\boldsymbol{\mathcal{E}}&= - \frac{\partial}{\partial t}\boldsymbol{\mathcal{B}}\\
+	\Rightarrow \nabla\times\boldsymbol{E}&= i\omega \boldsymbol{B}
+\end{align}
+
+The total energy is given by
+\begin{align}
+	W = \int d\tau\: \frac{I}{c}=\frac{\epsilon_0}{2}\int d\tau\: \boldsymbol{E}^\ast\cdot\boldsymbol{E}
+\end{align}
+
+Now time-averaged Poynting vector is given by, \cite{poynting}\cite{haus}
+\begin{align}
+	\expval{\boldsymbol{S}} =\frac{1}{\mu_0}\expval{\boldsymbol{\mathcal{E}} \times \boldsymbol{\mathcal{B}}} =\frac{1}{\mu_0}\; \frac{1}{2} \Re{\boldsymbol{E}^\ast \times \boldsymbol{B}} = 
+	\frac{1}{2\mu_0}\:(\boldsymbol{E}^\ast \times \boldsymbol{B}+ \boldsymbol{E} \times \boldsymbol{B}^\ast )\label{eq:3.7}
+\end{align}
+
+From eq. \ref{eq:3.1} and \ref{eq:3.2} and using \ref{eq:3.6} and \ref{eq:3.7}, time-averaged linear momentum is given by
+\begin{align}
+	\boldsymbol{P} &= \int d\tau\: \expval{\boldsymbol{S}}\\
+	&=\frac{\epsilon_0}{2}\int d\tau \:(\boldsymbol{E}^\ast \times \boldsymbol{B}+ \boldsymbol{E} \times \boldsymbol{B}^\ast )\nonumber\\
+	&= \frac{\epsilon_0}{2i\omega}\int d\tau\: \left(\boldsymbol{E}^\ast \times (\nabla\times\boldsymbol{E}) -  \boldsymbol{E} \times (\nabla\times\boldsymbol{E}^\ast) \right)\\
+\end{align}
+On partial integration and using the transversality\footnote{what is it?} of E, considering the magnitude of $\boldsymbol{E}$ decreasing very rapidly when $r\to0$, \cite{enk nien 92} we get\footnote{have to see derivation in Chapter I in ref. \cite{CCT}}
+\begin{align}
+	\boldsymbol{P}= \frac{\epsilon_0}{2i\omega}\int d\tau \left[\sum_{\xi=x,y,z}E_\xi^\ast\nabla E_\xi\right]
+\end{align}
+which is quantum mechanical equivalent for linear momentum of a particle.
+
+
+Let angular momentum density is $\boldsymbol{j}$ and angular momentum is $\boldsymbol{J}$ then,
+\begin{align}
+	\boldsymbol{j} &= \frac{1}{c^2}\boldsymbol{r}\times\boldsymbol{S} = \epsilon_0 \boldsymbol{r}\times(\boldsymbol{E} \times \boldsymbol{B})\label{eq:3.}\\
+	\boldsymbol{J} &= \int \boldsymbol{j} \:d\tau\label{eq:3.4}
+\end{align}
+
+From eq. \ref{} and \ref{} and using \ref{} and \ref{}, time-averaged angular momentum, 
+\begin{align}
+	\boldsymbol{J} &= \int d\tau\: \boldsymbol{r}\times\expval{\boldsymbol{S}}\\
+	&=\frac{\epsilon_0}{2}\int d\tau \:\boldsymbol{r}\times(\boldsymbol{E}^\ast \times \boldsymbol{B}+ \boldsymbol{E} \times \boldsymbol{B}^\ast )\nonumber\\
+	&= \frac{\epsilon_0}{2i\omega}\int d\tau\: \boldsymbol{r}\times\left(\boldsymbol{E}^\ast \times (\nabla\times\boldsymbol{E}) -  \boldsymbol{E} \times (\nabla\times\boldsymbol{E}^\ast) \right)  \nonumber
+\end{align}
+
+Now similarly On partial integration and using the transversality\footnote{what is it?} of E, considering the magnitude of $\boldsymbol{E}$ decreasing very rapidly when $r\to0$, \cite{enk nien 92}\cite{allen 99} we get\footnote{have to see derivation in Chapter I in ref. \cite{CCT}}
+
+\begin{align}
+	 \boldsymbol{J}=\frac{\epsilon_0}{2i\omega}\int d\tau \left[\sum_{\xi=x,y,z}E_\xi^\ast(\boldsymbol{r}\times\nabla)E_\xi\right]+ \frac{\epsilon_0}{2i\omega}\int d\tau \boldsymbol{E}^\ast\times \boldsymbol{E}
+\end{align}
+
+Now according to \cite{bernatt allen 94}\cite{enk nien 92}, within the paraxial approximation to get time-averaged energy, linear momentum and angular momentum per unit length, $\mathcal{W}$, $\mathcal{P}$ and $\mathcal{J}$ respectively, along the beam propagating in z-direction, we have to integrate throughout the transverse xy-plane. So,
+\begin{align}
+	\mathcal{W}&=\frac{\epsilon_0}{2}\iint dx\:dy\: \boldsymbol{E}^\ast\cdot\boldsymbol{E}\\
+	\mathcal{P}&=\frac{\epsilon_0}{2}\iint dx\:dy\: \boldsymbol{r}\times\expval{\boldsymbol{E}\times (\nabla\times\boldsymbol{E})}\\
+	\mathcal{J}&=\frac{\epsilon_0}{2}\iint  dx\:dy\: \expval{\boldsymbol{E}\times (\nabla\times\boldsymbol{E})}
+\end{align}
+
+
+\subsection{More on angular momentum}
+Let the electric field of the paraxial EM wave is \cite{WO} 
+\begin{align}
+	\boldsymbol{E}(x,y,z)=\boldsymbol{F}(x,y,z)\:e^{ikz} \label{}
+\end{align}
+\textit{s.t.} $\boldsymbol{F}$ is the slowly varying spatial envelop, satisfies the paraxial wave equation \ref{eq:2.6} \textit{i.e.}
+$$\nabla_T ^2\boldsymbol{F} +2ik \frac{\partial\boldsymbol{F}}{\partial r}=0$$
+also assumed that the beam waist $w_0$ (transverse dimension of the beam) is
+assumed to be much smaller than the diffraction length, $l_d = kw_0^2$ and z- component of $\boldsymbol{F}$ is smaller than transverse component by a factor of $w_0/l_d$. \cite{melvin 75}\cite{enk nien 92}\cite{WO}
+
+From previous eq. \ref{} z-component of $\mathcal{J}$ for \ref{} is given by
+
+\begin{align}
+	\mathcal{J}_z (z)
+	= \underbrace{\frac{\epsilon_0}{2i\omega} \iint dx\:dy\:\left[F_\xi^\ast\left(x\frac{\partial}{\partial y} - y\frac{\partial}{\partial x}\right)F_\xi\right]_{\xi=x,y}}_{\text{1st term }}
+	+\underbrace{\frac{\epsilon_0}{2i\omega}\iint dx\:dy\: (F_x^\ast F_y + F_y^\ast F_x)}_{\text{2nd term}}
+\end{align}
+
+Note that, in \ref{}, we can separately identify two terms. According to \cite{WO}, the first is associated with transverse distribution of electric field (amplitude and phase) as 
+$x\frac{\partial}{\partial y} - y\frac{\partial}{\partial x}$
+is equivalent to $\frac{\partial}{\partial\phi}$ in cylindrical coordinate and the second term to the polarization of electric field. Thus it is concludeed,\cite{enk nien 92} within the paraxial approximation, that
+\begin{enumerate}
+	\item 
+	first term is the orbital angular momentum (OAM) per unit length in z of the EM wave,
+	\begin{align}
+		\mathcal{L} = \frac{\epsilon_0}{2i\omega} \iint dx\:dy\:\left[F_\xi^\ast\left(x\frac{\partial}{\partial y} - y\frac{\partial}{\partial x}\right)F_\xi\right]_{\xi=x,y}
+	\end{align}
+	which is quantum mechanical equivalent of z-component of the angular momentum of a particle.
+	
+	\item 
+	second term is the spin angular momentum (SAM) per unit length in z,
+	\begin{align}
+		\mathcal{S} = \frac{\epsilon_0}{2i\omega}\iint dx\:dy\: (F_x^\ast F_y + F_y^\ast F_x)
+	\end{align}
+\end{enumerate}
 \subsection{Orbital Angular Momentum (OAM)}
+Let envelop $\boldsymbol{F}$ corresponding to the EM wave \ref{} for a vortex beam (\textit{e.g.} LG beam) be,
+\begin{align}
+	\boldsymbol{F}(r,\phi,t)= u(r)\:\exp(il\phi)\:\Hat{\boldsymbol{p}}(t)
+\end{align} where $e^{il\phi}$ refers to helical phase front, and $\Hat{\boldsymbol{p}} = p_x\Hat{x}+ p_y\Hat{y}+p_z\Hat{z}$ refers to unit polarization direction of electric field. Putting it in \ref{} considering $x\frac{\partial}{\partial y} - y\frac{\partial}{\partial x} \equiv \frac{\partial}{\partial\phi}$, we get,
+
+\begin{align}
+	\mathcal{L}&=\frac{\epsilon_0}{2i\omega} \iint r\:dr\:d\phi\:\left[F_\xi^\ast\frac{\partial}{\partial\phi}F_\xi\right]_{\xi=x,y}\nonumber\\
+	&= 	\frac{\epsilon_0}{2\omega} l \left({p_x}^2+{p_y}^2\right)2\pi \int r\:dr\:\abs{u(r)}^2 \nonumber
+\end{align}
+considering z-component of $\Hat{\boldsymbol{p}}$ is smaller than transverse component by a factor of $w_0/l_d$, so ${p_x}^2+{p_y}^2 \approx {p_x}^2+{p_y}^2+{p_z}^2 = \abs{\Hat{\boldsymbol{p}}}^2 = 1$, then
+\begin{align}
+	\mathcal{L}=\frac{\pi\epsilon_0l}{\omega}\int r\:dr\:\abs{u(r)}^2 \label{}
+\end{align}
+
+Now measuring $\mathcal{W}$ we get,
+\begin{align}
+	\mathcal{W} &=\frac{\epsilon_0}{2}\iint r\:dr\:d\phi\: \boldsymbol{E}^\ast\cdot\boldsymbol{E}\nonumber\\
+	&= \frac{\epsilon_0}{2}\iint r\:dr\:d\phi\: \boldsymbol{F}^\ast\cdot\boldsymbol{F}\nonumber\\
+	&=\frac{\epsilon_0}{2} \left({p_x}^2+{p_y}^2+{p_z}^2\right) 2\pi\int r\:dr\:\abs{u(r)}^2\nonumber\\
+	&=\pi\epsilon_0\int r\:dr\:\abs{u(r)}^2 \label{}
+\end{align}
+
+See from \ref{} and \ref{}, 
+\begin{align}
+	\boxed{\frac{\mathcal{L}}{\mathcal{W}} = \frac{l}{\omega}} \label{}
+\end{align}
+
+We know for a photon the energy associated with it is $\hbar\omega$, then from \ref{} we can say, the OAM associated with one photon is $l\hbar$.
+
 \subsubsection{Intrinsic vs Extrinsic OAM}
 
-\subsubsection{OAM of LG Beam}
+
+
+%\subsubsection{OAM of LG Beam}
 
 \subsection{Spin Angular Momentum (SAM)}
 
 \subsection{Spin orbit energy}
+
+\section{SPIN-ORBIT INTERACTION}
 
 \subsection{Geometric phase of light}
 \subsubsection{Spin redirection Berry phase}
@@ -1232,7 +1382,7 @@ Some characteristics of HG beams are given below,
 
 
 \clearpage
-
+\pagenumbering{roman}
 \begin{thebibliography}{99}
 	\bibitem{WO}
 	Gupta, S.D., Ghosh, N., \& Banerjee, A. (2015). Wave Optics: Basic Concepts and Contemporary Trends (1st ed.). CRC Press. doi:10.1201/b19330
@@ -1267,9 +1417,32 @@ Some characteristics of HG beams are given below,
 	\bibitem{LG}
 	\href{https://flex.phys.tohoku.ac.jp/~rsaito/saito20-GaussianBeam.pdf}{Introduction of Gaussian Beam - Tohoku University}
 	
-	\bibitem{beijers 93}
+	\bibitem{babiker 12}
+	Andrews, D., \& Babiker, M. (Eds.). (2012). The Angular Momentum of Light. Cambridge: Cambridge University Press. doi: 10.1017/CBO9780511795213
+	
+	
+	\bibitem{beijers allen 93}
 	MW Beijersbergen, L Allen, H Van der Veen, and JP Woerdman (1993). Astigmatic laser mode converters and transfer of orbital angular momentum. Opt. Commun., 96(1):123–132.
 	
+	\bibitem{enk nien 92}
+	 S.J. van Enk; G. Nienhuis (1992). Eigenfunction description of laser beams and orbital angular momentum of light. 94(1-3), 147–158. doi: 10.1016/0030-4018(92)90424-p     
+	 
+	 \bibitem{allen 99}
+	 Allen, L. (1999).The Orbital Angular Momentum of Light. Progress in Optics.  Volume 39. 291–372. doi: 10.1016/S0079-6638(08)70391-3
+	  
+	 \bibitem{poynting}
+	 \href{https://en.wikipedia.org/wiki/Poynting_vector}{Poynting vector - Wikipedia}
+	  
+	 \bibitem{haus}
+	 Haus, Hermann A. (1984). Waves and fields in optoelectronics. Englewood Cliffs, NJ :Prentice-Hall.
+	 
+	 \bibitem{bernatt allen 94}
+	 Barnett, S. \& Allen, L. (2010). Orbital angular momentum and nonparaxial light beams. Opt. Commun. 110. 670-678. doi: 10.1016/0030-4018(94)90269-0.
+	 
+	 \bibitem{CCT} 
+	 Cohen-Tannoudji, C., J. Dupont-Roc, and G. Grynberg (1989), Photons and. Atoms, Introduction to Quantum Electrodynamics, John Wiley \& Sons,. New York.
+	 
+	 \bibitem{melvin 75}
+	 Lax, Melvin; Louisell, William H.; McKnight, William B. (1975). From Maxwell to paraxial wave optics. Physical Review A, 11(4), 1365–1370. doi: 10.1103/PhysRevA.11.1365     
 \end{thebibliography}
-
 \end{document}

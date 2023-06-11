@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.31)  10 JUN 2023 14:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.31)  12 JUN 2023 03:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1003,32 +1003,27 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 \tf@lot=\write8
 \openout8 = `REPORT.lot'.
 
- (./REPORT.lol)
-\tf@lol=\write9
-\openout9 = `REPORT.lol'.
-
  [4
 
-] [1] [2] [3] [4] [5] [6]
-[7] [8]
+] [1] [2] [3] [4] [5] [6] [7] [8]
 LaTeX Font Info:    Trying to load font information for U+euf on input line 530
 .
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 ) [9]
-<ellipse.png, id=484, 198.0pt x 117.15pt>
+<ellipse.png, id=483, 198.0pt x 117.15pt>
 File: ellipse.png Graphic file (type png)
 <use ellipse.png>
 Package pdftex.def Info: ellipse.png  used on input line 660.
 (pdftex.def)             Requested size: 227.62204pt x 134.68568pt.
- [10]
-[11 <./ellipse.png>]
-<ellipse_new.png, id=527, 2313.53223pt x 1429.34pt>
+ [10] [11 <./ellipse.png>]
+<ellipse_new.png, id=526, 2313.53223pt x 1429.34pt>
 File: ellipse_new.png Graphic file (type png)
 <use ellipse_new.png>
 Package pdftex.def Info: ellipse_new.png  used on input line 755.
 (pdftex.def)             Requested size: 184.37096pt x 113.89153pt.
-<poincare.png, id=528, 1596.18556pt x 1522.1311pt>
+<poincare.png, id=527, 1596.18556pt x 1522.1311pt>
 File: poincare.png Graphic file (type png)
 <use poincare.png>
 Package pdftex.def Info: poincare.png  used on input line 761.
@@ -1043,71 +1038,71 @@ OMS/cmsy/m/n/10.95 r[] \OT1/cmr/m/n/10.95 = [][] [] +
 [13
 
 ] [14]
-<spherical wave.png, id=586, 741.77126pt x 322.20375pt>
+<spherical wave.png, id=585, 741.77126pt x 322.20375pt>
 File: spherical wave.png Graphic file (type png)
 <use spherical wave.png>
 Package pdftex.def Info: spherical wave.png  used on input line 888.
 (pdftex.def)             Requested size: 199.16928pt x 86.50945pt.
  [15 <./spherical wave.png>]
-<beam.png, id=619, 1095.09125pt x 339.2675pt>
+<beam.png, id=618, 1095.09125pt x 339.2675pt>
 File: beam.png Graphic file (type png)
 <use beam.png>
 Package pdftex.def Info: beam.png  used on input line 956.
 (pdftex.def)             Requested size: 384.10959pt x 118.99905pt.
  [16 <./beam.png>]
-<intensity.png, id=634, 462.528pt x 346.896pt>
+<intensity.png, id=633, 462.528pt x 346.896pt>
 File: intensity.png Graphic file (type png)
 <use intensity.png>
 Package pdftex.def Info: intensity.png  used on input line 972.
 (pdftex.def)             Requested size: 188.2158pt x 141.16434pt.
-<intensity_var.png, id=635, 462.528pt x 331.9602pt>
+<intensity_var.png, id=634, 462.528pt x 331.9602pt>
 File: intensity_var.png Graphic file (type png)
 <use intensity_var.png>
 Package pdftex.def Info: intensity_var.png  used on input line 979.
 (pdftex.def)             Requested size: 188.2158pt x 135.08643pt.
  (./R_vs_z.tex) [17 <./intensity.png> <./intensity_var.png>] (./gouy.tex) [18] 
 [19]
-<intensity_hg00.png, id=681, 462.528pt x 346.896pt>
+<intensity_hg00.png, id=680, 462.528pt x 346.896pt>
 File: intensity_hg00.png Graphic file (type png)
 <use intensity_hg00.png>
 Package pdftex.def Info: intensity_hg00.png  used on input line 1103.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_hg01.png, id=682, 462.528pt x 346.896pt>
+<intensity_hg01.png, id=681, 462.528pt x 346.896pt>
 File: intensity_hg01.png Graphic file (type png)
 <use intensity_hg01.png>
 Package pdftex.def Info: intensity_hg01.png  used on input line 1103.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_hg02.png, id=683, 462.528pt x 346.896pt>
+<intensity_hg02.png, id=682, 462.528pt x 346.896pt>
 File: intensity_hg02.png Graphic file (type png)
 <use intensity_hg02.png>
 Package pdftex.def Info: intensity_hg02.png  used on input line 1103.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_hg10.png, id=684, 462.528pt x 346.896pt>
+<intensity_hg10.png, id=683, 462.528pt x 346.896pt>
 File: intensity_hg10.png Graphic file (type png)
 <use intensity_hg10.png>
 Package pdftex.def Info: intensity_hg10.png  used on input line 1103.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_hg11.png, id=685, 462.528pt x 346.896pt>
+<intensity_hg11.png, id=684, 462.528pt x 346.896pt>
 File: intensity_hg11.png Graphic file (type png)
 <use intensity_hg11.png>
 Package pdftex.def Info: intensity_hg11.png  used on input line 1103.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_hg12.png, id=686, 462.528pt x 346.896pt>
+<intensity_hg12.png, id=685, 462.528pt x 346.896pt>
 File: intensity_hg12.png Graphic file (type png)
 <use intensity_hg12.png>
 Package pdftex.def Info: intensity_hg12.png  used on input line 1103.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_hg20.png, id=687, 462.528pt x 346.896pt>
+<intensity_hg20.png, id=686, 462.528pt x 346.896pt>
 File: intensity_hg20.png Graphic file (type png)
 <use intensity_hg20.png>
 Package pdftex.def Info: intensity_hg20.png  used on input line 1103.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_hg21.png, id=688, 462.528pt x 346.896pt>
+<intensity_hg21.png, id=687, 462.528pt x 346.896pt>
 File: intensity_hg21.png Graphic file (type png)
 <use intensity_hg21.png>
 Package pdftex.def Info: intensity_hg21.png  used on input line 1103.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_hg22.png, id=689, 462.528pt x 346.896pt>
+<intensity_hg22.png, id=688, 462.528pt x 346.896pt>
 File: intensity_hg22.png Graphic file (type png)
 <use intensity_hg22.png>
 Package pdftex.def Info: intensity_hg22.png  used on input line 1103.
@@ -1120,104 +1115,104 @@ Underfull \hbox (badness 10000) in paragraph at lines 1103--1105
 (./gouy_hg.tex) [20 <./intensity_hg00.png> <./intensity_hg01.png> <./intensity_
 hg02.png> <./intensity_hg10.png> <./intensity_hg11.png> <./intensity_hg12.png> 
 <./intensity_hg20.png> <./intensity_hg21.png> <./intensity_hg22.png>]
-<intensity_lg00.png, id=713, 462.528pt x 346.896pt>
+<intensity_lg00.png, id=712, 462.528pt x 346.896pt>
 File: intensity_lg00.png Graphic file (type png)
 <use intensity_lg00.png>
-Package pdftex.def Info: intensity_lg00.png  used on input line 1152.
+Package pdftex.def Info: intensity_lg00.png  used on input line 1155.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_lg01.png, id=714, 462.528pt x 346.896pt>
+<intensity_lg01.png, id=713, 462.528pt x 346.896pt>
 File: intensity_lg01.png Graphic file (type png)
 <use intensity_lg01.png>
-Package pdftex.def Info: intensity_lg01.png  used on input line 1152.
+Package pdftex.def Info: intensity_lg01.png  used on input line 1155.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_lg02.png, id=715, 462.528pt x 346.896pt>
+<intensity_lg02.png, id=714, 462.528pt x 346.896pt>
 File: intensity_lg02.png Graphic file (type png)
 <use intensity_lg02.png>
-Package pdftex.def Info: intensity_lg02.png  used on input line 1152.
+Package pdftex.def Info: intensity_lg02.png  used on input line 1155.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_lg10.png, id=716, 462.528pt x 346.896pt>
+<intensity_lg10.png, id=715, 462.528pt x 346.896pt>
 File: intensity_lg10.png Graphic file (type png)
 <use intensity_lg10.png>
-Package pdftex.def Info: intensity_lg10.png  used on input line 1152.
+Package pdftex.def Info: intensity_lg10.png  used on input line 1155.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_lg11.png, id=717, 462.528pt x 346.896pt>
+<intensity_lg11.png, id=716, 462.528pt x 346.896pt>
 File: intensity_lg11.png Graphic file (type png)
 <use intensity_lg11.png>
-Package pdftex.def Info: intensity_lg11.png  used on input line 1152.
+Package pdftex.def Info: intensity_lg11.png  used on input line 1155.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_lg12.png, id=718, 462.528pt x 346.896pt>
+<intensity_lg12.png, id=717, 462.528pt x 346.896pt>
 File: intensity_lg12.png Graphic file (type png)
 <use intensity_lg12.png>
-Package pdftex.def Info: intensity_lg12.png  used on input line 1152.
+Package pdftex.def Info: intensity_lg12.png  used on input line 1155.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_lg20.png, id=719, 462.528pt x 346.896pt>
+<intensity_lg20.png, id=718, 462.528pt x 346.896pt>
 File: intensity_lg20.png Graphic file (type png)
 <use intensity_lg20.png>
-Package pdftex.def Info: intensity_lg20.png  used on input line 1152.
+Package pdftex.def Info: intensity_lg20.png  used on input line 1155.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_lg21.png, id=720, 462.528pt x 346.896pt>
+<intensity_lg21.png, id=719, 462.528pt x 346.896pt>
 File: intensity_lg21.png Graphic file (type png)
 <use intensity_lg21.png>
-Package pdftex.def Info: intensity_lg21.png  used on input line 1152.
+Package pdftex.def Info: intensity_lg21.png  used on input line 1155.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_lg22.png, id=721, 462.528pt x 346.896pt>
+<intensity_lg22.png, id=720, 462.528pt x 346.896pt>
 File: intensity_lg22.png Graphic file (type png)
 <use intensity_lg22.png>
-Package pdftex.def Info: intensity_lg22.png  used on input line 1152.
+Package pdftex.def Info: intensity_lg22.png  used on input line 1155.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1152--1154
+Underfull \hbox (badness 10000) in paragraph at lines 1155--1157
 
  []
 
 [21]
-<phase_lg00.png, id=736, 462.528pt x 346.896pt>
+<phase_lg00.png, id=734, 462.528pt x 346.896pt>
 File: phase_lg00.png Graphic file (type png)
 <use phase_lg00.png>
-Package pdftex.def Info: phase_lg00.png  used on input line 1194.
+Package pdftex.def Info: phase_lg00.png  used on input line 1200.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<phase_lg01.png, id=737, 462.528pt x 346.896pt>
+<phase_lg01.png, id=735, 462.528pt x 346.896pt>
 File: phase_lg01.png Graphic file (type png)
 <use phase_lg01.png>
-Package pdftex.def Info: phase_lg01.png  used on input line 1194.
+Package pdftex.def Info: phase_lg01.png  used on input line 1200.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<phase_lg02.png, id=738, 462.528pt x 346.896pt>
+<phase_lg02.png, id=736, 462.528pt x 346.896pt>
 File: phase_lg02.png Graphic file (type png)
 <use phase_lg02.png>
-Package pdftex.def Info: phase_lg02.png  used on input line 1194.
+Package pdftex.def Info: phase_lg02.png  used on input line 1200.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<phase_lg10.png, id=739, 462.528pt x 346.896pt>
+<phase_lg10.png, id=737, 462.528pt x 346.896pt>
 File: phase_lg10.png Graphic file (type png)
 <use phase_lg10.png>
-Package pdftex.def Info: phase_lg10.png  used on input line 1194.
+Package pdftex.def Info: phase_lg10.png  used on input line 1200.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<phase_lg11.png, id=740, 462.528pt x 346.896pt>
+<phase_lg11.png, id=738, 462.528pt x 346.896pt>
 File: phase_lg11.png Graphic file (type png)
 <use phase_lg11.png>
-Package pdftex.def Info: phase_lg11.png  used on input line 1194.
+Package pdftex.def Info: phase_lg11.png  used on input line 1200.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<phase_lg12.png, id=741, 462.528pt x 346.896pt>
+<phase_lg12.png, id=739, 462.528pt x 346.896pt>
 File: phase_lg12.png Graphic file (type png)
 <use phase_lg12.png>
-Package pdftex.def Info: phase_lg12.png  used on input line 1194.
+Package pdftex.def Info: phase_lg12.png  used on input line 1200.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<phase_lg20.png, id=742, 462.528pt x 346.896pt>
+<phase_lg20.png, id=740, 462.528pt x 346.896pt>
 File: phase_lg20.png Graphic file (type png)
 <use phase_lg20.png>
-Package pdftex.def Info: phase_lg20.png  used on input line 1194.
+Package pdftex.def Info: phase_lg20.png  used on input line 1200.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<phase_lg21.png, id=743, 462.528pt x 346.896pt>
+<phase_lg21.png, id=741, 462.528pt x 346.896pt>
 File: phase_lg21.png Graphic file (type png)
 <use phase_lg21.png>
-Package pdftex.def Info: phase_lg21.png  used on input line 1194.
+Package pdftex.def Info: phase_lg21.png  used on input line 1200.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<phase_lg22.png, id=744, 462.528pt x 346.896pt>
+<phase_lg22.png, id=742, 462.528pt x 346.896pt>
 File: phase_lg22.png Graphic file (type png)
 <use phase_lg22.png>
-Package pdftex.def Info: phase_lg22.png  used on input line 1194.
+Package pdftex.def Info: phase_lg22.png  used on input line 1200.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1194--1196
+Underfull \hbox (badness 10000) in paragraph at lines 1200--1202
 
  []
 
@@ -1226,19 +1221,74 @@ ensity_lg10.png> <./intensity_lg11.png> <./intensity_lg12.png> <./intensity_lg2
 0.png> <./intensity_lg21.png> <./intensity_lg22.png>] [23 <./phase_lg00.png> <.
 /phase_lg01.png> <./phase_lg02.png> <./phase_lg10.png> <./phase_lg11.png> <./ph
 ase_lg12.png> <./phase_lg20.png> <./phase_lg21.png> <./phase_lg22.png>]
+
+LaTeX Warning: Reference `eq:3.6' on page 24 undefined on input line 1255.
+
 [24
 
-] [25
+]
 
-] (./REPORT.aux)
+LaTeX Warning: Reference `' on page 25 undefined on input line 1274.
+
+
+LaTeX Warning: Reference `' on page 25 undefined on input line 1274.
+
+
+LaTeX Warning: Reference `' on page 25 undefined on input line 1274.
+
+
+LaTeX Warning: Reference `' on page 25 undefined on input line 1274.
+
+[25]
+
+LaTeX Warning: Reference `' on page 26 undefined on input line 1305.
+
+
+LaTeX Warning: Reference `' on page 26 undefined on input line 1305.
+
+
+LaTeX Warning: Reference `' on page 26 undefined on input line 1313.
+
+
+LaTeX Warning: Reference `' on page 26 undefined on input line 1331.
+
+
+LaTeX Warning: Reference `' on page 26 undefined on input line 1334.
+
+[26]
+
+LaTeX Warning: Reference `' on page 27 undefined on input line 1353.
+
+
+LaTeX Warning: Reference `' on page 27 undefined on input line 1353.
+
+
+LaTeX Warning: Reference `' on page 27 undefined on input line 1358.
+
+[27]pdfTeX warning (ext4): destination with the same identifier (name{page.i}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1447 \end{thebibliography}
+                             [1
+
+]pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1448 \end{document}
+                      [2] (./REPORT.aux)
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `REPORT.out' has not changed.
-(rerunfilecheck)             Checksum: 1237D50ACF88F11EB0E155C4ECEB4F32;8197.
+(rerunfilecheck)             Checksum: B3DFB7BC1F0D2689CC9F84FEE7FE6EBE;8192.
  ) 
 Here is how much of TeX's memory you used:
- 36993 strings out of 480171
- 835904 string characters out of 5894489
- 1269225 words of memory out of 5000000
- 54071 multiletter control sequences out of 15000+600000
+ 37046 strings out of 480171
+ 836520 string characters out of 5894489
+ 1268814 words of memory out of 5000000
+ 54083 multiletter control sequences out of 15000+600000
  495334 words of font info for 101 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  84i,22n,89p,734b,2152s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1256,29 +1306,30 @@ four/jknappen/ec/ecbx1440.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk
 /ljfour/jknappen/ec/ecrm1095.600pk> </home/pritish/.texlive2021/texmf-var/fonts
 /pk/ljfour/jknappen/ec/ecrm1728.600pk> </home/pritish/.texlive2021/texmf-var/fo
 nts/pk/ljfour/jknappen/ec/ecbx2488.600pk></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmbx6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
-8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufb10.pf
-b>
-Output written on REPORT.pdf (29 pages, 2448374 bytes).
+ype1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmbx6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufb10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on REPORT.pdf (33 pages, 2479495 bytes).
 PDF statistics:
- 1361 PDF objects out of 1440 (max. 8388607)
- 816 compressed objects within 9 object streams
- 246 named destinations out of 1000 (max. 500000)
+ 1467 PDF objects out of 1728 (max. 8388607)
+ 909 compressed objects within 10 object streams
+ 290 named destinations out of 1000 (max. 500000)
  508 words of extra memory for PDF output out of 10000 (max. 10000000)
 
