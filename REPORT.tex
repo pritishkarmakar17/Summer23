@@ -3,9 +3,15 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath,amssymb,makeidx,graphicx,float,indentfirst,color,hyperref,tikz, fancyref,pgfplots,verbatim,fancyvrb,caption,subcaption,physics,longtable,mathrsfs, mathtools}
+\usepackage{afterpage}
+\newcommand\blankpage{%
+	\null
+	\thispagestyle{empty}%
+	\addtocounter{page}{-1}
+	\newpage}
 \numberwithin{equation}{section}
 \usepackage[width=15.00cm, height=23.00cm]{geometry}
-\setlength{\parindent}{4mm}
+\setlength{\parindent}{6mm}
 \setlength{\parskip}{1mm}
 \hypersetup{colorlinks=true, linktoc=all, linkcolor=blue,}
 \pgfplotsset{compat=1.15}
@@ -41,7 +47,6 @@
 
 \begin{document}
 	\begin{titlepage}
-		\pagenumbering{roman}
 		\vspace*{3.5cm}
 		\centering
 		{\Huge\bfseries Summer Project}\\
@@ -54,9 +59,50 @@
 		\vspace{0.3cm}
 		{21MS179}
 		\vfill
-		
-		
 		\clearpage
+		
+		\iffalse
+		\newpage 
+		\thispagestyle{empty}
+		\begin{center}
+			This page is intentionally left blank
+		\end{center}
+		\newpage
+		\fi
+		
+		\parindent=0pt
+		\thispagestyle{empty}
+		\begin{center}
+			\slshape
+			
+			
+			\vspace*{\fill}
+			\color{darkgray}{\Large{\textbf{“} Nobody ever figures out what life is all about, and it\\ doesn't matter. Explore the world. Nearly everything\\ is really interesting if you go into it deeply enough. \textbf{”}} \par} 
+			\vspace{8mm}
+			\textsc{\Large \textbf{Richard P. Feynman}}
+			\vspace*{\fill}
+			
+			\iffalse
+			\vspace*{\fill}
+			\color{darkgray}{\Large{\textbf{“} Out of mere compassion for them, I, dwelling within their hearts, destroy the darkness, born of ignorance, by the luminous Lamp of Knowledge. \textbf{”}} \par} 
+			\vspace{1cm}
+			\textsc{\Large \textbf{Srimad Bhagavad-Gita, 10-11}}
+			\vspace*{\fill}
+			\fi
+		\end{center}
+		\clearpage
+		
+		\iffalse
+		\newpage 
+		\thispagestyle{empty}
+		\begin{center}
+			This page is intentionally left blank
+		\end{center}
+		\newpage
+		\fi
+		
+		\pagenumbering{roman}
+		
 		\tableofcontents
 		\clearpage
 		\listoffigures
@@ -470,7 +516,7 @@ So the measured intensity will be
  \end{enumerate}
 
 From the equations \ref{s I}, \ref{s II}, \ref{s III} and \ref{s IV}, we can get the values of all $S_i$'s.
-\subsubsection{Poincare sphere representation}
+\subsubsection{Poincare  and sphere representation}AM
 For total intensity normalised Stokes vector is $\boldsymbol{s}= \begin{bmatrix} 1& s_1& s_2& s_3\end{bmatrix}^T$ where $s_i=S_i/S_0$. Observe that $ \boldsymbol{s} $ is a 3-dimensional quantity. Therefore we can write, 
 \begin{align*}
 	\begin{bmatrix} 1\\ s_1\\ s_2\\ s_3\end{bmatrix} \rightarrow 
@@ -771,7 +817,8 @@ The evolution of azimuth ($\psi$) and ellipticity ($\chi$) of the polarization s
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{GAUSSIAN BEAM}
-\subsection{Introduction}
+\subsection{\color{red}Introduction}
+
 \subsection{Paraxial wave equation and solutions}
 From Maxwell's 3-D wave equation for electric field in vacuum,
 \begin{align}
@@ -781,14 +828,13 @@ Here we will consider the scalar form of the equation.
 
 To find the scalar solution, let our first ansatz be,
 \begin{align}
-	{E}= {F}(x,y,z) e^{i\omega t} \label{eq:2.2}
+	{E}(x,y,z,t)= {F}(x,y,z) e^{i\omega t} \label{eq:2.2}
 \end{align}
-Putting it in eq. \ref{eq:2.1}, we get Helmholtz equation \textit{i.e.} 
+Putting it in eq. \ref{eq:2.1}, we get time -independent \textit{Helmholtz equation} \textit{i.e.} 
 \begin{align}
-	\nabla^2{F}(x,y,z) + k^2{f}(x,y,z)=0
+	\nabla^2{F}(x,y,z) + k^2{F}(x,y,z)=0
 	\text{ where }k^2 = \frac{\omega^2}{c^2} \label{eq:2.3}
 \end{align}
-
 For light to travel in z-direction, our 2nd ansatz be,
 \begin{align}
 	{F}(\boldsymbol{r}) = \psi(x,y,z)e^{-ikz}  \label{eq:2.4} 
@@ -797,7 +843,7 @@ Considering the slowly varying envelope approximation\cite{WO} that,
 \begin{align}
 	\lambda^2 \left|\frac{\partial^2\psi}{\partial z^2}\right|<<
 	\lambda \left|\frac{\partial\psi}{\partial z}\right| <<
-	\left|\psi\right|
+	\left|\psi\right| \label{eq:2.5}
 \end{align}
 and putting \ref{eq:2.4} in eq. \ref{eq:2.3} gives \textit{Paraxial wave equation},
 \begin{align}
@@ -805,7 +851,7 @@ and putting \ref{eq:2.4} in eq. \ref{eq:2.3} gives \textit{Paraxial wave equatio
 \end{align}
 where transverse Laplacian, $\displaystyle\nabla_T = \frac{\partial^2}{\partial x^2}+\frac{\partial^2}{\partial y^2}$ or in cylindrical coordinate, $\displaystyle\nabla_T = \frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial}{\partial r}\right) + \frac{1}{r^2}\frac{\partial^2}{\partial \phi^2}$.
 
-\subsubsection{Scalar wave solution (without polarization)}
+\subsubsection{Scalar wave solution}
 We will solve the paraxial wave equation in cylindrical coordinate $\{r,\phi,z \}$.\cite{cornell}
 To get a solution for which intensity is of Gaussian like and radially symmetric (\textit{i.e.} no variation with $\phi$), our first ansatz be,\cite{kogelnik 66}\cite{cornell}
 \begin{align}
@@ -948,9 +994,6 @@ In that expression,
 	
 \end{enumerate}
 
-\subsubsection{Vector wave solution (with polarization)}
-\cite{babiker 12}\cite{conry 12}\cite{erikson 94}\cite{hall 96}\cite{lewis 14}
-
 \subsection{Characteristics of Gaussian Beam }
 \begin{figure}[H]
 	\centering
@@ -967,23 +1010,23 @@ Some characteristics of Gaussian beam are
 		I(r,z)&= \frac{1}{2}\epsilon_0c\abs{E^\ast E} = \frac{1}{2}\epsilon_0c\abs{\psi^\ast \psi}\nonumber\\
 		&= \frac{1}{2} \epsilon_0c \abs{A}^2 \left(\frac{w_0}{w(z)}\right)^2  \exp(-\frac{2r^2}{w^2(z)})
 	\end{align}
-\begin{figure}[H]
-	\begin{subfigure}[H]{0.49\textwidth}
-		\centering
-		\includegraphics[width=0.9\textwidth]{intensity.png}
-		\caption{Intensity variation in a cross section}
-		\label{fig:g intensity}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[H]{0.49\textwidth}
-		\centering
-		\includegraphics[width=0.9\textwidth]{intensity_var.png}
-		\caption{Intensity variation along z-axis}
-		\label{fig:g intensity var}
-	\end{subfigure}
-\caption{Gaussian intensity profile for $z_0=1,w_0=1$}
-\end{figure}
-
+	\begin{figure}[H]
+		\begin{subfigure}[H]{0.49\textwidth}
+			\centering
+			\includegraphics[width=0.9\textwidth]{intensity.png}
+			\caption{Intensity variation in a cross section}
+			\label{fig:g intensity}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[H]{0.49\textwidth}
+			\centering
+			\includegraphics[width=0.9\textwidth]{intensity_var.png}
+			\caption{Intensity variation along z-axis}
+			\label{fig:g intensity var}
+		\end{subfigure}
+		\caption{Gaussian intensity profile for $z_0=1,w_0=1$}
+	\end{figure}
+	
 	\item
 	\textit{Rate of energy} of Gaussian beam passes through any transverse plain is given by
 	\begin{align}
@@ -992,7 +1035,7 @@ Some characteristics of Gaussian beam are
 		&= \frac{1}{2} \epsilon_0c \abs{A}^2 \left(\frac{w_0}{w(z)}\right)^2 \int_{-\infty}^{\infty} dx\: \exp(-\frac{2x^2}{w^2(z)})\: \int_{-\infty}^{\infty} dy\: \exp(-\frac{2y^2}{w^2(z)})\nonumber\\
 		&=  \frac{1}{2}\epsilon_0c \abs{A}^2 \left(\frac{w_0}{w(z)}\right)^2 (\sqrt{\pi} w(z))^2 = \frac{1}{2}\epsilon_0c \abs{A}^2 w_0^2
 	\end{align} which is constant throughout the propagation along z-axis.
-
+	
 	\item
 	\textit{Radius of curvature} $R(z)$ of the wavefront is given by
 	\begin{align}
@@ -1002,10 +1045,10 @@ Some characteristics of Gaussian beam are
 	\subitem For $z>>z_0$, then $R\approx z$
 	
 	\begin{figure}[H]
-	\centering
-	\scalebox{0.7}{\input{R_vs_z.tex}}
-	\caption{Variation of radius of curvature with z ($z_0=1$)}
-	\label{fig:R vs z}
+		\centering
+		\scalebox{0.7}{\input{R_vs_z.tex}}
+		\caption{Variation of radius of curvature with z ($z_0=1$)}
+		\label{fig:R vs z}
 	\end{figure}
 	
 	\item
@@ -1013,7 +1056,7 @@ Some characteristics of Gaussian beam are
 	\begin{align}
 		w(z)= w_0\sqrt{1+\left(\frac{z}{z_0}\right)^2}
 	\end{align}
-	\subitem For $z=0$ $w = w_0$ (\textit{Beam waist})
+	\subitem For $z=0$, then $w = w_0$ (\textit{Beam waist})
 	\subitem For $z>>z_0$, then $w(z)= w_0\frac{z}{z_0}$
 	\subitem \textit{Diffraction angle} at far field is given by 
 	\begin{align}
@@ -1022,7 +1065,8 @@ Some characteristics of Gaussian beam are
 	\subitem \textit{Effective area} of the beam in a cross section is $\displaystyle \frac{1}{2} \pi w^2(z)$
 	
 	\item 
-	\textit{Gouy phase} of a gaussian beam is given by
+	\textit{Gouy phase} represents the difference in phase shift of a Gaussian beam \textit{w.r.t.} a plane wave of the same wavelength near $r=0$.\cite{conry 12}
+	Gouy phase of a Gaussian beam is given by
 	\begin{align}
 		\phi_g (z) = \tan[-1](\frac{z}{z_0})
 	\end{align}
@@ -1040,8 +1084,8 @@ Some characteristics of Gaussian beam are
 \end{enumerate}
 
 
-%\subsection{Beam Tracing}
-%\subsubsection{Resonator Stability}
+\subsection{\color{red}Beam Tracing and Resonator Stability}
+
 
 \subsection{Different modes of Gaussian beams}
 Here we will discuss mainly two types of higher order Gaussian beams \textit{i.e.}
@@ -1054,9 +1098,9 @@ Here we will discuss mainly two types of higher order Gaussian beams \textit{i.e
 In the expression \ref{eq:2.30}, we get the radially symmetric Gaussian beam solution. But we now seek higher order solution of Gaussian beam which is rectangular symmetric.
 
 Lets take the ansatz as,
- \begin{align}
- 	\psi(\boldsymbol{r},z)= A \: g\left(\frac{x}{w(z)}\right) h\left(\frac{y}{w(z)}\right) \exp\left[-i\left(p(z) + \frac{kr^2}{2q(z)}\right)\right]
- \end{align}
+\begin{align}
+	\psi(\boldsymbol{r},z)= A \: g\left(\frac{x}{w(z)}\right) h\left(\frac{y}{w(z)}\right) \exp\left[-i\left(p(z) + \frac{kr^2}{2q(z)}\right)\right]
+\end{align}
 Putting this in Paraxial wave equation \ref{eq:2.6}, and solving the differential equation,\cite{milonni} we get,
 \begin{align}
 	\psi_{m,n}(\boldsymbol{r},z)&= A \frac{w_0}{w(z)} H_m\left(\frac{\sqrt{2} x}{w(z)}\right) H_n\left(\frac{\sqrt{2} y}{w(z)}\right)\exp( -\frac{r^2}{w^2(z)}) \cdot\nonumber\\ 
@@ -1073,7 +1117,7 @@ Some characteristics of HG beams are given below,
 		I_{m,n}(x,y,z)=\frac{c\epsilon}{2} |A|^2 \left[H_m\left(\frac{\sqrt{2} x}{w(z)}\right) \right]^2 \left[H_n\left(\frac{\sqrt{2} y}{w(z)}\right) \right]^2 \exp(\frac{2(x^2+y^2)}{w^2(z)})
 	\end{align}
 	Due to the number of zeros equals the order of Hermite polynomial, we will see $m$ number of horizontal and $n$ number of vertical node in intensity profile of the $TEM_{mn}$ beam. See figure \ref{fig:hgmn}.
-
+	
 	\item 
 	\textit{Rate of energy} of HG beam passes through any transverse plain is given by
 	\begin{align}
@@ -1082,49 +1126,49 @@ Some characteristics of HG beams are given below,
 		&= \frac{1}{2} \epsilon_0c \abs{A}^2 \left(\frac{w_0}{w(z)}\right)^2 \int_{-\infty}^{\infty} dx\: \exp(-\frac{2x^2}{w^2(z)}) \left[H_m\left(\frac{\sqrt{2} x}{w(z)}\right) \right]^2\nonumber\\ 
 		&\int_{-\infty}^{\infty} dy\: \exp(-\frac{2y^2}{w^2(z)})\left[H_n\left(\frac{\sqrt{2} y}{w(z)}\right) \right]^2 \label{eq:2.40}
 	\end{align}
-the integration terms of \ref{eq:2.40} are in the form of 
-$$\int_{-\infty}^{\infty} H_l \exp(-a\xi^2) d\xi=
-\int_{-\infty}^{\infty}\left(\sum_{k=0}^l c_k \xi_k\right)  \exp(-a\xi^2) d\xi = 
-\sum_{k=0}^l c_k\int_{-\infty}^{\infty} \xi_k \exp(-a\xi^2) d\xi
-$$
-as the values of $ \int_{-\infty}^{\infty} \xi_k \exp(-a\xi^2) d\xi $ is fixed\footnote{as $n_{th}$ moment of a random variable of Gaussian distribution has a fixed value for a periarticular integer values of $n$ \cite{n dist}} and for finite value of $l$, $W$ is finite and constant throughout the propagation along z-axis.
-
-
-\begin{figure}[t!]
-	\foreach \n in {0,1,2}{
-		\foreach \m in {0,1,2}{
-			\begin{subfigure}[htbp]{0.32\textwidth}
-				\centering
-				\includegraphics[width=\textwidth]{intensity_hg\n\m}
-				\caption{$TEM_{\n\m}$}
-				%\label{fig:hg\n\m}
-			\end{subfigure}
-			\hfill
+	the integration terms of \ref{eq:2.40} are in the form of 
+	$$\int_{-\infty}^{\infty} H_l \exp(-a\xi^2) d\xi=
+	\int_{-\infty}^{\infty}\left(\sum_{k=0}^l c_k \xi_k\right)  \exp(-a\xi^2) d\xi = 
+	\sum_{k=0}^l c_k\int_{-\infty}^{\infty} \xi_k \exp(-a\xi^2) d\xi
+	$$
+	as the values of $ \int_{-\infty}^{\infty} \xi_k \exp(-a\xi^2) d\xi $ is fixed\footnote{as $n_{th}$ moment of a random variable of Gaussian distribution has a fixed value for a particular integer values of $n$ \cite{n dist}} and for finite value of $l$, $W$ is finite and constant throughout the propagation along z-axis.
+	
+	
+	\begin{figure}[t!]
+		\foreach \n in {0,1,2}{
+			\foreach \m in {0,1,2}{
+				\begin{subfigure}[htbp]{0.32\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{intensity_hg\n\m}
+					\caption{$TEM_{\n\m}$}
+					%\label{fig:hg\n\m}
+				\end{subfigure}
+				\hfill
+			}
 		}
-	}
-	\\
-	\caption{Intensity variation for different TEM in a cross section ($z=0,z_0=1,w_0=1$)}
-	\label{fig:hgmn}
-\end{figure}
-
- 
-\item
-\textit{Radius of curvature} of HG beam is same as simple Gaussian beam for all modes.
-
-\item 
-\textit{Gouy phase} for different order HG beam is given by
-\begin{align}
-	\phi_g (\eta,z) = \eta \tan[-1](\frac{z}{z_0})\text{ where } \eta = m+n+1
-\end{align}
-
-\begin{figure}[H]
-	\centering
-	\scalebox{0.7}{\input{gouy_hg.tex}}
-	\caption{Variation of Gouy phase with z for HG beam}
-	\label{fig:gouy_hg}
-\end{figure}
-
-
+		\\
+		\caption{Intensity variation for different TEM in a cross section ($z=0,z_0=1,w_0=1$)}
+		\label{fig:hgmn}
+	\end{figure}
+	
+	
+	\item
+	\textit{Radius of curvature} of HG beam is same as simple Gaussian beam for all modes.
+	
+	\item 
+	\textit{Gouy phase} for different order HG beam is given by
+	\begin{align}
+		\phi_g (\eta,z) = \eta \tan[-1](\frac{z}{z_0})\text{ where } \eta = m+n+1
+	\end{align}
+	
+	\begin{figure}[H]
+		\centering
+		\scalebox{0.7}{\input{gouy_hg.tex}}
+		\caption{Variation of Gouy phase with z for HG beam}
+		\label{fig:gouy_hg}
+	\end{figure}
+	
+	
 \end{enumerate}
 
 
@@ -1204,8 +1248,64 @@ Some characteristics of HG beams are given below,
 \end{figure}
 
 
-\subsection{Relationship between LG \& HG beam}
+\subsection{\color{red}Relationship between LG \& HG beam}
 \cite{beijers allen 93}
+\subsection{Maxwell-Gaussian beam (with polarization)}
+\cite{babiker 12}\cite{conry 12}\cite{hall 96}
+
+Let us consider electric field $\boldsymbol{E}$ and magnetic field $\boldsymbol{E}$ of a EM wave propagating in z-direction, we write, in Cartesian coordinate\footnote{For cylindrical coordinate, refer \cite{lewis 14}.}, 
+\begin{align}
+	\boldsymbol{E}(\boldsymbol{r},t)
+	&= \boldsymbol{E_0}\: e^{i(kz - \omega t)}
+	= \begin{bmatrix}
+		E_{0x}(\boldsymbol{r})\\E_{0y}(\boldsymbol{r})\\E_{0y}(\boldsymbol{r})
+	\end{bmatrix} e^{i(kz - \omega t)}\\
+	\boldsymbol{B}
+	&= \boldsymbol{B_0}\: e^{i(kz - \omega t)}
+	= \begin{bmatrix}
+		B_{0x}(\boldsymbol{r})\\B_{0y}(\boldsymbol{r})\\B_{0y}(\boldsymbol{r})
+	\end{bmatrix} e^{i(kz - \omega t)}
+\end{align}
+As $\boldsymbol{E}$ and $\boldsymbol{B}$ satisfies Maxwell's equation in free space\cite{max eq - wiki}, and using $\omega/k = c$, we get,
+\begin{align}
+	&\nabla\cdot\boldsymbol{E}=0\\
+	\Rightarrow\;& ikE_{0z}+\nabla\cdot\boldsymbol{E_0}=0\label{eq:2.50}\\
+	&\nabla\cdot\boldsymbol{B}=0\\
+	\Rightarrow\;& ikB_{0z}+\nabla\cdot\boldsymbol{B_0}=0\label{eq:2.52}\\
+	&\nabla\times\boldsymbol{E}= -\frac{\partial \boldsymbol{B}}{\partial t}\\
+	\Rightarrow\;& ik\Hat{z}\times\boldsymbol{E_0}+ \nabla\times\boldsymbol{E_0}
+	=ikc\boldsymbol{B_0}\label{eq:2.54}\\
+	&\nabla\times\boldsymbol{B}=\frac{1}{c^2}\frac{\partial\boldsymbol{E}}{\partial t}\\
+	\Rightarrow\;& ik\Hat{z}\times\boldsymbol{B_0}+ \nabla\times\boldsymbol{B_0}
+	=-ik\frac{1}{c}\boldsymbol{E_0}\label{eq:2.56}
+\end{align}
+
+Assuming paraxial approximation \ref{eq:2.6}, we get paraxial wave equation in vector form, 
+\begin{align}
+	\nabla_T ^2 \boldsymbol{E_0} -2ik \frac{\partial\boldsymbol{E_0}}{\partial r}=0\\
+	\nabla_T ^2 \boldsymbol{B_0} -2ik \frac{\partial\boldsymbol{B_0}}{\partial r}=0
+\end{align}
+Here each component of $\boldsymbol{E_0}$ and $\boldsymbol{B_0}$ will satisfy the paraxial equation.
+
+Now considering slowly varying envelop approximation \ref{eq:2.5} for each component of $\boldsymbol{E_0}$ and $\boldsymbol{B_0}$, from \ref{eq:2.50} and \ref{eq:2.52}, we get,
+\begin{align} 
+	E_{0z} = \frac{i}{k}\left(\frac{\partial E_{0x}}{\partial x}+\frac{\partial E_{0y}}{\partial y}\right)\\
+	B_{0z} = \frac{i}{k}\left(\frac{\partial B_{0x}}{\partial x}+\frac{\partial B_{0y}}{\partial y}\right)
+\end{align}
+
+
+
+
+
+
+
+
+\cite{erikson 94}
+
+
+
+
+
 
 \clearpage
 
@@ -1280,9 +1380,9 @@ Now similarly on partial integration and using the transversality\footnote{what 
 
 Now according to \cite{bernatt allen 94}\cite{enk nien 92}, within the paraxial approximation to get time-averaged energy, linear momentum and angular momentum per unit length \textit{i.e.} $\mathcal{W}$, $\mathcal{P}$ and $\mathcal{J}$ respectively, along the beam propagating in z-direction, we have to integrate throughout the transverse xy-plane. So,
 \begin{align}
-	\mathcal{W}_z&=\frac{\epsilon_0}{2}\iint dx\:dy\: \boldsymbol{E}^\ast\cdot\boldsymbol{E}\label{eq:3.17}\\
-	\mathcal{P}_z&=\frac{\epsilon_0}{2}\iint  dx\:dy\: \expval{\boldsymbol{E}\times (\nabla\times\boldsymbol{E})}\\
-	\mathcal{J}_z&=\frac{\epsilon_0}{2}\iint dx\:dy\: \boldsymbol{r}\times\expval{\boldsymbol{E}\times (\nabla\times\boldsymbol{E})}
+	\mathcal{W}_z&=\frac{\epsilon_0}{2i\omega}\iint dx\:dy\: \boldsymbol{E}^\ast\cdot\boldsymbol{E}\label{eq:3.17}\\
+	\mathcal{P}_z&=\frac{\epsilon_0}{2i\omega}\iint  dx\:dy\: \expval{\boldsymbol{E}\times (\nabla\times\boldsymbol{E})}_z\\
+	\mathcal{J}_z&=\frac{\epsilon_0}{2i\omega}\iint dx\:dy\: \left[\boldsymbol{r}\times\expval{\boldsymbol{E}\times (\nabla\times\boldsymbol{E})}\right]_z
 	\label{eq:3.19}
 \end{align}
 
@@ -1418,13 +1518,14 @@ If the AM is to be intrinsic, then for all $(x_0,y_0)$
 
 From the SAM part, we see $\mathcal{S}$ does not depend on the choice of the axis, so SAM is intrinsic. But for the OAM part, we see $\mathcal{L}$ depends on the choice of the axis, so OAM may be intrinsic or extrinsic determined by \ref{eq:3.40}.
 
-%\subsection{AM of Gaussian Beam}
+\subsection{\color{red}AM of Gaussian Beam}
 
 
 \clearpage
 
 \section{SPIN-ORBIT INTERACTION}
 
+\subsection{\color{red}Introduction}
 \subsection{Spin-orbit energy}
 In quantum mechanics, spin-orbit interaction is a common phenomena. We can see it in the splitting of spectral lines into fine structure. For a simple case like H atom, a electron in orbit around the nucleus, the spin-orbit coupling results from the interaction between electron's spin magnetic moment and nucleus's orbital magnetic field, which we will discuss below. \cite{WO}\cite{zettili 09} 
 
@@ -1460,14 +1561,14 @@ We call $H_{so}$ as \textit{Spin-orbit energy}.\footnote{I have to check the Tho
 
 
 \subsection{Geometric phase of light}
-We know from the knowledge of waves, there is the phase factor corresponding to the EM wave due to optical path length difference, called \textit{dynamical phase}. But there is another phase factor other than dynamical one, due to the geometry or topology of the evolution of the electromagnetic wave, we call it \textit{Geometric phase}.\cite{WO} Geometric phases arises from intrinsic angular momentum and rotations of coordinates.\cite{bilokh 15} The two types of geometric phases, will be discussed, are
+We know from the knowledge of waves, there is the phase factor corresponding to the EM wave due to optical path length difference, called \textit{dynamical phase}. But there is another phase factor other than dynamical one, due to the geometry or topology of the evolution of the electromagnetic wave, we call it \textit{Geometric phase}.\cite{WO} Geometric phases arises from intrinsic angular momentum and rotations of coordinates.\cite{bliokh 15} The two types of geometric phases, will be discussed, are
 \begin{enumerate}
 	\item Spin-redirection Berry phase
 	\item Pancharatnam-Berry phase
 \end{enumerate}
 
 \subsubsection{Spin-redirection Berry phase}
-This \textit{Berry phase} associated with adiabatic evolution of wave-vector $\boldsymbol{k}$. When the wave vector complete a adiabatic cycle, we will find a geometric phase arises from it.  As an example, let a polarized light passes through a helical optic fibre with very low (negligible) birefringence and no torsional stress\footnote{Torsional stress produces circular birefringence by elasto-optic effect. \cite{ross 84}}. After one helical patch, the $\boldsymbol{k}$ wave-vector come to the same state, but gives rise of a helicity-dependant geometric phase\footnote{This is a \textit{non-holonomic process}. \cite{anholonomy}} called \textit{spin-redirection Berry phase}. \cite{bilokh 15}
+This \textit{Berry phase} associated with adiabatic evolution of wave-vector $\boldsymbol{k}$. When the wave vector complete a adiabatic cycle, we will find a geometric phase arises from it.  As an example, let a polarized light passes through a helical optic fibre with very low (negligible) birefringence and no torsional stress\footnote{Torsional stress produces circular birefringence by elasto-optic effect. \cite{ross 84}}. After one helical patch, the $\boldsymbol{k}$ wave-vector come to the same state, but gives rise of a helicity-dependant geometric phase\footnote{This is a \textit{non-holonomic process}. \cite{anholonomy}} called \textit{spin-redirection Berry phase}. \cite{bliokh 15}
 
 For circularly polarized light, we can write Jones vector as 
 \begin{align}
@@ -1476,13 +1577,14 @@ For circularly polarized light, we can write Jones vector as
 		1\\i\sigma
 	\end{bmatrix}
 \end{align}
-where  $\sigma$ is helicity (either $+1$ or $-1$). After one adiabatic cycle, transformation of $\boldsymbol{J}$ will be
+where  $\sigma$ is helicity (either $+1$ or $-1$).
+
+Considering transversality of electric field, it will be tangent on the sphere in momentum space. And in one adiabatic cycle of wave-vector \textit{w.r.t.} $k_z$, the non-trivial parallel transport of the electric-field vectors takes place on the sphere.\cite{bliokh 15} So after transportation of a vector, the vector is rotated by an angle $\Theta$ \cite{par trans} \textit{i.e.} the frame is rotated by an angle $\Theta$ where
 \begin{align}
-	\boldsymbol{J}\longrightarrow\boldsymbol{J}\exp(i\Theta_g)
-\end{align} where $\Theta_g$ is the acquired helicity-dependant geometric phase.\footnote{why it depends on spin helicity?}
+	\Theta = 2\pi(1-\cos\theta)
+\end{align} where $\theta$ is half-apex angle of the cone formed by sweeping the wave vector $\boldsymbol{k}$ (see fig \ref{fig:berry b}). Note that $\Theta$ is the solid angle at at the apex of the cone.
 
-
-\begin{figure}[H]
+\begin{figure}[t]
 	\begin{subfigure}[H]{0.62\textwidth}
 		\centering
 		\includegraphics[width=0.9\textwidth]{berry.png}
@@ -1497,12 +1599,26 @@ where  $\sigma$ is helicity (either $+1$ or $-1$). After one adiabatic cycle, tr
 		\label{fig:berry b}
 	\end{subfigure}
 	\caption{Geometric Berry phase arises along helical optic fibre}
-	
-\end{figure}
+\end{figure} 
 
+After one adiabatic cycle, electric field vector $\boldsymbol{J}$ transform into $\boldsymbol{J'}$
+\begin{align}
+\boldsymbol{J}\longrightarrow\boldsymbol{J'}=\boldsymbol{J}\exp(i\Theta_G)
+\end{align} where $\Theta_G$ is the acquired helicity-dependant geometric phase \textit{s.t.} 
+\begin{align}
+	\Theta_G= \sigma\Theta
+\end{align}
+So,
+\begin{align}
+	\ket{L}&\longrightarrow e^{i\Theta}\ket{L}\\
+	\ket{R}&\longrightarrow e^{-i\Theta}\ket{R}
+\end{align}
 
----------------- INCOMPLETE ------------------
-
+Now for x-polarized light, $\ket{x_{in}}$ and $\ket{x_{out}}$ will be
+\begin{align}
+	\ket{x_{in}} &= \frac{1}{\sqrt{2}}\left(\ket{L}+\ket{R}\right)\\
+	\ket{x_{out}} &= \frac{1}{\sqrt{2}}\left(e^{i\Theta}\ket{L}+ e^{-i\Theta}\ket{R}\right)
+\end{align} So the x-polarized light is rotated by angle $\Theta$, shown in fig \ref{fig:berry a}. Note that $\theta$ does not originate from intrinsic anisotropy and it is geometric one. We call it \textit{spin-redirection Berry phase}.
 
 \subsubsection{Pancharatnam-Berry Phase}
 Unlike the previous one, the \textit{Pancharatnam-Berry phase} arises after a cyclic evolution in Poincare sphere when the state of polarization changes  keeping wave-vector $\boldsymbol{k}$ is fixed. Convenient example of observation of Pancharatnam-Berry phase is Michelson interferometer setup, (see fig. \ref{fig:pb expt}) in which one arm of the interferometer has two quarter wave-plates, one (QP1) is fixed and another one (QP2) is rotatable. \cite{chyba 88}
@@ -1514,19 +1630,19 @@ Unlike the previous one, the \textit{Pancharatnam-Berry phase} arises after a cy
 	\label{fig:pb expt}
 \end{figure}
 
- Optical axis of QP1 and QP2 are aligned at $\theta_1= \pi/4$ and $\theta_2=3\pi/4 + \beta$ \textit{w.r.t.} x-axis, respectively. The input light is x-polarized. Then the polarization state of output light at different part of arm 2 in Michelson interferometer is shown in fig \ref{fig:pancha}, and corresponding Jones calculus shown in table \ref{table:5}.
+ Fast axis of QP1 and QP2 are aligned at $\theta_1= \pi/4$ and $\theta_2= \beta$ \textit{w.r.t.} x-axis, respectively. The input light is x-polarized. Then the polarization state of output light at different part of arm 2 in Michelson interferometer is shown in fig \ref{fig:pancha}, and corresponding Jones calculus shown in table \ref{table:5}.
  
  \begin{figure}[H]
- 	\begin{subfigure}[H]{0.48\textwidth}
+ 	\begin{subfigure}[H]{0.50\textwidth}
  		\centering
  		\includegraphics[width=0.9\textwidth]{MI arm.png}
  		\caption{Michelson interferometer arm 2}
  		\label{fig:pancha a}
  	\end{subfigure}
  	\hfil
- 	\begin{subfigure}[H]{0.48\textwidth}
+ 	\begin{subfigure}[H]{0.4\textwidth}
  		\centering
- 		\includegraphics[width=0.8\textwidth]{poincare-pb.png}
+ 		\includegraphics[width=0.9\textwidth]{poincare-pb.png}
  		\caption{Corresponding cyclic evolution in Poincare sphere}
  		\label{fig:pancha b}
  	\end{subfigure}
@@ -1550,38 +1666,158 @@ Unlike the previous one, the \textit{Pancharatnam-Berry phase} arises after a cy
 		(Jones vector, $\boldsymbol{J}$)
 	\end{tabular} \\\hline
  	
- 	 A $(\ket{H})$ & $\boldsymbol{J}_A= \begin{bmatrix}1 \\ 0\end{bmatrix}$\\
+ 	 A $(\ket{A})$ & $\boldsymbol{J}_A= \begin{bmatrix}1 \\ 0\end{bmatrix}$\\\hline
  	
- 	 R $(\ket{R})$ & $\boldsymbol{J}_R= \begin{bmatrix}1+i&1-i \\ 1-i & 1+i\end{bmatrix} \begin{bmatrix}1 \\ 0\end{bmatrix} = \begin{bmatrix}1+i\\1-i\end{bmatrix}=\begin{bmatrix}1\\-i\end{bmatrix} \exp(i\phi_1)$ \\
+ 	 R $(\ket{R})$ & 
+ 	 \parbox{5cm}{\begin{align*}
+ 	 	\boldsymbol{J}_R 
+ 	 	&= R(-\pi/4)\:\boldsymbol{M}_{QP}\:R(\pi/4) \;\boldsymbol{J}_A = \frac{e^{i\phi'}}{2}\begin{bmatrix}1+i&1-i \\ 1-i & 1+i\end{bmatrix} \begin{bmatrix}1 \\ 0\end{bmatrix}\\
+ 	 	&= \frac{e^{i\phi'}}{2}\begin{bmatrix}1+i\\1-i\end{bmatrix} = \frac{1}{\sqrt{2}}\begin{bmatrix}1\\-i\end{bmatrix} \exp(i\phi_1)
+ 	 \end{align*}}\\\hline
  	
  	 B $(\ket{B})$& 
  	\parbox{5cm}{\begin{align*}
- 			\boldsymbol{J}_B &= 
+ 			\boldsymbol{J}_B 
+ 			&=R(-\beta)\:\boldsymbol{M}_{QP}\:R(\beta) \;\boldsymbol{J}_R\\
+ 			&= e^{i\phi''}
  			\begin{bmatrix}
- 				\cos[2](\theta_2)+i\sin[2](\theta_2)&(1-i)\sin(\theta_2)\cos(\theta_2) \\ 
- 				(1-i)\sin(\theta_2)\cos(\theta_2) & \sin[2](\theta_2)+i\cos[2](\theta_2)
+ 				\cos[2](\beta)+i\sin[2](\beta)&(1-i)\sin(\beta)\cos(\beta) \\ 
+ 				(1-i)\sin(\beta)\cos(\beta) & \sin[2](\beta)+i\cos[2](\beta)
  			\end{bmatrix} 
- 		\begin{bmatrix}1 \\ -i\end{bmatrix}\exp(i\phi_1)\\
- 			&=\begin{bmatrix}\cos(\beta)\\\sin(\beta)\end{bmatrix} \exp(i\phi_1+i\phi_2)\:{\color{red}\exp(-i\beta)}
+ 		\frac{1}{\sqrt{2}}\begin{bmatrix}1 \\ -i\end{bmatrix}\exp(i\phi_1)\\
+ 			&=\begin{bmatrix}\cos(\beta+\pi/4)\\\sin(\beta+\pi/4)\end{bmatrix} \exp(i\phi_2)\:\exp(-i\beta)\\
+ 			& = \begin{bmatrix}\cos(\varphi)\\\sin(\varphi)\end{bmatrix} \exp(i\phi_3)\:{\color{red}\exp(-i\varphi)}\:\text{ where }\:\varphi= \beta+\pi/4
+ 	\end{align*}}\\\hline
+ 	
+ 	C $(\ket{C})$&
+ 	\parbox{5cm}{\begin{align*}
+ 			\boldsymbol{J}_C 
+ 			&=\boldsymbol{M}_{Mirror} \;\boldsymbol{J}_B
+ 			= e^{i\pi/2}
+ 			\begin{bmatrix}
+ 				-1 & 0 \\ 0 & 1
+ 			\end{bmatrix} 
+ 			\begin{bmatrix}\cos(\varphi)\\\sin(\varphi)\end{bmatrix} \exp(i\phi_3)\:{\color{red}\exp(-i\varphi)}\\
+ 			&=\begin{bmatrix}-\cos(\varphi)\\\sin(\varphi)\end{bmatrix} \exp(i\phi_4)\:{\color{red}\exp(-i\varphi)}
+ 	\end{align*}}\\\hline
+ 	
+ 	L $(\ket{L})$&
+ 	\parbox{5cm}{\begin{align*}
+ 			\boldsymbol{J}_L 
+ 			=\begin{bmatrix}1\\i\end{bmatrix} \exp(i\phi_5)\:{\color{red}\exp(-i\:2\varphi)}
+ 	\end{align*}}\\\hline
+ 
+ 	A $(\ket{A'})$&
+ 	\parbox{5cm}{\begin{align*}
+ 			\boldsymbol{J}_A' 
+ 			&=\begin{bmatrix}1\\0\end{bmatrix} \exp(i\phi_6)\:{\color{red}\exp(-i\:2\varphi)}\\
+ 			&=\boldsymbol{J}_A \exp(i\phi_6)\:{\color{red}\exp(-i\:2\varphi)}
  	\end{align*}}\\
+ 	\hline
  	\hline
 	\end{tabular}
  	\caption{Jones vector of polarization state}
  	\label{table:5}
 \end{table}
 
-We see that the light with linear polarization state $(\ket{B})$ acquired a additional phase term \textit{i.e.} ${\color{red}\exp(-i\beta)}$ which only depends on orientation of QP2 and does not depend on thickness and refractive index of the birefringent wave-plate, so this phase is purely geometric one. Other $\phi_1$ and $\phi_2$ are dynamical phase factor. \cite{WO}
+We see that the light with linear polarization state $(\ket{B})$ acquired a additional phase term \textit{i.e.} ${\color{red}\exp(-i\:2\varphi)}$ which only depends on orientation of QP2 \textit{i.e.} $\varphi= \beta+\pi/4$ and does not depend on thickness and refractive index of the birefringent wave-plate, so this phase is purely geometric one. Other all $\phi$'s are dynamical phase factor.\cite{WO}
 
+We see after one cyclic evolution in Poincare sphere in path ARBCLA,
+\begin{align}
+	\ket{A}\longrightarrow\ket{A'}=\ket{A}\exp(i\phi_6-i\:2\varphi)
+\end{align}
 
+So at photodiode the intensity variation \textit{w.r.t.} $\beta$ will be
+\begin{align}
+	I &= (\bra{A}+\bra{A'})(\ket{A}+\ket{A'}) \nonumber\\
+	&= \braket{A}{A} \left(1+\exp(-i\phi_6+i2\varphi)\right)\left(1+\exp(i\phi_6-i2\varphi)\right)\nonumber\\
+	&= \braket{A}{A}(2 + 2\cos(2\varphi - \phi_6))\nonumber\\
+	\Rightarrow I(\beta)&= 2\braket{A}{A} \left(1- \sin(2\beta - \phi_6)\right) \label{}
+\end{align}
+Experimental verification by Chyba \textit{et al} (ref. \cite{chyba 88}) is given in figure \ref{fig:chyba}.
+\begin{figure}[H]
+	\begin{subfigure}[H]{0.53\textwidth}
+		\centering
+		\includegraphics[width=0.9\textwidth]{chyba 1.png}
+		\caption{Measured intensity vs Rotation angle  $\beta$ of QP2, fitted with eq. \ref{} }
+		\label{fig:chyba a}
+	\end{subfigure}
+	\hfil
+	\begin{subfigure}[H]{0.41\textwidth}
+		\centering
+		\includegraphics[width=0.9\textwidth]{chyba 2.png}
+		\caption{Measured phase shift vs rotation angle $\beta$, with solid line of $\phi=2\beta$}
+		\label{fig:chyba b}
+	\end{subfigure}
+	\caption{Measurement of the Pancharatnam phase by Chyba \textit{et al} \cite{chyba 88}}
+	\label{fig:chyba}
+\end{figure}
 
-
-\subsubsection{LG-HG Mode transformation}
-
-
+%\subsubsection{Geometric phase in LG-HG mode transformation}
 
 \subsection{Types of SOI}
+We have discussed brief of angular momentum of light in previous chapter. The different types of angular momentum a EM beam carries are
+\begin{enumerate}
+	\item Spin AM ($\boldsymbol{S}$)
+	\item Intrinsic orbital AM ($\boldsymbol{L}_{int}$)
+	\item Extrinsic orbital AM ($\boldsymbol{L}_{ext}$)
+\end{enumerate}
+The diagrammatic representation is given in figure \ref{fig:am}.
+
+\begin{figure}[H]
+	\begin{subfigure}[H]{0.32\textwidth}
+		\centering
+		\includegraphics[width=0.95\textwidth]{sam.png}
+		\caption{SAM of RCP beam of $\sigma=-1$}
+		\label{fig:sam}
+	\end{subfigure}
+	\hfil
+	\begin{subfigure}[H]{0.31\textwidth}
+		\centering
+		\includegraphics[width=0.95\textwidth]{ioam.png}
+		\caption{Intrinsic OAM of vortex beam of $l=2$}
+		\label{fig:ioam}
+	\end{subfigure}
+	\hfil
+	\begin{subfigure}[H]{0.31\textwidth}
+		\centering
+		\includegraphics[width=0.95\textwidth]{eoam.png}
+		\caption{Extrinsic OAM of beam at $\boldsymbol{R}$ away from origin}
+		\label{fig:eoam}
+	\end{subfigure}
+	\caption{Angular momentum of paraxial beam (ref. \cite{bliokh 15})}
+	\label{fig:am}
+\end{figure}
+
+The inter-conversion between these different angular momentum in a process represents \textit{spin-orbit interaction} of light.\cite{bliokh 15} The three type of interaction  are
+\begin{enumerate}
+	\item between $\boldsymbol{S}$ and $\boldsymbol{L}_{int}$
+	\item between $\boldsymbol{S}$ and $\boldsymbol{L}_{ext}$
+	\item between $\boldsymbol{L}_{int}$ and $\boldsymbol{L}_{ext}$
+\end{enumerate}
+In the later section, we will see several manifestation of those interactions.
+
+\subsection{SOI in isotropic medium}
+\cite{bliokh 12}
 
 \subsection{SOI in inhomogeneous anisotropic medium}
+\cite{marrucci 06}\cite{allen 99}\cite{bliokh 15}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{SOI in non-paraxial fields}
+
 
 
 \clearpage
@@ -1590,7 +1826,6 @@ We see that the light with linear polarization state $(\ket{B})$ acquired a addi
 	\oldbibliography{#1}%
 	\setlength{\itemsep}{0pt}%
 }
-
 \pagenumbering{roman}
 \small
 \fontfamily{lmtt}\selectfont
@@ -1625,6 +1860,9 @@ We see that the light with linear polarization state $(\ket{B})$ acquired a addi
 	
 	\bibitem{erikson 94}
 	Erikson, W. L.; Singh, S. (1994). Polarization properties of Maxwell-Gaussian laser beams. Physical Review E, 49(6), 5778–5786. doi: 10.1103/PhysRevE.49.5778
+	
+	\bibitem{max eq - wiki}
+	\href{https://en.wikipedia.org/wiki/Maxwell's_equations}{Maxwell's equations - Wikipedia}
 	
 	\bibitem{hall 96}
 	Hall, Dennis G. (1996). Vector-beam solutions of Maxwell’s wave equation. ol/21/1/ol-21-1-9.pdf, 21(1), 9–0. doi:10.1364/OL.21.000009  
@@ -1687,20 +1925,29 @@ We see that the light with linear polarization state $(\ket{B})$ acquired a addi
 	  \bibitem{anholonomy}
 	  \href{https://en.wikipedia.org/wiki/Nonholonomic_system}{Nonholonomic system - Wikipedia}
 	  
+	  \bibitem{par trans}
+	  \href{https://www.physics.usu.edu/Wheeler/GenRel2013/Notes/Curvature.pdf}{Parallel transport and curvature - Utah State University}
+	  
 	  \bibitem{icts - ghosh}
 	  \href{https://www.youtube.com/watch?v=e1ix-oBH5Ng&list=PL04QVxpjcnjjUn4IbvSncV24Uazej5fBI&index=2}{ Angular momentum, Geometric phase and spin orbit interaction of Light by Nirmalya Ghosh - ICTS}
 	  
-	  \bibitem{ross 84}
-	  Ross, J. N. (1984). The rotation of the polarization in low birefringence monomode optical fibres due to geometric effects. Opt Quant Electron 16, 455–461. doi: 10.1007/BF00619638
+	  %\bibitem{ross 84}
+	  %Ross, J. N. (1984). The rotation of the polarization in low birefringence monomode optical fibres due to geometric effects. Opt Quant Electron 16, 455–461. doi: 10.1007/BF00619638
 	  
 	  \bibitem{bliokh 09}
-	   Bliokh, K. Y. (2009). Geometrodynamics of polarized light: Berry phase and spin Hall effect in a gradient-index medium. Journal of Optics A: Pure and Applied Optics, 11(9), 094009–. doi: 10.1088/1464-4258/11/9/094009
+	  Bliokh, K. Y. (2009). Geometrodynamics of polarized light: Berry phase and spin Hall effect in a gradient-index medium. Journal of Optics A: Pure and Applied Optics, 11(9), 094009–. doi: 10.1088/1464-4258/11/9/094009
 	   
-	  \bibitem{bilokh 15}
+	  \bibitem{bliokh 15}
 	   Bliokh, K. Y.; Rodríguez-Fortuño, F. J.; Nori, F.; Zayats, A. V. (2015). Spin–orbit interactions of light. Nature Photonics, 9(12), 796–808. doi: 10.1038/nphoton.2015.201 
 	  
 	  \bibitem{chyba 88}
-	  Chyba, T. H.; Wang, L. J.; Mandel, L.; Simon, R. (1988). Measurement of the Pancharatnam phase for a light beam. Optics Letters, 13(7), 562–0. doi: 10.1364/OL.13.000562     
+	  Chyba, T. H.; Wang, L. J.; Mandel, L.; Simon, R. (1988). Measurement of the Pancharatnam phase for a light beam. Optics Letters, 13(7), 562–0. doi: 10.1364/OL.13.000562
+	  
+	  \bibitem{bliokh 12}
+	  Bliokh, K., Aiello, A., \& Alonso, M. (2012). Spin-orbit interactions of light in isotropic media. In D. Andrews \& M. Babiker (Eds.), The Angular Momentum of Light (pp. 174-245). Cambridge: Cambridge University Press. doi: 10.1017/CBO9780511795213.009
+	  
+	  \bibitem{marrucci 06}
+	  Marrucci, L.; Manzo, C.; Paparo, D. (2006). Optical Spin-to-Orbital Angular Momentum Conversion in Inhomogeneous Anisotropic Media. Physical Review Letters, 96(16), 163905–. doi: 10.1103/PhysRevLett.96.163905  
 	   
 \end{thebibliography}
 \end{document}

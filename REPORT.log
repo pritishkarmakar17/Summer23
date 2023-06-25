@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.31)  18 JUN 2023 16:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.31)  25 JUN 2023 13:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -791,6 +791,12 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \xmathstrut@box=\box73
 \xmathstrut@dim=\dimen291
 )
+(/usr/share/texlive/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks45
+\AP@partial=\box74
+\AP@footins=\box75
+)
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
@@ -808,9 +814,9 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen297
 \Gm@layouthoffset=\dimen298
 \Gm@layoutvoffset=\dimen299
-\Gm@dimlist=\toks45
+\Gm@dimlist=\toks46
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 10.
+Package hyperref Info: Option `colorlinks' set `true' on input line 16.
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarypatterns.code.tex
@@ -830,8 +836,8 @@ File: pgflibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count331
-\lst@gtempboxa=\box74
-\lst@token=\toks46
+\lst@gtempboxa=\box76
+\lst@token=\toks47
 \lst@length=\count332
 \lst@currlwidth=\dimen300
 \lst@column=\count333
@@ -846,7 +852,7 @@ File: pgflibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 \c@lstnumber=\count337
 \lst@skipnumbers=\count338
-\lst@framebox=\box75
+\lst@framebox=\box77
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
@@ -855,37 +861,37 @@ Package: listings 2020/03/24 1.8d (Carsten Heinz)
  (./REPORT.aux)
 \openout1 = `REPORT.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count339
 \scratchdimen=\dimen304
-\scratchbox=\box76
+\scratchbox=\box78
 \nofMPsegments=\count340
 \nofMParguments=\count341
-\everyMPshowfont=\toks47
+\everyMPshowfont=\toks48
 \MPscratchCnt=\count342
 \MPscratchDim=\dimen305
 \MPnumerator=\count343
 \makeMPintoPDFobject=\count344
-\everyMPtoPDFconversion=\toks48
+\everyMPtoPDFconversion=\toks49
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -895,7 +901,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 42.
+Package hyperref Info: Link coloring ON on input line 48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -909,15 +915,15 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 \c@section@level=\count345
 LaTeX Info: Redefining \Ref on input line 520.
 )
-LaTeX Info: Redefining \ref on input line 42.
-LaTeX Info: Redefining \pageref on input line 42.
-LaTeX Info: Redefining \nameref on input line 42.
+LaTeX Info: Redefining \ref on input line 48.
+LaTeX Info: Redefining \pageref on input line 48.
+LaTeX Info: Redefining \nameref on input line 48.
 
 (./REPORT.out) (./REPORT.out)
 \@outlinefile=\write5
 \openout5 = `REPORT.out'.
 
-LaTeX Info: Redefining \Ref on input line 42.
+LaTeX Info: Redefining \Ref on input line 48.
 
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.18} (current compat level: 1.15).
@@ -965,15 +971,21 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count346
-<iiserk.png, id=171, 274.02374pt x 301.125pt>
+<iiserk.png, id=187, 274.02374pt x 301.125pt>
 File: iiserk.png Graphic file (type png)
 <use iiserk.png>
-Package pdftex.def Info: iiserk.png  used on input line 49.
+Package pdftex.def Info: iiserk.png  used on input line 54.
 (pdftex.def)             Requested size: 71.13188pt x 78.16658pt.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./iiserk.png>]
-(./REPORT.toc
+
+LaTeX Font Warning: Font shape `T1/cmr/m/scsl' undefined
+(Font)              using `T1/cmr/m/sc' instead on input line 82.
+
+[2
+
+] (./REPORT.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -988,13 +1000,13 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 2.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-) [2
+) [1
 
 ])
 \tf@toc=\write6
 \openout6 = `REPORT.toc'.
 
- [3]
+ [2]
 (./REPORT.lof
 Overfull \hbox (7.15012pt too wide) in paragraph at lines 13--13
  [][] [][][]\T1/cmr/m/n/10.95 Schematic of Michel-son in-ter-fer-om-e-ter setup
@@ -1009,33 +1021,48 @@ Overfull \hbox (7.15012pt too wide) in paragraph at lines 13--13
 \tf@lot=\write8
 \openout8 = `REPORT.lot'.
 
- [4
+ [3
 
-] [1] [2] [3] [4] [5] [6] [7] [8]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 530
+]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.179 	\begin{align*}
+                      [1]pdfTeX warning (ext4): destination with the same ident
+ifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.293 
+       [2] [3] [4] [5] [6] [7] [8]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 576
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 ) [9]
-<ellipse.png, id=504, 198.0pt x 117.15pt>
+<ellipse.png, id=542, 198.0pt x 117.15pt>
 File: ellipse.png Graphic file (type png)
 <use ellipse.png>
-Package pdftex.def Info: ellipse.png  used on input line 660.
+Package pdftex.def Info: ellipse.png  used on input line 706.
 (pdftex.def)             Requested size: 227.62204pt x 134.68568pt.
  [10] [11 <./ellipse.png>]
-<ellipse_new.png, id=547, 2313.53223pt x 1429.34pt>
+<ellipse_new.png, id=586, 2313.53223pt x 1429.34pt>
 File: ellipse_new.png Graphic file (type png)
 <use ellipse_new.png>
-Package pdftex.def Info: ellipse_new.png  used on input line 755.
+Package pdftex.def Info: ellipse_new.png  used on input line 801.
 (pdftex.def)             Requested size: 184.37096pt x 113.89153pt.
-<poincare.png, id=548, 1596.18556pt x 1522.1311pt>
+<poincare.png, id=587, 1596.18556pt x 1522.1311pt>
 File: poincare.png Graphic file (type png)
 <use poincare.png>
-Package pdftex.def Info: poincare.png  used on input line 761.
+Package pdftex.def Info: poincare.png  used on input line 807.
 (pdftex.def)             Requested size: 143.39998pt x 136.7304pt.
  [12 <./ellipse_new.png> <./poincare.png>]
-Overfull \hbox (15.04219pt too wide) in paragraph at lines 805--807
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 820.
+
+
+Overfull \hbox (15.04219pt too wide) in paragraph at lines 851--853
 \T1/cmr/m/n/10.95 where trans-verse Lapla-cian, $\OMS/cmsy/m/n/10.95 r[] \OT1/c
 mr/m/n/10.95 = [] + []$ \T1/cmr/m/n/10.95 or in cylin-dri-cal co-or-di-nate, $\
 OMS/cmsy/m/n/10.95 r[] \OT1/cmr/m/n/10.95 = [][] [] +
@@ -1044,128 +1071,132 @@ OMS/cmsy/m/n/10.95 r[] \OT1/cmr/m/n/10.95 = [][] [] +
 [13
 
 ] [14]
-<spherical wave.png, id=606, 741.77126pt x 322.20375pt>
+<spherical wave.png, id=645, 741.77126pt x 322.20375pt>
 File: spherical wave.png Graphic file (type png)
 <use spherical wave.png>
-Package pdftex.def Info: spherical wave.png  used on input line 888.
+Package pdftex.def Info: spherical wave.png  used on input line 934.
 (pdftex.def)             Requested size: 199.16928pt x 86.50945pt.
  [15 <./spherical wave.png>]
-<beam.png, id=644, 1095.09125pt x 339.2675pt>
+<beam.png, id=677, 1095.09125pt x 339.2675pt>
 File: beam.png Graphic file (type png)
 <use beam.png>
-Package pdftex.def Info: beam.png  used on input line 957.
+Package pdftex.def Info: beam.png  used on input line 1000.
 (pdftex.def)             Requested size: 298.75262pt x 92.55597pt.
- [16]
-<intensity.png, id=663, 462.528pt x 346.896pt>
+ [16 <./beam.png>]
+<intensity.png, id=693, 462.528pt x 346.896pt>
 File: intensity.png Graphic file (type png)
 <use intensity.png>
-Package pdftex.def Info: intensity.png  used on input line 973.
+Package pdftex.def Info: intensity.png  used on input line 1016.
 (pdftex.def)             Requested size: 188.2158pt x 141.16434pt.
-<intensity_var.png, id=664, 462.528pt x 331.9602pt>
+<intensity_var.png, id=694, 462.528pt x 331.9602pt>
 File: intensity_var.png Graphic file (type png)
 <use intensity_var.png>
-Package pdftex.def Info: intensity_var.png  used on input line 980.
+Package pdftex.def Info: intensity_var.png  used on input line 1023.
 (pdftex.def)             Requested size: 188.2158pt x 135.08643pt.
- [17 <./beam.png> <./intensity.png> <./intensity_var.png>] (./R_vs_z.tex) (./go
-uy.tex) [18] [19]
-<intensity_hg00.png, id=707, 462.528pt x 346.896pt>
+ (./R_vs_z.tex) [17 <./intensity.png> <./intensity_var.png>] (./gouy.tex) [18]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 1087.
+
+[19]
+<intensity_hg00.png, id=739, 462.528pt x 346.896pt>
 File: intensity_hg00.png Graphic file (type png)
 <use intensity_hg00.png>
-Package pdftex.def Info: intensity_hg00.png  used on input line 1104.
+Package pdftex.def Info: intensity_hg00.png  used on input line 1148.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_hg01.png, id=708, 462.528pt x 346.896pt>
+<intensity_hg01.png, id=740, 462.528pt x 346.896pt>
 File: intensity_hg01.png Graphic file (type png)
 <use intensity_hg01.png>
-Package pdftex.def Info: intensity_hg01.png  used on input line 1104.
+Package pdftex.def Info: intensity_hg01.png  used on input line 1148.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_hg02.png, id=709, 462.528pt x 346.896pt>
+<intensity_hg02.png, id=741, 462.528pt x 346.896pt>
 File: intensity_hg02.png Graphic file (type png)
 <use intensity_hg02.png>
-Package pdftex.def Info: intensity_hg02.png  used on input line 1104.
+Package pdftex.def Info: intensity_hg02.png  used on input line 1148.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_hg10.png, id=710, 462.528pt x 346.896pt>
+<intensity_hg10.png, id=742, 462.528pt x 346.896pt>
 File: intensity_hg10.png Graphic file (type png)
 <use intensity_hg10.png>
-Package pdftex.def Info: intensity_hg10.png  used on input line 1104.
+Package pdftex.def Info: intensity_hg10.png  used on input line 1148.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_hg11.png, id=711, 462.528pt x 346.896pt>
+<intensity_hg11.png, id=743, 462.528pt x 346.896pt>
 File: intensity_hg11.png Graphic file (type png)
 <use intensity_hg11.png>
-Package pdftex.def Info: intensity_hg11.png  used on input line 1104.
+Package pdftex.def Info: intensity_hg11.png  used on input line 1148.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_hg12.png, id=712, 462.528pt x 346.896pt>
+<intensity_hg12.png, id=744, 462.528pt x 346.896pt>
 File: intensity_hg12.png Graphic file (type png)
 <use intensity_hg12.png>
-Package pdftex.def Info: intensity_hg12.png  used on input line 1104.
+Package pdftex.def Info: intensity_hg12.png  used on input line 1148.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_hg20.png, id=713, 462.528pt x 346.896pt>
+<intensity_hg20.png, id=745, 462.528pt x 346.896pt>
 File: intensity_hg20.png Graphic file (type png)
 <use intensity_hg20.png>
-Package pdftex.def Info: intensity_hg20.png  used on input line 1104.
+Package pdftex.def Info: intensity_hg20.png  used on input line 1148.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_hg21.png, id=714, 462.528pt x 346.896pt>
+<intensity_hg21.png, id=746, 462.528pt x 346.896pt>
 File: intensity_hg21.png Graphic file (type png)
 <use intensity_hg21.png>
-Package pdftex.def Info: intensity_hg21.png  used on input line 1104.
+Package pdftex.def Info: intensity_hg21.png  used on input line 1148.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_hg22.png, id=715, 462.528pt x 346.896pt>
+<intensity_hg22.png, id=747, 462.528pt x 346.896pt>
 File: intensity_hg22.png Graphic file (type png)
 <use intensity_hg22.png>
-Package pdftex.def Info: intensity_hg22.png  used on input line 1104.
+Package pdftex.def Info: intensity_hg22.png  used on input line 1148.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1104--1106
+Underfull \hbox (badness 10000) in paragraph at lines 1148--1150
 
  []
 
 (./gouy_hg.tex) [20]
-<intensity_lg00.png, id=733, 462.528pt x 346.896pt>
+<intensity_lg00.png, id=765, 462.528pt x 346.896pt>
 File: intensity_lg00.png Graphic file (type png)
 <use intensity_lg00.png>
-Package pdftex.def Info: intensity_lg00.png  used on input line 1155.
+Package pdftex.def Info: intensity_lg00.png  used on input line 1199.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_lg01.png, id=734, 462.528pt x 346.896pt>
+<intensity_lg01.png, id=766, 462.528pt x 346.896pt>
 File: intensity_lg01.png Graphic file (type png)
 <use intensity_lg01.png>
-Package pdftex.def Info: intensity_lg01.png  used on input line 1155.
+Package pdftex.def Info: intensity_lg01.png  used on input line 1199.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_lg02.png, id=735, 462.528pt x 346.896pt>
+<intensity_lg02.png, id=767, 462.528pt x 346.896pt>
 File: intensity_lg02.png Graphic file (type png)
 <use intensity_lg02.png>
-Package pdftex.def Info: intensity_lg02.png  used on input line 1155.
+Package pdftex.def Info: intensity_lg02.png  used on input line 1199.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_lg10.png, id=736, 462.528pt x 346.896pt>
+<intensity_lg10.png, id=768, 462.528pt x 346.896pt>
 File: intensity_lg10.png Graphic file (type png)
 <use intensity_lg10.png>
-Package pdftex.def Info: intensity_lg10.png  used on input line 1155.
+Package pdftex.def Info: intensity_lg10.png  used on input line 1199.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_lg11.png, id=737, 462.528pt x 346.896pt>
+<intensity_lg11.png, id=769, 462.528pt x 346.896pt>
 File: intensity_lg11.png Graphic file (type png)
 <use intensity_lg11.png>
-Package pdftex.def Info: intensity_lg11.png  used on input line 1155.
+Package pdftex.def Info: intensity_lg11.png  used on input line 1199.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_lg12.png, id=738, 462.528pt x 346.896pt>
+<intensity_lg12.png, id=770, 462.528pt x 346.896pt>
 File: intensity_lg12.png Graphic file (type png)
 <use intensity_lg12.png>
-Package pdftex.def Info: intensity_lg12.png  used on input line 1155.
+Package pdftex.def Info: intensity_lg12.png  used on input line 1199.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_lg20.png, id=739, 462.528pt x 346.896pt>
+<intensity_lg20.png, id=771, 462.528pt x 346.896pt>
 File: intensity_lg20.png Graphic file (type png)
 <use intensity_lg20.png>
-Package pdftex.def Info: intensity_lg20.png  used on input line 1155.
+Package pdftex.def Info: intensity_lg20.png  used on input line 1199.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_lg21.png, id=740, 462.528pt x 346.896pt>
+<intensity_lg21.png, id=772, 462.528pt x 346.896pt>
 File: intensity_lg21.png Graphic file (type png)
 <use intensity_lg21.png>
-Package pdftex.def Info: intensity_lg21.png  used on input line 1155.
+Package pdftex.def Info: intensity_lg21.png  used on input line 1199.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<intensity_lg22.png, id=741, 462.528pt x 346.896pt>
+<intensity_lg22.png, id=773, 462.528pt x 346.896pt>
 File: intensity_lg22.png Graphic file (type png)
 <use intensity_lg22.png>
-Package pdftex.def Info: intensity_lg22.png  used on input line 1155.
+Package pdftex.def Info: intensity_lg22.png  used on input line 1199.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1155--1157
+Underfull \hbox (badness 10000) in paragraph at lines 1199--1201
 
  []
 
@@ -1175,255 +1206,331 @@ ensity_hg10.png> <./intensity_hg11.png> <./intensity_hg12.png> <./intensity_hg2
 > <./intensity_lg01.png> <./intensity_lg02.png> <./intensity_lg10.png> <./inten
 sity_lg11.png> <./intensity_lg12.png> <./intensity_lg20.png> <./intensity_lg21.
 png> <./intensity_lg22.png>]
-<phase_lg00.png, id=777, 462.528pt x 346.896pt>
+<phase_lg00.png, id=811, 462.528pt x 346.896pt>
 File: phase_lg00.png Graphic file (type png)
 <use phase_lg00.png>
-Package pdftex.def Info: phase_lg00.png  used on input line 1200.
+Package pdftex.def Info: phase_lg00.png  used on input line 1244.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<phase_lg01.png, id=778, 462.528pt x 346.896pt>
+<phase_lg01.png, id=812, 462.528pt x 346.896pt>
 File: phase_lg01.png Graphic file (type png)
 <use phase_lg01.png>
-Package pdftex.def Info: phase_lg01.png  used on input line 1200.
+Package pdftex.def Info: phase_lg01.png  used on input line 1244.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<phase_lg02.png, id=779, 462.528pt x 346.896pt>
+<phase_lg02.png, id=813, 462.528pt x 346.896pt>
 File: phase_lg02.png Graphic file (type png)
 <use phase_lg02.png>
-Package pdftex.def Info: phase_lg02.png  used on input line 1200.
+Package pdftex.def Info: phase_lg02.png  used on input line 1244.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<phase_lg10.png, id=780, 462.528pt x 346.896pt>
+<phase_lg10.png, id=814, 462.528pt x 346.896pt>
 File: phase_lg10.png Graphic file (type png)
 <use phase_lg10.png>
-Package pdftex.def Info: phase_lg10.png  used on input line 1200.
+Package pdftex.def Info: phase_lg10.png  used on input line 1244.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<phase_lg11.png, id=781, 462.528pt x 346.896pt>
+<phase_lg11.png, id=815, 462.528pt x 346.896pt>
 File: phase_lg11.png Graphic file (type png)
 <use phase_lg11.png>
-Package pdftex.def Info: phase_lg11.png  used on input line 1200.
+Package pdftex.def Info: phase_lg11.png  used on input line 1244.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<phase_lg12.png, id=782, 462.528pt x 346.896pt>
+<phase_lg12.png, id=816, 462.528pt x 346.896pt>
 File: phase_lg12.png Graphic file (type png)
 <use phase_lg12.png>
-Package pdftex.def Info: phase_lg12.png  used on input line 1200.
+Package pdftex.def Info: phase_lg12.png  used on input line 1244.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<phase_lg20.png, id=783, 462.528pt x 346.896pt>
+<phase_lg20.png, id=817, 462.528pt x 346.896pt>
 File: phase_lg20.png Graphic file (type png)
 <use phase_lg20.png>
-Package pdftex.def Info: phase_lg20.png  used on input line 1200.
+Package pdftex.def Info: phase_lg20.png  used on input line 1244.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<phase_lg21.png, id=784, 462.528pt x 346.896pt>
+<phase_lg21.png, id=818, 462.528pt x 346.896pt>
 File: phase_lg21.png Graphic file (type png)
 <use phase_lg21.png>
-Package pdftex.def Info: phase_lg21.png  used on input line 1200.
+Package pdftex.def Info: phase_lg21.png  used on input line 1244.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
-<phase_lg22.png, id=785, 462.528pt x 346.896pt>
+<phase_lg22.png, id=819, 462.528pt x 346.896pt>
 File: phase_lg22.png Graphic file (type png)
 <use phase_lg22.png>
-Package pdftex.def Info: phase_lg22.png  used on input line 1200.
+Package pdftex.def Info: phase_lg22.png  used on input line 1244.
 (pdftex.def)             Requested size: 136.57634pt x 102.43399pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1200--1202
+Underfull \hbox (badness 10000) in paragraph at lines 1244--1246
 
  []
 
-[23] [24 <./phase_lg00.png> <./phase_lg01.png> <./phase_lg02.png> <./phase_lg10
-.png> <./phase_lg11.png> <./phase_lg12.png> <./phase_lg20.png> <./phase_lg21.pn
-g> <./phase_lg22.png>] [25
 
-] [26] [27] [28] [29] [30
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 1251.
+
+[23 <./phase_lg00.png> <./phase_lg01.png> <./phase_lg02.png> <./phase_lg10.png>
+ <./phase_lg11.png> <./phase_lg12.png> <./phase_lg20.png> <./phase_lg21.png> <.
+/phase_lg22.png>] [24] [25
+
+] [26] [27] [28]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 1521.
+
+[29]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 1528.
+
+[30
 
 ]
-<berry.png, id=973, 1114.1625pt x 564.1075pt>
+
+LaTeX Warning: Citation `ross 84' on page 31 undefined on input line 1571.
+
+<berry.png, id=1034, 1114.1625pt x 564.1075pt>
 File: berry.png Graphic file (type png)
 <use berry.png>
-Package pdftex.def Info: berry.png  used on input line 1488.
+Package pdftex.def Info: berry.png  used on input line 1590.
 (pdftex.def)             Requested size: 238.14606pt x 120.57492pt.
-<poincare-berry.png, id=976, 1394.54333pt x 1357.96222pt>
+<poincare-berry.png, id=1037, 1394.54333pt x 1357.96222pt>
 File: poincare-berry.png Graphic file (type png)
 <use poincare-berry.png>
-Package pdftex.def Info: poincare-berry.png  used on input line 1495.
+Package pdftex.def Info: poincare-berry.png  used on input line 1597.
 (pdftex.def)             Requested size: 134.44069pt x 130.91406pt.
 
-Underfull \hbox (badness 1127) in paragraph at lines 1496--1496
+Underfull \hbox (badness 1127) in paragraph at lines 1598--1598
 []\T1/cmr/m/n/10 (b) |Evo-lu-tion of wave-vector $[]$
  []
 
-<pb expt.png, id=979, 1142.93666pt x 967.16888pt>
+[31]
+<pb expt.png, id=1058, 1142.93666pt x 967.16888pt>
 File: pb expt.png Graphic file (type png)
 <use pb expt.png>
-Package pdftex.def Info: pb expt.png  used on input line 1512.
+Package pdftex.def Info: pb expt.png  used on input line 1628.
 (pdftex.def)             Requested size: 227.62204pt x 192.61867pt.
-[31 <./berry.png> <./poincare-berry.png>]
-<MI arm.png, id=1000, 1507.85556pt x 1241.08112pt>
+ [32 <./berry.png> <./poincare-berry.png>]
+<MI arm.png, id=1074, 1334.76445pt x 1000.1811pt>
 File: MI arm.png Graphic file (type png)
 <use MI arm.png>
-Package pdftex.def Info: MI arm.png  used on input line 1522.
-(pdftex.def)             Requested size: 184.37096pt x 151.74496pt.
-<poincare-pb.png, id=1001, 1667.56334pt x 1549.79pt>
+Package pdftex.def Info: MI arm.png  used on input line 1638.
+(pdftex.def)             Requested size: 192.05478pt x 143.90082pt.
+<poincare-pb.png, id=1075, 1268.74pt x 1268.74pt>
 File: poincare-pb.png Graphic file (type png)
 <use poincare-pb.png>
-Package pdftex.def Info: poincare-pb.png  used on input line 1529.
-(pdftex.def)             Requested size: 163.88702pt x 152.29222pt.
+Package pdftex.def Info: poincare-pb.png  used on input line 1645.
+(pdftex.def)             Requested size: 153.64148pt x 153.63611pt.
 
-Overfull \hbox (176.43843pt too wide) detected at line 1566
+Overfull \hbox (135.86296pt too wide) detected at line 1676
 []
  []
 
-[32 <./pb expt.png> <./MI arm.png> <./poincare-pb.png>] [33]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-596.
 
-(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+Overfull \hbox (203.04684pt too wide) detected at line 1690
+[]
+ []
+
+
+Overfull \hbox (160.90923pt too wide) detected at line 1702
+[]
+ []
+
+
+Overfull \hbox (0.82234pt too wide) detected at line 1708
+[]
+ []
+
+
+Overfull \hbox (1.40846pt too wide) detected at line 1715
+[]
+ []
+
+
+Overfull \hbox (15.01083pt too wide) in paragraph at lines 1656--1719
+ [][] 
+ []
+
+[33 <./pb expt.png> <./MI arm.png> <./poincare-pb.png>] [34]
+<chyba 1.png, id=1091, 1179.51778pt x 841.36555pt>
+File: chyba 1.png Graphic file (type png)
+<use chyba 1.png>
+Package pdftex.def Info: chyba 1.png  used on input line 1741.
+(pdftex.def)             Requested size: 203.5776pt x 145.21274pt.
+
+
+LaTeX Warning: Reference `' on page 35 undefined on input line 1742.
+
+
+LaTeX Warning: Reference `' on page 35 undefined on input line 1742.
+
+<chyba 2.png, id=1092, 994.82777pt x 935.04889pt>
+File: chyba 2.png Graphic file (type png)
+<use chyba 2.png>
+Package pdftex.def Info: chyba 2.png  used on input line 1748.
+(pdftex.def)             Requested size: 157.48633pt x 148.0129pt.
+<sam.png, id=1096, 469.755pt x 313.17pt>
+File: sam.png Graphic file (type png)
+<use sam.png>
+Package pdftex.def Info: sam.png  used on input line 1770.
+(pdftex.def)             Requested size: 129.7471pt x 86.49713pt.
+<ioam.png, id=1097, 469.755pt x 313.17pt>
+File: ioam.png Graphic file (type png)
+<use ioam.png>
+Package pdftex.def Info: ioam.png  used on input line 1777.
+(pdftex.def)             Requested size: 125.68863pt x 83.79245pt.
+<eoam.png, id=1098, 498.86375pt x 310.15875pt>
+File: eoam.png Graphic file (type png)
+<use eoam.png>
+Package pdftex.def Info: eoam.png  used on input line 1784.
+(pdftex.def)             Requested size: 125.68863pt x 78.14053pt.
+[35 <./chyba 1.png> <./chyba 2.png> <./sam.png> <./ioam.png> <./eoam.png>]
+[36]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+831.
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 1600--1601
+Underfull \hbox (badness 10000) in paragraph at lines 1835--1836
 []\T1/lmtt/m/n/10 Gupta, S.D., Ghosh, N., & Banerjee, A. (2015). Wave Optics: B
 asic Concepts
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1603--1604
+Underfull \hbox (badness 10000) in paragraph at lines 1838--1839
 []\T1/lmtt/m/n/10 Born, Max; Wolf, Emil (1999). Principles of optics: electroma
 gnetic theory
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1603--1604
+Underfull \hbox (badness 10000) in paragraph at lines 1838--1839
 \T1/lmtt/m/n/10 of propagation, interference and diffraction of light (7th expa
 nded ed.).
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1609--1610
+Underfull \hbox (badness 10000) in paragraph at lines 1844--1845
 []\T1/lmtt/m/n/10 Wang Jizhong (1986). A matrix method for describing unpolariz
 ed light and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1612--1613
+Underfull \hbox (badness 10000) in paragraph at lines 1847--1848
 [][][]\T1/lmtt/m/n/10 Polarization (Jones vectors and matrices, partial polariz
 ation, Stokes
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1615--1616
+Underfull \hbox (badness 10000) in paragraph at lines 1850--1851
 []\T1/lmtt/m/n/10 Hecht, Eugene (1970). Note on an Operational Definition of th
 e
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1615--1616
+Underfull \hbox (badness 10000) in paragraph at lines 1850--1851
 \T1/lmtt/m/n/10 Stokes Parameters. American Journal of Physics, 38(9), 1156^^U.
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1618--1619
+Underfull \hbox (badness 10000) in paragraph at lines 1853--1854
 []\T1/lmtt/m/n/10 Milonni, P.W. and Eberly, J.H. (2010). Laser Physics. Wiley &
  Sons,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1624--1625
+Underfull \hbox (badness 10000) in paragraph at lines 1859--1860
 []\T1/lmtt/m/n/10 Kogelnik, H., & Li, T. (1966). Laser beams and resonators. Ap
 plied optics,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1627--1628
+Underfull \hbox (badness 10000) in paragraph at lines 1862--1863
 []\T1/lmtt/m/n/10 Erikson, W. L.; Singh, S. (1994). Polarization properties of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1627--1628
+Underfull \hbox (badness 10000) in paragraph at lines 1862--1863
 \T1/lmtt/m/n/10 Maxwell-Gaussian laser beams. Physical Review E, 49(6), 5778^^U
 5786. doi:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1630--1631
+Underfull \hbox (badness 10000) in paragraph at lines 1868--1869
 []\T1/lmtt/m/n/10 Hall, Dennis G. (1996). Vector-beam solutions of Maxwell's wa
 ve equation.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1633--1634
+Underfull \hbox (badness 10000) in paragraph at lines 1871--1872
 []\T1/lmtt/m/n/10 Conry, J. P. (2012). Polarization Properties of Maxwell-Gauss
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1633--1634
+Underfull \hbox (badness 10000) in paragraph at lines 1871--1872
 \T1/lmtt/m/n/10 Laser Beams. Graduate Theses and Dissertations Retrieved from
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1636--1637
+Underfull \hbox (badness 10000) in paragraph at lines 1874--1875
 []\T1/lmtt/m/n/10 Lewis, W. E.; Vyas, R. (2014). Maxwell-Gaussian beams with cy
 lindrical
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1636--1637
+Underfull \hbox (badness 10000) in paragraph at lines 1874--1875
 \T1/lmtt/m/n/10 polarization. Journal of the Optical Society of America A, 31(7
 ), 1595^^U.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1645--1646
+Underfull \hbox (badness 10000) in paragraph at lines 1883--1884
 []\T1/lmtt/m/n/10 Andrews, D., & Babiker, M. (Eds.). (2012). The Angular Moment
 um of Light.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1649--1650
+Underfull \hbox (badness 10000) in paragraph at lines 1887--1888
 []\T1/lmtt/m/n/10 MW Beijersbergen, L Allen, H Van der Veen, and JP Woerdman (1
 993).
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1649--1650
+Underfull \hbox (badness 10000) in paragraph at lines 1887--1888
 \T1/lmtt/m/n/10 Astigmatic laser mode converters and transfer of orbital angula
 r momentum.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1652--1653
+Underfull \hbox (badness 10000) in paragraph at lines 1890--1891
 []\T1/lmtt/m/n/10 S.J. van Enk; G. Nienhuis (1992). Eigenfunction description o
 f laser
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1652--1653
+Underfull \hbox (badness 10000) in paragraph at lines 1890--1891
 \T1/lmtt/m/n/10 beams and orbital angular momentum of light. 94(1-3), 147^^U158
 . doi:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1655--1656
+Underfull \hbox (badness 10000) in paragraph at lines 1893--1894
 []\T1/lmtt/m/n/10 Allen, L. (1999).The Orbital Angular Momentum of Light. Progr
 ess in Optics.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1661--1662
+Underfull \hbox (badness 10000) in paragraph at lines 1899--1900
 []\T1/lmtt/m/n/10 Haus, Hermann A. (1984). Waves and fields in optoelectronics.
  Englewood
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1664--1665
+Underfull \hbox (badness 10000) in paragraph at lines 1902--1903
 []\T1/lmtt/m/n/10 Barnett, S. & Allen, L. (2010). Orbital angular momentum and 
 nonparaxial
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1667--1668
+Underfull \hbox (badness 10000) in paragraph at lines 1905--1906
 []\T1/lmtt/m/n/10 Cohen-Tannoudji, C., J. Dupont-Roc, and G. Grynberg (1989), P
 hotons and.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1667--1668
+Underfull \hbox (badness 10000) in paragraph at lines 1905--1906
 \T1/lmtt/m/n/10 Atoms, Introduction to Quantum Electrodynamics, John Wiley & So
 ns,. New
  []
@@ -1432,152 +1539,178 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1669 	 \bibitem{melvin 75}
-                             [1
+l.1906 	
+         [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1670--1671
+Underfull \hbox (badness 10000) in paragraph at lines 1908--1909
 []\T1/lmtt/m/n/10 Lax, Melvin; Louisell, William H.; McKnight, William B. (1975
 ). From
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1670--1671
+Underfull \hbox (badness 10000) in paragraph at lines 1908--1909
 \T1/lmtt/m/n/10 Maxwell to paraxial wave optics. Physical Review A, 11(4), 1365
 ^^U1370. doi:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1673--1674
+Underfull \hbox (badness 10000) in paragraph at lines 1911--1912
 []\T1/lmtt/m/n/10 Berry, Michael V.; Soskin, Marat S. (1998). SPIE Proceedings.
 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1673--1674
+Underfull \hbox (badness 10000) in paragraph at lines 1911--1912
 \T1/lmtt/m/n/10 International Conference on Singular Optics - Paraxial beams of
  spinning
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1676--1677
+Underfull \hbox (badness 10000) in paragraph at lines 1914--1915
 []\T1/lmtt/m/n/10 Zettili N. (2009). Quantum mechanics : concepts and applicati
 ons (2nd
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1691--1692
+Underfull \hbox (badness 10000) in paragraph at lines 1932--1933
 [][][]\T1/lmtt/m/n/10 Angular momentum, Geometric phase and spin orbit interact
 ion of Light by
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1694--1695
-[]\T1/lmtt/m/n/10 Ross, J. N. (1984). The rotation of the polarization in low b
-irefringence
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1694--1695
-\T1/lmtt/m/n/10 monomode optical fibres due to geometric effects. Opt Quant Ele
-ctron 16,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1697--1698
+Underfull \hbox (badness 10000) in paragraph at lines 1938--1939
 []\T1/lmtt/m/n/10 Bliokh, K. Y. (2009). Geometrodynamics of polarized light: Be
 rry phase and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1697--1698
+Underfull \hbox (badness 10000) in paragraph at lines 1938--1939
 \T1/lmtt/m/n/10 spin Hall effect in a gradient-index medium. Journal of Optics 
 A: Pure and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1700--1701
+Underfull \hbox (badness 10000) in paragraph at lines 1941--1942
 []\T1/lmtt/m/n/10 Bliokh, K. Y.; Rodríguez-Fortuño, F. J.; Nori, F.; Zayats, A.
  V. (2015).
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1700--1701
+Underfull \hbox (badness 10000) in paragraph at lines 1941--1942
 \T1/lmtt/m/n/10 Spin^^Uorbit interactions of light. Nature Photonics, 9(12), 79
 6^^U808. doi:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1703--1704
+Underfull \hbox (badness 10000) in paragraph at lines 1944--1945
 []\T1/lmtt/m/n/10 Chyba, T. H.; Wang, L. J.; Mandel, L.; Simon, R. (1988). Meas
 urement of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1703--1704
+Underfull \hbox (badness 10000) in paragraph at lines 1944--1945
 \T1/lmtt/m/n/10 the Pancharatnam phase for a light beam. Optics Letters, 13(7),
  562^^U0. doi:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1947--1948
+[]\T1/lmtt/m/n/10 Bliokh, K., Aiello, A., & Alonso, M. (2012). Spin-orbit inter
+actions of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1947--1948
+\T1/lmtt/m/n/10 light in isotropic media. In D. Andrews & M. Babiker (Eds.), Th
+e Angular
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1947--1948
+\T1/lmtt/m/n/10 Momentum of Light (pp. 174-245). Cambridge: Cambridge Universit
+y Press.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1950--1951
+[]\T1/lmtt/m/n/10 Marrucci, L.; Manzo, C.; Paparo, D. (2006). Optical Spin-to-O
+rbital Angular
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1950--1951
+\T1/lmtt/m/n/10 Momentum Conversion in Inhomogeneous Anisotropic Media. Physica
+l Review
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1706 \end{document}
+l.1953 \end{document}
                       [2] (./REPORT.aux)
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `REPORT.out' has not changed.
-(rerunfilecheck)             Checksum: E7CA23F7DCA6F6EFD1502780387C8793;8656.
+(rerunfilecheck)             Checksum: A8DDB2AE969962E5E5B1E16564E06131;9329.
  ) 
 Here is how much of TeX's memory you used:
- 37230 strings out of 480171
- 839121 string characters out of 5894489
- 1271847 words of memory out of 5000000
- 54198 multiletter control sequences out of 15000+600000
- 498193 words of font info for 111 fonts, out of 8000000 for 9000
+ 37381 strings out of 480171
+ 841372 string characters out of 5894489
+ 1274145 words of memory out of 5000000
+ 54294 multiletter control sequences out of 15000+600000
+ 504269 words of font info for 119 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 84i,25n,89p,734b,2152s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 84i,25n,89p,740b,2152s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc} </home/pritish/.texlive2021/t
-exmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/pritish/.texlive202
-1/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk> </home/pritish/.texlive
-2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti0900.600pk> </home/pritish/.texl
-ive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </home/pritish/.t
-exlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk> </home/pritish
-/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/prit
-ish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.600pk> </home/p
-ritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </hom
-e/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </
-home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk>
- </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600
-pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.
-600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx24
-88.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cmextra/cmmib9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/euler/eufb10.pfb></usr/share/texmf/fonts/type1/public/lm/lmt
-t10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm
-10.pfb>
-Output written on REPORT.pdf (39 pages, 2966955 bytes).
+exmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/pritish/.texlive202
+1/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk> </home/pritish/.texlive
+2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/pritish/.texl
+ive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk> </home/pritish/.t
+exlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti0900.600pk> </home/pritish
+/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </home/prit
+ish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk> </home/p
+ritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </hom
+e/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </
+home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.600pk>
+ </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600
+pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.
+600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecxc14
+40.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecs
+l1440.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/
+ecbl1440.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/
+ec/ecrm1095.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jknapp
+en/ec/ecrm1728.600pk> </home/pritish/.texlive2021/texmf-var/fonts/pk/ljfour/jkn
+appen/ec/ecbx2488.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+mextra/cmbsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmbx6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cmextra/cmmib9.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/euler/eufb10.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/symbols/msbm10.pfb>
+Output written on REPORT.pdf (43 pages, 3612039 bytes).
 PDF statistics:
- 1682 PDF objects out of 1728 (max. 8388607)
- 1071 compressed objects within 11 object streams
- 345 named destinations out of 1000 (max. 500000)
- 541 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1874 PDF objects out of 2073 (max. 8388607)
+ 1193 compressed objects within 12 object streams
+ 384 named destinations out of 1000 (max. 500000)
+ 598 words of extra memory for PDF output out of 10000 (max. 10000000)
 
