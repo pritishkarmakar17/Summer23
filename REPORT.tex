@@ -1084,8 +1084,88 @@ Some characteristics of Gaussian beam are
 \end{enumerate}
 
 
-\subsection{\color{red}Beam Tracing and Resonator Stability}
+\subsection{Beam Tracing using ABCD matrix}
+Like ray tracing using ABCD matrix, beam tracing is also done using ABCD matrix. We know that $q$ parameter gives all the characteristic of the beam as 
+\begin{align*}
+	q(z) &= z + iz_0\\
+	\frac{1}{q(z)} &= \frac{1}{R(z)} - i\: \frac{\lambda}{\pi w^2(z)}
+\end{align*}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{"beam tracing"}
+	\caption{Schematic of beam tracing}
+	\label{fig:beam-tracing}
+\end{figure}
 
+By using ABCD matrix we can understand the change in $q$ parameter of input and output the Gaussian beam, say $q_{in}$ and $q_{out}$ respectively. Let the ABCD matrix of the optical element is 
+\begin{align}
+	\begin{bmatrix}
+		A&B\\
+		C&D
+	\end{bmatrix}
+\end{align}
+Then relation between $q_{in}$ and $q_{out}$ is
+\begin{align}
+	q_{out}= \frac{Aq_{in}+B}{Cq_{in}+D}
+\end{align}
+
+\subsection{Resonator stability and resonator mode-frequency}
+Now we will discuss about the \textit{resonator stability} for the Gaussian beam. The resonator cavity (or optical cavity) is made of two highly reflecting mirror align in particular manner so that  light confined in the cavity reflects multiple times, producing modes with certain resonance frequencies.\cite{opt cavity} If a Gaussian beam is to be a mode of a resonator with spherical mirrors, then radius of curvature of beam wave-front must be equal to that of the mirror.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{resonator}
+	\caption{Schematic of beam resonator of two mirrors of radius of curvature $R_1$ \& $R_2$}
+	\label{fig:resonator}
+\end{figure}
+
+Let radius of curvature of first and second mirror are $R_1$ and $R_2$ respectively, length of resonator cavity is $L$, then \cite{milonni}
+\begin{align}
+	R(z_1)= z_1+\frac{z_0^2}{z_1}&=-R_1\\
+	R(z_2)= z_2+\frac{z_0^2}{z_2}&= R_2\\
+	z_2-z_1&=L
+\end{align}
+
+Lets define, 
+\begin{align}
+	g_i=1-\frac{L}{R_i}
+\end{align}
+where $R_i>0$ for concave and $<0$ for convex mirror. By considering the four relation, and the properties of Gaussian beam, we get,\cite{milonni}
+\begin{enumerate}
+	\item 
+	Mirror locations \textit{w.r.t.} beam waist location, $z_0$ be
+	\begin{align}
+		z_1&=-\frac{Lg_2(1-g_1)}{g_1+g_2-2g_1g_2}\\
+		z_2&=z_1+L
+	\end{align}
+
+	\item 
+	Let spot sizes of beam at first, second mirrors and beam waist be $w_1$, $w_2$ and $w_0$ respectively, then
+	\begin{align}
+		w_1&= \left(\frac{\lambda L}{\pi}\right)^{1/2} \left(\frac{g_2}{g_1(1-g_1g_2)}\right)^{1/4}\\
+		w_2&= \left(\frac{\lambda L}{\pi}\right)^{1/2} \left(\frac{g_1}{g_2(1-g_1g_2)}\right)^{1/4}\\
+		w_0&= \left(\frac{\lambda L}{\pi}\right)^{1/2} \left(\frac{g_1g_2(1-g_1g_2)}{(g_1+g_2-2g_1g_2)^2}\right)^{1/4}
+	\end{align}
+\end{enumerate}
+
+Note that $w_0$ to be a real value,
+\begin{align}
+	& g_1g_2(1-g_1g_2)>0\nonumber\\
+	\Rightarrow& \boxed{g_1g_2 \notin [0,1]}
+\end{align} This is the \textit{condition of stable resonator}. The cases when $g_1g_2= 0,1$ is neither stable nor unstable, is called \textit{marginal stability}.
+
+From \ref{eq:2.4} and \ref{eq:2.30}, we see that the spatial phase of Gaussian beam near the centroid (\textit{i.e.} $r\approx0$) be
+\begin{align}
+	\Phi(z) = kz-\tan[-1](\frac{z}{z_0})
+\end{align}
+For light confined in the cavity to be in standing wave mode, phase change in a round trip \textit{i.e.} from first mirror after reflecting at second mirror to again first mirror, should be an integral multiple of $2\pi$. So phase change from first mirror to second mirror is an integral multiple of $\pi$. Then
+\begin{align}
+	\Phi(z_2)-\Phi(z_1) &= m\pi\nonumber\\
+	k(z_2-z_1)- \left[\tan[-1](\frac{z_2}{z_0})-\tan[-1](\frac{z_1}{z_0})\right]&=m\pi \text{, where } m= 0, \pm1,\pm2 ,\dots
+\end{align} 
+If the mode frequency is $\nu$, $k=2\pi\nu/c$, then
+\begin{align}
+	\nu_m = \frac{c}{2L}\left[m+\frac{1}{\pi}\cos[-1](\sqrt{g_1g_2})\right]
+\end{align} This is \textit{longitudinal mode} of Gaussian beam.
 
 \subsection{Different modes of Gaussian beams}
 Here we will discuss mainly two types of higher order Gaussian beams \textit{i.e.}
@@ -1110,6 +1190,22 @@ where $H_i$ is \textit{i th order Hermite polynomial}and other symbols are as us
 See for $m=0=n$ we recover the Gaussian solution of \ref{eq:2.30} which we call as \textit{zero order} HG beam. For different values of $m$ an $n$, we will get diferent type of higher order HG beam, these are called \textit{transverse electromagnetic mode} of order $(m,n)$ or, $TEM_{mn}$. 
 
 Some characteristics of HG beams are given below,
+	\begin{figure}[t]
+	\foreach \n in {0,1,2}{
+		\foreach \m in {0,1,2}{
+			\begin{subfigure}[htbp]{0.32\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{intensity_hg\n\m}
+				\caption{$TEM_{\n\m}$}
+				%\label{fig:hg\n\m}
+			\end{subfigure}
+			\hfill
+		}
+	}
+	\\
+	\caption{Intensity variation for different TEM in a cross section ($z=0,z_0=1,w_0=1$)}
+	\label{fig:hgmn}
+\end{figure}
 \begin{enumerate}
 	\item 
 	\textit{Intensity} of HG beam is given by
@@ -1132,24 +1228,6 @@ Some characteristics of HG beams are given below,
 	\sum_{k=0}^l c_k\int_{-\infty}^{\infty} \xi_k \exp(-a\xi^2) d\xi
 	$$
 	as the values of $ \int_{-\infty}^{\infty} \xi_k \exp(-a\xi^2) d\xi $ is fixed\footnote{as $n_{th}$ moment of a random variable of Gaussian distribution has a fixed value for a particular integer values of $n$ \cite{n dist}} and for finite value of $l$, $W$ is finite and constant throughout the propagation along z-axis.
-	
-	
-	\begin{figure}[t!]
-		\foreach \n in {0,1,2}{
-			\foreach \m in {0,1,2}{
-				\begin{subfigure}[htbp]{0.32\textwidth}
-					\centering
-					\includegraphics[width=\textwidth]{intensity_hg\n\m}
-					\caption{$TEM_{\n\m}$}
-					%\label{fig:hg\n\m}
-				\end{subfigure}
-				\hfill
-			}
-		}
-		\\
-		\caption{Intensity variation for different TEM in a cross section ($z=0,z_0=1,w_0=1$)}
-		\label{fig:hgmn}
-	\end{figure}
 	
 	
 	\item
@@ -1220,7 +1298,7 @@ Some characteristics of HG beams are given below,
 	By same argument as HG beam, we can conclude $W$ is finite and constant throughout the propagation along z-axis
 	
 	\item
-	\textit{Phase} of the LG beam, unlike Gaussian beam, not only depends on the $r$ and $z$, but also on $phi$. Phase of LG beam is given by
+	\textit{Phase} of the LG beam, unlike Gaussian beam, not only depends on the $r$ and $z$, but also on $\phi$. Phase of LG beam is given by
 	\begin{align}
 		\Phi_{LG}(r,\phi,z) = -il\phi+i(2p+l+1)\arctan(\frac{z}{z_0})-i\frac{kr^2}{2R(z)}
 	\end{align}
@@ -1248,8 +1326,14 @@ Some characteristics of HG beams are given below,
 \end{figure}
 
 
-\subsection{\color{red}Relationship between LG \& HG beam}
-\cite{beijers allen 93}
+\subsection{\color{red}Relationship between LG \& HG modes}
+\cite{beijers allen 93},  \cite{allen 99} p 310 , Optical Angular Momentum by allen p 257, orbital Poincaré sphere of first-order modes
+
+
+
+
+
+
 \subsection{Maxwell-Gaussian beam (with polarization)}
 \cite{babiker 12}\cite{conry 12}\cite{hall 96}
 
@@ -1309,8 +1393,8 @@ Now considering slowly varying envelop approximation \ref{eq:2.5} for each compo
 
 \clearpage
 
-\section{MOMENTUM OF LIGHT}
 
+\section{MOMENTUM OF LIGHT}
 \subsection{Introduction}
 We know EM wave carries energy as well as momentum. Momentum can be two types, linear and angular momentum. The \textit{momentum density} of EM wave is momentum per unit volume.
 
@@ -1561,7 +1645,7 @@ We call $H_{so}$ as \textit{Spin-orbit energy}.\footnote{I have to check the Tho
 
 
 \subsection{Geometric phase of light}
-We know from the knowledge of waves, there is the phase factor corresponding to the EM wave due to optical path length difference, called \textit{dynamical phase}. But there is another phase factor other than dynamical one, due to the geometry or topology of the evolution of the electromagnetic wave, we call it \textit{Geometric phase}.\cite{WO} Geometric phases arises from intrinsic angular momentum and rotations of coordinates.\cite{bliokh 15} The two types of geometric phases, will be discussed, are
+We know from the knowledge of waves, there is the phase factor corresponding to the EM wave due to optical path length difference, called \textit{dynamical phase}. But there is another phase factor other than dynamical one, due to the geometry or topology of the evolution of the electromagnetic wave, we call it \textit{Geometric phase}.\cite{WO} Geometric phases arises from intrinsic angular momentum and rotations of coordinates. The geometric phase and angular momentum underlie the SOI of light.\cite{bliokh 15} The two types of geometric phases, will be discussed, are
 \begin{enumerate}
 	\item Spin-redirection Berry phase
 	\item Pancharatnam-Berry phase
@@ -1582,7 +1666,7 @@ where  $\sigma$ is helicity (either $+1$ or $-1$).
 Considering transversality of electric field, it will be tangent on the sphere in momentum space. And in one adiabatic cycle of wave-vector \textit{w.r.t.} $k_z$, the non-trivial parallel transport of the electric-field vectors takes place on the sphere.\cite{bliokh 15} So after transportation of a vector, the vector is rotated by an angle $\Theta$ \cite{par trans} \textit{i.e.} the frame is rotated by an angle $\Theta$ where
 \begin{align}
 	\Theta = 2\pi(1-\cos\theta)
-\end{align} where $\theta$ is half-apex angle of the cone formed by sweeping the wave vector $\boldsymbol{k}$ (see fig \ref{fig:berry b}). Note that $\Theta$ is the solid angle at at the apex of the cone.
+\end{align} where $\theta$ is half-apex angle of the cone formed by sweeping the wave vector $\boldsymbol{k}$ in momentum space (see fig \ref{fig:berry b}). Note that $\Theta$ is the solid angle obtained at the apex of the cone.
 
 \begin{figure}[t]
 	\begin{subfigure}[H]{0.62\textwidth}
@@ -1618,39 +1702,21 @@ Now for x-polarized light, $\ket{x_{in}}$ and $\ket{x_{out}}$ will be
 \begin{align}
 	\ket{x_{in}} &= \frac{1}{\sqrt{2}}\left(\ket{L}+\ket{R}\right)\\
 	\ket{x_{out}} &= \frac{1}{\sqrt{2}}\left(e^{i\Theta}\ket{L}+ e^{-i\Theta}\ket{R}\right)
-\end{align} So the x-polarized light is rotated by angle $\Theta$, shown in fig \ref{fig:berry a}. Note that $\theta$ does not originate from intrinsic anisotropy and it is geometric one. We call it \textit{spin-redirection Berry phase}.
+\end{align} So the x-polarized light is rotated by angle $\Theta$ after one cycle, shown in fig \ref{fig:berry a}. Note that $\theta$ does not originate from intrinsic anisotropy and it is geometric one. We call it \textit{spin-redirection Berry phase}.
 
 \subsubsection{Pancharatnam-Berry Phase}
 Unlike the previous one, the \textit{Pancharatnam-Berry phase} arises after a cyclic evolution in Poincare sphere when the state of polarization changes  keeping wave-vector $\boldsymbol{k}$ is fixed. Convenient example of observation of Pancharatnam-Berry phase is Michelson interferometer setup, (see fig. \ref{fig:pb expt}) in which one arm of the interferometer has two quarter wave-plates, one (QP1) is fixed and another one (QP2) is rotatable. \cite{chyba 88}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=8cm]{pb expt.png}
+	\includegraphics[width=6.5cm]{pb expt.png}
 	\caption{Schematic of Michelson interferometer setup for observation of Pancharatnam-Berry phase(ref. \cite{chyba 88})}
 	\label{fig:pb expt}
 \end{figure}
 
  Fast axis of QP1 and QP2 are aligned at $\theta_1= \pi/4$ and $\theta_2= \beta$ \textit{w.r.t.} x-axis, respectively. The input light is x-polarized. Then the polarization state of output light at different part of arm 2 in Michelson interferometer is shown in fig \ref{fig:pancha}, and corresponding Jones calculus shown in table \ref{table:5}.
  
- \begin{figure}[H]
- 	\begin{subfigure}[H]{0.50\textwidth}
- 		\centering
- 		\includegraphics[width=0.9\textwidth]{MI arm.png}
- 		\caption{Michelson interferometer arm 2}
- 		\label{fig:pancha a}
- 	\end{subfigure}
- 	\hfil
- 	\begin{subfigure}[H]{0.4\textwidth}
- 		\centering
- 		\includegraphics[width=0.9\textwidth]{poincare-pb.png}
- 		\caption{Corresponding cyclic evolution in Poincare sphere}
- 		\label{fig:pancha b}
- 	\end{subfigure}
- 	\caption{Evolution of polarization state in arm 2}
- 	\label{fig:pancha}
- \end{figure}
- 
- 
+
 \begin{table}[H]
  	\centering
  	\begin{tabular}{c c} 
@@ -1693,7 +1759,7 @@ Unlike the previous one, the \textit{Pancharatnam-Berry phase} arises after a cy
  	\parbox{5cm}{\begin{align*}
  			\boldsymbol{J}_C 
  			&=\boldsymbol{M}_{Mirror} \;\boldsymbol{J}_B
- 			= e^{i\pi/2}
+ 			= e^{i\pi}
  			\begin{bmatrix}
  				-1 & 0 \\ 0 & 1
  			\end{bmatrix} 
@@ -1716,9 +1782,28 @@ Unlike the previous one, the \textit{Pancharatnam-Berry phase} arises after a cy
  	\hline
  	\hline
 	\end{tabular}
- 	\caption{Jones vector of polarization state}
+ 	\caption{Jones vector of polarization state in Pancharatnam-Berry phase}
  	\label{table:5}
 \end{table}
+
+ \begin{figure}[t]
+	\begin{subfigure}[H]{0.50\textwidth}
+		\centering
+		\includegraphics[width=0.9\textwidth]{MI arm.png}
+		\caption{Michelson interferometer arm 2}
+		\label{fig:pancha a}
+	\end{subfigure}
+	\hfil
+	\begin{subfigure}[H]{0.4\textwidth}
+		\centering
+		\includegraphics[width=0.9\textwidth]{poincare-pb.png}
+		\caption{Corresponding cyclic evolution in Poincare sphere}
+		\label{fig:pancha b}
+	\end{subfigure}
+	\caption{Evolution of polarization state in arm 2}
+	\label{fig:pancha}
+\end{figure}
+
 
 We see that the light with linear polarization state $(\ket{B})$ acquired a additional phase term \textit{i.e.} ${\color{red}\exp(-i\:2\varphi)}$ which only depends on orientation of QP2 \textit{i.e.} $\varphi= \beta+\pi/4$ and does not depend on thickness and refractive index of the birefringent wave-plate, so this phase is purely geometric one. Other all $\phi$'s are dynamical phase factor.\cite{WO}
 
@@ -1732,14 +1817,14 @@ So at photodiode the intensity variation \textit{w.r.t.} $\beta$ will be
 	I &= (\bra{A}+\bra{A'})(\ket{A}+\ket{A'}) \nonumber\\
 	&= \braket{A}{A} \left(1+\exp(-i\phi_6+i2\varphi)\right)\left(1+\exp(i\phi_6-i2\varphi)\right)\nonumber\\
 	&= \braket{A}{A}(2 + 2\cos(2\varphi - \phi_6))\nonumber\\
-	\Rightarrow I(\beta)&= 2\braket{A}{A} \left(1- \sin(2\beta - \phi_6)\right) \label{}
+	\Rightarrow I(\beta)&= 2\braket{A}{A} \left(1- \sin(2\beta - \phi_6)\right) \label{eq:4.16}
 \end{align}
 Experimental verification by Chyba \textit{et al} (ref. \cite{chyba 88}) is given in figure \ref{fig:chyba}.
 \begin{figure}[H]
 	\begin{subfigure}[H]{0.53\textwidth}
 		\centering
 		\includegraphics[width=0.9\textwidth]{chyba 1.png}
-		\caption{Measured intensity vs Rotation angle  $\beta$ of QP2, fitted with eq. \ref{} }
+		\caption{Measured intensity vs Rotation angle  $\beta$ of QP2, fitted with eq. \ref{eq:4.16} }
 		\label{fig:chyba a}
 	\end{subfigure}
 	\hfil
@@ -1749,21 +1834,65 @@ Experimental verification by Chyba \textit{et al} (ref. \cite{chyba 88}) is give
 		\caption{Measured phase shift vs rotation angle $\beta$, with solid line of $\phi=2\beta$}
 		\label{fig:chyba b}
 	\end{subfigure}
-	\caption{Measurement of the Pancharatnam phase by Chyba \textit{et al} \cite{chyba 88}}
+	\caption{Measurement of the Pancharatnam phase by Chyba \textit{et al} (ref. \cite{chyba 88})}
 	\label{fig:chyba}
 \end{figure}
 
-%\subsubsection{Geometric phase in LG-HG mode transformation}
+
+\subsubsection{Rotational frequency shift of light}
+Rotational frequency shift is the dynamical manifestation of Pancharatnam-Berry Phase. Let there is half wave-plate rotating \textit{w.r.t.} centre axis at $\Omega$. If the alignment of the fast axis of half wave-plate is $\theta$, then
+\begin{align}
+	\Omega = \frac{d\theta}{dt}\\
+	\theta = \Omega t
+\end{align}
+
+let the Jones electric field vector of input light is
+ \begin{align}
+ 	\boldsymbol{E}_{in} = \frac{1}{\sqrt{2}}
+ 	\begin{bmatrix}
+ 		1\\i\sigma
+ 	\end{bmatrix}
+ \end{align}
+Then the Jones electric field vector of output light is
+\begin{align}
+	\boldsymbol{E}_{out}(\theta)&=R(-\theta)\boldsymbol{M}_{\lambda/2}R(\theta)\boldsymbol{E}_{in}
+	=R(-\theta)
+	\begin{bmatrix}
+		1 & 0\\
+		0 & -1
+	\end{bmatrix}
+	R(\theta)\boldsymbol{E}_{in}\nonumber\\
+	&=\begin{bmatrix}
+		\cos(2\theta) & \sin(2\theta)\\
+		\sin(2\theta) & -\cos(2\theta)
+	\end{bmatrix}
+	\frac{1}{\sqrt{2}}
+	\begin{bmatrix}
+		1\\i\sigma
+	\end{bmatrix}
+	= \frac{1}{\sqrt{2}}
+	\begin{bmatrix}
+		1\\-i\sigma
+	\end{bmatrix}
+	{\color{blue}\exp(i2\sigma\theta)}\nonumber\\
+	\Rightarrow\boldsymbol{E}_{out}(t)&= \frac{1}{\sqrt{2}}
+	\begin{bmatrix}
+		1\\-i\sigma
+	\end{bmatrix}
+	{\color{blue}\exp(i2\sigma\Omega t)}
+\end{align}
+If angular frequency of the input beam is $\omega$, then the angular frequency of output beam be $(\omega + 2\sigma\Omega)$. So change in angular frequency, $\Delta\omega=2\sigma\Omega$. This is spin-dependant \textit{rotational Doppler shift} of SAM carrying light beam.
+
+\subsubsection{\color{red}Geometric phase in LG-HG mode transformation}
 
 \subsection{Types of SOI}
 We have discussed brief of angular momentum of light in previous chapter. The different types of angular momentum a EM beam carries are
 \begin{enumerate}
-	\item Spin AM ($\boldsymbol{S}$)
-	\item Intrinsic orbital AM ($\boldsymbol{L}_{int}$)
-	\item Extrinsic orbital AM ($\boldsymbol{L}_{ext}$)
+	\item Spin AM ($\boldsymbol{S}$) or SAM
+	\item Intrinsic orbital AM ($\boldsymbol{L}_{int}$) or IOAM
+	\item Extrinsic orbital AM ($\boldsymbol{L}_{ext}$) or EOAM
 \end{enumerate}
-The diagrammatic representation is given in figure \ref{fig:am}.
-
+SAM is associated with degree of circular polarization and also intrinsic in nature. The IOAM is associated with the optical vortex structure of the beam (\textit{e.g.} vortex beam like LG beam), so it is intrinsic. Whereas the EOAM is associated with the trajectory of centroid of the beam.\cite{bliokh 12} (see fig \ref{fig:am}) 
 \begin{figure}[H]
 	\begin{subfigure}[H]{0.32\textwidth}
 		\centering
@@ -1797,27 +1926,141 @@ The inter-conversion between these different angular momentum in a process repre
 \end{enumerate}
 In the later section, we will see several manifestation of those interactions.
 
-\subsection{SOI in isotropic medium}
-\cite{bliokh 12}
+%\subsection{SOI in isotropic medium}
+%\cite{bliokh 12}
 
 \subsection{SOI in inhomogeneous anisotropic medium}
-\cite{marrucci 06}\cite{allen 99}\cite{bliokh 15}
+Inhomogeneous anisotropic medium has spatially varying anisotropy axis (\textit{i.e.} birefringent or dichroic. Here SOI deals with spin flipping, spin-to-orbital angular momentum conversion etc. To illustrate these events, we will consider specific cases.
+
+A simple case is when a circularly polarized light passes through quarter wave-plate, it become linearly polarized light, so the SAM transformation is $S=\pm1 \longrightarrow S= 0$, in that cases, $\pm\hbar$ SAM carried by each photon of circularly polarized light, is transferred to the wave plate. Similarly for half wave-plate, the SAM transformation is 
+$$\sigma=\pm 1 \longrightarrow \sigma=\mp1$$ So the spin is flipped.  
+
+Before going into more complex cases, we discuss about \textit{q-plate}. Q-plate is an homogeneous birefringent phase retardation of $\pi$ (half-wave) across the slab and an inhomogeneous orientation of the fast (or slow) optical axis lying parallel to the slab planes whose local alignment of birefringent fast axis varies linearly with the azimuth angle of the q-plate.\cite{marrucci 06} Let local alignment angle is $\alpha$, and the azimuth angle is $\phi$, then,
+\begin{align}
+	\alpha(\phi)=q\phi+\alpha_0
+\end{align}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.4\linewidth]{q-plate}
+\caption{local birefringent fast axis alignment in q-plate}
+\label{fig:q-plate}
+\end{figure}
+
+Now the corresponding Jones matrix at each point of the q-plate will be \cite{marrucci 06}
+\begin{align}
+	\boldsymbol{M}_q(\phi)&=R(-\alpha)\boldsymbol{M}_{\lambda/2}R(\alpha) 
+	=R(-\alpha)
+	\begin{bmatrix}
+		1 & 0\\
+		0 & -1
+	\end{bmatrix}
+	R(\alpha)\nonumber\\
+	 &=\begin{bmatrix}
+		\cos(2\alpha) & \sin(2\alpha)\\
+		\sin(2\alpha) & -\cos(2\alpha)
+	\end{bmatrix}
+\end{align}
+
+Let considering transversal of electric field, for each ray of a paraxial beam of circular polarization ($\sigma=\pm1$) the Jones electric field is 
+\begin{align}
+	\boldsymbol{E}_{in} = \frac{1}{\sqrt{2}}
+	\begin{bmatrix}
+		1\\i\sigma
+	\end{bmatrix}
+\end{align}
+then the output electric filed vector will be
+\begin{align}
+	\boldsymbol{E}_{out}(\phi) = \boldsymbol{M}_q(\phi)
+	\frac{1}{\sqrt{2}}
+	\begin{bmatrix}
+		1\\i\sigma
+	\end{bmatrix}
+	= \exp(i2\sigma\alpha)\frac{1}{\sqrt{2}}
+	\begin{bmatrix}
+		1\\-i\sigma
+	\end{bmatrix}
+	=\frac{1}{\sqrt{2}}
+	\begin{bmatrix}
+		1\\-i\sigma
+	\end{bmatrix}
+	{\color{red}\exp(i2\sigma q\phi)}\: \exp(i2\sigma\alpha_0)
+\end{align}
+So the output beam has spin flipping. Moreover the beam has acquired a spin-dependant phase factor  ${\color{red}\exp(i2\sigma q\phi)}$, which makes it a vortex beam. From \ref{eq:3.32} we see that output light carries $2q\hbar$ angular momentum per photon. Here the change of angular momentum is 
+$$(\sigma=\pm1,l=0)\longrightarrow (\sigma=\mp1,l=\pm2q)$$
+So to keep total angular momentum per photon conserved, $q=2$.
 
 
+Now let the q-plate is of phase retardation of $\pi/2$, then 
+\begin{align}
+	\boldsymbol{M}_q(\phi)&=R(-\alpha)\boldsymbol{M}_{\lambda/4}R(\alpha) 
+	=R(-\alpha)
+	\begin{bmatrix}
+		1 & 0\\
+		0 & i
+	\end{bmatrix}
+	R(\alpha)\nonumber\\
+	&=\begin{bmatrix}
+		\cos[2](\alpha)+i\sin[2](\alpha)&(1-i)\sin(\alpha)\cos(\alpha) \\ 
+		(1-i)\sin(\alpha)\cos(\alpha) & \sin[2](\alpha)+i\cos[2](\alpha)
+	\end{bmatrix}
+\end{align}
+Putting circularly polarized light (as in Pancharatnam-Berry phase, see table \ref{table:5}), electric filed vector will be
+\begin{align}
+	\boldsymbol{E}_{out}(\phi) &= \boldsymbol{M}_q(\phi)\frac{1}{\sqrt{2}}
+	\begin{bmatrix}
+		1\\
+		i\sigma
+	\end{bmatrix}
+	= \exp(i\sigma\alpha)
+	\begin{bmatrix}
+		\cos(\alpha - \sigma\pi/4)\\
+		\sin(\alpha - \sigma\pi/4)
+	\end{bmatrix}\nonumber\\
+	&=\begin{bmatrix}
+		\cos(\alpha - \sigma\pi/4)\\
+		\sin(\alpha - \sigma\pi/4)
+	\end{bmatrix}
+	{\color{red}\exp(i\sigma q\phi)}\:\exp(i\sigma\alpha_0)
+\end{align}
+So the output beam has a phase factor ${\color{red}\exp(i\sigma q\phi)}$. Here the change of angular momentum is 
+$$(\sigma=\pm1,l=0)\longrightarrow (\sigma=0,l=\pm q)$$
+So to keep total angular momentum per photon conserved, $q=1$.
 
-
-
-
-
-
-
-
-
-
+\begin{figure}[H]
+	\begin{subfigure}[H]{0.24\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{qplate(0).png}
+		\caption{$q=0$, $\alpha_0=0$}
+		\label{fig:q0}
+	\end{subfigure}
+	\hfil
+	\begin{subfigure}[H]{0.24\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{qplate(0.5).png}
+		\caption{$q=0.5$, $\alpha_0=0$}
+		\label{fig:q0.5}
+	\end{subfigure}
+	\hfil
+	\begin{subfigure}[H]{0.24\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{qplate(1).png}
+		\caption{$q=1$, $\alpha_0=0$}
+		\label{fig:q1}
+	\end{subfigure}
+	\hfil
+	\begin{subfigure}[H]{0.24\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{qplate(1,r).png}
+		\caption{$q=1$, $\alpha_0=\pi/2$}
+		\label{fig:q1r}
+	\end{subfigure}
+	\caption{Q-plate of different $q$ and $\alpha_0$}
+	\label{fig:qplate}
+\end{figure}
 
 
 \subsection{SOI in non-paraxial fields}
-
+\subsection{Spin Hall effect}
 
 
 \clearpage
@@ -1857,6 +2100,9 @@ In the later section, we will see several manifestation of those interactions.
 	
 	\bibitem{kogelnik 66}
 	Kogelnik, H., \& Li, T. (1966). Laser beams and resonators. Applied optics, 5(10), 1550-1567. 
+	
+	\bibitem{opt cavity}
+	\href{https://en.wikipedia.org/wiki/Optical_cavity}{Optical cavity - Wikipedia}
 	
 	\bibitem{erikson 94}
 	Erikson, W. L.; Singh, S. (1994). Polarization properties of Maxwell-Gaussian laser beams. Physical Review E, 49(6), 5778–5786. doi: 10.1103/PhysRevE.49.5778
@@ -1931,8 +2177,8 @@ In the later section, we will see several manifestation of those interactions.
 	  \bibitem{icts - ghosh}
 	  \href{https://www.youtube.com/watch?v=e1ix-oBH5Ng&list=PL04QVxpjcnjjUn4IbvSncV24Uazej5fBI&index=2}{ Angular momentum, Geometric phase and spin orbit interaction of Light by Nirmalya Ghosh - ICTS}
 	  
-	  %\bibitem{ross 84}
-	  %Ross, J. N. (1984). The rotation of the polarization in low birefringence monomode optical fibres due to geometric effects. Opt Quant Electron 16, 455–461. doi: 10.1007/BF00619638
+	  \bibitem{ross 84}
+	  Ross, J. N. (1984). The rotation of the polarization in low birefringence monomode optical fibres due to geometric effects. Opt Quant Electron 16, 455–461. doi: 10.1007/BF00619638
 	  
 	  \bibitem{bliokh 09}
 	  Bliokh, K. Y. (2009). Geometrodynamics of polarized light: Berry phase and spin Hall effect in a gradient-index medium. Journal of Optics A: Pure and Applied Optics, 11(9), 094009–. doi: 10.1088/1464-4258/11/9/094009
