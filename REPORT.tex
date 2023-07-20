@@ -49,7 +49,7 @@
 	\begin{titlepage}
 		\vspace*{3.5cm}
 		\centering
-		{\Huge\bfseries Summer Project}\\
+		{\Huge\bfseries Summer Project of 2023}\\
 		\vspace{5cm}
 		\includegraphics[width=2.5cm]{iiserk.png}
 
@@ -70,6 +70,7 @@
 		\newpage
 		\fi
 		
+		\iffalse
 		\parindent=0pt
 		\thispagestyle{empty}
 		\begin{center}
@@ -82,24 +83,32 @@
 			\textsc{\Large \textbf{Richard P. Feynman}}
 			\vspace*{\fill}
 			
-			\iffalse
-			\vspace*{\fill}
-			\color{darkgray}{\Large{\textbf{“} Out of mere compassion for them, I, dwelling within their hearts, destroy the darkness, born of ignorance, by the luminous Lamp of Knowledge. \textbf{”}} \par} 
-			\vspace{1cm}
-			\textsc{\Large \textbf{Srimad Bhagavad-Gita, 10-11}}
-			\vspace*{\fill}
-			\fi
 		\end{center}
 		\clearpage
-		
-		\iffalse
-		\newpage 
-		\thispagestyle{empty}
-		\begin{center}
-			This page is intentionally left blank
-		\end{center}
-		\newpage
 		\fi
+		
+		\newpage 
+		
+		\thispagestyle{empty}
+		{\centering\Huge\bfseries Acknowledgement}
+		\vspace{12mm}
+		\begin{flushleft}
+		\Large
+		\hspace{7mm}I am incredibly grateful to have had the opportunity to work on a fascinating summer project on the topic of optics under  \textbf{Prof. Ayan Banerjee}\footnote{HOD, Department of Physical Sciences, IISER Kolkata, Room No: M-130, email: \href{mailto:ayan@iiserkol.ac.in}{ayan@iiserkol.ac.in}} and with the mentorship of \textbf{Ram Nandan Kumar}\footnote{Int. PhD, Department of Physical Sciences, IISER Kolkata, email: \href{mailto:ramnandan899@gmail.com}{ramnandan899@gmail.com}}. This project has been an enriching and enlightening experience for me, and I am indebted to the support and expertise provided by both of them.  The project was a reading-oriented project of duration from the 17th of May to the 20th of July of 2023, and throughout this period, {Prof. Ayan Banerjee} and {Ram Nandan Kumar} extended their unwavering support, sharing their valuable insights and encouraging me to deepen my understanding of the subject matter.\\
+		\vspace{5mm}
+		\hspace{7mm}Finally, I want to thank my family and friends for their unwavering support and understanding throughout this journey. Their encouragement provided the motivation I needed to stay focused and determined.\\
+		\vspace{5mm}
+		\hspace{7mm}In conclusion, I feel immensely fortunate to have worked on this summer project and the knowledge and experiences gained during this period will undoubtedly shape my academic and professional pursuits in the future.\\
+		\vspace{5mm}
+		\hspace{7mm}Thank you all for being an integral part of this enriching journey.\\
+		\vspace{5mm}
+		Sincerely,\\
+		\vspace{5mm}
+		\textit{\LARGE Pritish Karmakar}\\
+		\textit{20.07.23} 
+		\end{flushleft}
+		\newpage
+		
 		
 		\pagenumbering{roman}
 		
@@ -235,13 +244,12 @@ To determine $m_{ij}$ in $\boldsymbol{M}$,
 \end{enumerate}
 
 Such examples of usual Jones matrix \footnote{For polariser the Jones matrix $\boldsymbol{M} = \boldsymbol{J}\;\boldsymbol{J}^\ast$ where $\boldsymbol{J}$ is normalized Jones vector corresponding polarization state \textit{s.t.} $\boldsymbol{J}_{out}= \boldsymbol{M}\boldsymbol{J} = (\boldsymbol{J}\boldsymbol{J}^\ast)\boldsymbol{J}=\boldsymbol{J}(\boldsymbol{J}^\ast\boldsymbol{J})=\boldsymbol{J}$ \label{fn:1}} are given below,\cite{jones}
-\begin{table}[H]
-	\centering
-	\begin{tabular}{ c c } 
+
+	\begin{longtable}[H]{ c c } 
 		\hline
 		\hline
 		Optical element & $\boldsymbol{M}$\\
-		\hline
+		\hline\endhead
 		Free space & $\begin{bmatrix}
 			1 & 0 \\ 
 			0 & 1
@@ -286,10 +294,11 @@ Such examples of usual Jones matrix \footnote{For polariser the Jones matrix $\b
 		\end{bmatrix}$\\
 	\hline
 	\hline
-	\end{tabular}
 	\caption{Jones matrix related to usual optical element}
 	\label{table:2}
-\end{table}
+	\end{longtable}
+	
+
 
 Some properties of Jones matrix are 
 \begin{enumerate}
@@ -355,7 +364,7 @@ Examples of coherency matrix of usual polarization states are given below \cite{
 Some properties of coherency matrix are
 \begin{enumerate}
 	\item It is a hermitian matrix \textit{i.e.} $\boldsymbol{C}=\boldsymbol{C}^\dagger$
-	\item Trace and determinant off the matrix are non-negative\footnote{Proofs to be done} \textit{i.e.} $\tr(\boldsymbol{C})>0$ \& $\det(\boldsymbol{C})\ge0$.
+	\item Trace and determinant off the matrix are non-negative \textit{i.e.} $\tr(\boldsymbol{C})>0$ \& $\det(\boldsymbol{C})\ge0$.
 	\item $\Tr(\boldsymbol{C}) = \expval{E_x E_x^\ast} +\expval{E_y E_y^\ast}$ is the time averaged intensity of input light.
 	\item let the polarized light (of electric field $\boldsymbol{E}_{in}$ \& coherency matrix $\boldsymbol{C}_{in}$) passes through an optical element (of Jones matrix $\boldsymbol{M}$) then let output electric field be $\boldsymbol{E}_{out}$ by the equation \ref{eq:1.5}, then output coherency matrix $\boldsymbol{C}_{out}$ is given by 
 	\begin{align}
@@ -638,7 +647,7 @@ and \textit{Wolf matrix} $\boldsymbol{W}$ as
 \begin{align}
 	\boldsymbol{L}_{out}=\boldsymbol{W}\:\boldsymbol{L}_{in}
 \end{align}
-then the relation between Jones and Wolf matrix\footnote{proof to be done} is
+then the relation between Jones and Wolf matrix is
 \begin{align}
 	\boldsymbol{W}=\boldsymbol{M}\otimes\boldsymbol{M}^\ast
 \end{align}
@@ -658,7 +667,7 @@ where,
 		0 & -i & i & 0
 	\end{bmatrix}
 \end{align}
-then the relation between Jones and Muller matrix\footnote{proof to be done} is
+then the relation between Jones and Muller matrix is
 \begin{align}
 	\boldsymbol{\mathfrak{M}}=\boldsymbol{A} \left(\boldsymbol{M}\otimes\boldsymbol{M}^\ast\right) \boldsymbol{A}^{-1}
 \end{align} 
@@ -754,7 +763,7 @@ To see the handedness of the rotation of electric field vector in transverse pla
 	$$\tan \chi \le 0\Rightarrow \chi \in \left[-\frac{\pi}{4},0\right)$$
 \end{enumerate}
 	
-Now the Jones vector of elliptical polarization in the form of ellipticity and azimuth\footnote{proof to be done} will be,
+Now the Jones vector of elliptical polarization in the form of ellipticity and azimuth will be,
 \begin{align}
 	\boldsymbol{J}= 
 		\begin{bmatrix}
@@ -764,7 +773,7 @@ Now the Jones vector of elliptical polarization in the form of ellipticity and a
 \end{align}
 
 \subsubsection{Stokes vector and corresponding Poincare representation}
-From the eq. \ref{eq:1.16}, we can write for our case\footnote{proof to be done}, 
+From the eq. \ref{eq:1.16}, we can write for our case, 
 \begin{align}
 	\boldsymbol{S}= \begin{bmatrix} S_0\\ S_1\\ S_2\\S_3\end{bmatrix} =
 	\begin{bmatrix}
@@ -817,7 +826,8 @@ The evolution of azimuth ($\psi$) and ellipticity ($\chi$) of the polarization s
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{GAUSSIAN BEAM}
-\subsection{\color{red}Introduction}
+\subsection{Introduction}
+In optics and laser physics, the Gaussian beam stands as a fundamental concept, where the intensity of the light beam follows Gaussian curve. Its elegance lies in the fact that, it propagate over long distances with minimal divergence and diffraction. This distinctive feature makes it a preferred choice in a wide array of applications in optics and laser physics. Here we will briefly discuss about the different modes of Gaussian beams, as well as their properties.
 
 \subsection{Paraxial wave equation and solutions}
 From Maxwell's 3-D wave equation for electric field in vacuum,
@@ -1184,7 +1194,7 @@ Lets take the ansatz as,
 Putting this in Paraxial wave equation \ref{eq:2.6}, and solving the differential equation,\cite{milonni} we get,
 \begin{align}
 	\psi_{m,n}(\boldsymbol{r},z)&= A \frac{w_0}{w(z)} H_m\left(\frac{\sqrt{2} x}{w(z)}\right) H_n\left(\frac{\sqrt{2} y}{w(z)}\right)\exp( -\frac{r^2}{w^2(z)}) \cdot\nonumber\\ 
-	&\exp( i\:(m+n+1)\tan[-1](\frac{z}{z_0}) -i\frac{kr^2}{2R(z)})
+	&\exp( i\:(m+n+1)\tan[-1](\frac{z}{z_0}) -i\frac{kr^2}{2R(z)}) \label{eq:2.53}
 \end{align}
 where $H_i$ is \textit{i th order Hermite polynomial}and other symbols are as usual.
 See for $m=0=n$ we recover the Gaussian solution of \ref{eq:2.30} which we call as \textit{zero order} HG beam. For different values of $m$ an $n$, we will get diferent type of higher order HG beam, these are called \textit{transverse electromagnetic mode} of order $(m,n)$ or, $TEM_{mn}$. 
@@ -1219,15 +1229,14 @@ Some characteristics of HG beams are given below,
 	\begin{align}
 		W&= \iint_{-\infty}^{\infty} dx\:dy\:I(x,y,z)\nonumber\\
 		%&= \frac{1}{2} \epsilon_0c \abs{A}^2 \left(\frac{w_0}{w(z)}\right)^2 \iint_{-\infty}^{\infty} dx\:dy\: \left[H_m\left(\frac{\sqrt{2} x}{w(z)}\right)\right]^2 \left[H_n\left(\frac{\sqrt{2} y}{w(z)}\right) \right]^2\exp(-\frac{2(x^2+y^2)}{w^2(z)})\nonumber\\
-		&= \frac{1}{2} \epsilon_0c \abs{A}^2 \left(\frac{w_0}{w(z)}\right)^2 \int_{-\infty}^{\infty} dx\: \exp(-\frac{2x^2}{w^2(z)}) \left[H_m\left(\frac{\sqrt{2} x}{w(z)}\right) \right]^2\nonumber\\ 
-		&\int_{-\infty}^{\infty} dy\: \exp(-\frac{2y^2}{w^2(z)})\left[H_n\left(\frac{\sqrt{2} y}{w(z)}\right) \right]^2 \label{eq:2.40}
+		&= \frac{1}{2} \epsilon_0c \abs{A}^2 \left(\frac{w_0}{w(z)}\right)^2 \int_{-\infty}^{\infty} dx\: \exp(-\frac{2x^2}{w^2(z)}) \left[H_m\left(\frac{\sqrt{2} x}{w(z)}\right) \right]^2\label{eq:2.40}
 	\end{align}
 	the integration terms of \ref{eq:2.40} are in the form of 
 	$$\int_{-\infty}^{\infty} H_l \exp(-a\xi^2) d\xi=
 	\int_{-\infty}^{\infty}\left(\sum_{k=0}^l c_k \xi_k\right)  \exp(-a\xi^2) d\xi = 
 	\sum_{k=0}^l c_k\int_{-\infty}^{\infty} \xi_k \exp(-a\xi^2) d\xi
 	$$
-	as the values of $ \int_{-\infty}^{\infty} \xi_k \exp(-a\xi^2) d\xi $ is fixed\footnote{as $n_{th}$ moment of a random variable of Gaussian distribution has a fixed value for a particular integer values of $n$ \cite{n dist}} and for finite value of $l$, $W$ is finite and constant throughout the propagation along z-axis.
+	as the values of $ \int_{-\infty}^{\infty} \xi_k \exp(-a\xi^2) d\xi $ is fixed\footnote{as $n^{th}$ moment of a random variable of Gaussian distribution has a fixed value for a particular integer values of $n$ \cite{n dist}} and for finite value of $l$, $W$ is finite and constant throughout the propagation along z-axis.
 	
 	
 	\item
@@ -1255,13 +1264,13 @@ In the expression \ref{eq:2.30}, we get the radially symmetric Gaussian beam sol
 
 Lets take the ansatz as,
 \begin{align}
-	\psi(\boldsymbol{r},z)= A \: g\left(\frac{y}{w(z)}\right) \exp\left[-i\left(p(z) + \frac{kr^2}{2q(z)}+l\phi\right)\right]
+	\psi(r,\phi,z)= A \: g\left(\frac{y}{w(z)}\right) \exp\left[-i\left(p(z) + \frac{kr^2}{2q(z)}+l\phi\right)\right]
 \end{align}
 Putting this in Paraxial wave equation \ref{eq:2.6}, and solving the differential equation,\cite{LG}\cite{kogelnik 66} we get,
 \begin{align}
-	\psi_{p,l}(\boldsymbol{r},z)=&A\:\frac{w_0}{w(z)} \left[\frac{r\sqrt{2}}{w(z)}\right]^{|l|} L_p^{|l|}\left(\frac{2r^2}{w^2(z)}\right)\exp(-\frac{r^2}{w^2(z)}) \cdot\nonumber\\ &\exp(-il\phi+i(2p+l+1)\arctan(\frac{z}{z_0})-i\frac{kr^2}{2R(z)}) \label{eq:2.43}
+	\psi_{p,l}(r,\phi,z)=&A\:\frac{w_0}{w(z)} \left[\frac{r\sqrt{2}}{w(z)}\right]^{|l|} L_p^{|l|}\left(\frac{2r^2}{w^2(z)}\right)\exp(-\frac{r^2}{w^2(z)}) \cdot\nonumber\\ &\exp(-il\phi+i(2p+l+1)\tan[-1](\frac{z}{z_0})-i\frac{kr^2}{2R(z)}) \label{eq:2.58}
 \end{align}
-where $l$ is \textit{vortex quantum number},takes integer value, $ L_p^{|l|} $ is  \textit{associated Laguerre polynomial} and other terms are as usual.
+where $l$ is \textit{vortex quantum number}, takes integer value, $ L_p^{|l|} $ is  \textit{associated Laguerre polynomial} and other terms are as usual.
 \begin{figure}[!t]
 	
 	\foreach \n in {0,1,2}{
@@ -1280,7 +1289,23 @@ where $l$ is \textit{vortex quantum number},takes integer value, $ L_p^{|l|} $ i
 	\label{fig:lgpl}
 \end{figure}
 
-
+\begin{figure}[t]
+	
+	\foreach \n in {0,1,2}{
+		\foreach \m in {0,1,2}{
+			\begin{subfigure}[htbp]{0.32\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{phase_lg\n\m}
+				\caption{$p=\n,l=\m$}
+				%\label{fig:hg\n\m}
+			\end{subfigure}
+			\hfill
+		}
+	}
+	\\
+	\caption{Phase variation for different modes in a cross section ($z=0,z_0=1,w_0=1$)}
+	\label{fig:phase_lgpl}
+\end{figure}
 Some characteristics of HG beams are given below,
 \begin{enumerate}
 	\item \textit{Intensity} of LG beam is given by 
@@ -1300,51 +1325,26 @@ Some characteristics of HG beams are given below,
 	\item
 	\textit{Phase} of the LG beam, unlike Gaussian beam, not only depends on the $r$ and $z$, but also on $\phi$. Phase of LG beam is given by
 	\begin{align}
-		\Phi_{LG}(r,\phi,z) = -il\phi+i(2p+l+1)\arctan(\frac{z}{z_0})-i\frac{kr^2}{2R(z)}
+		\Phi_{LG}(r,\phi,z) = \arg(\psi_{p,l}(r,\phi,z)) 
 	\end{align}
 	Phase plot for different order of LG beam at $z=0$ is given in figure \ref{fig:phase_lgpl}.
 	
 	\item 
 	As we will see later section, unlike the HG beam, LG bream carry orbital angular momentum due to its phase variation \textit{w.r.t.} $\phi$ which results helical phase-front of the beam.
 \end{enumerate}
-\begin{figure}[!t]
-	
-	\foreach \n in {0,1,2}{
-		\foreach \m in {0,1,2}{
-			\begin{subfigure}[htbp]{0.32\textwidth}
-				\centering
-				\includegraphics[width=\textwidth]{phase_lg\n\m}
-				\caption{$p=\n,l=\m$}
-				%\label{fig:hg\n\m}
-			\end{subfigure}
-			\hfill
-		}
-	}
-	\\
-	\caption{Phase variation for different modes in a cross section ($z=0,z_0=1,w_0=1$)}
-	\label{fig:phase_lgpl}
-\end{figure}
-
-
-\subsection{\color{red}Relationship between LG \& HG modes}
-\cite{beijers allen 93},  \cite{allen 99} p 310 , Optical Angular Momentum by allen p 257, orbital Poincaré sphere of first-order modes
-
-
 
 
 
 
 \subsection{Maxwell-Gaussian beam (with polarization)}
-\cite{babiker 12}\cite{conry 12}\cite{hall 96}
-
-Let us consider electric field $\boldsymbol{E}$ and magnetic field $\boldsymbol{E}$ of a EM wave propagating in z-direction, we write, in Cartesian coordinate\footnote{For cylindrical coordinate, refer \cite{lewis 14}.}, 
+According to \cite{erikson 94}, let us consider electric field $\boldsymbol{E}$ and magnetic field $\boldsymbol{E}$ of a EM wave propagating in z-direction, we write, in Cartesian coordinate,\footnote{For cylindrical coordinate, ref \cite{lewis 14}}
 \begin{align}
 	\boldsymbol{E}(\boldsymbol{r},t)
 	&= \boldsymbol{E_0}\: e^{i(kz - \omega t)}
 	= \begin{bmatrix}
 		E_{0x}(\boldsymbol{r})\\E_{0y}(\boldsymbol{r})\\E_{0y}(\boldsymbol{r})
 	\end{bmatrix} e^{i(kz - \omega t)}\\
-	\boldsymbol{B}
+	\boldsymbol{B}(\boldsymbol{r},t)
 	&= \boldsymbol{B_0}\: e^{i(kz - \omega t)}
 	= \begin{bmatrix}
 		B_{0x}(\boldsymbol{r})\\B_{0y}(\boldsymbol{r})\\B_{0y}(\boldsymbol{r})
@@ -1353,44 +1353,153 @@ Let us consider electric field $\boldsymbol{E}$ and magnetic field $\boldsymbol{
 As $\boldsymbol{E}$ and $\boldsymbol{B}$ satisfies Maxwell's equation in free space\cite{max eq - wiki}, and using $\omega/k = c$, we get,
 \begin{align}
 	&\nabla\cdot\boldsymbol{E}=0\\
-	\Rightarrow\;& ikE_{0z}+\nabla\cdot\boldsymbol{E_0}=0\label{eq:2.50}\\
+	\Rightarrow\;& ikE_{0z}+\nabla\cdot\boldsymbol{E_0}=0\label{eq:2.65}\\
 	&\nabla\cdot\boldsymbol{B}=0\\
-	\Rightarrow\;& ikB_{0z}+\nabla\cdot\boldsymbol{B_0}=0\label{eq:2.52}\\
+	\Rightarrow\;& ikB_{0z}+\nabla\cdot\boldsymbol{B_0}=0\label{eq:2.67}\\
 	&\nabla\times\boldsymbol{E}= -\frac{\partial \boldsymbol{B}}{\partial t}\\
 	\Rightarrow\;& ik\Hat{z}\times\boldsymbol{E_0}+ \nabla\times\boldsymbol{E_0}
-	=ikc\boldsymbol{B_0}\label{eq:2.54}\\
+	=ikc\boldsymbol{B_0}\label{eq:2.69}\\
 	&\nabla\times\boldsymbol{B}=\frac{1}{c^2}\frac{\partial\boldsymbol{E}}{\partial t}\\
 	\Rightarrow\;& ik\Hat{z}\times\boldsymbol{B_0}+ \nabla\times\boldsymbol{B_0}
-	=-ik\frac{1}{c}\boldsymbol{E_0}\label{eq:2.56}
+	=-ik\frac{1}{c}\boldsymbol{E_0}\label{eq:2.71}
 \end{align}
 
 Assuming paraxial approximation \ref{eq:2.6}, we get paraxial wave equation in vector form, 
 \begin{align}
-	\nabla_T ^2 \boldsymbol{E_0} -2ik \frac{\partial\boldsymbol{E_0}}{\partial r}=0\\
-	\nabla_T ^2 \boldsymbol{B_0} -2ik \frac{\partial\boldsymbol{B_0}}{\partial r}=0
+	\left(\frac{\partial^2}{\partial x^2}+\frac{\partial^2}{\partial y^2} + 2ik\frac{\partial}{\partial z}\right)
+	\begin{Bmatrix}
+		\boldsymbol{E_0}\\\boldsymbol{B_0}
+	\end{Bmatrix}
+	=0 \label{eq:2.72}
 \end{align}
-Here each component of $\boldsymbol{E_0}$ and $\boldsymbol{B_0}$ will satisfy the paraxial equation.
+So each component of $\boldsymbol{E_0}$ and $\boldsymbol{B_0}$ will satisfy the paraxial equation. So,
+\begin{align}
+	\frac{\partial}{\partial z}= \frac{i}{2k}\left( \frac{\partial^2}{\partial x^2}+\frac{\partial^2}{\partial y^2}  \right) \label{eq:2.73}
+\end{align}
 
-Now considering slowly varying envelop approximation \ref{eq:2.5} for each component of $\boldsymbol{E_0}$ and $\boldsymbol{B_0}$, from \ref{eq:2.50} and \ref{eq:2.52}, we get,
+
+Now considering slowly varying envelop approximation \ref{eq:2.5} for each component of $\boldsymbol{E_0}$ and $\boldsymbol{B_0}$, from \ref{eq:2.65} and \ref{eq:2.67}, we get,
 \begin{align} 
-	E_{0z} = \frac{i}{k}\left(\frac{\partial E_{0x}}{\partial x}+\frac{\partial E_{0y}}{\partial y}\right)\\
-	B_{0z} = \frac{i}{k}\left(\frac{\partial B_{0x}}{\partial x}+\frac{\partial B_{0y}}{\partial y}\right)
+	E_{0z} = \frac{i}{k}\left(\frac{\partial E_{0x}}{\partial x}+\frac{\partial E_{0y}}{\partial y}\right)\label{eq:2.74}\\
+	B_{0z} = \frac{i}{k}\left(\frac{\partial B_{0x}}{\partial x}+\frac{\partial B_{0y}}{\partial y}\right)\label{eq:2.75}
 \end{align}
 
+Now putting \ref{eq:2.74} in \ref{eq:2.69}, and using \ref{eq:2.73}, matching $\boldsymbol{B_0}$ component-wise we get,
+\begin{align}
+	cB_{0x} &= 
+	-E_{0y} + \frac{1}{2k^2}\left( \frac{\partial^2 E_{0y}}{\partial x^2} - \frac{\partial^2 E_{0y}}{\partial y^2} + 2\frac{\partial^2 E_{0x}}{\partial x\partial y} \right)\label{eq:2.76}\\
+	cB_{0y} &= 
+	E_{0x} + \frac{1}{2k^2}\left( \frac{\partial^2 E_{0x}}{\partial y^2} - \frac{\partial^2 E_{0x}}{\partial x^2} - 2\frac{\partial^2 E_{0y}}{\partial x\partial y} \right)\\
+	cB_{0z} &= 
+	\frac{i}{k}\left(\frac{\partial\: cB_{0x}}{\partial x}+\frac{\partial\: cB_{0y}}{\partial y}\right)= \frac{i}{k}\left(\frac{\partial E_{0x}}{\partial y}-\frac{\partial E_{0y}}{\partial x}\right)
+\end{align}
+
+Similarly, putting \ref{eq:2.74} in \ref{eq:2.69}, and using \ref{eq:2.73}, matching $\boldsymbol{E_0}$ component-wise we get,
+\begin{align}
+	\frac{1}{c}E_{0x} &=
+	 B_{0y} + \frac{1}{2k^2}\left( \frac{\partial^2 B_{0y}}{\partial x^2} - \frac{\partial^2 B_{0y}}{\partial y^2} - 2\frac{\partial^2 B_{0x}}{\partial x\partial y} \right)\\
+	\frac{1}{c}E_{0y} &= 
+	-B_{0x} + \frac{1}{2k^2}\left( \frac{\partial^2 B_{0x}}{\partial x^2} - \frac{\partial^2 B_{0x}}{\partial y^2} + 2\frac{\partial^2 B_{0y}}{\partial x\partial y} \right)\\
+	\frac{1}{c}E_{0z} &= \frac{i}{ck}\left(\frac{\partial E_{0x}}{\partial x}+ \frac{\partial E_{0y}}{\partial y}\right) = \frac{i}{k}\left(\frac{\partial B_{0y}}{\partial x}-\frac{\partial B_{0x}}{\partial y}\right)\label{eq:2.81}
+\end{align}
+
+Let $\psi_x(\boldsymbol{r})$ and $\psi_y(\boldsymbol{r})$ are the dominant x and y component of electric field satisfying paraxial wave equation. If we write magnetic field component as \cite{erikson 94}
+\begin{align}
+	cB_{0x} &= 
+	-\psi_y + \frac{1}{4k^2}\left( \frac{\partial^2 \psi_y}{\partial x^2} - \frac{\partial^2 \psi_y}{\partial y^2} + 2\frac{\partial^2 \psi_x}{\partial x\partial y} \right)\label{eq:2.85}\\
+	cB_{0y} &= 
+	\psi_x + \frac{1}{4k^2}\left( \frac{\partial^2 \psi_x}{\partial y^2} - \frac{\partial^2 \psi_x}{\partial x^2} - 2\frac{\partial^2 \psi_y}{\partial x\partial y} \right)\\
+	cB_{0z} &= 
+	\frac{i}{k}\left(\frac{\partial \psi_x}{\partial y}-\frac{\partial \psi_y}{\partial x}\right)
+\end{align}
+and electric field component as \cite{erikson 94}
+\begin{align}
+	E_{0x} &=
+	\psi_x + \frac{1}{4k^2}\left( \frac{\partial^2 \psi_x}{\partial x^2} - \frac{\partial^2 \psi_x}{\partial y^2} + 2\frac{\partial^2 \psi_y}{\partial x\partial y} \right)\\
+	E_{0y} &= 
+	\psi_y - \frac{1}{4k^2}\left( \frac{\partial^2 \psi_y}{\partial x^2} - \frac{\partial^2 \psi_y}{\partial y^2} + 2\frac{\partial^2 \psi_x}{\partial x\partial y} \right)\\
+	E_{0z} &= 
+	\frac{i}{k}\left(\frac{\partial \psi_x}{\partial x}+\frac{\partial \psi_y}{\partial y}\right)\label{eq:2.90}
+\end{align}
+then the eq. \ref{eq:2.85} - \ref{eq:2.90} satisfy the paraxial Maxwell's relations \ref{eq:2.76} - \ref{eq:2.81} up-to the order of $1/(kw_0)^2$, where $w_0$ is Rayleigh length of Gaussian beam.
 
 
+Now we will consider two cases of polarization for HG beam - linear and circular polarization.
+\begin{enumerate}
+	\item 
+	\textbf{Linear polarization}\\
+	Let the dominant polarization is in x direction, then $\psi_x=\psi_{m,n}$ of \ref{eq:2.53} and $\psi_y=0$. The electric field components are
+	\begin{align}
+		E_{0x} =&
+		\psi_{m,n}\\
+		E_{0y} =& 
+		\frac{1}{2k^2}\frac{\partial^2 \psi_{m,n}}{\partial x\partial y}\nonumber \\
+		=&\frac{1}{4k^2w_0^2} \big( 4mn\psi_{m-1,n-1} - 2m\psi_{m-1,n+1} - 2n\psi_{m+1,n-1} + \psi_{m+1,n+1}\big)\\
+		E_{0z} =& 
+		\frac{i}{k}\frac{\partial \psi_{m,n}}{\partial x}\nonumber\\
+		=& \frac{i}{\sqrt{2}kw_0}\big(2m\psi_{m-1,n} - \psi_{m+1,n}\big)
+	\end{align}
+	Here we use the the following properties of Hermite polynomials, \cite{levedev} \textit{i.e.} $\forall x\in \mathbb{R}$ and $\forall n\in \mathbb{N}$, 
+	\begin{align}
+		H_{n+1}(x) &= 2x H_n(x) - 2nH_{n-1}(x)\label{eq:2.91}\\
+		\frac{d}{dx}H_n(x)&=2nH_{n-1}(x)\label{eq:2.92}
+	\end{align}
+	
+	\item 
+	\textbf{Circular polarization}\\
+	Similarly for LCP, $\psi_x=\psi_{m,n}$ and $\psi_y=i\psi_{m,n}$, the electric field components, using \ref{eq:2.91} and \ref{eq:2.92}, are
+	\begin{align}
+		E_{0x} =&
+		\frac{1}{\sqrt{2}}\psi_{m,n}\\
+		E_{0y} =& 
+		\frac{i}{\sqrt{2}}\psi_{m,n}\\
+		E_{0z} =& 
+		\frac{i}{2kw_0}\big( 4m\psi_{m-1,n} - \psi_{m+1,n} + i2n\psi_{m,n-1} - i\psi_{m,n+1}\big)
+	\end{align}
+\end{enumerate}
 
+\subsection{Relationship between LG \& HG modes}
+According to \cite{abra 91}, for $n,m = 0,1,2,\dots$
+\begin{align}
+	&\sum_{k=0}^{n+m}(2i)^k \mathcal{P}_k^{(n-k,m-k)}(0)H_{n+m-k}(x)H_k(y)\nonumber\\
+	&=
+	\begin{cases}
+		2^{n+m}(-1)^m m! (x+iy)^{n-m}L_m^{n-m}(x^2+y^2),& n\ge m\\
+		2^{n+m}(-1)^n n! (x+iy)^{m-n}L_n^{m-n}(x^2+y^2),& m > n
+	\end{cases}
+\end{align}
+where
+\begin{align}
+	\mathcal{P}_k^{(n-k,m-k)}(0) = \frac{(-1)^k}{2^kk!} \frac{d^k}{dt^k}\big[(1-t)^n(1+t)^m \big] \bigg|_{t=0}
+\end{align}
 
+Now the scalar field representations of HG and LG beam are 
+\begin{align}
+	U_{m,n}^{HG}(x,y,z)=& \frac{C_{m,n}^{HG}}{w(z)} H_m\left(\frac{\sqrt{2} x}{w(z)}\right) H_n\left(\frac{\sqrt{2} y}{w(z)}\right)\exp( -\frac{(x^2+y^2)}{w^2(z)}) \cdot\nonumber\\ 
+	&\exp( i\:(m+n+1)\eta -i\frac{k(x^2+y^2)}{2R(z)}) \\
+	U_{n,m}^{LG}(x,y,z)=&(-1)^{\min(n,m)}\frac{C_{m,n}^{LG}}{w(z)} \left[\frac{\sqrt{2(x^2+y^2)}}{w(z)}\right]^{|n-m|} L_{\min(n,m)}^{|n-m|}\left(\frac{2(x^2+y^2)}{w^2(z)}\right)\cdot\nonumber\\&\exp(-\frac{(x^2+y^2)}{w^2(z)}) \exp(-i(n-m)\arg(x+iy)-i(n+m-1)\eta-i\frac{kr^2}{2R(z)}) 
+\end{align}
+where\footnote{here $w(z)$ is not the beam half-width but scaled version of that.}
+\begin{align}
+	R(z)&= \frac{z_0^2+z^2}{z}\\
+	w(z)&= \sqrt{\frac{2(z_0^2+z^2)}{kz}}\\
+	\eta(Z)&= \tan[-1](\frac{z}{z_0})
+\end{align}
+and the normalization constants, such that $\iint dx\:dy\: \abs{U}=1$, are
+\begin{align}
+	C_{m,n}^{HG}=\sqrt{\frac{2}{\pi n!m!}}2^{-(m+n)/2}\\
+	C_{m,n}^{LG}=\sqrt{\frac{2}{\pi n!m!}}\min(n,m)!
+\end{align}
+Here to get the LG beam representation, use $l=n-m$ and $p=\min(n,m)$ in \ref{eq:2.58}.
 
-
-
-\cite{erikson 94}
-
-
-
-
-
-
+Using this identity, the LG beam can be decomposed into various order of HG beam by, \cite{beijers allen 93}
+\begin{align}
+	U_{m,n}^{LG}= \sum_{k=0}^{n+m}i^k b(n,m,k)\: U_{m+n-k,k}^{HG}
+\end{align}
+where,
+\begin{align}
+	b(n,m,k)=\frac{1}{k!}\sqrt{\frac{(n+m)!k!}{2^{n+m}n!m!}} \frac{d^k}{dt^k}\big[(1-t)^n(1+t)^m \big] \bigg|_{t=0}
+\end{align}
 \clearpage
 
 
@@ -1435,7 +1544,7 @@ From eq. \ref{eq:3.1} and \ref{eq:3.2} and using \ref{eq:3.6} and \ref{eq:3.8}, 
 	&= \frac{\epsilon_0}{2i\omega}\int d\tau\: \Re{\boldsymbol{E}^\ast \times (\nabla\times\boldsymbol{E})} \nonumber\\
 	&= \frac{\epsilon_0}{2i\omega}\Re{\int d\tau\: {\boldsymbol{E}^\ast \times (\nabla\times\boldsymbol{E})}}
 \end{align}
-On partial integration and using the transversality\footnote{what is it?} of E, considering the magnitude of $\boldsymbol{E}$ decreasing very rapidly when $r\to0$, \cite{enk nien 92} we get\footnote{have to see derivation in Chapter I in ref. \cite{CCT}}
+On partial integration and using the transversality of E, considering the magnitude of $\boldsymbol{E}$ decreasing very rapidly when $r\to0$, \cite{enk nien 92} we get\footnote{see derivation in Chapter I in ref. \cite{CCT}}
 \begin{align}
 	\boldsymbol{P}= \frac{\epsilon_0}{2i\omega}\int d\tau \left[\sum_{\xi=x,y,z}E_\xi^\ast\nabla E_\xi\right]
 \end{align}
@@ -1452,11 +1561,10 @@ Similarly from eq. \ref{eq:3.12} and \ref{eq:3.13} and using \ref{eq:3.6} and \r
 \begin{align}
 	\boldsymbol{J} &= \int d\tau\: \boldsymbol{r}\times\expval{\boldsymbol{S}}\\
 	&=\frac{\epsilon_0}{2}\int d\tau \:\boldsymbol{r}\times\Re{\boldsymbol{E}^\ast \times \boldsymbol{B}}\nonumber\\
-	&= \frac{\epsilon_0}{2i\omega}\int d\tau\: \Re{\boldsymbol{r}\times\left(\boldsymbol{E}^\ast \times (\nabla\times\boldsymbol{E})\right)}\nonumber\\
-	&=\frac{\epsilon_0}{2i\omega}\Re{\int d\tau\: \boldsymbol{r}\times\left(\boldsymbol{E}^\ast \times (\nabla\times\boldsymbol{E})\right)}
+	&= \frac{\epsilon_0}{2i\omega}\int d\tau\: \Re{\boldsymbol{r}\times\left(\boldsymbol{E}^\ast \times (\nabla\times\boldsymbol{E})\right)}
 \end{align}
 
-Now similarly on partial integration and using the transversality\footnote{what is it?} of E, considering the magnitude of $\boldsymbol{E}$ decreasing very rapidly when $r\to0$, \cite{enk nien 92}\cite{allen 99} we get\footnote{have to see derivation in Chapter I in ref. \cite{CCT}}
+Now similarly on partial integration and using the transversality of E, considering the magnitude of $\boldsymbol{E}$ decreasing very rapidly when $r\to0$, \cite{enk nien 92}\cite{allen 99} we get\footnote{see derivation in Chapter I in ref. \cite{CCT}}
 
 \begin{align}
 	 \boldsymbol{J}=\frac{\epsilon_0}{2i\omega}\int d\tau \left[\sum_{\xi=x,y,z}E_\xi^\ast(\boldsymbol{r}\times\nabla)E_\xi\right]+ \frac{\epsilon_0}{2i\omega}\int d\tau \boldsymbol{E}^\ast\times \boldsymbol{E}
@@ -1600,16 +1708,17 @@ If the AM is to be intrinsic, then for all $(x_0,y_0)$
 	\Rightarrow &\iint  dx\:dy\: \expval{\boldsymbol{E}\times\boldsymbol{B}}_y = 0 = \iint  dx\:dy\: \expval{\boldsymbol{E}\times\boldsymbol{B}}_x \label{eq:3.40}
 \end{align} 
 
-From the SAM part, we see $\mathcal{S}$ does not depend on the choice of the axis, so SAM is intrinsic. But for the OAM part, we see $\mathcal{L}$ depends on the choice of the axis, so OAM may be intrinsic or extrinsic determined by \ref{eq:3.40}.
+From the SAM part, we see $\mathcal{S}$ does not depend on the choice of the axis, so SAM is intrinsic. But for the OAM part, we see $\mathcal{L}$ depends on the choice of the axis, so OAM may be intrinsic or extrinsic determined by condition \ref{eq:3.40}.
 
-\subsection{\color{red}AM of Gaussian Beam}
+%\subsection{\color{red}AM of Gaussian Beam}
 
 
 \clearpage
 
 \section{SPIN-ORBIT INTERACTION}
 
-\subsection{\color{red}Introduction}
+\subsection{Introduction}
+The interaction between light and matter is a fascinating realm of physics, where various phenomena come into play, determining the behaviour of both photons and particles. One crucial and intriguing aspect of this interaction is the spin-orbit interaction on light. The underlying framework is the interaction between the intrinsic angular momentum, known as spin, and  orbital angular momentum of light. In this section, we will briefly discuss about spin-orbit interaction on light.
 \subsection{Spin-orbit energy}
 In quantum mechanics, spin-orbit interaction is a common phenomena. We can see it in the splitting of spectral lines into fine structure. For a simple case like H atom, a electron in orbit around the nucleus, the spin-orbit coupling results from the interaction between electron's spin magnetic moment and nucleus's orbital magnetic field, which we will discuss below. \cite{WO}\cite{zettili 09} 
 
@@ -1641,7 +1750,7 @@ Due to spin-orbit interaction, the corresponding interaction energy rises,
 \begin{align}
 	H_{so}=\frac{1}{m_e^2c^2r}\frac{dU}{dr}\boldsymbol{S}\cdot\boldsymbol{L}
 \end{align}
-We call $H_{so}$ as \textit{Spin-orbit energy}.\footnote{I have to check the Thomas precision.}
+We call $H_{so}$ as \textit{Spin-orbit energy}.\footnote{By Thomas precision, multiplication of a factor of 1/2 is necessary to agree with experimental results. It is informally known as the "Thomas half". \cite{thomas}}
 
 
 \subsection{Geometric phase of light}
@@ -1881,9 +1990,9 @@ Then the Jones electric field vector of output light is
 	\end{bmatrix}
 	{\color{blue}\exp(i2\sigma\Omega t)}
 \end{align}
-If angular frequency of the input beam is $\omega$, then the angular frequency of output beam be $(\omega + 2\sigma\Omega)$. So change in angular frequency, $\Delta\omega=2\sigma\Omega$. This is spin-dependant \textit{rotational Doppler shift} of SAM carrying light beam.
+If angular frequency of the input beam is $\omega$, then the angular frequency of output beam be $(\omega + 2\sigma\Omega)$. So change in angular frequency, $\Delta\omega=2\sigma\Omega$. This is spin-dependant \textit{rotational Doppler shift} of SAM carrying light beam. \cite{WO}
 
-\subsubsection{\color{red}Geometric phase in LG-HG mode transformation}
+%\subsubsection{\color{red}Geometric phase in LG-HG mode transformation}
 
 \subsection{Types of SOI}
 We have discussed brief of angular momentum of light in previous chapter. The different types of angular momentum a EM beam carries are
@@ -1987,7 +2096,7 @@ then the output electric filed vector will be
 \end{align}
 So the output beam has spin flipping. Moreover the beam has acquired a spin-dependant phase factor  ${\color{red}\exp(i2\sigma q\phi)}$, which makes it a vortex beam. From \ref{eq:3.32} we see that output light carries $2q\hbar$ angular momentum per photon. Here the change of angular momentum is 
 $$(\sigma=\pm1,l=0)\longrightarrow (\sigma=\mp1,l=\pm2q)$$
-So to keep total angular momentum per photon conserved, $q=2$.
+So to keep total angular momentum per photon conserved, $q=1$.
 
 
 Now let the q-plate is of phase retardation of $\pi/2$, then 
@@ -2059,8 +2168,8 @@ So to keep total angular momentum per photon conserved, $q=1$.
 \end{figure}
 
 
-\subsection{SOI in non-paraxial fields}
-\subsection{Spin Hall effect}
+%\subsection{SOI in non-paraxial fields}
+%\subsection{Spin Hall effect}
 
 
 \clearpage
@@ -2110,8 +2219,8 @@ So to keep total angular momentum per photon conserved, $q=1$.
 	\bibitem{max eq - wiki}
 	\href{https://en.wikipedia.org/wiki/Maxwell's_equations}{Maxwell's equations - Wikipedia}
 	
-	\bibitem{hall 96}
-	Hall, Dennis G. (1996). Vector-beam solutions of Maxwell’s wave equation. ol/21/1/ol-21-1-9.pdf, 21(1), 9–0. doi:10.1364/OL.21.000009  
+	%\bibitem{hall 96}
+	%Hall, Dennis G. (1996). Vector-beam solutions of Maxwell’s wave equation. ol/21/1/ol-21-1-9.pdf, 21(1), 9–0. doi:10.1364/OL.21.000009  
 	
 	\bibitem{conry 12}
 	Conry, J. P. (2012). Polarization Properties of Maxwell-Gauss Laser Beams. Graduate Theses and Dissertations Retrieved from \href{https://scholarworks.uark.edu/etd/491}{https://scholarworks.uark.edu/etd/491}.
@@ -2137,7 +2246,13 @@ So to keep total angular momentum per photon conserved, $q=1$.
 	 
 	 \bibitem{allen 99}
 	 Allen, L. (1999).The Orbital Angular Momentum of Light. Progress in Optics.  Volume 39. 291–372. doi: 10.1016/S0079-6638(08)70391-3
-	  
+	 
+	 \bibitem{levedev}
+	 Lebedev, N. N. (1972), Special Functions and Their Applications, Dover Publications Inc.
+	 
+	 \bibitem{abra 91}
+	 Abramochkin, E. and Volostnikov, V. (1991) Beam Transformations and Nontransformed Beams. Optics Communications, 83, 123-135. 
+	 
 	 \bibitem{poynting}
 	 \href{https://en.wikipedia.org/wiki/Poynting_vector}{Poynting vector - Wikipedia}
 	  
@@ -2162,6 +2277,8 @@ So to keep total angular momentum per photon conserved, $q=1$.
 	  \bibitem{relativity -wiki}
 	  \href{https://en.wikipedia.org/wiki/Classical_electromagnetism_and_special_relativity}{Classical electromagnetism and special relativity - Wikipedia}
 	  
+	  \bibitem{thomas}
+	  \href{https://en.wikipedia.org/wiki/Thomas_precession}{Thomas precession - wikipedia}
 	  %\bibitem{resnick 68}
 	  %Resnick, Robert (1968). Introduction to Special Relativity. New York: Wiley.
 	  
@@ -2196,4 +2313,15 @@ So to keep total angular momentum per photon conserved, $q=1$.
 	  Marrucci, L.; Manzo, C.; Paparo, D. (2006). Optical Spin-to-Orbital Angular Momentum Conversion in Inhomogeneous Anisotropic Media. Physical Review Letters, 96(16), 163905–. doi: 10.1103/PhysRevLett.96.163905  
 	   
 \end{thebibliography}
+
+\clearpage
+\newpage 
+\thispagestyle{empty}
+\vspace{7mm}
+\begin{center}
+	\vspace*{\fill}% * is needed here
+	\noindent
+	\makebox[\textwidth]{\Huge$\mathfrak{The\;\;End}$}
+	\vfill
+\end{center}
 \end{document}
