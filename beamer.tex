@@ -9,18 +9,29 @@
 \setbeamertemplate{footline}{}
 \setbeamercovered{transparent}
 \usefonttheme{serif}
-\usepackage{amsmath,amssymb,makeidx,graphicx,float,indentfirst,color,hyperref,tikz,fancyref,pgfplots,verbatim,fancyvrb,caption,subcaption,physics,longtable,mathrsfs,mathtools,xcolor,ifthen}
+\usepackage{amsmath,amssymb,makeidx,graphicx,float,indentfirst,color,hyperref,tikz,fancyref,pgfplots,verbatim,fancyvrb,caption,subcaption,physics,longtable,mathrsfs,mathtools,xcolor,ifthen,lipsum}
 
 \numberwithin{equation}{section}
 
-\author{Pritish Karmakar}
-\title{{On Polarization Properties of Light,
-	Gaussian Beams and Spin-Orbit Interaction of Light}}
+\newcommand\blfootnote[1]{%
+	\begingroup
+	\renewcommand\thefootnote{}\footnote{#1}%
+	\addtocounter{footnote}{-1}%
+	\endgroup
+}
+\renewcommand{\footnotesize}{\scriptsize} 
+
 \begin{document}
-\begin{frame}
+	\author{\textbf{Pritish Karmakar}\\{\footnotesize(21MS179, IISER Kolkata)}}
+	\title{{On Polarization Properties of Light, Gaussian Beams and Spin-Orbit Interaction of Light}}
+	\date{July 25, 2023}
+\begin{frame}[plain]
 	\maketitle
 	\centering
-	\includegraphics[width=1.5cm]{iiserk.png}
+	\textsl{\small Submitted to}\\
+	\textbf{\small Prof. Ayan Banerjee}\\
+	{\scriptsize (HOD, DPS, IISER Kolkata)}\\
+	\includegraphics[width=1.2cm]{iiserk.png}
 \end{frame}
 	
 \begin{frame}{Topics of discussion}
@@ -38,8 +49,7 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Jones Vector}
-
+\begin{frame}{Jones Vector}\blfootnote{Wave Optics (2015)}
 	Electric field of \textit{fully polarized} EM wave propagating along z-axis is given by
 	\begin{align*}
 		\boldsymbol{E}(\boldsymbol{r},t)=
@@ -80,7 +90,7 @@ Note that \textit{intensity}, $I= A_x^2+A_y^2 =  \boldsymbol{J}^\ast \boldsymbol
 	\end{table}
 \end{frame}
 
-\begin{frame}{Jones Matrix \& evolution of Jones vector}
+\begin{frame}{Jones Matrix \& evolution of Jones vector}\blfootnote{Wave Optics (2015)}
 	Jones matrix for an optical element be $\boldsymbol{M}$ \textit{s.t.} 
 	\begin{align*}\boldsymbol{M}=
 		\begin{bmatrix}
@@ -100,6 +110,7 @@ Note that \textit{intensity}, $I= A_x^2+A_y^2 =  \boldsymbol{J}^\ast \boldsymbol
 		$\boldsymbol{M}_\theta = R(-\theta)\;\boldsymbol{M}\;R(\theta)$
 		where $R(\theta)$ is \textit{passive rotation matrix}.
 	\end{itemize}
+
 \end{frame}
 
 \begin{frame}{Jones matrix of usual optical element}
@@ -155,7 +166,7 @@ Note that \textit{intensity}, $I= A_x^2+A_y^2 =  \boldsymbol{J}^\ast \boldsymbol
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Coherency matrix}
+\begin{frame}{Coherency matrix}\blfootnote{Wave Optics (2015), \href{https://www.youtube.com/watch?v=RowMxWt4mVE&list=LL&index=5}{Polarization lecture- YouTube}}
 	\textit{Coherency matrix}, $\boldsymbol{C}$ defined as 
 	\begin{align*}
 		\boldsymbol{C}=\only<1>{{\color{blue}\underbrace{\expval{\boldsymbol{E}\otimes\boldsymbol{E}^\dagger}= \expval{\boldsymbol{E}\boldsymbol{E}^\dagger}=
@@ -195,7 +206,7 @@ Note that \textit{intensity}, $I= A_x^2+A_y^2 =  \boldsymbol{J}^\ast \boldsymbol
 	\right\} \text{ \textit{s.t.} } \boldsymbol{C} = \frac{1}{2} \sum_{i=0}^{3} S_i \boldsymbol{V_i}$$
 \end{frame}
 
-\begin{frame}{Stokes vector}
+\begin{frame}{Stokes vector}\blfootnote{Wave Optics (2015), Hecht, E. (1970) \href{https://www.youtube.com/watch?v=RowMxWt4mVE&list=LL&index=5}{Polarization lecture- YouTube}}
 	$$\boldsymbol{C} = \frac{1}{2} \sum_{i=0}^{3} {\color{blue}S_i} \boldsymbol{V_i}\pause \longrightarrow {\color{blue}\begin{bmatrix} S_0\\ S_1\\ S_2\\S_3\end{bmatrix}} = \boldsymbol{S} \text{ (\textit{Stokes vector})}$$\pause
 
 
@@ -227,7 +238,7 @@ Note that \textit{intensity}, $I= A_x^2+A_y^2 =  \boldsymbol{J}^\ast \boldsymbol
 	\end{table}
 \end{frame}
 
-\begin{frame}{Muller Matrix \& evolution of Stokes vector}
+\begin{frame}{Muller Matrix \& evolution of Stokes vector}\blfootnote{Wave Optics (2015)}
 	\textit{Muller matrix} for an optical element $\boldsymbol{\mathfrak{M}}$ \textit{s.t.} 
 	\begin{align*}\boldsymbol{\mathfrak{M}}=
 		\begin{bmatrix}
@@ -251,32 +262,34 @@ Note that \textit{intensity}, $I= A_x^2+A_y^2 =  \boldsymbol{J}^\ast \boldsymbol
 	\end{itemize}
 \end{frame}
 
-\begin{frame}[t]{Poincare sphere representation}
-	\only<1,2>{For elliptically polarized light, Stokes vector
-	\begin{align*}\boldsymbol{S}=
+\begin{frame}[t]{Poincare sphere representation}\blfootnote{Wave Optics (2015), Born, M;  Wolf, E (1999)}
+	\vspace{-10pt}
+	For elliptically polarized light, Stokes vector
+	\begin{align*}
+		\onslide<1->{\boldsymbol{S}=
 		S_0
 		\begin{bmatrix}
 			1\\
 			\cos 2\chi \cos 2\psi\\
 			\cos 2\chi \sin 2\psi\\
 			\sin 2\chi
-		\end{bmatrix}\longrightarrow
-		\underbrace{{\color{blue}S_0}(\cos 2{\color{red}\chi} \cos 2{\color{green!45!black}\psi}, \cos 2{\color{red}\chi} \sin 2{\color{green!45!black}\psi}, \sin 2{\color{red}{\color{green!45!black}\psi}})}_{\text{On Poincare sphere of radius $S_0$}}
+		\end{bmatrix}}\onslide<2->{\longrightarrow
+		\underbrace{{\color{blue}S_0}(\cos 2{\color{red}\chi} \cos 2{\color{green!45!black}\psi}, \cos 2{\color{red}\chi} \sin 2{\color{green!45!black}\psi}, \sin 2{\color{red}{\color{green!45!black}\psi}})}_{\text{On Poincare sphere of radius $S_0$}}}
 	\end{align*}
-where azimuth (${\color{green!45!black}\psi}$) and ellipticity (${\color{red}\chi}$) is defined.\\
-\vspace{7pt}}
-	\only<2>{\begin{columns}
-		\column{0.45\textwidth}
+\onslide<1->{where azimuth (${\color{green!45!black}\psi}$) and ellipticity (${\color{red}\chi}$) of polarization ellipse.}\\
+\vspace{7pt}
+	\only<3>{\begin{columns}
+		\column{0.42\textwidth}
 			\centering\textit{Polarization ellipse}\\
 			\includegraphics[width=0.96\textwidth]{ellipse beamer}
-		\column{0.45\textwidth}
+		\column{0.42\textwidth}
 			\centering \textit{Poincare sphere}
 			\includegraphics[width=0.72\textwidth]{poincare beamer}
 	\end{columns}}
 
 \end{frame}
 
-\begin{frame}[t]{Poincare sphere representation}
+\begin{frame}[t]{Poincare sphere representation}\blfootnote{Wave Optics (2015), Born, M;  Wolf, E (1999)} %2
 For un-polarized light,
 	\begin{align*}\boldsymbol{S}=
 		S_0
@@ -307,7 +320,7 @@ For partially polarized light,
 
 \section{Gaussian Beam}
 
-\begin{frame}
+\begin{frame} %title
 	\centering
 	\alert{\huge Gaussian Beam and properties}
 	\begin{itemize}\Large
@@ -317,7 +330,8 @@ For partially polarized light,
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Paraxial wave}\vspace{-4pt}
+\begin{frame}{Paraxial wave}\blfootnote{Wave Optics (2015), Milonni, P.W ; Eberly, J.H.(2010)}
+	\vspace{-4pt}
 	Maxwell's wave equation: 
 	$$\nabla^2\boldsymbol{E}(\boldsymbol{r},t) - \frac{1}{c^2} \frac{\partial^2}{\partial t^2} \boldsymbol{E}(\boldsymbol{r},t)=0$$\pause
 	Paraxial beam propagating predominantly in $z$-direction, $$\boldsymbol{E}(x,y,z,t)= \boldsymbol{\psi}(x,y,z) e^{i(\omega t-kz)}$$\pause
@@ -328,7 +342,7 @@ For partially polarized light,
 	One of the solutions is \alert{\Large Gaussian beam}.\vspace{6pt}
 \end{frame}
 
-\begin{frame}
+\begin{frame}%title
 	\centering
 	\alert{\huge Gaussian Beam}
 	\begin{itemize}\Large
@@ -338,7 +352,8 @@ For partially polarized light,
 	\end{itemize}
 \end{frame}
 
-\begin{frame}[t]{Gaussian beam solution }\vspace{-16pt}
+\begin{frame}[t]{Gaussian beam solution } \blfootnote{Milonni, P.W (2010), Kogelnik, H. (1966), \href{https://www.youtube.com/playlist?list=PLyWzPf87clvEb8T3Xf30tMaUqdbVchrNY}{ECE 4300- Cornell}}
+	\vspace{-16pt}
 	$$\text{Ansatz: }\psi(\boldsymbol{r},z)= A \exp\left[-i\left(p(z) + \frac{kr^2}{2q(z)}\right)\right]$$\pause
 	$$\psi(\boldsymbol{r},z)=A
 	\only{\left(\frac{w_0}{w(z)}\right)}
@@ -356,7 +371,8 @@ For partially polarized light,
 	\end{columns}}}
 \end{frame}
 
-\begin{frame}[t]{Gaussian beam properties}\vspace{-16pt} %1
+\begin{frame}[t]{Gaussian beam properties}\blfootnote{Milonni, P.W (2010), Kogelnik, H. (1966), \href{https://www.youtube.com/playlist?list=PLyWzPf87clvEb8T3Xf30tMaUqdbVchrNY}{ECE 4300- Cornell}}%1
+	\vspace{-16pt} 
 	$$\psi(\boldsymbol{r},z)=A
 	{\underbrace{\left(\frac{\alert{w_0}}{w(z)}\right)}_{\text{term I}}}
 	\exp(
@@ -379,7 +395,8 @@ For partially polarized light,
 
 \end{frame}
 
-\begin{frame}[t]{Gaussian beam properties}\vspace{-16pt} %2
+\begin{frame}[t]{Gaussian beam properties}\blfootnote{Milonni, P.W (2010), Kogelnik, H. (1966), \href{https://www.youtube.com/playlist?list=PLyWzPf87clvEb8T3Xf30tMaUqdbVchrNY}{ECE 4300- Cornell}}%2
+	\vspace{-16pt} 
 	$$\psi(\boldsymbol{r},z)=A
 	{\left(\frac{w_0}{w(z)}\right)}
 	\exp(
@@ -396,7 +413,8 @@ For partially polarized light,
 	\end{columns}}
 \end{frame}
 
-\begin{frame}[t]{Gaussian beam properties}\vspace{-16pt} %3
+\begin{frame}[t]{Gaussian beam properties}\blfootnote{Milonni, P.W (2010), Kogelnik, H. (1966), \href{https://www.youtube.com/playlist?list=PLyWzPf87clvEb8T3Xf30tMaUqdbVchrNY}{ECE 4300- Cornell}}%3
+	\vspace{-16pt} 
 	$$\psi(\boldsymbol{r},z)=A
 	{\left(\frac{w_0}{w(z)}\right)}
 	\exp(
@@ -413,7 +431,8 @@ For partially polarized light,
 	\end{columns}}
 \end{frame}
 
-\begin{frame}[t]{Gaussian beam properties}\vspace{-16pt} %4
+\begin{frame}[t]{Gaussian beam properties}\blfootnote{Milonni, P.W (2010), Kogelnik, H. (1966), \href{https://www.youtube.com/playlist?list=PLyWzPf87clvEb8T3Xf30tMaUqdbVchrNY}{ECE 4300- Cornell}}%4
+	\vspace{-16pt} 
 	$$\psi(\boldsymbol{r},z)=A
 	{\left(\frac{w_0}{w(z)}\right)}
 	\exp(
@@ -423,7 +442,7 @@ For partially polarized light,
 	)$$
 	
 	{Term IV related to \textbf{Gaussian intensity profile}.\pause
-		\begin{columns}
+	\begin{columns}
 			\column{0.4\textwidth}
 				$$\color{red}I(r,z)\sim \exp(-\frac{2r^2}{w^2(z)})$$\pause
 			
@@ -432,13 +451,8 @@ For partially polarized light,
 	\end{columns}}
 \end{frame}
 
-
-
-
-
-
-
-\begin{frame}[t]{$q$ parameter and beam tracing}
+\begin{frame}[t]{$q$ parameter and beam tracing}\blfootnote{Haus, H. A. (1984), \href{https://www.youtube.com/playlist?list=PLyWzPf87clvEb8T3Xf30tMaUqdbVchrNY}{ECE 4300- Cornell}}
+	\vspace{-12pt}
 	$$\psi(\boldsymbol{r},z)= A \exp\left[-i\left(p(z) + \frac{kr^2}{2\:{\color{red}q(z)}}\right)\right]$$\pause
 	$\color{red}q(z)$ $\longrightarrow$ characteristic of a beam if $\lambda$ known.\pause
 	\begin{align*}
@@ -455,7 +469,7 @@ For partially polarized light,
 \end{align*}
 \end{frame}
 
-\begin{frame}
+\begin{frame}%title
 	\centering
 	\alert{\huge Gaussian Beam and properties}
 	\begin{itemize}\Large
@@ -465,7 +479,7 @@ For partially polarized light,
 	\end{itemize}
 \end{frame}
 
-\begin{frame}[c]{Hermite-Gaussian mode}
+\begin{frame}[c]{Hermite-Gaussian mode}\blfootnote{Milonni, P.W (2010), Kogelnik, H. (1966)}
 	\begin{align*}
 		\psi_{m,n}(\boldsymbol{r},z)=& A \left(\frac{w_0}{w(z)}\right) H_m\left(\frac{\sqrt{2} x}{w(z)}\right) H_n\left(\frac{\sqrt{2} y}{w(z)}\right)\exp( -\frac{r^2}{w^2(z)}) \cdot\nonumber\\ 
 		&\exp( i\:(m+n+1)\tan[-1](\frac{z}{z_0}) -i\frac{kr^2}{2R(z)})
@@ -491,7 +505,7 @@ For partially polarized light,
 	\end{figure}
 \end{frame}
 
-\begin{frame}[t]{Laguerre-Gaussian mode}
+\begin{frame}[t]{Laguerre-Gaussian mode}\blfootnote{Milonni, P.W (2010), Kogelnik, H. (1966), Bliokh, K. Y.; Rodríguez-Fortuño, F. J. (2015)}
 	\begin{align*}
 		\psi_{p,l}(r,\phi,z)=&A\:\frac{w_0}{w(z)} 	\left[\frac{r\sqrt{2}}{w(z)}\right]^{|l|} L_p^{|l|}\left(\frac{2r^2}{w^2(z)}\right)\exp(-\frac{r^2}{w^2(z)}) \cdot\nonumber\\ &\exp(\only<1,2>{-il\phi}\only<3>{{\color{blue}-il\phi}}+i(2p+l+1)\tan[-1](\frac{z}{z_0})-i\frac{kr^2}{2R(z)}) 
 	\end{align*}\pause
@@ -540,6 +554,337 @@ For partially polarized light,
 		\end{figure}
 \end{frame}
 
+\section{Spin-orbit interaction of light}
 
+\begin{frame} %title
+	\centering
+	\alert{\huge Spin-orbit interaction}
+	\begin{itemize}\Large
+		\item<1>Momentum of Light
+		\item<0>Geometric phase of light
+		\item<0>SOI in anisotropic medium
+	\end{itemize}
+\end{frame}
 
+\begin{frame}{Momentum of light}
+	\begin{center}
+		\boxed{\text{Momentum}}\vspace{-4mm}\pause
+		$$\swarrow\hspace{2cm}\searrow$$\\\vspace{-4mm}\pause
+		\boxed{\text{Linear Momentum}}\hspace{1cm}\boxed{\text{Angular Momentum}}\\ \vspace{-8mm}\pause
+		$$\hspace{5cm}\swarrow\hspace{1.5cm}\searrow$$\\\vspace{-4mm}\pause
+		\hspace{5cm}\boxed{\text{OAM}}\hspace{1cm}\boxed{\text{SAM}}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Linear momentum of light}\blfootnote{Haus, H. A. (1984)}
+	Monochromatic beam with angular frequency $\omega$ propagating in z-direction :
+	$$\boldsymbol{\mathcal{E}}(\boldsymbol{r},t) = \Re{\boldsymbol{E}(\boldsymbol{r}) e^{-(\omega t-kz )}}$$
+	$$\boldsymbol{\mathcal{B}}(\boldsymbol{r},t) = \Re{\boldsymbol{B}(\boldsymbol{r}) e^{-i (\omega t-kz ) }}$$\pause
+	
+	Maxwell-Faraday law:
+	$$\nabla\times\boldsymbol{E}= i\omega \boldsymbol{B} $$\pause
+	
+	Time-averaged linear momentum per length,
+	$$\mathcal{P}_z = \frac{1}{c^2}\int d\tau\: \expval{\boldsymbol{S}}_z\pause
+	=\frac{\epsilon_0}{2i\omega}\iint  dx\:dy\: \expval{\boldsymbol{E}\times (\nabla\times\boldsymbol{E})}_z$$
+\end{frame}
+
+\begin{frame}{Angular momentum of light}\blfootnote{Allen, L. (1999), Wave Optics (2015), S.J. van Enk; G. Nienhuis (1992), Cohen-Tannoudji, C., Dupont-Roc, J. (1989)}
+	Time-averaged AM per length :
+	$$\mathcal{J}_z=\frac{1}{c^2}\int d\tau\: [\boldsymbol{r}\times\expval{\boldsymbol{S}}]_z=\pause
+	\frac{\epsilon_0}{2i\omega}\iint dx\:dy\: \left[\boldsymbol{r}\times\expval{\boldsymbol{E}\times (\nabla\times\boldsymbol{E})}\right]_z$$\pause
+	For paraxial beam,
+	\begin{align*}
+		\mathcal{J}_z
+		= &\alert<4>{\frac{\epsilon_0}{2i\omega} \iint dx\:dy\:\left[E_\xi^\ast\left(x\frac{\partial}{\partial y} - y\frac{\partial}{\partial x}\right)E_\xi\right]_{\xi=x,y}}
+		\\
+		&+\alert<5>{\frac{\epsilon_0}{2i\omega}\iint dx\:dy\: (E_x^\ast E_y + E_y^\ast E_x)}
+	\end{align*}
+	
+	\begin{center}
+		\only<4>{\alert{Orbital AM, $\mathcal{L}$}} 
+		\only<5>{\alert{Spin AM, $\mathcal{S}$}}
+	\end{center}
+\end{frame}
+
+\begin{frame}[t]{Orbital AM}\blfootnote{Allen, L. (1999), Wave Optics (2015), S.J. van Enk (1992),Berry, M. V.; Soskin, M. S. (1998)}
+	\vspace{-9pt}
+	$$\mathcal{L}
+	= \frac{\epsilon_0}{2i\omega} \iint dx\:dy\:\left[E_\xi^\ast\left({\boldsymbol{r}}\times\nabla\right)_zE_\xi\right]_{\xi=x,y}$$\pause
+	for vortex beam,
+	$$\boldsymbol{E}(r,\phi)= u(r)\:\exp(-il\phi)\:\Hat{\boldsymbol{p}}$$\pause
+	$$\mathcal{W}_z=\frac{\epsilon_0}{2}\iint dx\:dy\: \boldsymbol{E}^\ast\cdot\boldsymbol{E}$$\pause
+	$$\frac{\mathcal{L}}{\mathcal{W}_z}  =\frac{\text{OAM}}{\text{Total energy}}\pause= \frac{l}{\omega}$$
+\end{frame}
+
+\begin{frame}[t]{Orbital AM}\blfootnote{Allen, L. (1999), Wave Optics (2015), S.J. van Enk (1992), Berry, M. V.; Soskin, M. S. (1998)}%2
+	\vspace{-9pt}
+	$$\mathcal{L}
+	= \frac{\epsilon_0}{2i\omega} \iint dx\:dy\:\left[E_\xi^\ast\left(\alert<2>{\boldsymbol{r}}\times\nabla\right)_zE_\xi\right]_{\xi=x,y}$$\pause
+	\alert<2>{OAM depends on the choice of the axis.}\pause
+	$$\boldsymbol{r}\longrightarrow\boldsymbol{r'}=\boldsymbol{r}+\boldsymbol{r_0}$$\pause\vspace{-8mm}
+	$$\mathcal{J}_z\longrightarrow\mathcal{J'}_z = \mathcal{J}_z + \alert{\Delta\mathcal{J}}$$\pause\vspace{-8mm}
+	
+	\begin{center}
+		\boxed{\text{OAM}}\vspace{-4mm}\pause
+		$$\swarrow\hspace{2cm}\searrow$$\\\vspace{-2mm}\pause
+		\boxed{\alert<8,9>{\text{Intrinsic}}}\hspace{1cm}\boxed{\alert<10>{\text{Extrinsic}}}
+	\end{center}\pause
+	\only<8,9>{\alert<8,9>{$$\Delta\mathcal{J}=0$$}\pause\vspace{-5mm}
+	\alert<8,9>{$$\iint  dx\:dy\: \expval{\boldsymbol{E}\times\boldsymbol{B}}_\xi = 0$$}}
+
+	\only<10>{\alert<10>{$$\Delta\mathcal{J}\ne0$$}}
+\end{frame}
+
+\begin{frame}[t]{Spin AM}\blfootnote{Allen, L. (1999), Wave Optics (2015), S.J. van Enk (1992)}
+	$$\mathcal{S}=\frac{\epsilon_0}{2i\omega}\iint dx\:dy\: (E_x^\ast E_y + E_y^\ast E_x)$$\\\pause
+	\alert<2>{SAM is \textbf{intrinsic}}.\\\pause
+	For vortex beam,
+	$$\boldsymbol{E}(r,\phi)= u(r)\:\exp(-il\phi)\:\Hat{\boldsymbol{p}}$$\pause\vspace{-3mm}
+	$$\frac{\mathcal{S}}{\mathcal{W}_z} =\frac{\text{SAM}}{\text{Total energy}} \pause = \frac{\alert<6>{\sigma}}{\omega} $$\pause
+	
+	$\alert<6>{\sigma=2\;\Im(p_x^\ast\: p_y)}\rightarrow$ helicity of beam\pause
+	
+	$$\frac{\mathcal{J}_z}{\mathcal{W}_z} = \frac{\mathcal{L}+\mathcal{S}}{\mathcal{W}_z} =\frac{\text{Total AM}}{\text{Total energy}} \pause=\frac{l+\sigma}{\omega}$$
+\end{frame}
+
+\begin{frame}{Visualisation of AM}\blfootnote{Bliokh, K. Y. (2015)}
+	\begin{columns}
+		\column{0.5\textwidth}
+		\visible<1->{\includegraphics[width=\linewidth]{"ioam"}}\\
+		\visible<2->{\includegraphics[width=\linewidth]{"eoam"}}
+		
+		\column{0.5\textwidth}
+		\visible<3->{\includegraphics[width=\linewidth]{"sam"}}
+\end{columns}
+\end{frame}
+
+\begin{frame} %title
+	\centering
+	\alert{\huge Spin-orbit interaction}
+	\begin{itemize}\Large
+		\item<0>Momentum of Light
+		\item<1>Geometric phase of light
+		\item<0>SOI in anisotropic medium
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[c]{Geometric phase}\blfootnote{Wave Optics (2015), Bliokh, K. Y. (2015)}
+	\begin{center}
+		\boxed{\text{Phase}}\vspace{-4mm}\pause
+		$$\swarrow\hspace{1.5cm}\searrow$$\\\vspace{-2mm}\pause
+		\boxed{\alert<4>{\text{Dynamical phase}}} \hspace{1cm}\boxed{\alert<5->{\text{Geometric phase}}}\\\pause
+	\end{center}
+
+		\only<4>{Associated with optical path length.}
+		\only<5->{Associated with geometry of evolution.}\pause
+		\visible<6>{\begin{itemize}
+			{\item Spin-redirection Berry phase}
+			{\item Pancharatnam-Berry Phase}
+		\end{itemize}}
+\end{frame}
+
+\begin{frame}[t]{Spin-redirection Berry phase}\blfootnote{Wave Optics (2015), Bliokh, K. Y. (2015), \href{https://www.physics.usu.edu/Wheeler/GenRel2013/Notes/Curvature.pdf}{Parallel transport- Utah State}}
+	Associated with adiabatic evolution of wave-vector.\pause \\
+	\textit{e.g.,} Polarized light through a helical optic fibre.\pause
+	\begin{columns}
+		\column{0.5\textwidth}
+		$$\boldsymbol{J}\longrightarrow\boldsymbol{J'}=\boldsymbol{J}\alert<2,3>{\exp(i \sigma\alert<4,5>{\Theta})}$$
+		\only<3>{\centering \alert<3>{Helicity-dependant geometric phase}}
+		\pause
+		$$\alert{\Theta} = 2\pi(1-\cos\theta)$$\pause
+		$\alert{\Theta}\rightarrow$ solid angle obtained at the apex of the cone.
+		
+		\begin{align*}
+			\ket{L}&\longrightarrow e^{i\Theta}\ket{L}\\
+			\ket{R}&\longrightarrow e^{-i\Theta}\ket{R}
+		\end{align*}
+	
+		\column{0.5\textwidth}
+		\begin{center}
+		\only<2,3>{\includegraphics[width=\linewidth]{"berry"}}
+		
+		\only<4->{
+			\includegraphics[width=0.7\linewidth]{"k sphere beamer"}\\
+			\textit{Parallel transport}}
+		\end{center}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[t]{Pancharatnam-Berry Phase}\blfootnote{Wave Optics (2015), Chyba, T. H.; Wang, L. J. (1988)}
+	Associated with cyclic evolution in Poincare sphere keeping wave-vector fixed.\pause\\ 
+	\textit{e.g.,} Michelson interferometer.\\\vspace{1mm}\pause
+
+	\begin{columns}
+		\column{0.5\textwidth}
+		\alert<3>{QP1}$\rightarrow$fixed (aligned at $\pi/4$)\\
+		\alert<3,9>{QP2}$\rightarrow$movable (aligned at $\beta$)\pause
+		\begin{align*}
+			\boldsymbol{J}_A&= \ket{x}\\\pause
+			\boldsymbol{J}_A &\longrightarrow \boldsymbol{J}_A'\\\pause
+			\boldsymbol{J}_A'&=\ket{x}\exp(i\phi_d)\:\alert<8>{\exp(-i\:2\alert<9>{\varphi})}\pause
+		\end{align*}
+		$$\alert<9->{\varphi}= \beta+\pi/4$$\pause
+		\onslide<8>{\alert{Pancharatnam-Berry Phase}}\pause\\
+		\alert<9>{(\alert{$\varphi$} depends on QP2 alignment)}
+		\column{0.5\textwidth}
+			\only<2>{\centering\includegraphics[width=\linewidth]{"pb expt"}}
+			\only<3->{\centering\includegraphics[width=0.8\linewidth]{"MI arm beamer"}\\\vspace{3mm}\includegraphics[width=0.8\linewidth]{"poincare-pb"}}
+	\end{columns}
+\end{frame}
+
+\begin{frame} %title
+	\centering
+	\alert{\huge Spin-orbit interaction}
+	\begin{itemize}\Large
+		\item<0>Momentum of Light
+		\item<0>Geometric phase of light
+		\item<1>SOI in anisotropic medium
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Spin-orbit interaction of light}\blfootnote{Bliokh, K. Y. (2015)}
+	Three types of AM:
+	\begin{itemize}
+		\item<2->IOAM
+		\item<3->EOAM
+		\item<4->SAM
+	\end{itemize}
+
+	\onslide<5>{Inter-conversion between AM in a process represents \textbf{spin-orbit interaction} of light}
+\end{frame}
+
+\begin{frame}{SOI in homogeneous-anisotropic media} \blfootnote{Wave Optics (2015)}
+	\textit{e.g.} \textbf{Quarter wave-plate}\pause
+	\begin{align*}
+		{\color{blue}\begin{matrix}
+			\text{Circularly}\\
+			\text{polarized}\\
+			(\sigma=\pm1)
+		\end{matrix}\longrightarrow}
+		&\boxed{\begin{matrix}
+			\text{Q}\\
+			\text{W}\\
+			\text{P}
+		\end{matrix}}{\color{blue}\longrightarrow
+		\begin{matrix}
+			\text{Linearly}\\
+			\text{polarized}\\
+			(\sigma=0)
+		\end{matrix}}
+	\end{align*}\pause
+	$\pm\hbar$ SAM per photon is transferred to the wave plate.\\\pause
+
+	\textit{e.g.} \textbf{Half wave-plate}\pause
+	\begin{align*}
+		{\color{blue}\begin{matrix}
+				\text{Circularly}\\
+				\text{polarized}\\
+				(\sigma=\pm1)
+			\end{matrix}\longrightarrow}
+		&\boxed{\begin{matrix}
+				\text{H}\\
+				\text{W}\\
+				\text{P}
+		\end{matrix}}{\color{blue}\longrightarrow
+			\begin{matrix}
+				\text{Circularly}\\
+				\text{polarized}\\
+				(\sigma=\mp1)
+		\end{matrix}}
+	\end{align*}\pause
+	$\pm2\hbar$ SAM per photon is transferred to the wave plate and spin is flipped.
+\end{frame}
+
+\begin{frame}[t]{SOI in inhomogeneous-anisotropic media} 
+	e.g. \textbf{q-plate}\\\pause
+	Inhomogeneous orientation of the fast axis varying with azimuth ($\phi$).\\
+	
+	\begin{columns}
+		\column{0.5\textwidth}
+		\only<3>{$$\alpha(\phi)=q\phi+\alpha_0$$}
+		\column{0.5\textwidth}
+		\begin{center}
+			\only<3>{\includegraphics[width=\linewidth]{"q-plate"}}
+		\end{center}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[t]{q-plate}\blfootnote{Marrucci, L.; Manzo, C. (2006)}
+	\begin{figure}[H]
+		\begin{subfigure}[H]{0.35\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{qplate(0).png}
+			\caption{$q=0$, $\alpha_0=0$}
+			\label{fig:q0}
+		\end{subfigure}
+		\hfil
+		\begin{subfigure}[H]{0.35\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{qplate(0.5).png}
+			\caption{$q=0.5$, $\alpha_0=0$}
+			\label{fig:q0.5}
+		\end{subfigure}
+	\end{figure}
+	\begin{figure}[H]
+		\begin{subfigure}[H]{0.35\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{qplate(1).png}
+			\caption{$q=1$, $\alpha_0=0$}
+			\label{fig:q1}
+		\end{subfigure}
+		\hfil
+		\begin{subfigure}[H]{0.35\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{qplate(1,r).png}
+			\caption{$q=1$, $\alpha_0=\pi/2$}
+			\label{fig:q1r}
+		\end{subfigure}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{SOI in q-plate}\blfootnote{Marrucci, L. (2006), Wave Optics (2015)}
+	\textbf{Q-plate of phase retardation of $\pi$}
+	\begin{align*}
+		\onslide<2->{
+		\begin{bmatrix}
+			1\\i\sigma
+		\end{bmatrix}
+		\longrightarrow\;
+		&\boxed{\textbf{\text{Q}}_{\lambda/2}}\;\longrightarrow}
+		\onslide<3->{
+		\begin{bmatrix}
+			1\\-i\sigma
+		\end{bmatrix}
+		\alert{\underbrace{\exp(i2\sigma q\phi)}_{\text{Vortex}}}
+		\:\exp(i2\sigma\alpha_0)}\\
+		\onslide<4->{(\sigma=\pm1,l=0) &\longrightarrow (\sigma=\mp1,l=\pm\alert{2q})}
+	\end{align*}
+	\onslide<5>{$q=1\rightarrow$ Angular momentum per photon is conserved.}
+	\onslide<6>{\textbf{Q-plate of phase retardation of $\pi/2$}}
+	\begin{align*}
+		\onslide<7->{
+			\begin{bmatrix}
+				1\\i\sigma
+			\end{bmatrix}
+			\longrightarrow\;
+			&\boxed{\textbf{\text{Q}}_{\lambda/4}}\;\longrightarrow}
+		\onslide<8->{
+			\begin{bmatrix}
+				\cos(\alpha - \sigma\pi/4)\\
+				\sin(\alpha - \sigma\pi/4)
+			\end{bmatrix}
+			\alert{\underbrace{\exp(i\sigma q\phi)}_{\text{Vortex}}}
+			\:\exp(i\sigma\alpha_0)}\\
+		\onslide<9->{(\sigma=\pm1,l=0) &\longrightarrow (\sigma=0,l=\pm\alert{q})}
+	\end{align*}
+	\onslide<10>{$q=1\rightarrow$ Angular momentum per photon is conserved.}
+\end{frame}
+
+\begin{frame} %thanks
+	\begin{center}\Huge
+		\alert{THANKS\\
+		TO ALL}
+	\end{center}
+\end{frame}
 \end{document}

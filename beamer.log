@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.31)  23 JUL 2023 04:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.31)  24 JUL 2023 01:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1023,7 +1023,17 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 19
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count364
+\l__lipsum_a_int=\count365
+\l__lipsum_b_int=\count366
+
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 24
 .
 
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
@@ -1031,24 +1041,24 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (./beamer.aux)
 \openout1 = `beamer.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1086,16 +1096,16 @@ LaTeX Font Info:    ... okay on input line 19.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count364
+\scratchcounter=\count367
 \scratchdimen=\dimen329
 \scratchbox=\box91
-\nofMPsegments=\count365
-\nofMParguments=\count366
+\nofMPsegments=\count368
+\nofMParguments=\count369
 \everyMPshowfont=\toks58
-\MPscratchCnt=\count367
+\MPscratchCnt=\count370
 \MPscratchDim=\dimen330
-\MPnumerator=\count368
-\makeMPintoPDFobject=\count369
+\MPnumerator=\count371
+\makeMPintoPDFobject=\count372
 \everyMPtoPDFconversion=\toks59
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1106,7 +1116,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 19.
+Package hyperref Info: Link coloring OFF on input line 24.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1117,12 +1127,12 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count370
+\c@section@level=\count373
 LaTeX Info: Redefining \Ref on input line 520.
 )
-LaTeX Info: Redefining \ref on input line 19.
-LaTeX Info: Redefining \pageref on input line 19.
-LaTeX Info: Redefining \nameref on input line 19.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
 
 (./beamer.out) (./beamer.out)
 \@outlinefile=\write6
@@ -1157,7 +1167,7 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 19.
+ on input line 24.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: longtable package is loaded.
@@ -1166,60 +1176,63 @@ Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
  (./beamer.nav)
-<iiserk.png, id=21, 274.02374pt x 301.125pt>
+
+Package hyperref Warning: Option `pdfauthor' has already been used,
+(hyperref)                setting the option has no effect on input line 25.
+
+<iiserk.png, id=25, 274.02374pt x 301.125pt>
 File: iiserk.png Graphic file (type png)
 <use iiserk.png>
-Package pdftex.def Info: iiserk.png  used on input line 24.
-(pdftex.def)             Requested size: 42.67912pt x 46.89903pt.
-
+Package pdftex.def Info: iiserk.png  used on input line 35.
+(pdftex.def)             Requested size: 34.14322pt x 37.51646pt.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./iiserk.png>]
 (./beamer.toc) [2
 
 ]
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
-9.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 5
+0.
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
-9.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 5
+0.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-39.
+50.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-39.
+50.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 39.
+(Font)              <17.28> on input line 50.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 39.
+(Font)              <12> on input line 50.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 39.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 39.
+(Font)              <10> on input line 50.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 50.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 39.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 39
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 50
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
@@ -1228,9 +1241,11 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 63.
+(Font)              <8> on input line 73.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 63.
+(Font)              <6> on input line 73.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 73.
  [4
 
 ] [5
@@ -1247,7 +1262,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 ] [10
 
 ]
-Overfull \vbox (22.7867pt too high) detected at line 147
+Overfull \vbox (22.7867pt too high) detected at line 158
  []
 
 [11
@@ -1255,21 +1270,21 @@ Overfull \vbox (22.7867pt too high) detected at line 147
 ] [12
 
 ]
-Overfull \hbox (8.5199pt too wide) detected at line 196
+Overfull \hbox (8.5199pt too wide) detected at line 207
 []
  []
 
 [13
 
 ]
-Overfull \hbox (8.5199pt too wide) detected at line 196
+Overfull \hbox (8.5199pt too wide) detected at line 207
 []
  []
 
 [14
 
 ]
-Overfull \hbox (8.5199pt too wide) detected at line 196
+Overfull \hbox (8.5199pt too wide) detected at line 207
 []
  []
 
@@ -1282,13 +1297,13 @@ Overfull \hbox (8.5199pt too wide) detected at line 196
 ] [18
 
 ]
-Overfull \vbox (1.28671pt too high) detected at line 228
+Overfull \vbox (1.28671pt too high) detected at line 239
  []
 
 [19
 
 ]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 252
+LaTeX Font Info:    Trying to load font information for U+euf on input line 263
 .
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
@@ -1300,41 +1315,46 @@ File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 [22
 
 ]
-Overfull \hbox (25.53761pt too wide) detected at line 277
+Overfull \hbox (29.53755pt too wide) detected at line 290
 []
  []
 
 [23
 
 ]
-Overfull \hbox (25.53761pt too wide) detected at line 277
+Overfull \hbox (29.53755pt too wide) detected at line 290
 []
  []
 
-<ellipse beamer.png, id=166, 2018.20667pt x 1468.59778pt>
-File: ellipse beamer.png Graphic file (type png)
-<use ellipse beamer.png>
-Package pdftex.def Info: ellipse beamer.png  used on input line 277.
-(pdftex.def)             Requested size: 132.74924pt x 96.58266pt.
-<poincare beamer.png, id=168, 1534.62222pt x 1534.62222pt>
-File: poincare beamer.png Graphic file (type png)
-<use poincare beamer.png>
-Package pdftex.def Info: poincare beamer.png  used on input line 277.
-(pdftex.def)             Requested size: 99.5614pt x 99.5432pt.
 [24
 
- <./ellipse beamer.png> <./poincare beamer.png>] [25
+]
+Overfull \hbox (29.53755pt too wide) detected at line 290
+[]
+ []
 
-] [26
+<ellipse beamer.png, id=185, 2018.20667pt x 1468.59778pt>
+File: ellipse beamer.png Graphic file (type png)
+<use ellipse beamer.png>
+Package pdftex.def Info: ellipse beamer.png  used on input line 290.
+(pdftex.def)             Requested size: 123.89958pt x 90.15128pt.
+<poincare beamer.png, id=187, 1534.62222pt x 1534.62222pt>
+File: poincare beamer.png Graphic file (type png)
+<use poincare beamer.png>
+Package pdftex.def Info: poincare beamer.png  used on input line 290.
+(pdftex.def)             Requested size: 92.9242pt x 92.91635pt.
+[25
+
+ <./ellipse beamer.png> <./poincare beamer.png>] [26
 
 ] [27
 
 ] [28
 
-]
-[29
+] [29
 
-] [30
+]
+[30
 
 ] [31
 
@@ -1346,117 +1366,117 @@ Package pdftex.def Info: poincare beamer.png  used on input line 277.
 
 ] [35
 
+] [36
+
 ]
-<rad of cur beamer.png, id=232, 764.63445pt x 573.69888pt>
+<rad of cur beamer.png, id=254, 764.63445pt x 573.69888pt>
 File: rad of cur beamer.png Graphic file (type png)
 <use rad of cur beamer.png>
-Package pdftex.def Info: rad of cur beamer.png  used on input line 357.
+Package pdftex.def Info: rad of cur beamer.png  used on input line 372.
 (pdftex.def)             Requested size: 153.64493pt x 115.27173pt.
-<intensity_var beamer.png, id=233, 758.38889pt x 568.34555pt>
+<intensity_var beamer.png, id=255, 758.38889pt x 568.34555pt>
 File: intensity_var beamer.png Graphic file (type png)
 <use intensity_var beamer.png>
-Package pdftex.def Info: intensity_var beamer.png  used on input line 357.
+Package pdftex.def Info: intensity_var beamer.png  used on input line 372.
 (pdftex.def)             Requested size: 153.64493pt x 115.14137pt.
- [36
+ [37
 
- <./Rad of cur beamer.png> <./intensity_var beamer.png>] [37
+ <./Rad of cur beamer.png> <./intensity_var beamer.png>] [38
 
 ]
-<beam waist beamer.png, id=247, 1969.13445pt x 1023.37889pt>
+<beam waist beamer.png, id=271, 1969.13445pt x 1023.37889pt>
 File: beam waist beamer.png Graphic file (type png)
 <use beam waist beamer.png>
-Package pdftex.def Info: beam waist beamer.png  used on input line 380.
+Package pdftex.def Info: beam waist beamer.png  used on input line 396.
 (pdftex.def)             Requested size: 153.64493pt x 79.84196pt.
- [38
+ [39
 
  <./beam waist beamer.png>]
 File: beam waist beamer.png Graphic file (type png)
 <use beam waist beamer.png>
-Package pdftex.def Info: beam waist beamer.png  used on input line 380.
-(pdftex.def)             Requested size: 153.64493pt x 79.84196pt.
- [39
-
-]
-File: beam waist beamer.png Graphic file (type png)
-<use beam waist beamer.png>
-Package pdftex.def Info: beam waist beamer.png  used on input line 380.
+Package pdftex.def Info: beam waist beamer.png  used on input line 396.
 (pdftex.def)             Requested size: 153.64493pt x 79.84196pt.
  [40
 
 ]
 File: beam waist beamer.png Graphic file (type png)
 <use beam waist beamer.png>
-Package pdftex.def Info: beam waist beamer.png  used on input line 380.
+Package pdftex.def Info: beam waist beamer.png  used on input line 396.
 (pdftex.def)             Requested size: 153.64493pt x 79.84196pt.
  [41
 
 ]
-<gouy beamer.png, id=269, 578.16pt x 433.62pt>
+File: beam waist beamer.png Graphic file (type png)
+<use beam waist beamer.png>
+Package pdftex.def Info: beam waist beamer.png  used on input line 396.
+(pdftex.def)             Requested size: 153.64493pt x 79.84196pt.
+ [42
+
+]
+<gouy beamer.png, id=297, 578.16pt x 433.62pt>
 File: gouy beamer.png Graphic file (type png)
 <use gouy beamer.png>
-Package pdftex.def Info: gouy beamer.png  used on input line 397.
+Package pdftex.def Info: gouy beamer.png  used on input line 414.
 (pdftex.def)             Requested size: 138.2795pt x 103.70702pt.
- [42
+ [43
 
  <./gouy beamer.png>]
 File: gouy beamer.png Graphic file (type png)
 <use gouy beamer.png>
-Package pdftex.def Info: gouy beamer.png  used on input line 397.
-(pdftex.def)             Requested size: 138.2795pt x 103.70702pt.
- [43
-
-]
-File: gouy beamer.png Graphic file (type png)
-<use gouy beamer.png>
-Package pdftex.def Info: gouy beamer.png  used on input line 397.
+Package pdftex.def Info: gouy beamer.png  used on input line 414.
 (pdftex.def)             Requested size: 138.2795pt x 103.70702pt.
  [44
 
 ]
-<R_vs_z beamer.png, id=287, 578.16pt x 433.62pt>
+File: gouy beamer.png Graphic file (type png)
+<use gouy beamer.png>
+Package pdftex.def Info: gouy beamer.png  used on input line 414.
+(pdftex.def)             Requested size: 138.2795pt x 103.70702pt.
+ [45
+
+]
+<R_vs_z beamer.png, id=319, 578.16pt x 433.62pt>
 File: R_vs_z beamer.png Graphic file (type png)
 <use R_vs_z beamer.png>
-Package pdftex.def Info: R_vs_z beamer.png  used on input line 414.
+Package pdftex.def Info: R_vs_z beamer.png  used on input line 432.
 (pdftex.def)             Requested size: 153.64493pt x 115.23296pt.
- [45
+ [46
 
  <./R_vs_z beamer.png>]
 File: R_vs_z beamer.png Graphic file (type png)
 <use R_vs_z beamer.png>
-Package pdftex.def Info: R_vs_z beamer.png  used on input line 414.
-(pdftex.def)             Requested size: 153.64493pt x 115.23296pt.
- [46
-
-]
-File: R_vs_z beamer.png Graphic file (type png)
-<use R_vs_z beamer.png>
-Package pdftex.def Info: R_vs_z beamer.png  used on input line 414.
+Package pdftex.def Info: R_vs_z beamer.png  used on input line 432.
 (pdftex.def)             Requested size: 153.64493pt x 115.23296pt.
  [47
 
 ]
-<intensity beamer.png, id=305, 462.528pt x 331.9602pt>
+File: R_vs_z beamer.png Graphic file (type png)
+<use R_vs_z beamer.png>
+Package pdftex.def Info: R_vs_z beamer.png  used on input line 432.
+(pdftex.def)             Requested size: 153.64493pt x 115.23296pt.
+ [48
+
+]
+<intensity beamer.png, id=339, 462.528pt x 331.9602pt>
 File: intensity beamer.png Graphic file (type png)
 <use intensity beamer.png>
-Package pdftex.def Info: intensity beamer.png  used on input line 433.
+Package pdftex.def Info: intensity beamer.png  used on input line 452.
 (pdftex.def)             Requested size: 153.64493pt x 110.27153pt.
- [48
+ [49
 
  <./intensity beamer.png>]
 File: intensity beamer.png Graphic file (type png)
 <use intensity beamer.png>
-Package pdftex.def Info: intensity beamer.png  used on input line 433.
+Package pdftex.def Info: intensity beamer.png  used on input line 452.
 (pdftex.def)             Requested size: 153.64493pt x 110.27153pt.
- [49
+ [50
 
 ]
 File: intensity beamer.png Graphic file (type png)
 <use intensity beamer.png>
-Package pdftex.def Info: intensity beamer.png  used on input line 433.
+Package pdftex.def Info: intensity beamer.png  used on input line 452.
 (pdftex.def)             Requested size: 153.64493pt x 110.27153pt.
- [50
-
-] [51
+ [51
 
 ] [52
 
@@ -1468,215 +1488,643 @@ Package pdftex.def Info: intensity beamer.png  used on input line 433.
 
 ] [56
 
-]
-Overfull \hbox (13.15337pt too wide) detected at line 474
-[]
- []
-
-[57
+] [57
 
 ]
-Overfull \hbox (13.15337pt too wide) detected at line 474
+Overfull \hbox (13.15337pt too wide) detected at line 488
 []
  []
 
 [58
 
 ]
-<intensity_hg00.png, id=364, 462.528pt x 346.896pt>
-File: intensity_hg00.png Graphic file (type png)
-<use intensity_hg00.png>
-Package pdftex.def Info: intensity_hg00.png  used on input line 492.
-(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 492.
-<intensity_hg01.png, id=365, 462.528pt x 346.896pt>
-File: intensity_hg01.png Graphic file (type png)
-<use intensity_hg01.png>
-Package pdftex.def Info: intensity_hg01.png  used on input line 492.
-(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_hg02.png, id=366, 462.528pt x 346.896pt>
-File: intensity_hg02.png Graphic file (type png)
-<use intensity_hg02.png>
-Package pdftex.def Info: intensity_hg02.png  used on input line 492.
-(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_hg10.png, id=367, 462.528pt x 346.896pt>
-File: intensity_hg10.png Graphic file (type png)
-<use intensity_hg10.png>
-Package pdftex.def Info: intensity_hg10.png  used on input line 492.
-(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_hg11.png, id=368, 462.528pt x 346.896pt>
-File: intensity_hg11.png Graphic file (type png)
-<use intensity_hg11.png>
-Package pdftex.def Info: intensity_hg11.png  used on input line 492.
-(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_hg12.png, id=369, 462.528pt x 346.896pt>
-File: intensity_hg12.png Graphic file (type png)
-<use intensity_hg12.png>
-Package pdftex.def Info: intensity_hg12.png  used on input line 492.
-(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_hg20.png, id=370, 462.528pt x 346.896pt>
-File: intensity_hg20.png Graphic file (type png)
-<use intensity_hg20.png>
-Package pdftex.def Info: intensity_hg20.png  used on input line 492.
-(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_hg21.png, id=371, 462.528pt x 346.896pt>
-File: intensity_hg21.png Graphic file (type png)
-<use intensity_hg21.png>
-Package pdftex.def Info: intensity_hg21.png  used on input line 492.
-(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_hg22.png, id=372, 462.528pt x 346.896pt>
-File: intensity_hg22.png Graphic file (type png)
-<use intensity_hg22.png>
-Package pdftex.def Info: intensity_hg22.png  used on input line 492.
-(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-
-Overfull \vbox (2.20113pt too high) detected at line 492
+Overfull \hbox (13.15337pt too wide) detected at line 488
+[]
  []
 
 [59
 
+]
+<intensity_hg00.png, id=405, 462.528pt x 346.896pt>
+File: intensity_hg00.png Graphic file (type png)
+<use intensity_hg00.png>
+Package pdftex.def Info: intensity_hg00.png  used on input line 506.
+(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
+<intensity_hg01.png, id=406, 462.528pt x 346.896pt>
+File: intensity_hg01.png Graphic file (type png)
+<use intensity_hg01.png>
+Package pdftex.def Info: intensity_hg01.png  used on input line 506.
+(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
+<intensity_hg02.png, id=407, 462.528pt x 346.896pt>
+File: intensity_hg02.png Graphic file (type png)
+<use intensity_hg02.png>
+Package pdftex.def Info: intensity_hg02.png  used on input line 506.
+(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
+<intensity_hg10.png, id=408, 462.528pt x 346.896pt>
+File: intensity_hg10.png Graphic file (type png)
+<use intensity_hg10.png>
+Package pdftex.def Info: intensity_hg10.png  used on input line 506.
+(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
+<intensity_hg11.png, id=409, 462.528pt x 346.896pt>
+File: intensity_hg11.png Graphic file (type png)
+<use intensity_hg11.png>
+Package pdftex.def Info: intensity_hg11.png  used on input line 506.
+(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
+<intensity_hg12.png, id=410, 462.528pt x 346.896pt>
+File: intensity_hg12.png Graphic file (type png)
+<use intensity_hg12.png>
+Package pdftex.def Info: intensity_hg12.png  used on input line 506.
+(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
+<intensity_hg20.png, id=411, 462.528pt x 346.896pt>
+File: intensity_hg20.png Graphic file (type png)
+<use intensity_hg20.png>
+Package pdftex.def Info: intensity_hg20.png  used on input line 506.
+(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
+<intensity_hg21.png, id=412, 462.528pt x 346.896pt>
+File: intensity_hg21.png Graphic file (type png)
+<use intensity_hg21.png>
+Package pdftex.def Info: intensity_hg21.png  used on input line 506.
+(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
+<intensity_hg22.png, id=413, 462.528pt x 346.896pt>
+File: intensity_hg22.png Graphic file (type png)
+<use intensity_hg22.png>
+Package pdftex.def Info: intensity_hg22.png  used on input line 506.
+(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
+ [60
+
  <./intensity_hg00.png> <./intensity_hg01.png> <./intensity_hg02.png> <./intens
 ity_hg10.png> <./intensity_hg11.png> <./intensity_hg12.png> <./intensity_hg20.p
 ng> <./intensity_hg21.png> <./intensity_hg22.png>]
-Overfull \hbox (6.83989pt too wide) detected at line 505
+Overfull \hbox (6.83989pt too wide) detected at line 519
 []
  []
 
-<ioam.png, id=390, 469.755pt x 313.17pt>
+<ioam.png, id=428, 469.755pt x 313.17pt>
 File: ioam.png Graphic file (type png)
 <use ioam.png>
-Package pdftex.def Info: ioam.png  used on input line 505.
-(pdftex.def)             Requested size: 107.55098pt x 71.69785pt.
-[60
-
- <./ioam.png>]
-Overfull \hbox (6.83989pt too wide) detected at line 505
-[]
- []
-
-File: ioam.png Graphic file (type png)
-<use ioam.png>
-Package pdftex.def Info: ioam.png  used on input line 505.
+Package pdftex.def Info: ioam.png  used on input line 519.
 (pdftex.def)             Requested size: 107.55098pt x 71.69785pt.
 [61
 
-]
-Overfull \hbox (6.83989pt too wide) detected at line 505
+ <./ioam.png>]
+Overfull \hbox (6.83989pt too wide) detected at line 519
 []
  []
 
 File: ioam.png Graphic file (type png)
 <use ioam.png>
-Package pdftex.def Info: ioam.png  used on input line 505.
+Package pdftex.def Info: ioam.png  used on input line 519.
 (pdftex.def)             Requested size: 107.55098pt x 71.69785pt.
 [62
 
 ]
-<intensity_lg00.png, id=408, 462.528pt x 346.896pt>
-File: intensity_lg00.png Graphic file (type png)
-<use intensity_lg00.png>
-Package pdftex.def Info: intensity_lg00.png  used on input line 523.
-(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_lg01.png, id=409, 462.528pt x 346.896pt>
-File: intensity_lg01.png Graphic file (type png)
-<use intensity_lg01.png>
-Package pdftex.def Info: intensity_lg01.png  used on input line 523.
-(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_lg02.png, id=410, 462.528pt x 346.896pt>
-File: intensity_lg02.png Graphic file (type png)
-<use intensity_lg02.png>
-Package pdftex.def Info: intensity_lg02.png  used on input line 523.
-(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_lg10.png, id=411, 462.528pt x 346.896pt>
-File: intensity_lg10.png Graphic file (type png)
-<use intensity_lg10.png>
-Package pdftex.def Info: intensity_lg10.png  used on input line 523.
-(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_lg11.png, id=412, 462.528pt x 346.896pt>
-File: intensity_lg11.png Graphic file (type png)
-<use intensity_lg11.png>
-Package pdftex.def Info: intensity_lg11.png  used on input line 523.
-(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_lg12.png, id=413, 462.528pt x 346.896pt>
-File: intensity_lg12.png Graphic file (type png)
-<use intensity_lg12.png>
-Package pdftex.def Info: intensity_lg12.png  used on input line 523.
-(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_lg20.png, id=414, 462.528pt x 346.896pt>
-File: intensity_lg20.png Graphic file (type png)
-<use intensity_lg20.png>
-Package pdftex.def Info: intensity_lg20.png  used on input line 523.
-(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_lg21.png, id=415, 462.528pt x 346.896pt>
-File: intensity_lg21.png Graphic file (type png)
-<use intensity_lg21.png>
-Package pdftex.def Info: intensity_lg21.png  used on input line 523.
-(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_lg22.png, id=416, 462.528pt x 346.896pt>
-File: intensity_lg22.png Graphic file (type png)
-<use intensity_lg22.png>
-Package pdftex.def Info: intensity_lg22.png  used on input line 523.
-(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-
-Overfull \vbox (2.20113pt too high) detected at line 523
+Overfull \hbox (6.83989pt too wide) detected at line 519
+[]
  []
 
+File: ioam.png Graphic file (type png)
+<use ioam.png>
+Package pdftex.def Info: ioam.png  used on input line 519.
+(pdftex.def)             Requested size: 107.55098pt x 71.69785pt.
 [63
+
+]
+<intensity_lg00.png, id=446, 462.528pt x 346.896pt>
+File: intensity_lg00.png Graphic file (type png)
+<use intensity_lg00.png>
+Package pdftex.def Info: intensity_lg00.png  used on input line 537.
+(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
+<intensity_lg01.png, id=447, 462.528pt x 346.896pt>
+File: intensity_lg01.png Graphic file (type png)
+<use intensity_lg01.png>
+Package pdftex.def Info: intensity_lg01.png  used on input line 537.
+(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
+<intensity_lg02.png, id=448, 462.528pt x 346.896pt>
+File: intensity_lg02.png Graphic file (type png)
+<use intensity_lg02.png>
+Package pdftex.def Info: intensity_lg02.png  used on input line 537.
+(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
+<intensity_lg10.png, id=449, 462.528pt x 346.896pt>
+File: intensity_lg10.png Graphic file (type png)
+<use intensity_lg10.png>
+Package pdftex.def Info: intensity_lg10.png  used on input line 537.
+(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
+<intensity_lg11.png, id=450, 462.528pt x 346.896pt>
+File: intensity_lg11.png Graphic file (type png)
+<use intensity_lg11.png>
+Package pdftex.def Info: intensity_lg11.png  used on input line 537.
+(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
+<intensity_lg12.png, id=451, 462.528pt x 346.896pt>
+File: intensity_lg12.png Graphic file (type png)
+<use intensity_lg12.png>
+Package pdftex.def Info: intensity_lg12.png  used on input line 537.
+(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
+<intensity_lg20.png, id=452, 462.528pt x 346.896pt>
+File: intensity_lg20.png Graphic file (type png)
+<use intensity_lg20.png>
+Package pdftex.def Info: intensity_lg20.png  used on input line 537.
+(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
+<intensity_lg21.png, id=453, 462.528pt x 346.896pt>
+File: intensity_lg21.png Graphic file (type png)
+<use intensity_lg21.png>
+Package pdftex.def Info: intensity_lg21.png  used on input line 537.
+(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
+<intensity_lg22.png, id=454, 462.528pt x 346.896pt>
+File: intensity_lg22.png Graphic file (type png)
+<use intensity_lg22.png>
+Package pdftex.def Info: intensity_lg22.png  used on input line 537.
+(pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
+ [64
 
  <./intensity_lg00.png> <./intensity_lg01.png> <./intensity_lg02.png> <./intens
 ity_lg10.png> <./intensity_lg11.png> <./intensity_lg12.png> <./intensity_lg20.p
 ng> <./intensity_lg21.png> <./intensity_lg22.png>]
-<phase_lg00.png, id=432, 462.528pt x 346.896pt>
+<phase_lg00.png, id=469, 462.528pt x 346.896pt>
 File: phase_lg00.png Graphic file (type png)
 <use phase_lg00.png>
-Package pdftex.def Info: phase_lg00.png  used on input line 541.
+Package pdftex.def Info: phase_lg00.png  used on input line 555.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<phase_lg01.png, id=433, 462.528pt x 346.896pt>
+<phase_lg01.png, id=470, 462.528pt x 346.896pt>
 File: phase_lg01.png Graphic file (type png)
 <use phase_lg01.png>
-Package pdftex.def Info: phase_lg01.png  used on input line 541.
+Package pdftex.def Info: phase_lg01.png  used on input line 555.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<phase_lg02.png, id=434, 462.528pt x 346.896pt>
+<phase_lg02.png, id=471, 462.528pt x 346.896pt>
 File: phase_lg02.png Graphic file (type png)
 <use phase_lg02.png>
-Package pdftex.def Info: phase_lg02.png  used on input line 541.
+Package pdftex.def Info: phase_lg02.png  used on input line 555.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<phase_lg10.png, id=435, 462.528pt x 346.896pt>
+<phase_lg10.png, id=472, 462.528pt x 346.896pt>
 File: phase_lg10.png Graphic file (type png)
 <use phase_lg10.png>
-Package pdftex.def Info: phase_lg10.png  used on input line 541.
+Package pdftex.def Info: phase_lg10.png  used on input line 555.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<phase_lg11.png, id=436, 462.528pt x 346.896pt>
+<phase_lg11.png, id=473, 462.528pt x 346.896pt>
 File: phase_lg11.png Graphic file (type png)
 <use phase_lg11.png>
-Package pdftex.def Info: phase_lg11.png  used on input line 541.
+Package pdftex.def Info: phase_lg11.png  used on input line 555.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<phase_lg12.png, id=437, 462.528pt x 346.896pt>
+<phase_lg12.png, id=474, 462.528pt x 346.896pt>
 File: phase_lg12.png Graphic file (type png)
 <use phase_lg12.png>
-Package pdftex.def Info: phase_lg12.png  used on input line 541.
+Package pdftex.def Info: phase_lg12.png  used on input line 555.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<phase_lg20.png, id=438, 462.528pt x 346.896pt>
+<phase_lg20.png, id=475, 462.528pt x 346.896pt>
 File: phase_lg20.png Graphic file (type png)
 <use phase_lg20.png>
-Package pdftex.def Info: phase_lg20.png  used on input line 541.
+Package pdftex.def Info: phase_lg20.png  used on input line 555.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<phase_lg21.png, id=439, 462.528pt x 346.896pt>
+<phase_lg21.png, id=476, 462.528pt x 346.896pt>
 File: phase_lg21.png Graphic file (type png)
 <use phase_lg21.png>
-Package pdftex.def Info: phase_lg21.png  used on input line 541.
+Package pdftex.def Info: phase_lg21.png  used on input line 555.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<phase_lg22.png, id=440, 462.528pt x 346.896pt>
+<phase_lg22.png, id=477, 462.528pt x 346.896pt>
 File: phase_lg22.png Graphic file (type png)
 <use phase_lg22.png>
-Package pdftex.def Info: phase_lg22.png  used on input line 541.
+Package pdftex.def Info: phase_lg22.png  used on input line 555.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
- [64
+ [65
 
  <./phase_lg00.png> <./phase_lg01.png> <./phase_lg02.png> <./phase_lg10.png> <.
 /phase_lg11.png> <./phase_lg12.png> <./phase_lg20.png> <./phase_lg21.png> <./ph
 ase_lg22.png>]
+[66
+
+] [67
+
+] [68
+
+] [69
+
+] [70
+
+] [71
+
+] [72
+
+] [73
+
+] [74
+
+] [75
+
+]
+Overfull \hbox (0.16028pt too wide) detected at line 608
+\OMS/lmsy/m/n/12 J[] \OT1/lmr/m/n/12 = [] [] \OML/lmm/m/it/12 d^^\ \OT1/lmr/m/n
+/12 [[] \OMS/lmsy/m/n/12 ^^B []\OT1/lmr/m/n/12 ][] = [][][][] [] [] \OML/lmm/m/
+it/12 dx dy  [][]
+ []
+
+[76
+
+]
+Overfull \hbox (0.16028pt too wide) detected at line 608
+\OMS/lmsy/m/n/12 J[] \OT1/lmr/m/n/12 = [] [] \OML/lmm/m/it/12 d^^\ \OT1/lmr/m/n
+/12 [[] \OMS/lmsy/m/n/12 ^^B []\OT1/lmr/m/n/12 ][] = [][][][][][][][] [] [] \OM
+L/lmm/m/it/12 dx dy  [][]
+ []
+
+[77
+
+]
+Overfull \hbox (0.16028pt too wide) detected at line 608
+\OMS/lmsy/m/n/12 J[] \OT1/lmr/m/n/12 = [] [] \OML/lmm/m/it/12 d^^\ \OT1/lmr/m/n
+/12 [[] \OMS/lmsy/m/n/12 ^^B []\OT1/lmr/m/n/12 ][] = [][][][][][][][] [] [] \OM
+L/lmm/m/it/12 dx dy  [][]
+ []
+
+[78
+
+]
+Overfull \hbox (0.16028pt too wide) detected at line 608
+\OMS/lmsy/m/n/12 J[] \OT1/lmr/m/n/12 = [] [] \OML/lmm/m/it/12 d^^\ \OT1/lmr/m/n
+/12 [[] \OMS/lmsy/m/n/12 ^^B []\OT1/lmr/m/n/12 ][] = [][][][][][][][] [] [] \OM
+L/lmm/m/it/12 dx dy  [][]
+ []
+
+[79
+
+]
+Overfull \hbox (0.16028pt too wide) detected at line 608
+\OMS/lmsy/m/n/12 J[] \OT1/lmr/m/n/12 = [] [] \OML/lmm/m/it/12 d^^\ \OT1/lmr/m/n
+/12 [[] \OMS/lmsy/m/n/12 ^^B []\OT1/lmr/m/n/12 ][] = [][][][][][][][] [] [] \OM
+L/lmm/m/it/12 dx dy  [][]
+ []
+
+[80
+
+] [81
+
+] [82
+
+] [83
+
+] [84
+
+] [85
+
+] [86
+
+] [87
+
+] [88
+
+] [89
+
+] [90
+
+] [91
+
+] [92
+
+] [93
+
+] [94
+
+]
+[95
+
+] [96
+
+] [97
+
+] [98
+
+] [99
+
+] [100
+
+] [101
+
+] [102
+
+] [103
+
+]
+File: ioam.png Graphic file (type png)
+<use ioam.png>
+Package pdftex.def Info: ioam.png  used on input line 660.
+(pdftex.def)             Requested size: 153.64493pt x 102.42892pt.
+<eoam.png, id=692, 498.86375pt x 310.15875pt>
+File: eoam.png Graphic file (type png)
+<use eoam.png>
+Package pdftex.def Info: eoam.png  used on input line 660.
+(pdftex.def)             Requested size: 153.64493pt x 95.5235pt.
+<sam.png, id=693, 469.755pt x 313.17pt>
+File: sam.png Graphic file (type png)
+<use sam.png>
+Package pdftex.def Info: sam.png  used on input line 660.
+(pdftex.def)             Requested size: 153.64493pt x 102.42892pt.
+ [104
+
+ <./eoam.png> <./sam.png>]
+File: ioam.png Graphic file (type png)
+<use ioam.png>
+Package pdftex.def Info: ioam.png  used on input line 660.
+(pdftex.def)             Requested size: 153.64493pt x 102.42892pt.
+File: eoam.png Graphic file (type png)
+<use eoam.png>
+Package pdftex.def Info: eoam.png  used on input line 660.
+(pdftex.def)             Requested size: 153.64493pt x 95.5235pt.
+File: sam.png Graphic file (type png)
+<use sam.png>
+Package pdftex.def Info: sam.png  used on input line 660.
+(pdftex.def)             Requested size: 153.64493pt x 102.42892pt.
+[105
+
+]
+File: ioam.png Graphic file (type png)
+<use ioam.png>
+Package pdftex.def Info: ioam.png  used on input line 660.
+(pdftex.def)             Requested size: 153.64493pt x 102.42892pt.
+File: eoam.png Graphic file (type png)
+<use eoam.png>
+Package pdftex.def Info: eoam.png  used on input line 660.
+(pdftex.def)             Requested size: 153.64493pt x 95.5235pt.
+File: sam.png Graphic file (type png)
+<use sam.png>
+Package pdftex.def Info: sam.png  used on input line 660.
+(pdftex.def)             Requested size: 153.64493pt x 102.42892pt.
+ [106
+
+] [107
+
+] [108
+
+] [109
+
+] [110
+
+] [111
+
+] [112
+
+] [113
+
+] [114
+
+]
+<berry.png, id=755, 1114.1625pt x 564.1075pt>
+File: berry.png Graphic file (type png)
+<use berry.png>
+Package pdftex.def Info: berry.png  used on input line 712.
+(pdftex.def)             Requested size: 153.64493pt x 77.78665pt.
+ [115
+
+ <./berry.png>]
+File: berry.png Graphic file (type png)
+<use berry.png>
+Package pdftex.def Info: berry.png  used on input line 712.
+(pdftex.def)             Requested size: 153.64493pt x 77.78665pt.
+
+Overfull \vbox (10.17429pt too high) detected at line 712
+ []
+
+[116
+
+]
+<k sphere beamer.png, id=770, 422.57875pt x 423.5825pt>
+File: k sphere beamer.png Graphic file (type png)
+<use k sphere beamer.png>
+Package pdftex.def Info: k sphere beamer.png  used on input line 712.
+(pdftex.def)             Requested size: 107.55098pt x 107.80205pt.
+ [117
+
+ <./k sphere beamer.png>]
+File: k sphere beamer.png Graphic file (type png)
+<use k sphere beamer.png>
+Package pdftex.def Info: k sphere beamer.png  used on input line 712.
+(pdftex.def)             Requested size: 107.55098pt x 107.80205pt.
+ [118
+
+] [119
+
+]
+<pb expt.png, id=788, 1142.93666pt x 967.16888pt>
+File: pb expt.png Graphic file (type png)
+<use pb expt.png>
+Package pdftex.def Info: pb expt.png  used on input line 734.
+(pdftex.def)             Requested size: 153.64493pt x 130.01613pt.
+ [120
+
+ <./pb expt.png>]
+<MI arm beamer.png, id=795, 1335.65666pt x 378.30222pt>
+File: MI arm beamer.png Graphic file (type png)
+<use MI arm beamer.png>
+Package pdftex.def Info: MI arm beamer.png  used on input line 734.
+(pdftex.def)             Requested size: 122.9164pt x 34.81345pt.
+<poincare-pb.png, id=796, 1268.74pt x 1268.74pt>
+File: poincare-pb.png Graphic file (type png)
+<use poincare-pb.png>
+Package pdftex.def Info: poincare-pb.png  used on input line 734.
+(pdftex.def)             Requested size: 122.9164pt x 122.91275pt.
+ [121
+
+ <./MI arm beamer.png> <./poincare-pb.png>]
+File: MI arm beamer.png Graphic file (type png)
+<use MI arm beamer.png>
+Package pdftex.def Info: MI arm beamer.png  used on input line 734.
+(pdftex.def)             Requested size: 122.9164pt x 34.81345pt.
+File: poincare-pb.png Graphic file (type png)
+<use poincare-pb.png>
+Package pdftex.def Info: poincare-pb.png  used on input line 734.
+(pdftex.def)             Requested size: 122.9164pt x 122.91275pt.
+ [122
+
+]
+File: MI arm beamer.png Graphic file (type png)
+<use MI arm beamer.png>
+Package pdftex.def Info: MI arm beamer.png  used on input line 734.
+(pdftex.def)             Requested size: 122.9164pt x 34.81345pt.
+File: poincare-pb.png Graphic file (type png)
+<use poincare-pb.png>
+Package pdftex.def Info: poincare-pb.png  used on input line 734.
+(pdftex.def)             Requested size: 122.9164pt x 122.91275pt.
+ [123
+
+]
+File: MI arm beamer.png Graphic file (type png)
+<use MI arm beamer.png>
+Package pdftex.def Info: MI arm beamer.png  used on input line 734.
+(pdftex.def)             Requested size: 122.9164pt x 34.81345pt.
+File: poincare-pb.png Graphic file (type png)
+<use poincare-pb.png>
+Package pdftex.def Info: poincare-pb.png  used on input line 734.
+(pdftex.def)             Requested size: 122.9164pt x 122.91275pt.
+ [124
+
+]
+File: MI arm beamer.png Graphic file (type png)
+<use MI arm beamer.png>
+Package pdftex.def Info: MI arm beamer.png  used on input line 734.
+(pdftex.def)             Requested size: 122.9164pt x 34.81345pt.
+File: poincare-pb.png Graphic file (type png)
+<use poincare-pb.png>
+Package pdftex.def Info: poincare-pb.png  used on input line 734.
+(pdftex.def)             Requested size: 122.9164pt x 122.91275pt.
+ [125
+
+]
+File: MI arm beamer.png Graphic file (type png)
+<use MI arm beamer.png>
+Package pdftex.def Info: MI arm beamer.png  used on input line 734.
+(pdftex.def)             Requested size: 122.9164pt x 34.81345pt.
+File: poincare-pb.png Graphic file (type png)
+<use poincare-pb.png>
+Package pdftex.def Info: poincare-pb.png  used on input line 734.
+(pdftex.def)             Requested size: 122.9164pt x 122.91275pt.
+ [126
+
+]
+File: MI arm beamer.png Graphic file (type png)
+<use MI arm beamer.png>
+Package pdftex.def Info: MI arm beamer.png  used on input line 734.
+(pdftex.def)             Requested size: 122.9164pt x 34.81345pt.
+File: poincare-pb.png Graphic file (type png)
+<use poincare-pb.png>
+Package pdftex.def Info: poincare-pb.png  used on input line 734.
+(pdftex.def)             Requested size: 122.9164pt x 122.91275pt.
+ [127
+
+]
+[128
+
+] [129
+
+] [130
+
+] [131
+
+] [132
+
+] [133
+
+] [134
+
+] [135
+
+] [136
+
+] [137
+
+] [138
+
+] [139
+
+]
+[140
+
+] [141
+
+]
+<q-plate.png, id=910, 1092.08pt x 759.28111pt>
+File: q-plate.png Graphic file (type png)
+<use q-plate.png>
+Package pdftex.def Info: q-plate.png  used on input line 811.
+(pdftex.def)             Requested size: 153.64493pt x 106.81998pt.
+ [142
+
+ <./q-plate.png>]
+<qplate(0).png, id=917, 578.16pt x 433.62pt>
+File: qplate(0).png Graphic file (type png)
+<use qplate(0).png>
+Package pdftex.def Info: qplate(0).png  used on input line 844.
+(pdftex.def)             Requested size: 107.55333pt x 80.66174pt.
+<qplate(0.5).png, id=918, 578.16pt x 433.62pt>
+File: qplate(0.5).png Graphic file (type png)
+<use qplate(0.5).png>
+Package pdftex.def Info: qplate(0.5).png  used on input line 844.
+(pdftex.def)             Requested size: 107.55333pt x 80.66174pt.
+<qplate(1).png, id=919, 578.16pt x 433.62pt>
+File: qplate(1).png Graphic file (type png)
+<use qplate(1).png>
+Package pdftex.def Info: qplate(1).png  used on input line 844.
+(pdftex.def)             Requested size: 107.55333pt x 80.66174pt.
+<qplate(1,r).png, id=920, 578.16pt x 433.62pt>
+File: qplate(1,r).png Graphic file (type png)
+<use qplate(1,r).png>
+Package pdftex.def Info: qplate(1,r).png  used on input line 844.
+(pdftex.def)             Requested size: 107.55333pt x 80.66174pt.
+
+Overfull \vbox (17.49866pt too high) detected at line 844
+ []
+
+[143
+
+ <./qplate(0).png> <./qplate(0.5).png> <./qplate(1).png> <./qplate(1,r).png>]
+Overfull \hbox (25.5183pt too wide) detected at line 882
+[]
+ []
+
+[144
+
+]
+Overfull \hbox (25.5183pt too wide) detected at line 882
+[]
+ []
+
+[145
+
+]
+Overfull \hbox (25.5183pt too wide) detected at line 882
+[]
+ []
+
+[146
+
+]
+Overfull \hbox (25.5183pt too wide) detected at line 882
+[]
+ []
+
+[147
+
+]
+Overfull \hbox (25.5183pt too wide) detected at line 882
+[]
+ []
+
+[148
+
+]
+Overfull \hbox (25.5183pt too wide) detected at line 882
+[]
+ []
+
+[149
+
+]
+Overfull \hbox (25.5183pt too wide) detected at line 882
+[]
+ []
+
+[150
+
+]
+Overfull \hbox (25.5183pt too wide) detected at line 882
+[]
+ []
+
+[151
+
+]
+Overfull \hbox (25.5183pt too wide) detected at line 882
+[]
+ []
+
+[152
+
+]
+Overfull \hbox (25.5183pt too wide) detected at line 882
+[]
+ []
+
+[153
+
+] [154
+
+]
 \tf@nav=\write7
 \openout7 = `beamer.nav'.
 
@@ -1686,39 +2134,40 @@ ase_lg22.png>]
 \tf@snm=\write9
 \openout9 = `beamer.snm'.
 
-
-(./beamer.aux)
+ (./beamer.aux)
 Package rerunfilecheck Info: File `beamer.out' has not changed.
-(rerunfilecheck)             Checksum: 97F9FD28E6632CE1647952B5AC1B8642;323.
+(rerunfilecheck)             Checksum: D65BFBB071B3E8DC7D33138FCF5C27F1;530.
  ) 
 Here is how much of TeX's memory you used:
- 39101 strings out of 480171
- 907628 string characters out of 5894489
- 1242158 words of memory out of 5000000
- 56162 multiletter control sequences out of 15000+600000
- 551374 words of font info for 98 fonts, out of 8000000 for 9000
+ 39899 strings out of 480171
+ 922849 string characters out of 5894489
+ 1336862 words of memory out of 5000000
+ 56751 multiletter control sequences out of 15000+600000
+ 559235 words of font info for 96 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 99i,25n,104p,702b,770s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,25n,104p,702b,805s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share
-/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
--mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eu
-fb10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/f
-onts/type1/public/lm/lmbx6.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.p
-fb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/sha
-re/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/l
-m/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/
-fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/typ
-e1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on beamer.pdf (64 pages, 2576782 bytes).
+ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/l
+m/lm-ec.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eu
+fb10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbsy10.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx6.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on beamer.pdf (154 pages, 3759238 bytes).
 PDF statistics:
- 578 PDF objects out of 1000 (max. 8388607)
- 387 compressed objects within 4 object streams
- 133 named destinations out of 1000 (max. 500000)
- 244 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1166 PDF objects out of 1200 (max. 8388607)
+ 853 compressed objects within 9 object streams
+ 322 named destinations out of 1000 (max. 500000)
+ 312 words of extra memory for PDF output out of 10000 (max. 10000000)
 

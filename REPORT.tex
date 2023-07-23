@@ -51,7 +51,7 @@
 		\centering
 		{\Huge\bfseries Summer Internship Report}\\
 		\vspace{1cm}
-		{\LARGE Indian Institution of Science Education \& Rescaech}\\
+		{\LARGE Indian Institution of Science Education \& Research}\\
 		\vspace{3.5mm}
 		{\LARGE Kolkata, WB, India, 741246}\\
 		\vspace{5mm}
@@ -1568,10 +1568,9 @@ Now time-averaged Poynting vector is given by, \cite{poynting}\cite{haus}
 
 From eq. \ref{eq:3.1} and \ref{eq:3.2} and using \ref{eq:3.6} and \ref{eq:3.8}, time-averaged linear momentum is given by
 \begin{align}
-	\boldsymbol{P} &= \int d\tau\: \expval{\boldsymbol{S}}\\
+	\boldsymbol{P} &= \frac{1}{c^2}\int d\tau\: \expval{\boldsymbol{S}}\\
 	&=\frac{\epsilon_0}{2}\int d\tau \:\Re{\boldsymbol{E}^\ast \times \boldsymbol{B}}\nonumber\\
-	&= \frac{\epsilon_0}{2i\omega}\int d\tau\: \Re{\boldsymbol{E}^\ast \times (\nabla\times\boldsymbol{E})} \nonumber\\
-	&= \frac{\epsilon_0}{2i\omega}\Re{\int d\tau\: {\boldsymbol{E}^\ast \times (\nabla\times\boldsymbol{E})}}
+	&= \frac{\epsilon_0}{2i\omega}\int d\tau\: \Re{\boldsymbol{E}^\ast \times (\nabla\times\boldsymbol{E})} 
 \end{align}
 On partial integration and using the transversality of E, considering the magnitude of $\boldsymbol{E}$ decreasing very rapidly when $r\to0$, \cite{enk nien 92} we get\footnote{see derivation in Chapter I in ref. \cite{CCT}}
 \begin{align}
@@ -1588,7 +1587,7 @@ Let angular momentum density is $\boldsymbol{j}$ and angular momentum is $\bolds
 
 Similarly from eq. \ref{eq:3.12} and \ref{eq:3.13} and using \ref{eq:3.6} and \ref{eq:3.8}, time-averaged angular momentum, 
 \begin{align}
-	\boldsymbol{J} &= \int d\tau\: \boldsymbol{r}\times\expval{\boldsymbol{S}}\\
+	\boldsymbol{J} &= \frac{1}{c^2}\int d\tau\: \boldsymbol{r}\times\expval{\boldsymbol{S}}\\
 	&=\frac{\epsilon_0}{2}\int d\tau \:\boldsymbol{r}\times\Re{\boldsymbol{E}^\ast \times \boldsymbol{B}}\nonumber\\
 	&= \frac{\epsilon_0}{2i\omega}\int d\tau\: \Re{\boldsymbol{r}\times\left(\boldsymbol{E}^\ast \times (\nabla\times\boldsymbol{E})\right)}
 \end{align}
@@ -1601,7 +1600,7 @@ Now similarly on partial integration and using the transversality of E, consider
 
 Now according to \cite{bernatt allen 94}\cite{enk nien 92}, within the paraxial approximation to get time-averaged energy, linear momentum and angular momentum per unit length \textit{i.e.} $\mathcal{W}$, $\mathcal{P}$ and $\mathcal{J}$ respectively, along the beam propagating in z-direction, we have to integrate throughout the transverse xy-plane. So,
 \begin{align}
-	\mathcal{W}_z&=\frac{\epsilon_0}{2i\omega}\iint dx\:dy\: \boldsymbol{E}^\ast\cdot\boldsymbol{E}\label{eq:3.17}\\
+	\mathcal{W}_z&=\frac{\epsilon_0}{2}\iint dx\:dy\: \boldsymbol{E}^\ast\cdot\boldsymbol{E}\label{eq:3.17}\\
 	\mathcal{P}_z&=\frac{\epsilon_0}{2i\omega}\iint  dx\:dy\: \expval{\boldsymbol{E}\times (\nabla\times\boldsymbol{E})}_z\\
 	\mathcal{J}_z&=\frac{\epsilon_0}{2i\omega}\iint dx\:dy\: \left[\boldsymbol{r}\times\expval{\boldsymbol{E}\times (\nabla\times\boldsymbol{E})}\right]_z
 	\label{eq:3.19}
@@ -1646,7 +1645,7 @@ is equivalent to $\frac{\partial}{\partial\phi}$ in cylindrical coordinate and t
 \subsubsection{Orbital and spin Angular Momentum}
 Let envelop $\boldsymbol{F}$ corresponding to the EM wave \ref{eq:3.20} for a vortex beam (\textit{e.g.} LG beam) be,
 \begin{align}
-	\boldsymbol{F}(r,\phi,t)= u(r)\:\exp(-il\phi)\:\Hat{\boldsymbol{p}}(t)
+	\boldsymbol{F}(r,\phi)= u(r)\:\exp(-il\phi)\:\Hat{\boldsymbol{p}}
 \end{align} where $e^{il\phi}$ refers to helical phase front, and $\Hat{\boldsymbol{p}} = p_x\Hat{x}+ p_y\Hat{y}+p_z\Hat{z}$ refers to unit polarization direction of electric field. Putting it in \ref{eq:3.22} considering $x\frac{\partial}{\partial y} - y\frac{\partial}{\partial x} \equiv \frac{\partial}{\partial\phi}$, we get,
 \begin{align}
 	\mathcal{L}&=\frac{\epsilon_0}{2i\omega} \iint r\:dr\:d\phi\:\left[F_\xi^\ast\frac{\partial}{\partial\phi}F_\xi\right]_{\xi=x,y}\nonumber\\
@@ -1669,7 +1668,7 @@ let us define a term \textit{polarization helicity} $\sigma$ as
 then
 \begin{align}
 	\mathcal{S}
-	=\frac{\epsilon_0}{2\omega}\sigma\: 2\pi \int r\:dr\: \abs{u(r)}^2 \label{eq:3.28}
+	=\frac{\pi\epsilon_0\sigma }{\omega}\int r\:dr\: \abs{u(r)}^2 \label{eq:3.28}
 \end{align}
 
 The relation between polarization direction $\Hat{\boldsymbol{p}}$ and Jones vector $\boldsymbol{J}$ is\footnote{for fully polarized light only} 
@@ -1739,8 +1738,8 @@ If the AM is to be intrinsic, then for all $(x_0,y_0)$
 
 From the SAM part, we see $\mathcal{S}$ does not depend on the choice of the axis, so SAM is intrinsic. But for the OAM part, we see $\mathcal{L}$ depends on the choice of the axis, so OAM may be intrinsic or extrinsic determined by condition \ref{eq:3.40}.
 
-%\subsection{\color{red}AM of Gaussian Beam}
-
+\subsection{\color{red} Observation of AM of light}
+\cite{yao 11} pg- 176
 
 \clearpage
 
@@ -2067,13 +2066,13 @@ In the later section, we will see several manifestation of those interactions.
 %\subsection{SOI in isotropic medium}
 %\cite{bliokh 12}
 
-\subsection{SOI in inhomogeneous anisotropic medium}
+\subsection{SOI in anisotropic medium}
 Inhomogeneous anisotropic medium has spatially varying anisotropy axis (\textit{i.e.} birefringent or dichroic. Here SOI deals with spin flipping, spin-to-orbital angular momentum conversion etc. To illustrate these events, we will consider specific cases.
 
-A simple case is when a circularly polarized light passes through quarter wave-plate, it become linearly polarized light, so the SAM transformation is $S=\pm1 \longrightarrow S= 0$, in that cases, $\pm\hbar$ SAM carried by each photon of circularly polarized light, is transferred to the wave plate. Similarly for half wave-plate, the SAM transformation is 
-$$\sigma=\pm 1 \longrightarrow \sigma=\mp1$$ So the spin is flipped.  
+A simple case of homogenous medium is when a circularly polarized light passes through quarter wave-plate, it become linearly polarized light, so the SAM transformation is $$\sigma=\pm1 \longrightarrow \sigma= 0$$, in that cases, $\pm\hbar$ SAM carried by each photon of circularly polarized light, is transferred to the wave plate. Similarly for half wave-plate, the SAM transformation is 
+$$\sigma=\pm 1 \longrightarrow \sigma=\mp1$$ So the spin is flipped.
 
-Before going into more complex cases, we discuss about \textit{q-plate}. Q-plate is an homogeneous birefringent phase retardation of $\pi$ (half-wave) across the slab and an inhomogeneous orientation of the fast (or slow) optical axis lying parallel to the slab planes whose local alignment of birefringent fast axis varies linearly with the azimuth angle of the q-plate.\cite{marrucci 06} Let local alignment angle is $\alpha$, and the azimuth angle is $\phi$, then,
+Before going into more complex cases, we discuss about \textit{q-plate}. Q-plate is an birefringent anisotropic media of phase retardation of $\pi$ (half-wave) across the slab with an inhomogeneous orientation of the fast (or slow) optical axis lying parallel to the slab planes whose local alignment of birefringent fast axis varies linearly with the azimuth angle of the q-plate.\cite{marrucci 06} Let local alignment angle is $\alpha$, and the azimuth angle is $\phi$, then,
 \begin{align}
 	\alpha(\phi)=q\phi+\alpha_0
 \end{align}
@@ -2195,6 +2194,13 @@ So to keep total angular momentum per photon conserved, $q=1$.
 	\caption{Q-plate of different $q$ and $\alpha_0$}
 	\label{fig:qplate}
 \end{figure}
+
+
+\cite{beijer 94}
+\cite{yao 11} pg - 168
+Another Inhomogeneous medium is spiral phase plate (see fig \cite{beijer 94}).
+
+
 
 
 %\subsection{SOI in non-paraxial fields}
@@ -2340,6 +2346,12 @@ So to keep total angular momentum per photon conserved, $q=1$.
 	  
 	  \bibitem{marrucci 06}
 	  Marrucci, L.; Manzo, C.; Paparo, D. (2006). Optical Spin-to-Orbital Angular Momentum Conversion in Inhomogeneous Anisotropic Media. Physical Review Letters, 96(16), 163905–. doi: 10.1103/PhysRevLett.96.163905  
+	  
+	  \bibitem{yao 11}
+	  Yao, A.M., and Padgett, M.J. (2011), "Orbital angular momentum: origins, behavior and applications," Adv. Opt. Photon. 3, 161-204, doi: 10.1364/AOP.3.000161
+	  
+	  \bibitem{beijer 94}
+       Beijersbergen, M.W.; Coerwinkel, R.P.C.; Kristensen, M.; Woerdman,  J.P. (1994). Helical-wavefront laser beams produced with a spiral phaseplate. , 112(5-6), 321–327. doi: 10.1016/0030-4018(94)90638-6     
 	   
 \end{thebibliography}
 
