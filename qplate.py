@@ -7,7 +7,7 @@ plt.style.use("classic")
 
 q=1
 
-q1=np.pi/2
+q1=np.pi  # lapha as mension the book
 
 # define phi of range 0 to 2*pi
 
@@ -30,5 +30,5 @@ plt.quiver(xv, yv, ax, bx)
 #plt.ylabel("y")
 #plt.colorbar()
 
-#plt.show()
-plt.savefig(f"qplate({q},r).png")
+plt.show()
+#plt.savefig(f"qplate({q},r).png")

@@ -2,7 +2,7 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{amsmath,amssymb,makeidx,graphicx,float,indentfirst,color,hyperref,tikz, fancyref,pgfplots,verbatim,fancyvrb,caption,subcaption,physics,longtable,mathrsfs, mathtools}
+\usepackage{amsmath,amssymb,makeidx,graphicx,float,indentfirst,color,hyperref,tikz,ifthen, fancyref,pgfplots,verbatim,fancyvrb,caption,subcaption,physics,longtable,mathrsfs, mathtools}
 \usepackage{afterpage}
 \newcommand\blankpage{%
 	\null
@@ -47,18 +47,36 @@
 
 \begin{document}
 	\begin{titlepage}
-		\vspace*{3.5cm}
+		\vspace*{1cm}
 		\centering
-		{\Huge\bfseries Summer Project of 2023}\\
-		\vspace{5cm}
-		\includegraphics[width=2.5cm]{iiserk.png}
-
-		\vspace{5cm}
+		{\Huge\bfseries Summer Internship Report}\\
+		\vspace{1cm}
+		{\LARGE Indian Institution of Science Education \& Rescaech}\\
+		\vspace{3.5mm}
+		{\LARGE Kolkata, WB, India, 741246}\\
+		\vspace{5mm}
 		
-		{\LARGE Pritish Karmakar\\}
-		\vspace{0.3cm}
-		{21MS179}
+		\includegraphics[width=4cm]{iiserk.png}
 		\vfill
+		\textbf{\textsc{\LARGE 
+				On Polarization Properties of Light,\\\vspace{2mm}
+				Gaussian Beams and Spin-Orbit Interaction.}}\\
+		
+		\vspace{15mm}
+		
+		\textsl{\LARGE Submitted by}\\\vspace{2mm}
+		\textbf{\huge Pritish Karmakar}\\\vspace{1.5mm}
+		{\LARGE (21MS179)}\\
+		\vspace{10mm}
+		
+		\textsl{\LARGE Submitted to}\\\vspace{3mm} 
+		\textbf{\huge Prof. Ayan Banerjee}\\\vspace{1.5mm}
+		{\LARGE (HOD, DPS, IISER Kolkata)}\\
+		\vspace{10mm}
+		
+		\textsl{\LARGE Dated}\\\vspace{3mm} 
+		\textbf{\huge17.05.23 - 20.07.23}\\
+		\vspace{1cm}
 		\clearpage
 		
 		\iffalse
@@ -148,7 +166,7 @@ Vector form of electric field of fully polarized EM wave propagating along z-axi
 \end{bmatrix}e^{-i(kz-\omega t)}
 \end{align}
 
-We define normalized\footnote{normalized as $\boldsymbol{J}\:\boldsymbol{J}^\ast=1$} \textit{Jones vector} as
+We define normalized\footnote{normalized as $\boldsymbol{J}^\ast\:\boldsymbol{J}=1$} \textit{Jones vector} as
 \begin{align}
 	\boldsymbol{J}(\boldsymbol{x},t)=\frac{1}{\sqrt{A_x^2+A_y^2}}
 	\begin{bmatrix}
@@ -182,7 +200,7 @@ Some properties of Jones vector are
 \begin{enumerate}
 	\item The intensity of the EM wave is given by 
 	\begin{align}
-		I= \frac{1}{2}c\epsilon_0(A_x^2+A_y^2) = \frac{1}{2}c\epsilon_0 (E^\ast E)
+		I= \frac{1}{2}c\epsilon_0(A_x^2+A_y^2) = \frac{1}{2}c\epsilon_0 (\boldsymbol{E}^\ast \boldsymbol{E})= \frac{1}{2}c\epsilon_0 (\boldsymbol{J}^\ast \boldsymbol{J})
 	\end{align}
 	\item For general elliptically polarized light we can measure the azimuth ($\alpha$) ellipticity ($\epsilon$) of the polarization ellipse by comparing Jones vector $\boldsymbol{J}$ with \cite{WO}
 	\begin{align*}
@@ -245,59 +263,59 @@ To determine $m_{ij}$ in $\boldsymbol{M}$,
 
 Such examples of usual Jones matrix \footnote{For polariser the Jones matrix $\boldsymbol{M} = \boldsymbol{J}\;\boldsymbol{J}^\ast$ where $\boldsymbol{J}$ is normalized Jones vector corresponding polarization state \textit{s.t.} $\boldsymbol{J}_{out}= \boldsymbol{M}\boldsymbol{J} = (\boldsymbol{J}\boldsymbol{J}^\ast)\boldsymbol{J}=\boldsymbol{J}(\boldsymbol{J}^\ast\boldsymbol{J})=\boldsymbol{J}$ \label{fn:1}} are given below,\cite{jones}
 
-	\begin{longtable}[H]{ c c } 
-		\hline
-		\hline
-		Optical element & $\boldsymbol{M}$\\
-		\hline\endhead
-		Free space & $\begin{bmatrix}
-			1 & 0 \\ 
-			0 & 1
-		\end{bmatrix}$\\ \hline
-		x-Polariser & $\begin{bmatrix}
-			1 & 0 \\ 
-			0 & 0
-		\end{bmatrix}$\\\hline
-		y-Polariser & $\begin{bmatrix}
-			0 & 0 \\ 
-			0 & 1
-		\end{bmatrix}$\\\hline
-		Right circular polariser & $\frac{1}{2}\begin{bmatrix}
-			1 & i \\ 
-			-i & 1
-		\end{bmatrix}$\\\hline
-		Left circular polariser & $\frac{1}{2}\begin{bmatrix}
-			1 & -i \\ 
-			i & 1
-		\end{bmatrix}$\\\hline
-		Linear di-attenuator & $\begin{bmatrix}
-			a & 0 \\ 
-			0 & b
-		\end{bmatrix}$\\\hline
-		\begin{tabular}{c}
-			Half-wave plate\\
-			with fast axis horizontal
-		\end{tabular} & $e^{-i\pi/2}\begin{bmatrix}
-			1 & 0 \\ 
-			0 & -1
-		\end{bmatrix}$\\\hline
-		\begin{tabular}{c}
-			Quarter-wave plate\\
-			with fast axis horizontal
-		\end{tabular} & $e^{-i\pi/4}\begin{bmatrix}
-			1 & 0 \\ 
-			0 & i
-		\end{bmatrix}$\\\hline
-		General phase retarder &  $\begin{bmatrix}
-			e^{i\phi_x} & 0 \\ 
-			0 & e^{i\phi_y}
-		\end{bmatrix}$\\
+\begin{longtable}[H]{ c c } 
 	\hline
 	\hline
-	\caption{Jones matrix related to usual optical element}
-	\label{table:2}
-	\end{longtable}
-	
+	Optical element & $\boldsymbol{M}$\\
+	\hline\endhead
+	Free space & $\begin{bmatrix}
+		1 & 0 \\ 
+		0 & 1
+	\end{bmatrix}$\\ \hline
+	x-Polariser & $\begin{bmatrix}
+		1 & 0 \\ 
+		0 & 0
+	\end{bmatrix}$\\\hline
+	y-Polariser & $\begin{bmatrix}
+		0 & 0 \\ 
+		0 & 1
+	\end{bmatrix}$\\\hline
+	Right circular polariser & $\frac{1}{2}\begin{bmatrix}
+		1 & i \\ 
+		-i & 1
+	\end{bmatrix}$\\\hline
+	Left circular polariser & $\frac{1}{2}\begin{bmatrix}
+		1 & -i \\ 
+		i & 1
+	\end{bmatrix}$\\\hline
+	Linear di-attenuator & $\begin{bmatrix}
+		a & 0 \\ 
+		0 & b
+	\end{bmatrix}$\\\hline
+	\begin{tabular}{c}
+		Half-wave plate\\
+		with fast axis horizontal
+	\end{tabular} & $e^{-i\pi/2}\begin{bmatrix}
+		1 & 0 \\ 
+		0 & -1
+	\end{bmatrix}$\\\hline
+	\begin{tabular}{c}
+		Quarter-wave plate\\
+		with fast axis horizontal
+	\end{tabular} & $e^{-i\pi/4}\begin{bmatrix}
+		1 & 0 \\ 
+		0 & i
+	\end{bmatrix}$\\\hline
+	General phase retarder &  $\begin{bmatrix}
+		e^{i\phi_x} & 0 \\ 
+		0 & e^{i\phi_y}
+	\end{bmatrix}$\\
+\hline
+\hline
+\caption{Jones matrix related to usual optical element}
+\label{table:2}
+\end{longtable}
+
 
 
 Some properties of Jones matrix are 
@@ -544,7 +562,7 @@ For total intensity normalised Stokes vector is $\boldsymbol{s}= \begin{bmatrix}
 
 Example of special cases are
 \begin{enumerate}
-	\item[\textbf{Case I}] For fully polarized light
+	\item[\textbf{Case I}] For fully polarized light,
 	\begin{align}
 		s_1&=\frac{A_x^2 - A_y^2}{A_x^2 + A_y^2}\\
 		s_2&=\frac{2A_yA_y\cos\delta}{A_x^2 + A_y^2}\\
@@ -556,11 +574,16 @@ from there we can see
 \end{align}
 which implies that fully polarized has the locus at any point in the sphere of radius 1 in Poincare sphere representation.
 
-\item[\textbf{Case II}] For fully un-polarized light
+\item[\textbf{Case II}] For fully un-polarized light,
 \begin{align}
 	s_1=s_2=s_3=0
 \end{align}
 which implies that fully un-polarized has the locus at any the centre $(0,0,0)$ in the sphere of radius 1 in Poincare sphere representation.
+
+\item[\textbf{Case III}] For partially polarized light,
+\begin{align}
+	0<s_1^2+s_2^2+s_3^2<1
+\end{align}
 \end{enumerate}
 
 \subsubsection{Degree of Polarization}
@@ -570,7 +593,7 @@ We define
 \begin{itemize}
 	\item Total degree of polarization, $DOP = \sqrt{s_1^2+s_2^2+s_3^2}$
 	\item Degree of linear polarization = $\sqrt{s_1^2+s_2^2}$
-	\item Degree of circular polarization = $\sqrt{s_1^2+s_2^2+s_3^2}$
+	\item Degree of circular polarization = $s_3$
 \end{itemize}
 
 For any mixed polarization state we can decompose the Stokes vector into fully polarized and un-polarized components,
@@ -599,7 +622,7 @@ Some properties of Jones matrix are
 \begin{enumerate}
 	\item Resultant Muller matrix for composition of $n$ optical elements is given by
 	\begin{align}
-		\boldsymbol{\mathfrak{M}}=\boldsymbol{\mathfrak{M}}_1\;\boldsymbol{\mathfrak{M}}_2 \dots {\boldsymbol{\mathfrak{M}}}
+		\boldsymbol{\mathfrak{M}}=\boldsymbol{\mathfrak{M}}_1\;\boldsymbol{\mathfrak{M}}_2 \dots {\boldsymbol{\mathfrak{M}}_n}
 	\end{align}
 	\item When th optical element is aligned at an angle $\theta$ \textit{w.r.t.} x-axis then resultant Muller matrix (similar to Jones matrix) for this rotated optical element is given by
 	\begin{align}
@@ -851,9 +874,9 @@ For light to travel in z-direction, our 2nd ansatz be,
 \end{align}
 Considering the slowly varying envelope approximation\cite{WO} that,
 \begin{align}
-	\lambda^2 \left|\frac{\partial^2\psi}{\partial z^2}\right|<<
-	\lambda \left|\frac{\partial\psi}{\partial z}\right| <<
-	\left|\psi\right| \label{eq:2.5}
+	\left|\frac{\partial^2\psi}{\partial z^2}\right|\ll
+	k \left|\frac{\partial\psi}{\partial z}\right| \ll
+	k^2\left|\psi\right| \label{eq:2.5}
 \end{align}
 and putting \ref{eq:2.4} in eq. \ref{eq:2.3} gives \textit{Paraxial wave equation},
 \begin{align}
@@ -1193,23 +1216,25 @@ Lets take the ansatz as,
 \end{align}
 Putting this in Paraxial wave equation \ref{eq:2.6}, and solving the differential equation,\cite{milonni} we get,
 \begin{align}
-	\psi_{m,n}(\boldsymbol{r},z)&= A \frac{w_0}{w(z)} H_m\left(\frac{\sqrt{2} x}{w(z)}\right) H_n\left(\frac{\sqrt{2} y}{w(z)}\right)\exp( -\frac{r^2}{w^2(z)}) \cdot\nonumber\\ 
+	\psi_{m,n}(\boldsymbol{r},z)=& A \left(\frac{w_0}{w(z)}\right) H_m\left(\frac{\sqrt{2} x}{w(z)}\right) H_n\left(\frac{\sqrt{2} y}{w(z)}\right)\exp( -\frac{r^2}{w^2(z)}) \cdot\nonumber\\ 
 	&\exp( i\:(m+n+1)\tan[-1](\frac{z}{z_0}) -i\frac{kr^2}{2R(z)}) \label{eq:2.53}
 \end{align}
-where $H_i$ is \textit{i th order Hermite polynomial}and other symbols are as usual.
+where $H_i$ is \textit{i th degree Hermite polynomial} and other symbols are as usual.
 See for $m=0=n$ we recover the Gaussian solution of \ref{eq:2.30} which we call as \textit{zero order} HG beam. For different values of $m$ an $n$, we will get diferent type of higher order HG beam, these are called \textit{transverse electromagnetic mode} of order $(m,n)$ or, $TEM_{mn}$. 
 
 Some characteristics of HG beams are given below,
 	\begin{figure}[t]
 	\foreach \n in {0,1,2}{
 		\foreach \m in {0,1,2}{
-			\begin{subfigure}[htbp]{0.32\textwidth}
-				\centering
-				\includegraphics[width=\textwidth]{intensity_hg\n\m}
-				\caption{$TEM_{\n\m}$}
-				%\label{fig:hg\n\m}
-			\end{subfigure}
-			\hfill
+			{
+				\begin{subfigure}[htbp]{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{intensity_hg\n\m}
+					\caption{$TEM_{\n\m}$}
+					%\label{fig:hg\n\m}
+				\end{subfigure}
+				\hfill
+			}
 		}
 	}
 	\\
@@ -1222,7 +1247,7 @@ Some characteristics of HG beams are given below,
 	\begin{align}
 		I_{m,n}(x,y,z)=\frac{c\epsilon}{2} |A|^2 \left[H_m\left(\frac{\sqrt{2} x}{w(z)}\right) \right]^2 \left[H_n\left(\frac{\sqrt{2} y}{w(z)}\right) \right]^2 \exp(\frac{2(x^2+y^2)}{w^2(z)})
 	\end{align}
-	Due to the number of zeros equals the order of Hermite polynomial, we will see $m$ number of horizontal and $n$ number of vertical node in intensity profile of the $TEM_{mn}$ beam. See figure \ref{fig:hgmn}.
+	Due to the number of zeros equals the degree of Hermite polynomial, we will see $m$ number of horizontal and $n$ number of vertical node in intensity profile of the $TEM_{mn}$ beam. See figure \ref{fig:hgmn}.
 	
 	\item 
 	\textit{Rate of energy} of HG beam passes through any transverse plain is given by
@@ -1275,13 +1300,15 @@ where $l$ is \textit{vortex quantum number}, takes integer value, $ L_p^{|l|} $ 
 	
 	\foreach \n in {0,1,2}{
 		\foreach \m in {0,1,2}{
-			\begin{subfigure}[htbp]{0.32\textwidth}
-				\centering
-				\includegraphics[width=\textwidth]{intensity_lg\n\m}
-				\caption{$p=\n,|l|=\m$}
-				%\label{fig:hg\n\m}
-			\end{subfigure}
-			\hfill
+				{
+					\begin{subfigure}[htbp]{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{intensity_lg\n\m}
+					\caption{$p=\n,|l|=\m$}
+					%\label{fig:hg\n\m}
+				\end{subfigure}
+				\hfill
+			}
 		}
 	}
 	\\
@@ -1293,13 +1320,15 @@ where $l$ is \textit{vortex quantum number}, takes integer value, $ L_p^{|l|} $ 
 	
 	\foreach \n in {0,1,2}{
 		\foreach \m in {0,1,2}{
-			\begin{subfigure}[htbp]{0.32\textwidth}
-				\centering
-				\includegraphics[width=\textwidth]{phase_lg\n\m}
-				\caption{$p=\n,l=\m$}
-				%\label{fig:hg\n\m}
-			\end{subfigure}
-			\hfill
+			{
+				\begin{subfigure}[htbp]{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{phase_lg\n\m}
+					\caption{$p=\n,l=\m$}
+					%\label{fig:hg\n\m}
+				\end{subfigure}
+				\hfill
+			}
 		}
 	}
 	\\

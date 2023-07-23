@@ -20,7 +20,7 @@ def R(p,l,r,phi):
     return np.angle(((np.sqrt(2*(r**2)))**(np.abs(l)))*(L(2*(r**2),p,np.abs(l)))*np.exp(1j*(l*phi)))
 phase=np.vectorize(R)
 
-a=2
+a=2.5
 a1=np.linspace(-a,a,500)
 xv,yv=np.meshgrid(a1,a1)
 zv=phase(p,l,np.sqrt(xv**2+yv**2),phi_angle(xv,yv))

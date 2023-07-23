@@ -1,0 +1,2 @@
+\beamer@sectionintoc {1}{Polarization properties of light}{3}{0}{1}
+\beamer@sectionintoc {2}{Gaussian Beam}{27}{0}{2}
