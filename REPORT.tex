@@ -354,7 +354,7 @@ Main drawback of Jones formalism is that its application is restricted in fully 
 	c_{yx} & c_{yy}
 \end{bmatrix}\label{coherency matrix}
 \end{align}
-where $\otimes$ denotes Kronecker product, $\expval{\cdot}$ denotes the temporal avg of the corresponding quantity and $\delta= \delta_y-\delta_x$.
+where $\otimes$ denotes Kronecker product and $\expval{\cdot}$ denotes the temporal avg of the corresponding quantity.
 
 Examples of coherency matrix of usual polarization states are given below \cite{coherency},
 \begin{table}[H]
@@ -400,7 +400,7 @@ Now we see that coherency matrix $\boldsymbol{C}$ of any polarization state in t
 	\underbrace{\begin{bmatrix}1 & 0 \\ 0 & 1\\\end{bmatrix}}_{\boldsymbol{V_0}},
 	\underbrace{\begin{bmatrix}1 & 0 \\ 0 & -1\\\end{bmatrix}}_{\boldsymbol{V_1}},
 	\underbrace{\begin{bmatrix}0 & 1 \\ 1 & 0\\\end{bmatrix}}_{\boldsymbol{V_2}},
-	\underbrace{\begin{bmatrix}0 & i \\ -i & 1\\\end{bmatrix}}_{\boldsymbol{V_3}}
+	\underbrace{\begin{bmatrix}0 & i \\ -i & 0\\\end{bmatrix}}_{\boldsymbol{V_3}}
 	\right\}
 \end{align}
 Now we can write any coherency matrix $ \boldsymbol{C} $ as 
@@ -456,8 +456,8 @@ From there we can write
 \begin{align}
 	\boldsymbol{S}= \begin{bmatrix} S_0\\ S_1\\ S_2\\S_3\end{bmatrix} =
 	\begin{bmatrix}
-		\expval{E_xE_x^\ast} + \expval{E_xE_y^\ast}\\
-		\expval{E_xE_x^\ast} - \expval{E_xE_y^\ast}\\
+		\expval{E_xE_x^\ast} + \expval{E_yE_y^\ast}\\
+		\expval{E_xE_x^\ast} - \expval{E_yE_y^\ast}\\
 		\expval{E_yE_x^\ast} + \expval{E_xE_y^\ast}\\
 		i\left(\expval{E_yE_x^\ast} - \expval{E_xE_y^\ast}\right)
 	\end{bmatrix} \label{eq:1.15}
@@ -478,8 +478,9 @@ Now for a polarized light,
 		\expval{2A_xA_y\sin\delta}
 	\end{bmatrix} \label{eq:1.16}
 \end{align}
-\subsubsection{Measurement of Stokes parameters}
- To measure the 4 Stokes parameter of EM wave associated with, we have to do 4 steps experiment. In each case, we pass the light through various optical elements and measure the (time-averaged) intensity \cite{stokes},
+where $\delta= \delta_y-\delta_x$.
+\subsubsection{\color{red}Measurement of Stokes parameters}
+ To measure the 4 Stokes parameter of {\color{red}polarized} light, we have to do 4 steps experiment. In each case, we pass the light through various optical elements and measure the (time-averaged) intensity \cite{stokes},
  \begin{enumerate}
  	\item[\textbf{Step I}] 
  	Pass the light through homogenous isotropic medium (or, free space) and measure the intensity. From table \ref{table:2} and eq. \ref{eq:1.10}, we get,
@@ -543,6 +544,11 @@ So the measured intensity will be
  \end{enumerate}
 
 From the equations \ref{s I}, \ref{s II}, \ref{s III} and \ref{s IV}, we can get the values of all $S_i$'s.
+
+
+{\color{red} For measurement of  Stokes parameter in general, we have to do 6 steps experiment}
+
+
 \subsubsection{Poincare  and sphere representation}AM
 For total intensity normalised Stokes vector is $\boldsymbol{s}= \begin{bmatrix} 1& s_1& s_2& s_3\end{bmatrix}^T$ where $s_i=S_i/S_0$. Observe that $ \boldsymbol{s} $ is a 3-dimensional quantity. Therefore we can write, 
 \begin{align*}
@@ -605,6 +611,7 @@ For any mixed polarization state we can decompose the Stokes vector into fully p
 \end{align}
 
 \subsubsection{Muller Matrix \& evolution of Stokes vector}
+
 Similar to the Jones matrix, \textit{Muller matrix} is a $4\times4$ matrix assigned for a particular optical element. Let $\boldsymbol{\mathfrak{M}}$ be the Muller matrix for an optical element \textit{s.t.} 
 \begin{align*}\boldsymbol{\mathfrak{M}}=
 	\begin{bmatrix}
@@ -655,6 +662,9 @@ Note that, in eq. \ref{poincare rotation matrix}, if we write
 	\end{bmatrix}
 \end{align}
 we see that it is proper rotation matrix of rotation angle $2\theta$ in Poincare sphere \textit{w.r.t} $s_3$ axis. And as we know that rotation of $\theta$ of electric field results in rotation of $2\theta$ in azimuth angle of Stokes vector in Poincare sphere.
+
+
+\subsubsection{\color{red}Measurement of Muller matrix parameters}
 
 \subsubsection{Relationship between Jones \& Stokes-Muller formalism}
 Let, $\boldsymbol{J}$ be jones vector, $\boldsymbol{M}$ be the Jones matrix, $\boldsymbol{S}$ be the Stokes vector and $\boldsymbol{\mathfrak{M}}$ be the Muller matrix \textit{s.t.} equations \ref{eq:1.4} and \ref{eq:1.33} is satisfied.
@@ -710,7 +720,7 @@ In this section we will discuss the generalized polarization ellipse of an EM wa
 		a_2 \cos(\tau+\delta_2)\\
 	\end{bmatrix}
 	\text{ where }
-	\tau = kz-\omega \text{ and } t a_1,a_2\ge0
+	\tau = kz-\omega t\text{ and } t a_1,a_2\ge0
 \end{align}
 by eliminating $\tau$ we get,
 \begin{align}
@@ -718,7 +728,7 @@ by eliminating $\tau$ we get,
 	\label{pol ellipse}
 \end{align}
 where $\delta = \delta_2-\delta_1$.
-The eq. \ref{pol ellipse} is equation of circle when $a_1 = a_2$, otherwise, of ellipse\cite{born-wolf}.
+The eq. \ref{pol ellipse} is equation of circle when $a_1 = a_2$, otherwise, of ellipse. \cite{born-wolf}
 
 Now we do the change of basis $\{E_x,E_y\}\longmapsto\{E_\xi,E_\eta\}$ (See fig. \ref{fig:pol ellipse}) \textit{s.t.} electric field in $\{E_\xi,E_\eta\}$ basis be
 \begin{align}
@@ -729,7 +739,7 @@ Now we do the change of basis $\{E_x,E_y\}\longmapsto\{E_\xi,E_\eta\}$ (See fig.
 	\end{bmatrix}=
 	\begin{bmatrix}
 		a \cos(\tau+\delta_0)\\
-		\pm b \cos(\tau+\delta_0)\\
+		\pm b \sin(\tau+\delta_0)\\
 	\end{bmatrix} \text{ where } a\ge b\ge 0
 \end{align}
 which is parametric form of canonical ellipse\footnote{$\pm$ before $b$ denotes the handedness of the rotation of electric field vector in transverse plane.} in $\{E_\xi,E_\eta\}$ basis.
@@ -752,7 +762,7 @@ Let $\psi$ be the azimuth angle of the ellipse then
 	\Rightarrow
 	\begin{bmatrix}
 		a \cos(\tau+\delta_0)\\
-		\pm b \cos(\tau+\delta_0)
+		\pm b \sin(\tau+\delta_0)
 	\end{bmatrix}&=
 	\begin{bmatrix}
 		\cos\psi & \sin\psi \\
@@ -786,7 +796,7 @@ To see the handedness of the rotation of electric field vector in transverse pla
 	$$\tan \chi \le 0\Rightarrow \chi \in \left[-\frac{\pi}{4},0\right)$$
 \end{enumerate}
 	
-Now the Jones vector of elliptical polarization in the form of ellipticity and azimuth will be,
+Now the Jones vector of elliptical polarization in the form of ellipticity and azimuth will be, \cite{WO}
 \begin{align}
 	\boldsymbol{J}= 
 		\begin{bmatrix}
@@ -842,7 +852,7 @@ The evolution of azimuth ($\psi$) and ellipticity ($\chi$) of the polarization s
 	\caption{polarization ellipse and corresponding Poincare representation}
 	\label{fig:compare poincare}
 \end{figure}
-
+For any $\psi$ and $\chi$ in the domain, the locus of state of polarization in Poincare sphere representation will always be on the sphere about origin of radius $S_0$. The pole and equatorial positions denotes the circular and linear polarization, respectively.
 \clearpage
 
 
@@ -852,7 +862,7 @@ The evolution of azimuth ($\psi$) and ellipticity ($\chi$) of the polarization s
 \subsection{Introduction}
 In optics and laser physics, the Gaussian beam stands as a fundamental concept, where the intensity of the light beam follows Gaussian curve. Its elegance lies in the fact that, it propagate over long distances with minimal divergence and diffraction. This distinctive feature makes it a preferred choice in a wide array of applications in optics and laser physics. Here we will briefly discuss about the different modes of Gaussian beams, as well as their properties.
 
-\subsection{Paraxial wave equation and solutions}
+\subsection{Paraxial wave equation}
 From Maxwell's 3-D wave equation for electric field in vacuum,
 \begin{align}
 	\nabla^2\boldsymbol{E}(\boldsymbol{r},t) - \frac{1}{c^2}\frac{\partial^2}{\partial t^2}\boldsymbol{E}(\boldsymbol{r},t)=0 \label{eq:2.1}
@@ -884,9 +894,9 @@ and putting \ref{eq:2.4} in eq. \ref{eq:2.3} gives \textit{Paraxial wave equatio
 \end{align}
 where transverse Laplacian, $\displaystyle\nabla_T = \frac{\partial^2}{\partial x^2}+\frac{\partial^2}{\partial y^2}$ or in cylindrical coordinate, $\displaystyle\nabla_T = \frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial}{\partial r}\right) + \frac{1}{r^2}\frac{\partial^2}{\partial \phi^2}$.
 
-\subsubsection{Scalar wave solution}
-We will solve the paraxial wave equation in cylindrical coordinate $\{r,\phi,z \}$.\cite{cornell}
-To get a solution for which intensity is of Gaussian like and radially symmetric (\textit{i.e.} no variation with $\phi$), our first ansatz be,\cite{kogelnik 66}\cite{cornell}
+\subsection{Scalar wave solution - Gaussian beam}
+We will solve the paraxial wave equation in cylindrical coordinate $\{r,\phi,z \}$. \cite{cornell}
+To get a solution for which intensity is of Gaussian like and radially symmetric (\textit{i.e.} no variation with $\phi$), our first ansatz be, \cite{kogelnik 66}\cite{cornell}
 \begin{align}
 	\psi(\boldsymbol{r},z)= A \exp\left[-i\left(p(z) + \frac{kr^2}{2q(z)}\right)\right]
 	=A\:\underbrace{\exp\left[-ip(z)\right]}_{\text{first term}} \:\underbrace{\exp\left[-i\frac{kr^2}{2q(z)}\right]} _{\text{second term}} \label{eq:2.7}
@@ -910,7 +920,7 @@ putting this in the second term of expression \ref{eq:2.7} at $z=0$,
 \begin{align}
 	\exp\left[-i\frac{kr^2}{2q(0)}\right] = \exp\left[-i\frac{kr^2}{2q_0}\right]
 \end{align}
-which is a phase factor does not give Gaussian intensity. So to get Gaussian intensity, $q_0$ must be imaginary. Let $j_0=iz_0$, then 
+which is a phase factor does not give Gaussian intensity. So to get Gaussian intensity, $q_0$ must be imaginary. Let $q_0=iz_0$, then 
 \begin{align}
 	\boxed{q(z) = z + iz_0} \label{eq:2.13}
 \end{align}
@@ -982,7 +992,7 @@ Now from \ref{eq:2.22},
 \begin{align}
 	E(\boldsymbol{r},t) &\sim \frac{1}{r} e^{i\omega t} e^{-ikr} {e^{-ik\frac{x^2+y^2}{2R}}}
 \end{align}
-comparing with \ref{eq:2.2}
+comparing with \ref{eq:2.2},
 \begin{align}
 	\psi({x,y,z}) &\sim e^{-ik\frac{x^2+y^2}{2R}} \label{eq:2.26}
 \end{align}
@@ -1008,7 +1018,7 @@ putting this in the above expression of $i\:p(z)$, our final expression will be
 	i\:p(z)=\frac{1}{2}\ln\left[1+ \left(\frac{z}{z_0}\right)^2\right]-i\: \tan[-1](\frac{z}{z_0}) \label{eq:2.29}
 \end{align}
 
-Finally putting \ref{eq:2.27} and \ref{eq:2.29} in \ref{eq:2.7}, we get,\cite{kogelnik 66}\cite{cornell}
+Finally putting \ref{eq:2.27} and \ref{eq:2.29} in \ref{eq:2.7}, we get, \cite{kogelnik 66}\cite{cornell}
 \begin{align}
 	\psi(\boldsymbol{r},z)&= A\exp\left[-i\left(p(z) + \frac{kr^2}{2q(z)}\right)\right]\nonumber\\
 	&= A\exp\left[- \frac{1}{2}\ln\left[1+ \left(\frac{z}{z_0}\right)^2\right]+i\: \tan[-1](\frac{z}{z_0}) -i \frac{kr^2}{2}\left(\frac{1}{R(z)} - i\: \frac{\lambda}{\pi w^2(z)}\right) \right]\nonumber\\
@@ -1093,12 +1103,12 @@ Some characteristics of Gaussian beam are
 	\subitem For $z>>z_0$, then $w(z)= w_0\frac{z}{z_0}$
 	\subitem \textit{Diffraction angle} at far field is given by 
 	\begin{align}
-		2\theta = 2\frac{dw}{dz} = 2\frac{w_0}{z_0} = \frac{2\lambda}{\pi w_0}
+		2\theta = 2\lim_{z\to\infty}\frac{dw}{dz} = 2\frac{w_0}{z_0} = \frac{2\lambda}{\pi w_0}
 	\end{align}
 	\subitem \textit{Effective area} of the beam in a cross section is $\displaystyle \frac{1}{2} \pi w^2(z)$
 	
 	\item 
-	\textit{Gouy phase} represents the difference in phase shift of a Gaussian beam \textit{w.r.t.} a plane wave of the same wavelength near $r=0$.\cite{conry 12}
+	\textit{Gouy phase} represents the difference in phase shift of a Gaussian beam \textit{w.r.t.} a plane wave of the same wavelength near $r=0$. \cite{conry 12}
 	Gouy phase of a Gaussian beam is given by
 	\begin{align}
 		\phi_g (z) = \tan[-1](\frac{z}{z_0})
@@ -1143,7 +1153,7 @@ Then relation between $q_{in}$ and $q_{out}$ is
 \end{align}
 
 \subsection{Resonator stability and resonator mode-frequency}
-Now we will discuss about the \textit{resonator stability} for the Gaussian beam. The resonator cavity (or optical cavity) is made of two highly reflecting mirror align in particular manner so that  light confined in the cavity reflects multiple times, producing modes with certain resonance frequencies.\cite{opt cavity} If a Gaussian beam is to be a mode of a resonator with spherical mirrors, then radius of curvature of beam wave-front must be equal to that of the mirror.
+Now we will discuss about the \textit{resonator stability} for the Gaussian beam. The resonator cavity (or optical cavity) is made of two highly reflecting mirror align in particular manner so that  light confined in the cavity reflects multiple times, producing modes with certain resonance frequencies. \cite{opt cavity} If a Gaussian beam is to be a mode of a resonator with spherical mirrors, then radius of curvature of beam wave-front must be equal to that of the mirror.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\linewidth]{resonator}
@@ -1162,7 +1172,7 @@ Lets define,
 \begin{align}
 	g_i=1-\frac{L}{R_i}
 \end{align}
-where $R_i>0$ for concave and $<0$ for convex mirror. By considering the four relation, and the properties of Gaussian beam, we get,\cite{milonni}
+where $R_i>0$ for concave and $<0$ for convex mirror. By considering the four relation, and the properties of Gaussian beam, we get, \cite{milonni}
 \begin{enumerate}
 	\item 
 	Mirror locations \textit{w.r.t.} beam waist location, $z_0$ be
@@ -1214,7 +1224,7 @@ Lets take the ansatz as,
 \begin{align}
 	\psi(\boldsymbol{r},z)= A \: g\left(\frac{x}{w(z)}\right) h\left(\frac{y}{w(z)}\right) \exp\left[-i\left(p(z) + \frac{kr^2}{2q(z)}\right)\right]
 \end{align}
-Putting this in Paraxial wave equation \ref{eq:2.6}, and solving the differential equation,\cite{milonni} we get,
+Putting this in Paraxial wave equation \ref{eq:2.6}, and solving the differential equation, \cite{milonni} we get,
 \begin{align}
 	\psi_{m,n}(\boldsymbol{r},z)=& A \left(\frac{w_0}{w(z)}\right) H_m\left(\frac{\sqrt{2} x}{w(z)}\right) H_n\left(\frac{\sqrt{2} y}{w(z)}\right)\exp( -\frac{r^2}{w^2(z)}) \cdot\nonumber\\ 
 	&\exp( i\:(m+n+1)\tan[-1](\frac{z}{z_0}) -i\frac{kr^2}{2R(z)}) \label{eq:2.53}
@@ -1291,7 +1301,7 @@ Lets take the ansatz as,
 \begin{align}
 	\psi(r,\phi,z)= A \: g\left(\frac{y}{w(z)}\right) \exp\left[-i\left(p(z) + \frac{kr^2}{2q(z)}+l\phi\right)\right]
 \end{align}
-Putting this in Paraxial wave equation \ref{eq:2.6}, and solving the differential equation,\cite{LG}\cite{kogelnik 66} we get,
+Putting this in Paraxial wave equation \ref{eq:2.6}, and solving the differential equation, \cite{LG}\cite{kogelnik 66} we get,
 \begin{align}
 	\psi_{p,l}(r,\phi,z)=&A\:\frac{w_0}{w(z)} \left[\frac{r\sqrt{2}}{w(z)}\right]^{|l|} L_p^{|l|}\left(\frac{2r^2}{w^2(z)}\right)\exp(-\frac{r^2}{w^2(z)}) \cdot\nonumber\\ &\exp(-il\phi+i(2p+l+1)\tan[-1](\frac{z}{z_0})-i\frac{kr^2}{2R(z)}) \label{eq:2.58}
 \end{align}
@@ -1379,7 +1389,7 @@ According to \cite{erikson 94}, let us consider electric field $\boldsymbol{E}$ 
 		B_{0x}(\boldsymbol{r})\\B_{0y}(\boldsymbol{r})\\B_{0y}(\boldsymbol{r})
 	\end{bmatrix} e^{i(kz - \omega t)}
 \end{align}
-As $\boldsymbol{E}$ and $\boldsymbol{B}$ satisfies Maxwell's equation in free space\cite{max eq - wiki}, and using $\omega/k = c$, we get,
+As $\boldsymbol{E}$ and $\boldsymbol{B}$ satisfies Maxwell's equation in free space, \cite{max eq - wiki} and using $\omega/k = c$, we get,
 \begin{align}
 	&\nabla\cdot\boldsymbol{E}=0\\
 	\Rightarrow\;& ikE_{0z}+\nabla\cdot\boldsymbol{E_0}=0\label{eq:2.65}\\
@@ -1423,7 +1433,7 @@ Now putting \ref{eq:2.74} in \ref{eq:2.69}, and using \ref{eq:2.73}, matching $\
 	\frac{i}{k}\left(\frac{\partial\: cB_{0x}}{\partial x}+\frac{\partial\: cB_{0y}}{\partial y}\right)= \frac{i}{k}\left(\frac{\partial E_{0x}}{\partial y}-\frac{\partial E_{0y}}{\partial x}\right)
 \end{align}
 
-Similarly, putting \ref{eq:2.74} in \ref{eq:2.69}, and using \ref{eq:2.73}, matching $\boldsymbol{E_0}$ component-wise we get,
+Similarly, putting \ref{eq:2.75} in \ref{eq:2.69}, and using \ref{eq:2.73}, matching $\boldsymbol{E_0}$ component-wise we get,
 \begin{align}
 	\frac{1}{c}E_{0x} &=
 	 B_{0y} + \frac{1}{2k^2}\left( \frac{\partial^2 B_{0y}}{\partial x^2} - \frac{\partial^2 B_{0y}}{\partial y^2} - 2\frac{\partial^2 B_{0x}}{\partial x\partial y} \right)\\
@@ -1598,7 +1608,7 @@ Now similarly on partial integration and using the transversality of E, consider
 	 \boldsymbol{J}=\frac{\epsilon_0}{2i\omega}\int d\tau \left[\sum_{\xi=x,y,z}E_\xi^\ast(\boldsymbol{r}\times\nabla)E_\xi\right]+ \frac{\epsilon_0}{2i\omega}\int d\tau \boldsymbol{E}^\ast\times \boldsymbol{E}
 \end{align}
 
-Now according to \cite{bernatt allen 94}\cite{enk nien 92}, within the paraxial approximation to get time-averaged energy, linear momentum and angular momentum per unit length \textit{i.e.} $\mathcal{W}$, $\mathcal{P}$ and $\mathcal{J}$ respectively, along the beam propagating in z-direction, we have to integrate throughout the transverse xy-plane. So,
+Now according to \cite{bernatt allen 94} \& \cite{enk nien 92}, within the paraxial approximation, to get time-averaged energy, linear momentum and angular momentum per unit length \textit{i.e.} $\mathcal{W}$, $\mathcal{P}$ and $\mathcal{J}$ respectively, along the beam propagating in z-direction, we have to integrate throughout the transverse xy-plane. So,
 \begin{align}
 	\mathcal{W}_z&=\frac{\epsilon_0}{2}\iint dx\:dy\: \boldsymbol{E}^\ast\cdot\boldsymbol{E}\label{eq:3.17}\\
 	\mathcal{P}_z&=\frac{\epsilon_0}{2i\omega}\iint  dx\:dy\: \expval{\boldsymbol{E}\times (\nabla\times\boldsymbol{E})}_z\\
@@ -1610,10 +1620,10 @@ Now according to \cite{bernatt allen 94}\cite{enk nien 92}, within the paraxial 
 \subsection{More on angular momentum}
 Let the electric field of the paraxial EM wave is \cite{WO} 
 \begin{align}
-	\boldsymbol{E}(x,y,z)=\boldsymbol{F}(x,y,z)\:e^{-ikz} \label{eq:3.20}
+	\boldsymbol{E}(x,y,z)=\boldsymbol{F}(x,y,z)\:e^{ikz} \label{eq:3.20}
 \end{align}
 \textit{s.t.} $\boldsymbol{F}$ is the slowly varying spatial envelop, satisfies the paraxial wave equation \ref{eq:2.6} \textit{i.e.}
-$$\nabla_T ^2\boldsymbol{F} -2ik \frac{\partial\boldsymbol{F}}{\partial r}=0$$
+$$\nabla_T ^2\boldsymbol{F} +2ik \frac{\partial\boldsymbol{F}}{\partial r}=0$$
 also assumed that the beam waist $w_0$ (transverse dimension of the beam) is
 assumed to be much smaller than the diffraction length, $l_d = kw_0^2$ and z- component of $\boldsymbol{F}$ is smaller than transverse component by a factor of $w_0/l_d$. \cite{melvin 75}\cite{enk nien 92}\cite{WO}
 
@@ -1632,7 +1642,8 @@ is equivalent to $\frac{\partial}{\partial\phi}$ in cylindrical coordinate and t
 	\item 
 	first term is the orbital angular momentum (OAM) per unit length in z of the EM wave,
 	\begin{align}
-		\mathcal{L} = \frac{\epsilon_0}{2i\omega} \iint dx\:dy\:\left[F_\xi^\ast\left(x\frac{\partial}{\partial y} - y\frac{\partial}{\partial x}\right)F_\xi\right]_{\xi=x,y} \label{eq:3.22}
+		\mathcal{L} &= \frac{\epsilon_0}{2i\omega} \iint dx\:dy\:\left[F_\xi^\ast\left(x\frac{\partial}{\partial y} - y\frac{\partial}{\partial x}\right)F_\xi\right]_{\xi=x,y}\nonumber\\
+		&=\frac{\epsilon_0}{2i\omega} \iint dx\:dy\:\left[F_\xi^\ast\left(\boldsymbol{r}\times\nabla\right)_zF_\xi\right]_{\xi=x,y}\label{eq:3.22}
 	\end{align}
 	which is quantum mechanical equivalent of z-component of the angular momentum of a particle.
 	
@@ -1710,10 +1721,10 @@ and from \ref{eq:3.32} and \ref{eq:3.33},
 	\frac{\mathcal{J}_z}{\mathcal{W}_z} = \frac{\mathcal{L}+\mathcal{S}}{\mathcal{W}_z} = \frac{l+\sigma}{\omega} =\frac{\text{Total AM}}{\text{Total energy}} \label{eq:3.34}
 \end{align}
 
-We know for a photon the energy associated with it is $\hbar\omega$, then from \ref{eq:3.32} and \ref{eq:3.33}, we can say, the OAM associated with one photon is $l\hbar$ and SAM associated with one photon is $\sigma\hbar$
+We know for a photon the energy associated with it is $\hbar\omega$, then from \ref{eq:3.32} and \ref{eq:3.33}, we can say, the OAM associated with one photon of paraxial vortex beam is $l\hbar$ and SAM associated with one photon is $\sigma\hbar$.
 
 \subsubsection{Intrinsic and Extrinsic nature of angular momentum}
-If we observe the expression of $\mathcal{J}_z$ in \ref{eq:3.19}, it may depends on the choice of the axis (usually $\boldsymbol{r} = (0,0) $), from which we measure $\boldsymbol{r}$.\cite{WO}\cite{berry 98} But if we shift the $\boldsymbol{r}$ \textit{s.t.}
+If we observe the expression of $\mathcal{J}_z$ in \ref{eq:3.19}, it may depends on the choice of the axis (usually $\boldsymbol{r} = (0,0) $), from which we measure $\boldsymbol{r}$. \cite{WO}\cite{berry 98} But if we shift the $\boldsymbol{r}$ \textit{s.t.}
 \begin{align}
 	\boldsymbol{r}&\longrightarrow\boldsymbol{r'}=\boldsymbol{r}+\boldsymbol{r_0}\\
 	(x,y)&\longrightarrow(x',y')=(x,y)+(x_0,y_0)
@@ -1736,7 +1747,12 @@ If the AM is to be intrinsic, then for all $(x_0,y_0)$
 	\Rightarrow &\iint  dx\:dy\: \expval{\boldsymbol{E}\times\boldsymbol{B}}_y = 0 = \iint  dx\:dy\: \expval{\boldsymbol{E}\times\boldsymbol{B}}_x \label{eq:3.40}
 \end{align} 
 
-From the SAM part, we see $\mathcal{S}$ does not depend on the choice of the axis, so SAM is intrinsic. But for the OAM part, we see $\mathcal{L}$ depends on the choice of the axis, so OAM may be intrinsic or extrinsic determined by condition \ref{eq:3.40}.
+From the SAM part, we see $\mathcal{S}$ does not depend on the choice of the axis, so SAM is intrinsic. But for the OAM part, we see $\mathcal{L}$ depends on the choice of the axis, so OAM may be intrinsic or extrinsic determined by, (from \ref{eq:3.22})
+\begin{align}
+	\Delta \mathcal{L}=
+	\iint  dx\:dy\: \left[F_\xi^\ast\left(\boldsymbol{r_0}\times\nabla\right)_zF_\xi\right] = 0, \;\text{where}\;\xi=x,y
+\end{align}
+
 
 \subsection{\color{red} Observation of AM of light}
 \cite{yao 11} pg- 176
@@ -1746,7 +1762,7 @@ From the SAM part, we see $\mathcal{S}$ does not depend on the choice of the axi
 \section{SPIN-ORBIT INTERACTION}
 
 \subsection{Introduction}
-The interaction between light and matter is a fascinating realm of physics, where various phenomena come into play, determining the behaviour of both photons and particles. One crucial and intriguing aspect of this interaction is the spin-orbit interaction on light. The underlying framework is the interaction between the intrinsic angular momentum, known as spin, and  orbital angular momentum of light. In this section, we will briefly discuss about spin-orbit interaction on light.
+The interaction between light and matter is a fascinating realm of physics. One crucial of this interaction is the spin-orbit interaction on light. The underlying framework is the interaction between the spin and  orbital angular momentum of light. In this section, we will briefly discuss about that.
 \subsection{Spin-orbit energy}
 In quantum mechanics, spin-orbit interaction is a common phenomena. We can see it in the splitting of spectral lines into fine structure. For a simple case like H atom, a electron in orbit around the nucleus, the spin-orbit coupling results from the interaction between electron's spin magnetic moment and nucleus's orbital magnetic field, which we will discuss below. \cite{WO}\cite{zettili 09} 
 
@@ -1847,7 +1863,7 @@ Unlike the previous one, the \textit{Pancharatnam-Berry phase} arises after a cy
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=6.5cm]{pb expt.png}
-	\caption{Schematic of Michelson interferometer setup for observation of Pancharatnam-Berry phase(ref. \cite{chyba 88})}
+	\caption{Schematic of Michelson interferometer setup for observation of Pancharatnam-Berry phase (ref. \cite{chyba 88})}
 	\label{fig:pb expt}
 \end{figure}
 
@@ -1942,7 +1958,7 @@ Unlike the previous one, the \textit{Pancharatnam-Berry phase} arises after a cy
 \end{figure}
 
 
-We see that the light with linear polarization state $(\ket{B})$ acquired a additional phase term \textit{i.e.} ${\color{red}\exp(-i\:2\varphi)}$ which only depends on orientation of QP2 \textit{i.e.} $\varphi= \beta+\pi/4$ and does not depend on thickness and refractive index of the birefringent wave-plate, so this phase is purely geometric one. Other all $\phi$'s are dynamical phase factor.\cite{WO}
+We see that the light with linear polarization state $(\ket{B})$ acquired a additional phase term \textit{i.e.} ${\color{red}\exp(-i\:2\varphi)}$ which only depends on orientation of QP2 \textit{i.e.} $\varphi= \beta+\pi/4$ and does not depend on thickness and refractive index of the birefringent wave-plate, so this phase is purely geometric one. Other all $\phi$'s are all dynamical phase factors. \cite{WO}
 
 We see after one cyclic evolution in Poincare sphere in path ARBCLA,
 \begin{align}
@@ -2029,7 +2045,7 @@ We have discussed brief of angular momentum of light in previous chapter. The di
 	\item Intrinsic orbital AM ($\boldsymbol{L}_{int}$) or IOAM
 	\item Extrinsic orbital AM ($\boldsymbol{L}_{ext}$) or EOAM
 \end{enumerate}
-SAM is associated with degree of circular polarization and also intrinsic in nature. The IOAM is associated with the optical vortex structure of the beam (\textit{e.g.} vortex beam like LG beam), so it is intrinsic. Whereas the EOAM is associated with the trajectory of centroid of the beam.\cite{bliokh 12} (see fig \ref{fig:am}) 
+SAM is associated with degree of circular polarization and also intrinsic in nature. The IOAM is associated with the optical vortex structure of the beam (\textit{e.g.} vortex beam like LG beam), so it is intrinsic. Whereas the EOAM is associated with the trajectory of centroid of the beam. \cite{bliokh 12} (see fig \ref{fig:am}) 
 \begin{figure}[H]
 	\begin{subfigure}[H]{0.32\textwidth}
 		\centering
@@ -2055,7 +2071,7 @@ SAM is associated with degree of circular polarization and also intrinsic in nat
 	\label{fig:am}
 \end{figure}
 
-The inter-conversion between these different angular momentum in a process represents \textit{spin-orbit interaction} of light.\cite{bliokh 15} The three type of interaction  are
+The inter-conversion between these different angular momentum in a process represents \textit{spin-orbit interaction} of light. \cite{bliokh 15} The three type of interaction  are
 \begin{enumerate}
 	\item between $\boldsymbol{S}$ and $\boldsymbol{L}_{int}$
 	\item between $\boldsymbol{S}$ and $\boldsymbol{L}_{ext}$
@@ -2069,10 +2085,11 @@ In the later section, we will see several manifestation of those interactions.
 \subsection{SOI in anisotropic medium}
 Inhomogeneous anisotropic medium has spatially varying anisotropy axis (\textit{i.e.} birefringent or dichroic. Here SOI deals with spin flipping, spin-to-orbital angular momentum conversion etc. To illustrate these events, we will consider specific cases.
 
-A simple case of homogenous medium is when a circularly polarized light passes through quarter wave-plate, it become linearly polarized light, so the SAM transformation is $$\sigma=\pm1 \longrightarrow \sigma= 0$$, in that cases, $\pm\hbar$ SAM carried by each photon of circularly polarized light, is transferred to the wave plate. Similarly for half wave-plate, the SAM transformation is 
+A simple case of homogenous medium is when a circularly polarized light passes through quarter wave-plate, it become linearly polarized light, so the SAM transformation is $$\sigma=\pm1 \longrightarrow \sigma= 0$$ 
+In that case, $\pm\hbar$ SAM carried by each photon of circularly polarized light, is transferred to the wave plate. Similarly for half wave-plate, the SAM transformation is 
 $$\sigma=\pm 1 \longrightarrow \sigma=\mp1$$ So the spin is flipped.
 
-Before going into more complex cases, we discuss about \textit{q-plate}. Q-plate is an birefringent anisotropic media of phase retardation of $\pi$ (half-wave) across the slab with an inhomogeneous orientation of the fast (or slow) optical axis lying parallel to the slab planes whose local alignment of birefringent fast axis varies linearly with the azimuth angle of the q-plate.\cite{marrucci 06} Let local alignment angle is $\alpha$, and the azimuth angle is $\phi$, then,
+Before going into more complex cases, we discuss about \textit{q-plate}. Q-plate is an birefringent anisotropic media of specific phase retardation across the slab with an inhomogeneous orientation of the fast (or slow) optical axis lying parallel to the slab planes whose local alignment of birefringent fast axis varies linearly with the azimuth angle of the q-plate. \cite{marrucci 06} Let local alignment angle is $\alpha$, and the azimuth angle is $\phi$, then,
 \begin{align}
 	\alpha(\phi)=q\phi+\alpha_0
 \end{align}
@@ -2083,7 +2100,7 @@ Before going into more complex cases, we discuss about \textit{q-plate}. Q-plate
 \label{fig:q-plate}
 \end{figure}
 
-Now the corresponding Jones matrix at each point of the q-plate will be \cite{marrucci 06}
+Now the corresponding Jones matrix at each point of the q-plate of phase retardation of $\pi$, will be \cite{marrucci 06}
 \begin{align}
 	\boldsymbol{M}_q(\phi)&=R(-\alpha)\boldsymbol{M}_{\lambda/2}R(\alpha) 
 	=R(-\alpha)

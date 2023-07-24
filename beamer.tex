@@ -169,16 +169,12 @@ Note that \textit{intensity}, $I= A_x^2+A_y^2 =  \boldsymbol{J}^\ast \boldsymbol
 \begin{frame}{Coherency matrix}\blfootnote{Wave Optics (2015), \href{https://www.youtube.com/watch?v=RowMxWt4mVE&list=LL&index=5}{Polarization lecture- YouTube}}
 	\textit{Coherency matrix}, $\boldsymbol{C}$ defined as 
 	\begin{align*}
-		\boldsymbol{C}=\only<1>{{\color{blue}\underbrace{\expval{\boldsymbol{E}\otimes\boldsymbol{E}^\dagger}= \expval{\boldsymbol{E}\boldsymbol{E}^\dagger}=
-		\begin{bmatrix}
-			\expval{E_xE_x^\ast} & \expval{E_xE_y^\ast}\\
-			\expval{E_yE_x^\ast} & \expval{E_yE_y^\ast}
-		\end{bmatrix}}_{\text{only for fully polarized light}}}}
-		\only<2->{\expval{\boldsymbol{E}\otimes\boldsymbol{E}^\dagger}= \expval{\boldsymbol{E}\boldsymbol{E}^\dagger}=
+		\boldsymbol{C}=
+		\expval{\boldsymbol{E}\otimes\boldsymbol{E}^\dagger}=
 			\begin{bmatrix}
 				\expval{E_xE_x^\ast} & \expval{E_xE_y^\ast}\\
 				\expval{E_yE_x^\ast} & \expval{E_yE_y^\ast}
-			\end{bmatrix}}=
+			\end{bmatrix}=
 		\begin{bmatrix}
 			c_{xx} & c_{xy}\\
 			c_{yx} & c_{yy}
@@ -186,38 +182,54 @@ Note that \textit{intensity}, $I= A_x^2+A_y^2 =  \boldsymbol{J}^\ast \boldsymbol
 	\end{align*}\pause
 	\begin{itemize}
 		\item
-		$\boldsymbol{C}=\boldsymbol{C}^\dagger$ (Hermitian).
+		$\boldsymbol{C}=\boldsymbol{C}^\dagger$ (\alert<2>{Hermitian}).\pause
 		
 		\item 
-		\textit{Time averaged intensity}, $I=\Tr(\boldsymbol{C})$
+		\textit{Time averaged intensity}, $I=\Tr(\boldsymbol{C})$\pause
 		
-		\item \only<2>{\color{blue}Evolution of coherency matrix as 
-		$\boldsymbol{C}_{out} =  \boldsymbol{M}\:\boldsymbol{C}_{in}\:\boldsymbol{M}^\dagger$}
-		\only<3->{Evolution of coherency matrix as 
-			$\boldsymbol{C}_{out} =  \boldsymbol{M}\:\boldsymbol{C}_{in}\:\boldsymbol{M}^\dagger$} 
+		\item \alert<4>{Evolution of coherency matrix as 
+		$\boldsymbol{C}_{out} =  \boldsymbol{M}\:\boldsymbol{C}_{in}\:\boldsymbol{M}^\dagger$} 
 	\end{itemize}\pause
 
 	Let basis set, 
 	$$\left\{
-	\underbrace{\begin{bmatrix}1 & 0 \\ 0 & 1\\\end{bmatrix}}_{\boldsymbol{V_0}},
-	\underbrace{\begin{bmatrix}1 & 0 \\ 0 & -1\\\end{bmatrix}}_{\boldsymbol{V_1}},
-	\underbrace{\begin{bmatrix}0 & 1 \\ 1 & 0\\\end{bmatrix}}_{\boldsymbol{V_2}},
-	\underbrace{\begin{bmatrix}0 & i \\ -i & 1\\\end{bmatrix}}_{\boldsymbol{V_3}}
-	\right\} \text{ \textit{s.t.} } \boldsymbol{C} = \frac{1}{2} \sum_{i=0}^{3} S_i \boldsymbol{V_i}$$
+	\underbrace{\begin{bmatrix}1 & 0 \\ 0 & 1\\\end{bmatrix}}_{\alert<6>{\boldsymbol{V_0}}},
+	\underbrace{\begin{bmatrix}1 & 0 \\ 0 & -1\\\end{bmatrix}}_{\alert<6>{\boldsymbol{V_1}}},
+	\underbrace{\begin{bmatrix}0 & 1 \\ 1 & 0\\\end{bmatrix}}_{\alert<6>{\boldsymbol{V_2}}},
+	\underbrace{\begin{bmatrix}0 & i \\ -i & 0\\\end{bmatrix}}_{\alert<6>{\boldsymbol{V_3}}}
+	\right\}\pause \text{ \textit{s.t.} } \boldsymbol{C} = \frac{1}{2} \sum_{i=0}^{3} S_i \alert<6>{\boldsymbol{V_i}}$$
 \end{frame}
 
+
+\iffalse
 \begin{frame}{Stokes vector}\blfootnote{Wave Optics (2015), Hecht, E. (1970) \href{https://www.youtube.com/watch?v=RowMxWt4mVE&list=LL&index=5}{Polarization lecture- YouTube}}
-	$$\boldsymbol{C} = \frac{1}{2} \sum_{i=0}^{3} {\color{blue}S_i} \boldsymbol{V_i}\pause \longrightarrow {\color{blue}\begin{bmatrix} S_0\\ S_1\\ S_2\\S_3\end{bmatrix}} = \boldsymbol{S} \text{ (\textit{Stokes vector})}$$\pause
+	$$\boldsymbol{C} = \frac{1}{2} \sum_{i=0}^{3} {\color{blue}S_i} \boldsymbol{V_i}\pause \longrightarrow {\color{blue}\begin{bmatrix} S_0\\ S_1\\ S_2\\S_3\end{bmatrix}}\pause = \alert<3>{\boldsymbol{S} \text{ (Stokes vector)}}$$\pause
 
 
-\textbf{Measurement of Stokes parameters} by passing the light through
+\textbf{Measurement of Stokes parameters} \pause by passing the light through
 \begin{enumerate}
-	\item isotropic medium, $I_0 = S_0$
-	\item x-polariser, $I_1 = \frac{1}{2} (S_0+S_1)$
-	\item $45^\circ$-polariser, $I_2 = \frac{1}{2} (S_0+S_2)$
-	\item circular polariser, $I_3 = \frac{1}{2} (S_0+S_3)$
+	\item isotropic medium, $I_0 = S_0$\pause
+	\item x-polariser, $I_1 = \frac{1}{2} (S_0+S_1)$\pause
+	\item $45^\circ$-polariser, $I_2 = \frac{1}{2} (S_0+S_2)$\pause
+	\item RC polariser, $I_3 = \frac{1}{2} (S_0+S_3)$
 \end{enumerate}
 
+\end{frame}
+\fi
+
+
+\begin{frame}{Stokes vector}\blfootnote{Wave Optics (2015), Hecht, E. (1970) }
+	$$\boldsymbol{C} = \frac{1}{2} \sum_{i=0}^{3} {\color{blue}S_i} \boldsymbol{V_i}\pause \longrightarrow {\color{blue}\begin{bmatrix} S_0\\ S_1\\ S_2\\S_3\end{bmatrix}}\pause = \alert<3>{\boldsymbol{S} \text{ (Stokes vector)}}$$\pause
+	
+	\textbf{Degree of Polarization} \pause is the measure of polarization of light.\pause
+	
+	\begin{itemize}
+		\item Total degree of polarization = $\sqrt{S_1^2+S_2^2+S_3^2}/S_0$\pause
+		\item Degree of linear polarization = $\sqrt{S_1^2+S_2^2}/S_0$\pause
+		\item Degree of circular polarization = $S_3/S_0$\pause
+	\end{itemize}
+	$$\alert{0\ge DOP\ge1}$$
+	
 \end{frame}
 
 \begin{frame}{Stokes vector of usual polarization state}
@@ -623,17 +635,17 @@ For partially polarized light,
 	= \frac{\epsilon_0}{2i\omega} \iint dx\:dy\:\left[E_\xi^\ast\left(\alert<2>{\boldsymbol{r}}\times\nabla\right)_zE_\xi\right]_{\xi=x,y}$$\pause
 	\alert<2>{OAM depends on the choice of the axis.}\pause
 	$$\boldsymbol{r}\longrightarrow\boldsymbol{r'}=\boldsymbol{r}+\boldsymbol{r_0}$$\pause\vspace{-8mm}
-	$$\mathcal{J}_z\longrightarrow\mathcal{J'}_z = \mathcal{J}_z + \alert{\Delta\mathcal{J}}$$\pause\vspace{-8mm}
+	$$\mathcal{L}\longrightarrow\mathcal{L'}= \mathcal{L}_z + \alert{\Delta\mathcal{L}}$$\pause\vspace{-8mm}
 	
 	\begin{center}
 		\boxed{\text{OAM}}\vspace{-4mm}\pause
 		$$\swarrow\hspace{2cm}\searrow$$\\\vspace{-2mm}\pause
 		\boxed{\alert<8,9>{\text{Intrinsic}}}\hspace{1cm}\boxed{\alert<10>{\text{Extrinsic}}}
 	\end{center}\pause
-	\only<8,9>{\alert<8,9>{$$\Delta\mathcal{J}=0$$}\pause\vspace{-5mm}
-	\alert<8,9>{$$\iint  dx\:dy\: \expval{\boldsymbol{E}\times\boldsymbol{B}}_\xi = 0$$}}
+	\only<8,9>{\alert<8,9>{$$\Delta\mathcal{L}=0$$}\pause\vspace{-5mm}
+	\alert<8,9>{$$\iint  dx\:dy\: \left[E_\xi^\ast\left(\boldsymbol{r_0}\times\nabla\right)_zE_\xi\right] = 0$$}}
 
-	\only<10>{\alert<10>{$$\Delta\mathcal{J}\ne0$$}}
+	\only<10>{\alert<10>{$$\Delta\mathcal{L}\ne0$$}}
 \end{frame}
 
 \begin{frame}[t]{Spin AM}\blfootnote{Allen, L. (1999), Wave Optics (2015), S.J. van Enk (1992)}

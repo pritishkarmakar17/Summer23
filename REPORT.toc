@@ -7,26 +7,27 @@
 \contentsline {subsection}{\numberline {1.3}Stokes-Muller formalism}{3}{subsection.1.3}%
 \contentsline {subsubsection}{\numberline {1.3.1}Coherency matrix}{3}{subsubsection.1.3.1}%
 \contentsline {subsubsection}{\numberline {1.3.2}Stokes parameters and Stokes vector}{4}{subsubsection.1.3.2}%
-\contentsline {subsubsection}{\numberline {1.3.3}Measurement of Stokes parameters}{6}{subsubsection.1.3.3}%
+\contentsline {subsubsection}{\numberline {1.3.3}\color {red}Measurement of Stokes parameters}{6}{subsubsection.1.3.3}%
 \contentsline {subsubsection}{\numberline {1.3.4}Poincare and sphere representation}{7}{subsubsection.1.3.4}%
 \contentsline {subsubsection}{\numberline {1.3.5}Degree of Polarization}{8}{subsubsection.1.3.5}%
-\contentsline {subsubsection}{\numberline {1.3.6}Muller Matrix \& evolution of Stokes vector}{8}{subsubsection.1.3.6}%
-\contentsline {subsubsection}{\numberline {1.3.7}Relationship between Jones \& Stokes-Muller formalism}{9}{subsubsection.1.3.7}%
+\contentsline {subsubsection}{\numberline {1.3.6}Muller Matrix \& evolution of Stokes vector}{9}{subsubsection.1.3.6}%
+\contentsline {subsubsection}{\numberline {1.3.7}\color {red}Measurement of Muller matrix parameters}{9}{subsubsection.1.3.7}%
+\contentsline {subsubsection}{\numberline {1.3.8}Relationship between Jones \& Stokes-Muller formalism}{9}{subsubsection.1.3.8}%
 \contentsline {subsection}{\numberline {1.4}More on Elliptically polarized light}{10}{subsection.1.4}%
 \contentsline {subsubsection}{\numberline {1.4.1}Jones vector of elliptically polarized light}{10}{subsubsection.1.4.1}%
-\contentsline {subsubsection}{\numberline {1.4.2}Stokes vector and corresponding Poincare representation}{11}{subsubsection.1.4.2}%
+\contentsline {subsubsection}{\numberline {1.4.2}Stokes vector and corresponding Poincare representation}{12}{subsubsection.1.4.2}%
 \contentsline {section}{\numberline {2}GAUSSIAN BEAM}{13}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Introduction}{13}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Paraxial wave equation and solutions}{13}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Scalar wave solution}{13}{subsubsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.3}Characteristics of Gaussian Beam }{17}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Beam Tracing using ABCD matrix}{19}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Resonator stability and resonator mode-frequency}{20}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Different modes of Gaussian beams}{21}{subsection.2.6}%
-\contentsline {subsubsection}{\numberline {2.6.1}Hermite-Gaussian beam}{21}{subsubsection.2.6.1}%
-\contentsline {subsubsection}{\numberline {2.6.2}Laguerre-Gaussian beam}{23}{subsubsection.2.6.2}%
-\contentsline {subsection}{\numberline {2.7}Maxwell-Gaussian beam (with polarization)}{26}{subsection.2.7}%
-\contentsline {subsection}{\numberline {2.8}Relationship between LG \& HG modes}{28}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.2}Paraxial wave equation}{13}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Scalar wave solution - Gaussian beam}{13}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Characteristics of Gaussian Beam }{17}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Beam Tracing using ABCD matrix}{19}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Resonator stability and resonator mode-frequency}{20}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Different modes of Gaussian beams}{21}{subsection.2.7}%
+\contentsline {subsubsection}{\numberline {2.7.1}Hermite-Gaussian beam}{21}{subsubsection.2.7.1}%
+\contentsline {subsubsection}{\numberline {2.7.2}Laguerre-Gaussian beam}{23}{subsubsection.2.7.2}%
+\contentsline {subsection}{\numberline {2.8}Maxwell-Gaussian beam (with polarization)}{26}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}Relationship between LG \& HG modes}{28}{subsection.2.9}%
 \contentsline {section}{\numberline {3}MOMENTUM OF LIGHT}{30}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Introduction}{30}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Linear and angular momentum of light}{30}{subsection.3.2}%
