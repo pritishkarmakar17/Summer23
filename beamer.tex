@@ -185,7 +185,7 @@ Note that \textit{intensity}, $I= A_x^2+A_y^2 =  \boldsymbol{J}^\ast \boldsymbol
 		$\boldsymbol{C}=\boldsymbol{C}^\dagger$ (\alert<2>{Hermitian}).\pause
 		
 		\item 
-		\textit{Time averaged intensity}, $I=\Tr(\boldsymbol{C})$\pause
+		\textit{Time averaged intensity} $=\expval{E_xE_x^\ast}+\expval{E_yE_y^\ast}=\Tr(\boldsymbol{C})$\pause
 		
 		\item \alert<4>{Evolution of coherency matrix as 
 		$\boldsymbol{C}_{out} =  \boldsymbol{M}\:\boldsymbol{C}_{in}\:\boldsymbol{M}^\dagger$} 
@@ -218,9 +218,9 @@ Note that \textit{intensity}, $I= A_x^2+A_y^2 =  \boldsymbol{J}^\ast \boldsymbol
 \fi
 
 
-\begin{frame}{Stokes vector}\blfootnote{Wave Optics (2015), Hecht, E. (1970) }
+\begin{frame}[t]{Stokes vector}\blfootnote{Wave Optics (2015), Hecht, E. (1970) }
 	$$\boldsymbol{C} = \frac{1}{2} \sum_{i=0}^{3} {\color{blue}S_i} \boldsymbol{V_i}\pause \longrightarrow {\color{blue}\begin{bmatrix} S_0\\ S_1\\ S_2\\S_3\end{bmatrix}}\pause = \alert<3>{\boldsymbol{S} \text{ (Stokes vector)}}$$\pause
-	
+	\alert<4,10>{$$S_1^2+S_2^2+S_3^2\le S_0^2$$}\pause
 	\textbf{Degree of Polarization} \pause is the measure of polarization of light.\pause
 	
 	\begin{itemize}
@@ -228,7 +228,7 @@ Note that \textit{intensity}, $I= A_x^2+A_y^2 =  \boldsymbol{J}^\ast \boldsymbol
 		\item Degree of linear polarization = $\sqrt{S_1^2+S_2^2}/S_0$\pause
 		\item Degree of circular polarization = $S_3/S_0$\pause
 	\end{itemize}
-	$$\alert{0\ge DOP\ge1}$$
+	$$\alert{0\le DOP\le1}$$
 	
 \end{frame}
 
@@ -274,6 +274,18 @@ Note that \textit{intensity}, $I= A_x^2+A_y^2 =  \boldsymbol{J}^\ast \boldsymbol
 	\end{itemize}
 \end{frame}
 
+\begin{frame}[t]{Poincare sphere representation}
+	\begin{align*}
+		{\begin{bmatrix} S_0\\ \alert<2>{S_1}\\ \alert<2>{S_2}\\ \alert<2>{S_3}\end{bmatrix} 
+			\onslide<2->{\longrightarrow 
+		\alert<2>{( S_1, S_2, S_3)}}}
+	\end{align*}
+	
+	\only<3>{\centering
+	\includegraphics[width=0.4\textwidth]{poincare basic}
+}
+\end{frame}
+
 \begin{frame}[t]{Poincare sphere representation}\blfootnote{Wave Optics (2015), Born, M;  Wolf, E (1999)}
 	\vspace{-10pt}
 	For elliptically polarized light, Stokes vector
@@ -286,7 +298,7 @@ Note that \textit{intensity}, $I= A_x^2+A_y^2 =  \boldsymbol{J}^\ast \boldsymbol
 			\cos 2\chi \sin 2\psi\\
 			\sin 2\chi
 		\end{bmatrix}}\onslide<2->{\longrightarrow
-		\underbrace{{\color{blue}S_0}(\cos 2{\color{red}\chi} \cos 2{\color{green!45!black}\psi}, \cos 2{\color{red}\chi} \sin 2{\color{green!45!black}\psi}, \sin 2{\color{red}{\color{green!45!black}\psi}})}_{\text{On Poincare sphere of radius $S_0$}}}
+		\underbrace{{\color{blue}S_0}(\cos 2{\color{red}\chi} \cos 2{\color{green!45!black}\psi}, \cos 2{\color{red}\chi} \sin 2{\color{green!45!black}\psi}, \sin 2{\color{red}{\color{green!45!black}\psi}})}_{\text{On sphere of radius $S_0$}}}
 	\end{align*}
 \onslide<1->{where azimuth (${\color{green!45!black}\psi}$) and ellipticity (${\color{red}\chi}$) of polarization ellipse.}\\
 \vspace{7pt}
@@ -397,9 +409,9 @@ For partially polarized light,
 	\column{0.4\textwidth}
 	$w\rightarrow$ Physical radius\\\pause
 	{\color{red}$w_0\rightarrow$ Beam waist}\pause
-	$$w(z)= w_0\sqrt{1+\left(\frac{z}{z_0}\right)^2}$$\pause
-	$z_0\rightarrow$ Rayleigh length
-	$$ z_0 = \frac{\pi w_0^2}{\lambda}$$ 
+	$$w(z)= w_0\sqrt{1+\left(\frac{z}{\alert<5->{z_0}}\right)^2}$$\pause
+	\alert<5->{$z_0\rightarrow$ Rayleigh length}
+	$$ \alert<5->{z_0} = \frac{\pi w_0^2}{\lambda}$$ 
 	
 	
 	\column{0.5\textwidth}\only<2->{\includegraphics[width=\linewidth]{"beam waist beamer"}}
@@ -465,8 +477,8 @@ For partially polarized light,
 
 \begin{frame}[t]{$q$ parameter and beam tracing}\blfootnote{Haus, H. A. (1984), \href{https://www.youtube.com/playlist?list=PLyWzPf87clvEb8T3Xf30tMaUqdbVchrNY}{ECE 4300- Cornell}}
 	\vspace{-12pt}
-	$$\psi(\boldsymbol{r},z)= A \exp\left[-i\left(p(z) + \frac{kr^2}{2\:{\color{red}q(z)}}\right)\right]$$\pause
-	$\color{red}q(z)$ $\longrightarrow$ characteristic of a beam if $\lambda$ known.\pause
+	$$\psi(\boldsymbol{r},z)= A \exp\left[-i\left(p(z) + \frac{kr^2}{2\:\alert<1,2>{q(z)}}\right)\right]$$\pause
+	$\alert<2>{q(z)}$ $\longrightarrow$ characteristic of a beam if $\lambda$ known.\pause
 	\begin{align*}
 		q(z) &= z + i\:\color{blue}z_0\\
 		\frac{1}{q(z)} &= \frac{1}{\color{blue}R(z)} - i\: \frac{\lambda}{\pi\: \color{blue}w^2(z)}
@@ -582,15 +594,17 @@ For partially polarized light,
 	\begin{center}
 		\boxed{\text{Momentum}}\vspace{-4mm}\pause
 		$$\swarrow\hspace{2cm}\searrow$$\\\vspace{-4mm}\pause
-		\boxed{\text{Linear Momentum}}\hspace{1cm}\boxed{\text{Angular Momentum}}\\ \vspace{-8mm}\pause
+		\boxed{\text{Linear Momentum}}\hspace{1cm}\boxed{\alert<4>{\text{Angular Momentum}}}\\ \vspace{-8mm}\pause
 		$$\hspace{5cm}\swarrow\hspace{1.5cm}\searrow$$\\\vspace{-4mm}\pause
-		\hspace{5cm}\boxed{\text{OAM}}\hspace{1cm}\boxed{\text{SAM}}
+		\hspace{5cm}\boxed{\alert{\text{OAM}}}\hspace{1cm}\boxed{\alert{\text{SAM}}}\\\vspace{1cm}
+		\alert{\centering For (paraxial beam only)}
+		
 	\end{center}
 \end{frame}
 
 \begin{frame}{Linear momentum of light}\blfootnote{Haus, H. A. (1984)}
 	Monochromatic beam with angular frequency $\omega$ propagating in z-direction :
-	$$\boldsymbol{\mathcal{E}}(\boldsymbol{r},t) = \Re{\boldsymbol{E}(\boldsymbol{r}) e^{-(\omega t-kz )}}$$
+	$$\boldsymbol{\mathcal{E}}(\boldsymbol{r},t) = \Re{\boldsymbol{E}(\boldsymbol{r}) e^{-i(\omega t-kz )}}$$
 	$$\boldsymbol{\mathcal{B}}(\boldsymbol{r},t) = \Re{\boldsymbol{B}(\boldsymbol{r}) e^{-i (\omega t-kz ) }}$$\pause
 	
 	Maxwell-Faraday law:
@@ -635,12 +649,12 @@ For partially polarized light,
 	= \frac{\epsilon_0}{2i\omega} \iint dx\:dy\:\left[E_\xi^\ast\left(\alert<2>{\boldsymbol{r}}\times\nabla\right)_zE_\xi\right]_{\xi=x,y}$$\pause
 	\alert<2>{OAM depends on the choice of the axis.}\pause
 	$$\boldsymbol{r}\longrightarrow\boldsymbol{r'}=\boldsymbol{r}+\boldsymbol{r_0}$$\pause\vspace{-8mm}
-	$$\mathcal{L}\longrightarrow\mathcal{L'}= \mathcal{L}_z + \alert{\Delta\mathcal{L}}$$\pause\vspace{-8mm}
+	$$\mathcal{L}\longrightarrow\mathcal{L'}= \mathcal{L}_z + \alert<5>{\Delta\mathcal{L}}$$\pause\vspace{-8mm}
 	
 	\begin{center}
 		\boxed{\text{OAM}}\vspace{-4mm}\pause
 		$$\swarrow\hspace{2cm}\searrow$$\\\vspace{-2mm}\pause
-		\boxed{\alert<8,9>{\text{Intrinsic}}}\hspace{1cm}\boxed{\alert<10>{\text{Extrinsic}}}
+		\boxed{\alert<8,9,10>{\text{Intrinsic}}}\hspace{1cm}\boxed{\alert<10>{\text{Extrinsic}}}
 	\end{center}\pause
 	\only<8,9>{\alert<8,9>{$$\Delta\mathcal{L}=0$$}\pause\vspace{-5mm}
 	\alert<8,9>{$$\iint  dx\:dy\: \left[E_\xi^\ast\left(\boldsymbol{r_0}\times\nabla\right)_zE_\xi\right] = 0$$}}
@@ -649,7 +663,7 @@ For partially polarized light,
 \end{frame}
 
 \begin{frame}[t]{Spin AM}\blfootnote{Allen, L. (1999), Wave Optics (2015), S.J. van Enk (1992)}
-	$$\mathcal{S}=\frac{\epsilon_0}{2i\omega}\iint dx\:dy\: (E_x^\ast E_y + E_y^\ast E_x)$$\\\pause
+	$$\mathcal{S}=\frac{\epsilon_0}{2i\omega}\iint dx\:dy\: \alert<2>{(E_x^\ast E_y + E_y^\ast E_x)}$$\\\pause
 	\alert<2>{SAM is \textbf{intrinsic}}.\\\pause
 	For vortex beam,
 	$$\boldsymbol{E}(r,\phi)= u(r)\:\exp(-il\phi)\:\Hat{\boldsymbol{p}}$$\pause\vspace{-3mm}
@@ -691,8 +705,8 @@ For partially polarized light,
 		\only<4>{Associated with optical path length.}
 		\only<5->{Associated with geometry of evolution.}\pause
 		\visible<6>{\begin{itemize}
-			{\item Spin-redirection Berry phase}
-			{\item Pancharatnam-Berry Phase}
+			{\item \alert{Spin-redirection Berry phase}}
+			{\item \alert{Pancharatnam-Berry Phase}}
 		\end{itemize}}
 \end{frame}
 
@@ -701,12 +715,13 @@ For partially polarized light,
 	\textit{e.g.,} Polarized light through a helical optic fibre.\pause
 	\begin{columns}
 		\column{0.5\textwidth}
-		$$\boldsymbol{J}\longrightarrow\boldsymbol{J'}=\boldsymbol{J}\alert<2,3>{\exp(i \sigma\alert<4,5>{\Theta})}$$
-		\only<3>{\centering \alert<3>{Helicity-dependant geometric phase}}
+		$$\boldsymbol{J}=\begin{bmatrix}
+			1\\i\sigma
+		\end{bmatrix}\longrightarrow\boldsymbol{J'}=\boldsymbol{J}\alert<2,3>{\exp(i \sigma\alert<4,5>{\Theta})}$$
+		\only<3>{\centering \alert<3>{Helicity-dependant geometric phase}\vspace{-4mm}}
 		\pause
 		$$\alert{\Theta} = 2\pi(1-\cos\theta)$$\pause
-		$\alert{\Theta}\rightarrow$ solid angle obtained at the apex of the cone.
-		
+		$\alert{\Theta}\rightarrow$ solid angle obtained at the apex of the cone.\pause
 		\begin{align*}
 			\ket{L}&\longrightarrow e^{i\Theta}\ket{L}\\
 			\ket{R}&\longrightarrow e^{-i\Theta}\ket{R}
@@ -873,7 +888,7 @@ For partially polarized light,
 		\onslide<4->{(\sigma=\pm1,l=0) &\longrightarrow (\sigma=\mp1,l=\pm\alert{2q})}
 	\end{align*}
 	\onslide<5>{$q=1\rightarrow$ Angular momentum per photon is conserved.}
-	\onslide<6>{\textbf{Q-plate of phase retardation of $\pi/2$}}
+	\onslide<6->{\textbf{Q-plate of phase retardation of $\pi/2$}}
 	\begin{align*}
 		\onslide<7->{
 			\begin{bmatrix}
