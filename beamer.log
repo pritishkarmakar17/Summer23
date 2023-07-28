@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.31)  25 JUL 2023 12:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.31)  27 JUL 2023 16:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1325,7 +1325,7 @@ File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 ] [34
 
 ]
-<poincare basic.png, id=236, 1523.91556pt x 1523.91556pt>
+<poincare basic.png, id=230, 1523.91556pt x 1523.91556pt>
 File: poincare basic.png Graphic file (type png)
 <use poincare basic.png>
 Package pdftex.def Info: poincare basic.png  used on input line 287.
@@ -1351,12 +1351,12 @@ Overfull \hbox (29.53755pt too wide) detected at line 314
 []
  []
 
-<ellipse beamer.png, id=256, 2018.20667pt x 1468.59778pt>
+<ellipse beamer.png, id=250, 2018.20667pt x 1468.59778pt>
 File: ellipse beamer.png Graphic file (type png)
 <use ellipse beamer.png>
 Package pdftex.def Info: ellipse beamer.png  used on input line 314.
 (pdftex.def)             Requested size: 123.89958pt x 90.15128pt.
-<poincare beamer.png, id=257, 1534.62222pt x 1534.62222pt>
+<poincare beamer.png, id=251, 1534.62222pt x 1534.62222pt>
 File: poincare beamer.png Graphic file (type png)
 <use poincare beamer.png>
 Package pdftex.def Info: poincare beamer.png  used on input line 314.
@@ -1387,12 +1387,12 @@ Package pdftex.def Info: poincare beamer.png  used on input line 314.
 ] [49
 
 ]
-<rad of cur beamer.png, id=325, 775.34111pt x 581.72888pt>
+<rad of cur beamer.png, id=319, 775.34111pt x 581.72888pt>
 File: rad of cur beamer.png Graphic file (type png)
 <use rad of cur beamer.png>
 Package pdftex.def Info: rad of cur beamer.png  used on input line 396.
 (pdftex.def)             Requested size: 153.64493pt x 115.27853pt.
-<intensity_var beamer.png, id=326, 758.38889pt x 568.34555pt>
+<intensity_var beamer.png, id=320, 758.38889pt x 568.34555pt>
 File: intensity_var beamer.png Graphic file (type png)
 <use intensity_var beamer.png>
 Package pdftex.def Info: intensity_var beamer.png  used on input line 396.
@@ -1402,7 +1402,7 @@ Package pdftex.def Info: intensity_var beamer.png  used on input line 396.
  <./Rad of cur beamer.png> <./intensity_var beamer.png>] [51
 
 ]
-<beam waist beamer.png, id=341, 1969.13445pt x 1023.37889pt>
+<beam waist beamer.png, id=335, 1969.13445pt x 1023.37889pt>
 File: beam waist beamer.png Graphic file (type png)
 <use beam waist beamer.png>
 Package pdftex.def Info: beam waist beamer.png  used on input line 420.
@@ -1431,7 +1431,7 @@ Package pdftex.def Info: beam waist beamer.png  used on input line 420.
  [55
 
 ]
-<gouy beamer.png, id=368, 578.16pt x 433.62pt>
+<gouy beamer.png, id=362, 578.16pt x 433.62pt>
 File: gouy beamer.png Graphic file (type png)
 <use gouy beamer.png>
 Package pdftex.def Info: gouy beamer.png  used on input line 438.
@@ -1453,7 +1453,7 @@ Package pdftex.def Info: gouy beamer.png  used on input line 438.
  [58
 
 ]
-<R_vs_z beamer.png, id=388, 578.16pt x 433.62pt>
+<R_vs_z beamer.png, id=382, 578.16pt x 433.62pt>
 File: R_vs_z beamer.png Graphic file (type png)
 <use R_vs_z beamer.png>
 Package pdftex.def Info: R_vs_z beamer.png  used on input line 456.
@@ -1475,7 +1475,7 @@ Package pdftex.def Info: R_vs_z beamer.png  used on input line 456.
  [61
 
 ]
-<intensity beamer.png, id=409, 462.528pt x 331.9602pt>
+<intensity beamer.png, id=403, 462.528pt x 331.9602pt>
 File: intensity beamer.png Graphic file (type png)
 <use intensity beamer.png>
 Package pdftex.def Info: intensity beamer.png  used on input line 476.
@@ -1523,47 +1523,47 @@ Overfull \hbox (13.15337pt too wide) detected at line 512
 [72
 
 ]
-<intensity_hg00.png, id=475, 462.528pt x 346.896pt>
+<intensity_hg00.png, id=469, 462.528pt x 346.896pt>
 File: intensity_hg00.png Graphic file (type png)
 <use intensity_hg00.png>
 Package pdftex.def Info: intensity_hg00.png  used on input line 530.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_hg01.png, id=476, 462.528pt x 346.896pt>
+<intensity_hg01.png, id=470, 462.528pt x 346.896pt>
 File: intensity_hg01.png Graphic file (type png)
 <use intensity_hg01.png>
 Package pdftex.def Info: intensity_hg01.png  used on input line 530.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_hg02.png, id=477, 462.528pt x 346.896pt>
+<intensity_hg02.png, id=471, 462.528pt x 346.896pt>
 File: intensity_hg02.png Graphic file (type png)
 <use intensity_hg02.png>
 Package pdftex.def Info: intensity_hg02.png  used on input line 530.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_hg10.png, id=478, 462.528pt x 346.896pt>
+<intensity_hg10.png, id=472, 462.528pt x 346.896pt>
 File: intensity_hg10.png Graphic file (type png)
 <use intensity_hg10.png>
 Package pdftex.def Info: intensity_hg10.png  used on input line 530.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_hg11.png, id=479, 462.528pt x 346.896pt>
+<intensity_hg11.png, id=473, 462.528pt x 346.896pt>
 File: intensity_hg11.png Graphic file (type png)
 <use intensity_hg11.png>
 Package pdftex.def Info: intensity_hg11.png  used on input line 530.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_hg12.png, id=480, 462.528pt x 346.896pt>
+<intensity_hg12.png, id=474, 462.528pt x 346.896pt>
 File: intensity_hg12.png Graphic file (type png)
 <use intensity_hg12.png>
 Package pdftex.def Info: intensity_hg12.png  used on input line 530.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_hg20.png, id=481, 462.528pt x 346.896pt>
+<intensity_hg20.png, id=475, 462.528pt x 346.896pt>
 File: intensity_hg20.png Graphic file (type png)
 <use intensity_hg20.png>
 Package pdftex.def Info: intensity_hg20.png  used on input line 530.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_hg21.png, id=482, 462.528pt x 346.896pt>
+<intensity_hg21.png, id=476, 462.528pt x 346.896pt>
 File: intensity_hg21.png Graphic file (type png)
 <use intensity_hg21.png>
 Package pdftex.def Info: intensity_hg21.png  used on input line 530.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_hg22.png, id=483, 462.528pt x 346.896pt>
+<intensity_hg22.png, id=477, 462.528pt x 346.896pt>
 File: intensity_hg22.png Graphic file (type png)
 <use intensity_hg22.png>
 Package pdftex.def Info: intensity_hg22.png  used on input line 530.
@@ -1577,7 +1577,7 @@ Overfull \hbox (6.83989pt too wide) detected at line 543
 []
  []
 
-<ioam.png, id=499, 469.755pt x 313.17pt>
+<ioam.png, id=493, 469.755pt x 313.17pt>
 File: ioam.png Graphic file (type png)
 <use ioam.png>
 Package pdftex.def Info: ioam.png  used on input line 543.
@@ -1607,47 +1607,47 @@ Package pdftex.def Info: ioam.png  used on input line 543.
 [76
 
 ]
-<intensity_lg00.png, id=516, 462.528pt x 346.896pt>
+<intensity_lg00.png, id=510, 462.528pt x 346.896pt>
 File: intensity_lg00.png Graphic file (type png)
 <use intensity_lg00.png>
 Package pdftex.def Info: intensity_lg00.png  used on input line 561.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_lg01.png, id=517, 462.528pt x 346.896pt>
+<intensity_lg01.png, id=511, 462.528pt x 346.896pt>
 File: intensity_lg01.png Graphic file (type png)
 <use intensity_lg01.png>
 Package pdftex.def Info: intensity_lg01.png  used on input line 561.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_lg02.png, id=518, 462.528pt x 346.896pt>
+<intensity_lg02.png, id=512, 462.528pt x 346.896pt>
 File: intensity_lg02.png Graphic file (type png)
 <use intensity_lg02.png>
 Package pdftex.def Info: intensity_lg02.png  used on input line 561.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_lg10.png, id=519, 462.528pt x 346.896pt>
+<intensity_lg10.png, id=513, 462.528pt x 346.896pt>
 File: intensity_lg10.png Graphic file (type png)
 <use intensity_lg10.png>
 Package pdftex.def Info: intensity_lg10.png  used on input line 561.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_lg11.png, id=520, 462.528pt x 346.896pt>
+<intensity_lg11.png, id=514, 462.528pt x 346.896pt>
 File: intensity_lg11.png Graphic file (type png)
 <use intensity_lg11.png>
 Package pdftex.def Info: intensity_lg11.png  used on input line 561.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_lg12.png, id=521, 462.528pt x 346.896pt>
+<intensity_lg12.png, id=515, 462.528pt x 346.896pt>
 File: intensity_lg12.png Graphic file (type png)
 <use intensity_lg12.png>
 Package pdftex.def Info: intensity_lg12.png  used on input line 561.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_lg20.png, id=522, 462.528pt x 346.896pt>
+<intensity_lg20.png, id=516, 462.528pt x 346.896pt>
 File: intensity_lg20.png Graphic file (type png)
 <use intensity_lg20.png>
 Package pdftex.def Info: intensity_lg20.png  used on input line 561.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_lg21.png, id=523, 462.528pt x 346.896pt>
+<intensity_lg21.png, id=517, 462.528pt x 346.896pt>
 File: intensity_lg21.png Graphic file (type png)
 <use intensity_lg21.png>
 Package pdftex.def Info: intensity_lg21.png  used on input line 561.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<intensity_lg22.png, id=524, 462.528pt x 346.896pt>
+<intensity_lg22.png, id=518, 462.528pt x 346.896pt>
 File: intensity_lg22.png Graphic file (type png)
 <use intensity_lg22.png>
 Package pdftex.def Info: intensity_lg22.png  used on input line 561.
@@ -1657,47 +1657,47 @@ Package pdftex.def Info: intensity_lg22.png  used on input line 561.
  <./intensity_lg00.png> <./intensity_lg01.png> <./intensity_lg02.png> <./intens
 ity_lg10.png> <./intensity_lg11.png> <./intensity_lg12.png> <./intensity_lg20.p
 ng> <./intensity_lg21.png> <./intensity_lg22.png>]
-<phase_lg00.png, id=539, 462.528pt x 346.896pt>
+<phase_lg00.png, id=533, 462.528pt x 346.896pt>
 File: phase_lg00.png Graphic file (type png)
 <use phase_lg00.png>
 Package pdftex.def Info: phase_lg00.png  used on input line 579.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<phase_lg01.png, id=540, 462.528pt x 346.896pt>
+<phase_lg01.png, id=534, 462.528pt x 346.896pt>
 File: phase_lg01.png Graphic file (type png)
 <use phase_lg01.png>
 Package pdftex.def Info: phase_lg01.png  used on input line 579.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<phase_lg02.png, id=541, 462.528pt x 346.896pt>
+<phase_lg02.png, id=535, 462.528pt x 346.896pt>
 File: phase_lg02.png Graphic file (type png)
 <use phase_lg02.png>
 Package pdftex.def Info: phase_lg02.png  used on input line 579.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<phase_lg10.png, id=542, 462.528pt x 346.896pt>
+<phase_lg10.png, id=536, 462.528pt x 346.896pt>
 File: phase_lg10.png Graphic file (type png)
 <use phase_lg10.png>
 Package pdftex.def Info: phase_lg10.png  used on input line 579.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<phase_lg11.png, id=543, 462.528pt x 346.896pt>
+<phase_lg11.png, id=537, 462.528pt x 346.896pt>
 File: phase_lg11.png Graphic file (type png)
 <use phase_lg11.png>
 Package pdftex.def Info: phase_lg11.png  used on input line 579.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<phase_lg12.png, id=544, 462.528pt x 346.896pt>
+<phase_lg12.png, id=538, 462.528pt x 346.896pt>
 File: phase_lg12.png Graphic file (type png)
 <use phase_lg12.png>
 Package pdftex.def Info: phase_lg12.png  used on input line 579.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<phase_lg20.png, id=545, 462.528pt x 346.896pt>
+<phase_lg20.png, id=539, 462.528pt x 346.896pt>
 File: phase_lg20.png Graphic file (type png)
 <use phase_lg20.png>
 Package pdftex.def Info: phase_lg20.png  used on input line 579.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<phase_lg21.png, id=546, 462.528pt x 346.896pt>
+<phase_lg21.png, id=540, 462.528pt x 346.896pt>
 File: phase_lg21.png Graphic file (type png)
 <use phase_lg21.png>
 Package pdftex.def Info: phase_lg21.png  used on input line 579.
 (pdftex.def)             Requested size: 73.7506pt x 55.30864pt.
-<phase_lg22.png, id=547, 462.528pt x 346.896pt>
+<phase_lg22.png, id=541, 462.528pt x 346.896pt>
 File: phase_lg22.png Graphic file (type png)
 <use phase_lg22.png>
 Package pdftex.def Info: phase_lg22.png  used on input line 579.
@@ -1824,12 +1824,12 @@ File: ioam.png Graphic file (type png)
 <use ioam.png>
 Package pdftex.def Info: ioam.png  used on input line 686.
 (pdftex.def)             Requested size: 153.64493pt x 102.42892pt.
-<eoam.png, id=762, 498.86375pt x 310.15875pt>
+<eoam.png, id=756, 498.86375pt x 310.15875pt>
 File: eoam.png Graphic file (type png)
 <use eoam.png>
 Package pdftex.def Info: eoam.png  used on input line 686.
 (pdftex.def)             Requested size: 153.64493pt x 95.5235pt.
-<sam.png, id=763, 469.755pt x 313.17pt>
+<sam.png, id=757, 469.755pt x 313.17pt>
 File: sam.png Graphic file (type png)
 <use sam.png>
 Package pdftex.def Info: sam.png  used on input line 686.
@@ -1894,7 +1894,7 @@ Overfull \hbox (5.70226pt too wide) detected at line 739
 []
  []
 
-<berry.png, id=825, 1114.1625pt x 564.1075pt>
+<berry.png, id=819, 1114.1625pt x 564.1075pt>
 File: berry.png Graphic file (type png)
 <use berry.png>
 Package pdftex.def Info: berry.png  used on input line 739.
@@ -1919,7 +1919,7 @@ Overfull \hbox (5.70226pt too wide) detected at line 739
 []
  []
 
-<k sphere beamer.png, id=839, 422.57875pt x 423.5825pt>
+<k sphere beamer.png, id=833, 422.57875pt x 423.5825pt>
 File: k sphere beamer.png Graphic file (type png)
 <use k sphere beamer.png>
 Package pdftex.def Info: k sphere beamer.png  used on input line 739.
@@ -1953,7 +1953,7 @@ Package pdftex.def Info: k sphere beamer.png  used on input line 739.
 ] [133
 
 ]
-<pb expt.png, id=864, 1142.93666pt x 967.16888pt>
+<pb expt.png, id=858, 1142.93666pt x 967.16888pt>
 File: pb expt.png Graphic file (type png)
 <use pb expt.png>
 Package pdftex.def Info: pb expt.png  used on input line 761.
@@ -1961,12 +1961,12 @@ Package pdftex.def Info: pb expt.png  used on input line 761.
  [134
 
  <./pb expt.png>]
-<MI arm beamer.png, id=871, 1335.65666pt x 378.30222pt>
+<MI arm beamer.png, id=865, 1335.65666pt x 378.30222pt>
 File: MI arm beamer.png Graphic file (type png)
 <use MI arm beamer.png>
 Package pdftex.def Info: MI arm beamer.png  used on input line 761.
 (pdftex.def)             Requested size: 122.9164pt x 34.81345pt.
-<poincare-pb.png, id=872, 1268.74pt x 1268.74pt>
+<poincare-pb.png, id=866, 1268.74pt x 1268.74pt>
 File: poincare-pb.png Graphic file (type png)
 <use poincare-pb.png>
 Package pdftex.def Info: poincare-pb.png  used on input line 761.
@@ -2069,7 +2069,7 @@ Package pdftex.def Info: poincare-pb.png  used on input line 761.
 ] [155
 
 ]
-<q-plate.png, id=985, 1092.08pt x 759.28111pt>
+<q-plate.png, id=979, 1092.08pt x 759.28111pt>
 File: q-plate.png Graphic file (type png)
 <use q-plate.png>
 Package pdftex.def Info: q-plate.png  used on input line 838.
@@ -2077,22 +2077,22 @@ Package pdftex.def Info: q-plate.png  used on input line 838.
  [156
 
  <./q-plate.png>]
-<qplate(0).png, id=992, 578.16pt x 433.62pt>
+<qplate(0).png, id=986, 578.16pt x 433.62pt>
 File: qplate(0).png Graphic file (type png)
 <use qplate(0).png>
 Package pdftex.def Info: qplate(0).png  used on input line 871.
 (pdftex.def)             Requested size: 107.55333pt x 80.66174pt.
-<qplate(0.5).png, id=993, 578.16pt x 433.62pt>
+<qplate(0.5).png, id=987, 578.16pt x 433.62pt>
 File: qplate(0.5).png Graphic file (type png)
 <use qplate(0.5).png>
 Package pdftex.def Info: qplate(0.5).png  used on input line 871.
 (pdftex.def)             Requested size: 107.55333pt x 80.66174pt.
-<qplate(1).png, id=994, 578.16pt x 433.62pt>
+<qplate(1).png, id=988, 578.16pt x 433.62pt>
 File: qplate(1).png Graphic file (type png)
 <use qplate(1).png>
 Package pdftex.def Info: qplate(1).png  used on input line 871.
 (pdftex.def)             Requested size: 107.55333pt x 80.66174pt.
-<qplate(1,r).png, id=995, 578.16pt x 433.62pt>
+<qplate(1,r).png, id=989, 578.16pt x 433.62pt>
 File: qplate(1,r).png Graphic file (type png)
 <use qplate(1,r).png>
 Package pdftex.def Info: qplate(1,r).png  used on input line 871.
@@ -2215,10 +2215,10 @@ type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb><
 /usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on beamer.pdf (168 pages, 3828371 bytes).
+Output written on beamer.pdf (168 pages, 3827938 bytes).
 PDF statistics:
- 1248 PDF objects out of 1440 (max. 8388607)
- 918 compressed objects within 10 object streams
+ 1242 PDF objects out of 1440 (max. 8388607)
+ 912 compressed objects within 10 object streams
  350 named destinations out of 1000 (max. 500000)
  317 words of extra memory for PDF output out of 10000 (max. 10000000)
 
