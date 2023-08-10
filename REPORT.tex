@@ -247,7 +247,7 @@ To determine $m_{ij}$ in $\boldsymbol{M}$,
 \end{align*}
 \end{enumerate}
 
-Such examples of usual Jones matrix \footnote{For polariser the Jones matrix $\boldsymbol{M} = \boldsymbol{J}\;\boldsymbol{J}^\ast$ where $\boldsymbol{J}$ is normalized Jones vector corresponding polarization state \textit{s.t.} $\boldsymbol{J}_{out}= \boldsymbol{M}\boldsymbol{J} = (\boldsymbol{J}\boldsymbol{J}^\ast)\boldsymbol{J}=\boldsymbol{J}(\boldsymbol{J}^\ast\boldsymbol{J})=\boldsymbol{J}$ \label{fn:1}} are given below,\cite{jones}
+Such examples of usual Jones matrix \footnote{For polarizer the Jones matrix $\boldsymbol{M} = \boldsymbol{J}\;\boldsymbol{J}^\ast$ where $\boldsymbol{J}$ is normalized Jones vector corresponding polarization state \textit{s.t.} $\boldsymbol{J}_{out}= \boldsymbol{M}\boldsymbol{J} = (\boldsymbol{J}\boldsymbol{J}^\ast)\boldsymbol{J}=\boldsymbol{J}(\boldsymbol{J}^\ast\boldsymbol{J})=\boldsymbol{J}$ \label{fn:1}} are given below,\cite{jones}
 
 \begin{longtable}[H]{ c c } 
 	\hline
@@ -258,19 +258,19 @@ Such examples of usual Jones matrix \footnote{For polariser the Jones matrix $\b
 		1 & 0 \\ 
 		0 & 1
 	\end{bmatrix}$\\ \hline
-	x-Polariser & $\begin{bmatrix}
+	x-polarizer & $\begin{bmatrix}
 		1 & 0 \\ 
 		0 & 0
 	\end{bmatrix}$\\\hline
-	y-Polariser & $\begin{bmatrix}
+	y-polarizer & $\begin{bmatrix}
 		0 & 0 \\ 
 		0 & 1
 	\end{bmatrix}$\\\hline
-	Right circular polariser & $\frac{1}{2}\begin{bmatrix}
+	Right circular polarizer & $\frac{1}{2}\begin{bmatrix}
 		1 & i \\ 
 		-i & 1
 	\end{bmatrix}$\\\hline
-	Left circular polariser & $\frac{1}{2}\begin{bmatrix}
+	Left circular polarizer & $\frac{1}{2}\begin{bmatrix}
 		1 & -i \\ 
 		i & 1
 	\end{bmatrix}$\\\hline
@@ -465,13 +465,13 @@ Now for a polarized light,
 	\end{bmatrix} \label{eq:1.16}
 \end{align}
 where $\delta= \delta_y-\delta_x$.
-\subsubsection{\color{red}Measurement of Stokes parameters}
- To measure the 4 Stokes parameter of {\color{red}polarized} light, we have to do 4 steps experiment. In each case, we pass the light through various optical elements and measure the (time-averaged) intensity, \cite{stokes}
+\subsubsection{Measurement of Stokes parameters}
+ To measure the 4 Stokes parameter of polarized light, we have to do 4 steps experiment. In each case, we pass the light through various optical elements and measure the (time-averaged) intensity, \cite{stokes}
  \begin{enumerate}
  	\item[\textbf{Step I}] 
  	Pass the light through homogenous isotropic medium (or, free space) and measure the intensity. From table \ref{table:2} and eq. \ref{eq:1.10}, we get,
  	\begin{align}
- 		\boldsymbol{C}_{out} &= \boldsymbol{M}\:\boldsymbol{C}_{in}\:\boldsymbol{M}^\dagger\nonumber\\
+ 		\boldsymbol{C}_{out} = \boldsymbol{M}\:\boldsymbol{C}_{in}\:\boldsymbol{M}^\dagger
  		&=\begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} 
  		\frac{1}{2} \begin{bmatrix} S_0+S_1 & S_2+iS_3 \\ S_2-iS_3 & S_0-S_1\end{bmatrix}
  		\begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}\nonumber\\
@@ -483,13 +483,12 @@ where $\delta= \delta_y-\delta_x$.
  	\end{align}
  
  \item[\textbf{Step II}] 
- Pass the light through x-polariser and measure the intensity. From table \ref{table:2} and eq. \ref{eq:1.10}, we get,
+ Pass the light through x-polarizer and measure the intensity. From table \ref{table:2} and eq. \ref{eq:1.10}, we get,
  \begin{align}
- 	\boldsymbol{C}_{out} &= \boldsymbol{M}\:\boldsymbol{C}_{in}\:\boldsymbol{M}^\dagger\nonumber\\
+ 	\boldsymbol{C}_{out} = \boldsymbol{M}\:\boldsymbol{C}_{in}\:\boldsymbol{M}^\dagger
  	&=\begin{bmatrix} 1 & 0 \\ 0 & 0 \end{bmatrix} 
  	\frac{1}{2} \begin{bmatrix} S_0+S_1 & S_2+iS_3 \\ S_2-iS_3 & S_0-S_1\end{bmatrix}
- 	\begin{bmatrix} 1 & 0 \\ 0 & 0 \end{bmatrix}\nonumber\\
- 	&= \frac{1}{2} \begin{bmatrix} S_0+S_1 & 0 \\ 0 & 0\end{bmatrix}
+ 	\begin{bmatrix} 1 & 0 \\ 0 & 0 \end{bmatrix}
  \end{align}
  So the measured intensity will be 
  \begin{align}
@@ -497,18 +496,16 @@ where $\delta= \delta_y-\delta_x$.
  \end{align}
 
 \item[\textbf{Step III}] 
-Pass the light through the polariser with transmission axis is at $45^\circ$ and measure the intensity. Then from eq. \ref{eq:1.7}, $\boldsymbol{M}$ for this polariser will be
+Pass the light through the polarizer with transmission axis is at $45^\circ$ and measure the intensity. Then from eq. \ref{eq:1.7}, $\boldsymbol{M}$ for this polarizer will be
 \begin{align}
 	\boldsymbol{M}= R(-45^\circ) \begin{bmatrix} 1 & 0 \\ 0 & 0 \end{bmatrix} R(45^\circ) =\frac{1}{2}\begin{bmatrix} 1 & 1 \\ 1 & 1 \end{bmatrix}
 \end{align}
 From eq. \ref{eq:1.10}, we get,
 \begin{align}
-	\boldsymbol{C}_{out} &= \boldsymbol{M}\:\boldsymbol{C}_{in}\:\boldsymbol{M}^\dagger\nonumber\\
-	&= \boldsymbol{M}\:\boldsymbol{C}_{in}\:\boldsymbol{M}^\dagger\nonumber\\
+	\boldsymbol{C}_{out} = \boldsymbol{M}\:\boldsymbol{C}_{in}\:\boldsymbol{M}^\dagger\
 	&=\frac{1}{2}\begin{bmatrix} 1 & 1 \\ 1 & 1 \end{bmatrix} 
 	\frac{1}{2} \begin{bmatrix} S_0+S_1 & S_2+iS_3 \\ S_2-iS_3 & S_0-S_1\end{bmatrix}
-	\frac{1}{2}\begin{bmatrix} 1 & 1 \\ 1 & 1 \end{bmatrix}\nonumber\\
-	&= \frac{1}{4} \begin{bmatrix} S_0+S_2 & S_0+S_2 \\ S_0+S_2 & S_0+S_2\end{bmatrix}
+	\frac{1}{2}\begin{bmatrix} 1 & 1 \\ 1 & 1 \end{bmatrix}
 \end{align}
 So the measured intensity will be 
 \begin{align}
@@ -516,9 +513,9 @@ So the measured intensity will be
 \end{align}
  
   \item[\textbf{Step IV}] 
- Pass the light through right circular polariser and measure the intensity. From table \ref{table:2} and eq. \ref{eq:1.10}, we get,
+ Pass the light through right circular polarizer and measure the intensity. From table \ref{table:2} and eq. \ref{eq:1.10}, we get,
  \begin{align}
- 	\boldsymbol{C}_{out} &= \boldsymbol{M}\:\boldsymbol{C}_{in}\:\boldsymbol{M}^\dagger\nonumber\\
+ 	\boldsymbol{C}_{out} = \boldsymbol{M}\:\boldsymbol{C}_{in}\:\boldsymbol{M}^\dagger
  	&=\frac{1}{2}\begin{bmatrix} 1 & i \\ -i & 1 \end{bmatrix} 
  	\frac{1}{2} \begin{bmatrix} S_0+S_1 & S_2+iS_3 \\ S_2-iS_3 & S_0-S_1\end{bmatrix}
  	\frac{1}{2}\begin{bmatrix} 1 & i \\ -i & 1 \end{bmatrix}
@@ -531,11 +528,29 @@ So the measured intensity will be
 
 From the equations \ref{s I}, \ref{s II}, \ref{s III} and \ref{s IV}, we can get the values of all $S_i$'s.
 
+Another way of measuring the  Stokes parameter is passing the light beam through first wave-plate and then polarizer and measuring the intensity (see fig \ref{fig:stokes-para}).
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{"stokes para"}
+	\caption{Experimental measurement of the Stokes polarization parameters (ref \cite{collett 05}) }
+	\label{fig:stokes-para}
+\end{figure}
+For different alignment of optical axes of wave-plate and polarizer, the intensity of the detector is,
+\begin{align}
+	I(\theta,\phi) = \frac{1}{2}[S_0+S_1\cos2\theta+S_2\sin2\theta\cos\phi-S_3\sin2\theta\sin\phi]
+\end{align}
+where $\phi$ is the phase shift of orthogonal electric field component introduced by wave-plate with specific orientation and $\theta$ is the transmission axis orientation angle of polarizer. \cite{goldstein 11}\cite{collett 05}
 
-{\color{red} For measurement of  Stokes parameter in general, we have to do 6 steps experiment}
+From there one can show that, 
+\begin{align}
+	S_0&=I(0,0)+I(\pi/2,0)\\
+	S_1&=I(0,0)-I(\pi/2,0)\\
+	S_1&=2I(\pi/4,0)-S_0\\
+	S_3&=S_0-2I(\pi/4,\pi/2)
+\end{align}
 
 
-\subsubsection{Poincare  and sphere representation}AM
+\subsubsection{Poincare  and sphere representation}
 For total intensity normalised Stokes vector is $\boldsymbol{s}= \begin{bmatrix} 1& s_1& s_2& s_3\end{bmatrix}^T$ where $s_i=S_i/S_0$. Observe that $ \boldsymbol{s} $ is a 3-dimensional quantity. Therefore we can write, 
 \begin{align*}
 	\begin{bmatrix} 1\\ s_1\\ s_2\\ s_3\end{bmatrix} \rightarrow 
@@ -650,7 +665,7 @@ Note that, in eq. \ref{poincare rotation matrix}, if we write
 we see that it is proper rotation matrix of rotation angle $2\theta$ in Poincare sphere \textit{w.r.t} $s_3$ axis. And as we know that rotation of $\theta$ of electric field results in rotation of $2\theta$ in azimuth angle of Stokes vector in Poincare sphere.
 
 
-\subsubsection{\color{red}Measurement of Muller matrix parameters}
+%\subsubsection{\color{red}Measurement of Muller matrix parameters}
 
 \subsubsection{Relationship between Jones \& Stokes-Muller formalism}
 Let, $\boldsymbol{J}$ be jones vector, $\boldsymbol{M}$ be the Jones matrix, $\boldsymbol{S}$ be the Stokes vector and $\boldsymbol{\mathfrak{M}}$ be the Muller matrix \textit{s.t.} equations \ref{eq:1.4} and \ref{eq:1.33} is satisfied.
@@ -1219,24 +1234,6 @@ where $H_i$ is \textit{i th degree Hermite polynomial} and other symbols are as 
 See for $m=0=n$ we recover the Gaussian solution of \ref{eq:2.30} which we call as \textit{zero order} HG beam. For different values of $m$ an $n$, we will get diferent type of higher order HG beam, these are called \textit{transverse electromagnetic mode} of order $(m,n)$ or, $TEM_{mn}$. 
 
 Some characteristics of HG beams are given below,
-	\begin{figure}[t]
-	\foreach \n in {0,1,2}{
-		\foreach \m in {0,1,2}{
-			{
-				\begin{subfigure}[htbp]{0.3\textwidth}
-					\centering
-					\includegraphics[width=\textwidth]{intensity_hg\n\m}
-					\caption{$TEM_{\n\m}$}
-					%\label{fig:hg\n\m}
-				\end{subfigure}
-				\hfill
-			}
-		}
-	}
-	\\
-	\caption{Intensity variation for different TEM in a cross section ($z=0,z_0=1,w_0=1$)}
-	\label{fig:hgmn}
-\end{figure}
 \begin{enumerate}
 	\item 
 	\textit{Intensity} of HG beam is given by
@@ -1275,10 +1272,25 @@ Some characteristics of HG beams are given below,
 		\caption{Variation of Gouy phase with z for HG beam}
 		\label{fig:gouy_hg}
 	\end{figure}
-	
-	
 \end{enumerate}
-
+	\begin{figure}[t]
+	\foreach \n in {0,1,2}{
+		\foreach \m in {0,1,2}{
+			{
+				\begin{subfigure}[htbp]{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{intensity_hg\n\m}
+					\caption{$TEM_{\n\m}$}
+					%\label{fig:hg\n\m}
+				\end{subfigure}
+				\hfill
+			}
+		}
+	}
+	\\
+	\caption{Intensity variation for different TEM in a cross section ($z=0,z_0=1,w_0=1$)}
+	\label{fig:hgmn}
+\end{figure}
 
 \subsubsection{Laguerre-Gaussian beam}
 In the expression \ref{eq:2.30}, we get the radially symmetric Gaussian beam solution. But we now seek higher order solution of Gaussian beam which is not radially symmetric {i.e.} vary with $\phi$.
@@ -1498,7 +1510,7 @@ where
 	\mathcal{P}_k^{(n-k,m-k)}(0) = \frac{(-1)^k}{2^kk!} \frac{d^k}{dt^k}\big[(1-t)^n(1+t)^m \big] \bigg|_{t=0}
 \end{align}
 
-Now the scalar field representations of HG and LG beam are 
+Now the scalar field representations of HG and LG beam are
 \begin{align}
 	U_{m,n}^{HG}(x,y,z)=& \frac{C_{m,n}^{HG}}{w(z)} H_m\left(\frac{\sqrt{2} x}{w(z)}\right) H_n\left(\frac{\sqrt{2} y}{w(z)}\right)\exp( -\frac{(x^2+y^2)}{w^2(z)}) \cdot\nonumber\\ 
 	&\exp( i\:(m+n+1)\eta -i\frac{k(x^2+y^2)}{2R(z)}) \\
@@ -1515,7 +1527,7 @@ and the normalization constants, such that $\iint dx\:dy\: \abs{U}=1$, are
 	C_{m,n}^{HG}=\sqrt{\frac{2}{\pi n!m!}}2^{-(m+n)/2}\\
 	C_{m,n}^{LG}=\sqrt{\frac{2}{\pi n!m!}}\min(n,m)!
 \end{align}
-Here to get the LG beam representation, use $l=n-m$ and $p=\min(n,m)$ in \ref{eq:2.58}.
+Here to get the LG beam representation, use $l=n-m$ and $p=\min(n,m)$ in \ref{eq:2.58}. \cite{allen 99}
 
 Using this identity, the LG beam can be decomposed into various order of HG beam by, \cite{beijers allen 93}
 \begin{align}
@@ -1668,10 +1680,7 @@ then
 	=\frac{\pi\epsilon_0\sigma }{\omega}\int r\:dr\: \abs{u(r)}^2 \label{eq:3.28}
 \end{align}
 
-The relation between polarization direction $\Hat{\boldsymbol{p}}$ and Jones vector $\boldsymbol{J}$ is\footnote{for fully polarized light only} 
-	\begin{align}
-		\Hat{\boldsymbol{p}} = \boldsymbol{J} e^{i\omega t}
-	\end{align}
+The relation\footnote{for polarized light only} between polarization direction $\Hat{\boldsymbol{p}}$ and normalized Jones vector $\boldsymbol{J}$ is $\Hat{\boldsymbol{p}} = \boldsymbol{J} e^{i\delta}$, for some phase difference $\delta$.
 
 So
 \begin{align}
@@ -1739,8 +1748,15 @@ From the SAM part, we see $\mathcal{S}$ does not depend on the choice of the axi
 	\iint  dx\:dy\: \left[F_\xi^\ast\left(\boldsymbol{r_0}\times\nabla\right)_zF_\xi\right] = 0, \;\text{where}\;\xi=x,y
 \end{align}
 
-\subsection{\color{red} Observation of AM of light}
-\cite{yao 11} pg- 176
+\subsection{Observation of AM of light}
+\cite{padgett 11}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\linewidth]{"optical trapping"}
+	\caption{Optical trapping of a birefringent particle (ref \cite{yao 11})}
+	\label{fig:optical-trapping}
+\end{figure}
+
 
 \clearpage
 
@@ -2198,9 +2214,10 @@ So to keep total angular momentum per photon conserved, $q=1$.
 \end{figure}
 
 
-\cite{beijer 94}
-\cite{yao 11} pg - 168
-Another Inhomogeneous medium is spiral phase plate (see fig \cite{beijer 94}).
+%\cite{beijer 94}
+%\cite{yao 11} pg - 168
+%\cite{allen 99} pg -314
+%Another Inhomogeneous medium is spiral phase plate (see fig \cite{beijer 94}).
 
 
 Now we will discuss about the diffractive optical element, especially computer-generated hologram (CGH). Its advantage is that, it can mimic any refractive element of choice, but only for at a single wavelength. To produce helical phase front, CHG (forked diffraction gratings or spiral Fresnel lenses, see fig \ref{fig:cgh},\ref{fig:CGH}) is used which is combination of helical phase hologram and linear phase ramp\footnote{Linear phase ramp is used to deviate the beam from the former propagation axis. \cite{doe}} with modulo $2\pi$. \cite{yao 11} 
@@ -2231,21 +2248,21 @@ Now we will discuss about the diffractive optical element, especially computer-g
 \end{figure}
 
 \begin{figure}[H]
-	\begin{subfigure}[H]{0.26\textwidth}
+	\begin{subfigure}[H]{0.31\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{cgh_hel.png}
 		\caption{Helical phase}
 		\label{fig:cgh,lin}
 	\end{subfigure}
-	\hfil $+$
-	\begin{subfigure}[H]{0.26\textwidth}
+	\hfil $\centering+$
+	\begin{subfigure}[H]{0.31\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{cgh_lin.png}
 		\caption{Linear phase}
 		\label{fig:cgh,hel}
 	\end{subfigure}
-	\hfil $=$
-	\begin{subfigure}[H]{0.26\textwidth}
+	\hfil $\centering=$
+	\begin{subfigure}[H]{0.31\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{cgh_mixed.png}
 		\caption{Forked phase}
@@ -2255,13 +2272,13 @@ Now we will discuss about the diffractive optical element, especially computer-g
 	\label{fig:CGH}
 \end{figure}
 
-If input beam of $\boldsymbol{J}_{in}$ passes through the CGH given fig \ref{fig:cgh,mixed}), then output beam is $\boldsymbol{J}_{out}$ \textit{s.t.},
+If input beam, $\boldsymbol{J}_{in}$ of planer phase front passes through the CGH given fig \ref{fig:cgh,mixed}), then output beam is $\boldsymbol{J}_{out}$ \textit{s.t.},
 \begin{align}
 	\boldsymbol{J}_{out}=\boldsymbol{J}_{in}\:{\color{red} \exp(il\phi)}
 \end{align}
-which has helical phase term resulting non-zero OAM. So change in OAM is,
+which has helical phase structure resulting non-zero OAM. So change in OAM is,
 $$(l=0)\longrightarrow (l=l)$$
-So, per photon $l\hbar$ OAM is transferred to CGH. Further, this can be used in beam shaping, wavefront shaping, LG-HG beam transformation etc. \cite{yao 11}
+So, per photon $l\hbar$ OAM is transferred to CGH. Further, this can be used in beam shaping, wavefront shaping, LG-HG beam transformation etc. \cite{yao 11}\cite{allen 99}
 
 %\subsection{SOI in non-paraxial fields}
 %\subsection{Spin Hall effect}
@@ -2295,7 +2312,13 @@ So, per photon $l\hbar$ OAM is transferred to CGH. Further, this can be used in 
      Simon, B. N.; Simon, S.; Mukunda, N.; Gori, F.; Santarsiero, M.; Borghi, R.; Simon, R. (2010). A complete characterization of pre-Mueller and Mueller matrices in polarization optics. josaa/27/2/josaa-27-2-188.pdf, 27(2), 188–0. doi: 10.1364/JOSAA.27.000188     
 	
 	\bibitem{stokes}
-	Hecht, Eugene (1970). Note on an Operational Definition of the Stokes Parameters. American Journal of Physics, 38(9), 1156–. doi:10.1119/1.1976574    
+	Hecht, Eugene (1970). Note on an Operational Definition of the Stokes Parameters. American Journal of Physics, 38(9), 1156–. doi: 10.1119/1.1976574    
+	
+	\bibitem{collett 05}
+	Collett E. (2005). Field guide to polarization. SPIE Press.
+	
+	\bibitem{goldstein 11}
+	Goldstein, D.H. (2011). Polarized Light (3rd ed.). CRC Press. doi: 10.1201/b10436
 	
 	\bibitem{milonni}
 	Milonni, P.W. and Eberly, J.H. (2010). Laser Physics. Wiley \& Sons, Hoboken, Chapter 7. doi: 10.1002/9780470409718
@@ -2343,6 +2366,9 @@ So, per photon $l\hbar$ OAM is transferred to CGH. Further, this can be used in 
 	 \bibitem{allen 99}
 	 Allen, L. (1999).The Orbital Angular Momentum of Light. Progress in Optics.  Volume 39. 291–372. doi: 10.1016/S0079-6638(08)70391-3
 	 
+	 \bibitem{padgett 11}
+	 Padgett, M., Bowman, R. (2011). Tweezers with a twist. Nature Photonics, 5(6), 343–348. doi:10.1038/nphoton.2011.81 
+	 
 	 \bibitem{levedev}
 	 Lebedev, N. N. (1972), Special Functions and Their Applications, Dover Publications Inc.
 	 
@@ -2367,8 +2393,8 @@ So, per photon $l\hbar$ OAM is transferred to CGH. Further, this can be used in 
 	 \bibitem{berry 98}
 	  Berry, Michael V.; Soskin, Marat S. (1998). SPIE Proceedings., International Conference on Singular Optics - Paraxial beams of spinning light., 3487(), 6–11. doi: 10.1117/12.317704 
 	  
-	\bibitem{}
-	He, H.; Friese, M. E. J.; Heckenberg, N. R.; Rubinsztein-Dunlop, H. (1995). Direct Observation of Transfer of Angular Momentum to Absorptive Particles from a Laser Beam with a Phase Singularity. Physical Review Letters, 75(5), 826–829. doi: 10.1103/physrevlett.75.826 
+	%\bibitem{}
+	%He, H.; Friese, M. E. J.; Heckenberg, N. R.; Rubinsztein-Dunlop, H. (1995). Direct Observation of Transfer of Angular Momentum to Absorptive Particles from a Laser Beam with a Phase Singularity. Physical Review Letters, 75(5), 826–829. doi: 10.1103/physrevlett.75.826 
 	  
 	  
 	  \bibitem{zettili 09}

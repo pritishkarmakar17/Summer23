@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.31)  28 JUL 2023 12:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.31)  11 AUG 2023 02:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -974,7 +974,7 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count346
-<iiserk.png, id=191, 274.02374pt x 301.125pt>
+<iiserk.png, id=187, 274.02374pt x 301.125pt>
 File: iiserk.png Graphic file (type png)
 <use iiserk.png>
 Package pdftex.def Info: iiserk.png  used on input line 69.
@@ -1056,7 +1056,7 @@ l.114 		\newpage
 \openout6 = `REPORT.toc'.
 
  [2] (./REPORT.lof
-Overfull \hbox (7.15012pt too wide) in paragraph at lines 15--15
+Overfull \hbox (7.15012pt too wide) in paragraph at lines 17--17
  [][] [][][]\T1/cmr/m/n/10.95 Schematic of Michel-son in-ter-fer-om-e-ter setup
  for ob-ser-va-tion of Pancharatnam- 
  []
@@ -1071,40 +1071,37 @@ Overfull \hbox (7.15012pt too wide) in paragraph at lines 15--15
 
  [3
 
-] [1] [2] [3] [4] [5]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 468.
-
-[6] [7]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 601
+] [1] [2] [3] [4] [5] [6]
+<stokes para.png, id=540, 858.20625pt x 385.44pt>
+File: stokes para.png Graphic file (type png)
+<use stokes para.png>
+Package pdftex.def Info: stokes para.png  used on input line 534.
+(pdftex.def)             Requested size: 256.0774pt x 115.00946pt.
+ [7 <./stokes para.png>] [8]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 616
 .
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [8]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 653.
-
-[9]
-<ellipse.png, id=576, 198.0pt x 117.15pt>
+) [9]
+<ellipse.png, id=595, 198.0pt x 117.15pt>
 File: ellipse.png Graphic file (type png)
 <use ellipse.png>
-Package pdftex.def Info: ellipse.png  used on input line 734.
+Package pdftex.def Info: ellipse.png  used on input line 749.
 (pdftex.def)             Requested size: 227.62204pt x 134.68568pt.
  [10] [11 <./ellipse.png>]
-<ellipse_new.png, id=617, 2313.53223pt x 1429.34pt>
+<ellipse_new.png, id=634, 2313.53223pt x 1429.34pt>
 File: ellipse_new.png Graphic file (type png)
 <use ellipse_new.png>
-Package pdftex.def Info: ellipse_new.png  used on input line 829.
+Package pdftex.def Info: ellipse_new.png  used on input line 844.
 (pdftex.def)             Requested size: 184.37096pt x 113.89153pt.
-<poincare.png, id=618, 1596.18556pt x 1522.1311pt>
+<poincare.png, id=635, 1596.18556pt x 1522.1311pt>
 File: poincare.png Graphic file (type png)
 <use poincare.png>
-Package pdftex.def Info: poincare.png  used on input line 835.
+Package pdftex.def Info: poincare.png  used on input line 850.
 (pdftex.def)             Requested size: 143.39998pt x 136.7304pt.
  [12 <./ellipse_new.png> <./poincare.png>]
-Overfull \hbox (15.04219pt too wide) in paragraph at lines 880--882
+Overfull \hbox (15.04219pt too wide) in paragraph at lines 895--897
 \T1/cmr/m/n/10.95 where trans-verse Lapla-cian, $\OMS/cmsy/m/n/10.95 r[] \OT1/c
 mr/m/n/10.95 = [] + []$ \T1/cmr/m/n/10.95 or in cylin-dri-cal co-or-di-nate, $\
 OMS/cmsy/m/n/10.95 r[] \OT1/cmr/m/n/10.95 = [][] [] +
@@ -1113,730 +1110,725 @@ OMS/cmsy/m/n/10.95 r[] \OT1/cmr/m/n/10.95 = [][] [] +
 [13
 
 ] [14]
-<spherical wave.png, id=672, 741.77126pt x 322.20375pt>
+<spherical wave.png, id=690, 741.77126pt x 322.20375pt>
 File: spherical wave.png Graphic file (type png)
 <use spherical wave.png>
-Package pdftex.def Info: spherical wave.png  used on input line 963.
+Package pdftex.def Info: spherical wave.png  used on input line 978.
 (pdftex.def)             Requested size: 199.16928pt x 86.50945pt.
  [15 <./spherical wave.png>]
-<beam.png, id=705, 1095.09125pt x 339.2675pt>
+<beam.png, id=722, 1095.09125pt x 339.2675pt>
 File: beam.png Graphic file (type png)
 <use beam.png>
-Package pdftex.def Info: beam.png  used on input line 1029.
+Package pdftex.def Info: beam.png  used on input line 1044.
 (pdftex.def)             Requested size: 298.75262pt x 92.55597pt.
  [16]
-<intensity.png, id=720, 462.528pt x 346.896pt>
+<intensity.png, id=737, 462.528pt x 346.896pt>
 File: intensity.png Graphic file (type png)
 <use intensity.png>
-Package pdftex.def Info: intensity.png  used on input line 1045.
+Package pdftex.def Info: intensity.png  used on input line 1060.
 (pdftex.def)             Requested size: 188.2158pt x 141.16434pt.
-<intensity_var.png, id=721, 462.528pt x 331.9602pt>
+<intensity_var.png, id=738, 462.528pt x 331.9602pt>
 File: intensity_var.png Graphic file (type png)
 <use intensity_var.png>
-Package pdftex.def Info: intensity_var.png  used on input line 1052.
+Package pdftex.def Info: intensity_var.png  used on input line 1067.
 (pdftex.def)             Requested size: 188.2158pt x 135.08643pt.
  [17 <./beam.png> <./intensity.png> <./intensity_var.png>] (./R_vs_z.tex) (./go
 uy.tex) [18]
-<beam tracing.png, id=748, 2117.24333pt x 1023.37889pt>
+<beam tracing.png, id=765, 2117.24333pt x 1023.37889pt>
 File: beam tracing.png Graphic file (type png)
 <use beam tracing.png>
-Package pdftex.def Info: beam tracing.png  used on input line 1124.
+Package pdftex.def Info: beam tracing.png  used on input line 1139.
 (pdftex.def)             Requested size: 213.39566pt x 103.14027pt.
-<resonator.png, id=750, 2058.35667pt x 924.34222pt>
+<resonator.png, id=767, 2058.35667pt x 924.34222pt>
 File: resonator.png Graphic file (type png)
 <use resonator.png>
-Package pdftex.def Info: resonator.png  used on input line 1145.
+Package pdftex.def Info: resonator.png  used on input line 1160.
 (pdftex.def)             Requested size: 256.0774pt x 114.99242pt.
- [19 <./beam tracing.png>] [20 <./resonator.png>] [21]
-<intensity_hg00.png, id=798, 462.528pt x 346.896pt>
+ [19 <./beam tracing.png>] [20 <./resonator.png>] [21] (./gouy_hg.tex)
+<intensity_hg00.png, id=819, 462.528pt x 346.896pt>
 File: intensity_hg00.png Graphic file (type png)
 <use intensity_hg00.png>
-Package pdftex.def Info: intensity_hg00.png  used on input line 1235.
+Package pdftex.def Info: intensity_hg00.png  used on input line 1289.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<intensity_hg01.png, id=799, 462.528pt x 346.896pt>
+<intensity_hg01.png, id=820, 462.528pt x 346.896pt>
 File: intensity_hg01.png Graphic file (type png)
 <use intensity_hg01.png>
-Package pdftex.def Info: intensity_hg01.png  used on input line 1235.
+Package pdftex.def Info: intensity_hg01.png  used on input line 1289.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<intensity_hg02.png, id=800, 462.528pt x 346.896pt>
+<intensity_hg02.png, id=821, 462.528pt x 346.896pt>
 File: intensity_hg02.png Graphic file (type png)
 <use intensity_hg02.png>
-Package pdftex.def Info: intensity_hg02.png  used on input line 1235.
+Package pdftex.def Info: intensity_hg02.png  used on input line 1289.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<intensity_hg10.png, id=801, 462.528pt x 346.896pt>
+<intensity_hg10.png, id=822, 462.528pt x 346.896pt>
 File: intensity_hg10.png Graphic file (type png)
 <use intensity_hg10.png>
-Package pdftex.def Info: intensity_hg10.png  used on input line 1235.
+Package pdftex.def Info: intensity_hg10.png  used on input line 1289.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<intensity_hg11.png, id=802, 462.528pt x 346.896pt>
+<intensity_hg11.png, id=823, 462.528pt x 346.896pt>
 File: intensity_hg11.png Graphic file (type png)
 <use intensity_hg11.png>
-Package pdftex.def Info: intensity_hg11.png  used on input line 1235.
+Package pdftex.def Info: intensity_hg11.png  used on input line 1289.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<intensity_hg12.png, id=803, 462.528pt x 346.896pt>
+<intensity_hg12.png, id=824, 462.528pt x 346.896pt>
 File: intensity_hg12.png Graphic file (type png)
 <use intensity_hg12.png>
-Package pdftex.def Info: intensity_hg12.png  used on input line 1235.
+Package pdftex.def Info: intensity_hg12.png  used on input line 1289.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<intensity_hg20.png, id=804, 462.528pt x 346.896pt>
+<intensity_hg20.png, id=825, 462.528pt x 346.896pt>
 File: intensity_hg20.png Graphic file (type png)
 <use intensity_hg20.png>
-Package pdftex.def Info: intensity_hg20.png  used on input line 1235.
+Package pdftex.def Info: intensity_hg20.png  used on input line 1289.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<intensity_hg21.png, id=805, 462.528pt x 346.896pt>
+<intensity_hg21.png, id=826, 462.528pt x 346.896pt>
 File: intensity_hg21.png Graphic file (type png)
 <use intensity_hg21.png>
-Package pdftex.def Info: intensity_hg21.png  used on input line 1235.
+Package pdftex.def Info: intensity_hg21.png  used on input line 1289.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<intensity_hg22.png, id=806, 462.528pt x 346.896pt>
+<intensity_hg22.png, id=827, 462.528pt x 346.896pt>
 File: intensity_hg22.png Graphic file (type png)
 <use intensity_hg22.png>
-Package pdftex.def Info: intensity_hg22.png  used on input line 1235.
+Package pdftex.def Info: intensity_hg22.png  used on input line 1289.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1235--1237
+Underfull \hbox (badness 10000) in paragraph at lines 1289--1291
 
  []
 
-[22 <./intensity_hg00.png> <./intensity_hg01.png> <./intensity_hg02.png> <./int
-ensity_hg10.png> <./intensity_hg11.png> <./intensity_hg12.png> <./intensity_hg2
-0.png> <./intensity_hg21.png> <./intensity_hg22.png>] (./gouy_hg.tex) [23]
-<intensity_lg00.png, id=843, 462.528pt x 346.896pt>
+[22]
+<intensity_lg00.png, id=845, 462.528pt x 346.896pt>
 File: intensity_lg00.png Graphic file (type png)
 <use intensity_lg00.png>
-Package pdftex.def Info: intensity_lg00.png  used on input line 1309.
+Package pdftex.def Info: intensity_lg00.png  used on input line 1321.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<intensity_lg01.png, id=844, 462.528pt x 346.896pt>
+<intensity_lg01.png, id=846, 462.528pt x 346.896pt>
 File: intensity_lg01.png Graphic file (type png)
 <use intensity_lg01.png>
-Package pdftex.def Info: intensity_lg01.png  used on input line 1309.
+Package pdftex.def Info: intensity_lg01.png  used on input line 1321.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<intensity_lg02.png, id=845, 462.528pt x 346.896pt>
+<intensity_lg02.png, id=847, 462.528pt x 346.896pt>
 File: intensity_lg02.png Graphic file (type png)
 <use intensity_lg02.png>
-Package pdftex.def Info: intensity_lg02.png  used on input line 1309.
+Package pdftex.def Info: intensity_lg02.png  used on input line 1321.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<intensity_lg10.png, id=846, 462.528pt x 346.896pt>
+<intensity_lg10.png, id=848, 462.528pt x 346.896pt>
 File: intensity_lg10.png Graphic file (type png)
 <use intensity_lg10.png>
-Package pdftex.def Info: intensity_lg10.png  used on input line 1309.
+Package pdftex.def Info: intensity_lg10.png  used on input line 1321.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<intensity_lg11.png, id=847, 462.528pt x 346.896pt>
+<intensity_lg11.png, id=849, 462.528pt x 346.896pt>
 File: intensity_lg11.png Graphic file (type png)
 <use intensity_lg11.png>
-Package pdftex.def Info: intensity_lg11.png  used on input line 1309.
+Package pdftex.def Info: intensity_lg11.png  used on input line 1321.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<intensity_lg12.png, id=848, 462.528pt x 346.896pt>
+<intensity_lg12.png, id=850, 462.528pt x 346.896pt>
 File: intensity_lg12.png Graphic file (type png)
 <use intensity_lg12.png>
-Package pdftex.def Info: intensity_lg12.png  used on input line 1309.
+Package pdftex.def Info: intensity_lg12.png  used on input line 1321.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<intensity_lg20.png, id=849, 462.528pt x 346.896pt>
+<intensity_lg20.png, id=851, 462.528pt x 346.896pt>
 File: intensity_lg20.png Graphic file (type png)
 <use intensity_lg20.png>
-Package pdftex.def Info: intensity_lg20.png  used on input line 1309.
+Package pdftex.def Info: intensity_lg20.png  used on input line 1321.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<intensity_lg21.png, id=850, 462.528pt x 346.896pt>
+<intensity_lg21.png, id=852, 462.528pt x 346.896pt>
 File: intensity_lg21.png Graphic file (type png)
 <use intensity_lg21.png>
-Package pdftex.def Info: intensity_lg21.png  used on input line 1309.
+Package pdftex.def Info: intensity_lg21.png  used on input line 1321.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<intensity_lg22.png, id=851, 462.528pt x 346.896pt>
+<intensity_lg22.png, id=853, 462.528pt x 346.896pt>
 File: intensity_lg22.png Graphic file (type png)
 <use intensity_lg22.png>
-Package pdftex.def Info: intensity_lg22.png  used on input line 1309.
+Package pdftex.def Info: intensity_lg22.png  used on input line 1321.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1309--1311
+Underfull \hbox (badness 10000) in paragraph at lines 1321--1323
 
  []
 
-<phase_lg00.png, id=852, 462.528pt x 346.896pt>
+<phase_lg00.png, id=854, 462.528pt x 346.896pt>
 File: phase_lg00.png Graphic file (type png)
 <use phase_lg00.png>
-Package pdftex.def Info: phase_lg00.png  used on input line 1329.
+Package pdftex.def Info: phase_lg00.png  used on input line 1341.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<phase_lg01.png, id=853, 462.528pt x 346.896pt>
+<phase_lg01.png, id=855, 462.528pt x 346.896pt>
 File: phase_lg01.png Graphic file (type png)
 <use phase_lg01.png>
-Package pdftex.def Info: phase_lg01.png  used on input line 1329.
+Package pdftex.def Info: phase_lg01.png  used on input line 1341.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<phase_lg02.png, id=854, 462.528pt x 346.896pt>
+<phase_lg02.png, id=856, 462.528pt x 346.896pt>
 File: phase_lg02.png Graphic file (type png)
 <use phase_lg02.png>
-Package pdftex.def Info: phase_lg02.png  used on input line 1329.
+Package pdftex.def Info: phase_lg02.png  used on input line 1341.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<phase_lg10.png, id=855, 462.528pt x 346.896pt>
+<phase_lg10.png, id=857, 462.528pt x 346.896pt>
 File: phase_lg10.png Graphic file (type png)
 <use phase_lg10.png>
-Package pdftex.def Info: phase_lg10.png  used on input line 1329.
+Package pdftex.def Info: phase_lg10.png  used on input line 1341.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<phase_lg11.png, id=856, 462.528pt x 346.896pt>
+<phase_lg11.png, id=858, 462.528pt x 346.896pt>
 File: phase_lg11.png Graphic file (type png)
 <use phase_lg11.png>
-Package pdftex.def Info: phase_lg11.png  used on input line 1329.
+Package pdftex.def Info: phase_lg11.png  used on input line 1341.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<phase_lg12.png, id=857, 462.528pt x 346.896pt>
+<phase_lg12.png, id=859, 462.528pt x 346.896pt>
 File: phase_lg12.png Graphic file (type png)
 <use phase_lg12.png>
-Package pdftex.def Info: phase_lg12.png  used on input line 1329.
+Package pdftex.def Info: phase_lg12.png  used on input line 1341.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<phase_lg20.png, id=858, 462.528pt x 346.896pt>
+<phase_lg20.png, id=860, 462.528pt x 346.896pt>
 File: phase_lg20.png Graphic file (type png)
 <use phase_lg20.png>
-Package pdftex.def Info: phase_lg20.png  used on input line 1329.
+Package pdftex.def Info: phase_lg20.png  used on input line 1341.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<phase_lg21.png, id=859, 462.528pt x 346.896pt>
+<phase_lg21.png, id=861, 462.528pt x 346.896pt>
 File: phase_lg21.png Graphic file (type png)
 <use phase_lg21.png>
-Package pdftex.def Info: phase_lg21.png  used on input line 1329.
+Package pdftex.def Info: phase_lg21.png  used on input line 1341.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<phase_lg22.png, id=860, 462.528pt x 346.896pt>
+<phase_lg22.png, id=862, 462.528pt x 346.896pt>
 File: phase_lg22.png Graphic file (type png)
 <use phase_lg22.png>
-Package pdftex.def Info: phase_lg22.png  used on input line 1329.
+Package pdftex.def Info: phase_lg22.png  used on input line 1341.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1329--1331
+Underfull \hbox (badness 10000) in paragraph at lines 1341--1343
 
  []
 
-[24 <./intensity_lg00.png> <./intensity_lg01.png> <./intensity_lg02.png> <./int
-ensity_lg10.png> <./intensity_lg11.png> <./intensity_lg12.png> <./intensity_lg2
-0.png> <./intensity_lg21.png> <./intensity_lg22.png>] [25 <./phase_lg00.png> <.
-/phase_lg01.png> <./phase_lg02.png> <./phase_lg10.png> <./phase_lg11.png> <./ph
-ase_lg12.png> <./phase_lg20.png> <./phase_lg21.png> <./phase_lg22.png>]
-[26] [27]
-Overfull \hbox (0.42377pt too wide) detected at line 1506
+[23 <./intensity_hg00.png> <./intensity_hg01.png> <./intensity_hg02.png> <./int
+ensity_hg10.png> <./intensity_hg11.png> <./intensity_hg12.png> <./intensity_hg2
+0.png> <./intensity_hg21.png> <./intensity_hg22.png>] [24 <./intensity_lg00.png
+> <./intensity_lg01.png> <./intensity_lg02.png> <./intensity_lg10.png> <./inten
+sity_lg11.png> <./intensity_lg12.png> <./intensity_lg20.png> <./intensity_lg21.
+png> <./intensity_lg22.png>] [25 <./phase_lg00.png> <./phase_lg01.png> <./phase
+_lg02.png> <./phase_lg10.png> <./phase_lg11.png> <./phase_lg12.png> <./phase_lg
+20.png> <./phase_lg21.png> <./phase_lg22.png>] [26] [27]
+Overfull \hbox (0.42377pt too wide) detected at line 1518
 []
  []
 
 [28] [29] [30
 
 ] [31] [32] [33]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 1742.
-
-[34] [35
+<optical trapping.png, id=1133, 650.43pt x 415.5525pt>
+File: optical trapping.png Graphic file (type png)
+<use optical trapping.png>
+Package pdftex.def Info: optical trapping.png  used on input line 1755.
+(pdftex.def)             Requested size: 213.39566pt x 136.3338pt.
+ [34] [35 <./optical trapping.png>] [36
 
 ]
-<berry.png, id=1163, 1114.1625pt x 564.1075pt>
+<berry.png, id=1188, 1114.1625pt x 564.1075pt>
 File: berry.png Graphic file (type png)
 <use berry.png>
-Package pdftex.def Info: berry.png  used on input line 1812.
+Package pdftex.def Info: berry.png  used on input line 1828.
 (pdftex.def)             Requested size: 238.14606pt x 120.57492pt.
-<poincare-berry.png, id=1166, 1394.54333pt x 1357.96222pt>
+<poincare-berry.png, id=1191, 1394.54333pt x 1357.96222pt>
 File: poincare-berry.png Graphic file (type png)
 <use poincare-berry.png>
-Package pdftex.def Info: poincare-berry.png  used on input line 1819.
+Package pdftex.def Info: poincare-berry.png  used on input line 1835.
 (pdftex.def)             Requested size: 134.44069pt x 130.91406pt.
 
-Underfull \hbox (badness 1127) in paragraph at lines 1820--1820
+Underfull \hbox (badness 1127) in paragraph at lines 1836--1836
 []\T1/cmr/m/n/10 (b) |Evo-lu-tion of wave-vector $[]$
  []
 
-[36]
-<pb expt.png, id=1188, 1142.93666pt x 967.16888pt>
+[37]
+<pb expt.png, id=1214, 1142.93666pt x 967.16888pt>
 File: pb expt.png Graphic file (type png)
 <use pb expt.png>
-Package pdftex.def Info: pb expt.png  used on input line 1850.
+Package pdftex.def Info: pb expt.png  used on input line 1866.
 (pdftex.def)             Requested size: 184.9429pt x 156.4916pt.
- [37 <./berry.png> <./poincare-berry.png> <./pb expt.png>]
-Overfull \hbox (135.86296pt too wide) detected at line 1880
+ [38 <./berry.png> <./poincare-berry.png> <./pb expt.png>]
+Overfull \hbox (135.86296pt too wide) detected at line 1896
 []
  []
 
 
-Overfull \hbox (203.04684pt too wide) detected at line 1894
+Overfull \hbox (203.04684pt too wide) detected at line 1910
 []
  []
 
 
-Overfull \hbox (152.4091pt too wide) detected at line 1906
+Overfull \hbox (152.4091pt too wide) detected at line 1922
 []
  []
 
 
-Overfull \hbox (0.82234pt too wide) detected at line 1912
+Overfull \hbox (0.82234pt too wide) detected at line 1928
 []
  []
 
 
-Overfull \hbox (1.40846pt too wide) detected at line 1919
+Overfull \hbox (1.40846pt too wide) detected at line 1935
 []
  []
 
 
-Overfull \hbox (15.01083pt too wide) in paragraph at lines 1860--1923
+Overfull \hbox (15.01083pt too wide) in paragraph at lines 1876--1939
  [][] 
  []
 
-<MI arm.png, id=1204, 1334.76445pt x 1000.1811pt>
+<MI arm.png, id=1229, 1334.76445pt x 1000.1811pt>
 File: MI arm.png Graphic file (type png)
 <use MI arm.png>
-Package pdftex.def Info: MI arm.png  used on input line 1930.
+Package pdftex.def Info: MI arm.png  used on input line 1946.
 (pdftex.def)             Requested size: 192.05478pt x 143.90082pt.
-<poincare-pb.png, id=1205, 1268.74pt x 1268.74pt>
+<poincare-pb.png, id=1230, 1268.74pt x 1268.74pt>
 File: poincare-pb.png Graphic file (type png)
 <use poincare-pb.png>
-Package pdftex.def Info: poincare-pb.png  used on input line 1937.
+Package pdftex.def Info: poincare-pb.png  used on input line 1953.
 (pdftex.def)             Requested size: 153.64148pt x 153.63611pt.
-[38]
-<chyba 1.png, id=1213, 1179.51778pt x 841.36555pt>
+[39]
+<chyba 1.png, id=1238, 1179.51778pt x 841.36555pt>
 File: chyba 1.png Graphic file (type png)
 <use chyba 1.png>
-Package pdftex.def Info: chyba 1.png  used on input line 1964.
+Package pdftex.def Info: chyba 1.png  used on input line 1980.
 (pdftex.def)             Requested size: 203.5776pt x 145.21274pt.
-<chyba 2.png, id=1216, 994.82777pt x 935.04889pt>
+<chyba 2.png, id=1241, 994.82777pt x 935.04889pt>
 File: chyba 2.png Graphic file (type png)
 <use chyba 2.png>
-Package pdftex.def Info: chyba 2.png  used on input line 1971.
+Package pdftex.def Info: chyba 2.png  used on input line 1987.
 (pdftex.def)             Requested size: 157.48633pt x 148.0129pt.
 
-Overfull \hbox (3.99068pt too wide) in paragraph at lines 1981--1982
+Overfull \hbox (3.99068pt too wide) in paragraph at lines 1997--1998
 []\T1/cmr/m/n/10.95 Rotational fre-quency shift is the dy-nam-i-cal man-i-fes-t
 a-tion of Pancharatnam-Berry Phase.
  []
 
-[39 <./MI arm.png> <./poincare-pb.png> <./chyba 1.png> <./chyba 2.png>]
-<sam.png, id=1232, 469.755pt x 313.17pt>
+[40 <./MI arm.png> <./poincare-pb.png> <./chyba 1.png> <./chyba 2.png>]
+<sam.png, id=1257, 469.755pt x 313.17pt>
 File: sam.png Graphic file (type png)
 <use sam.png>
-Package pdftex.def Info: sam.png  used on input line 2037.
+Package pdftex.def Info: sam.png  used on input line 2053.
 (pdftex.def)             Requested size: 129.7471pt x 86.49713pt.
-<ioam.png, id=1233, 469.755pt x 313.17pt>
+<ioam.png, id=1258, 469.755pt x 313.17pt>
 File: ioam.png Graphic file (type png)
 <use ioam.png>
-Package pdftex.def Info: ioam.png  used on input line 2044.
+Package pdftex.def Info: ioam.png  used on input line 2060.
 (pdftex.def)             Requested size: 125.68863pt x 83.79245pt.
-<eoam.png, id=1234, 498.86375pt x 310.15875pt>
+<eoam.png, id=1259, 498.86375pt x 310.15875pt>
 File: eoam.png Graphic file (type png)
 <use eoam.png>
-Package pdftex.def Info: eoam.png  used on input line 2051.
+Package pdftex.def Info: eoam.png  used on input line 2067.
 (pdftex.def)             Requested size: 125.68863pt x 78.14053pt.
 
-[40 <./sam.png> <./ioam.png> <./eoam.png>]
-<q-plate.png, id=1254, 1092.08pt x 759.28111pt>
+[41 <./sam.png> <./ioam.png> <./eoam.png>]
+<q-plate.png, id=1279, 1092.08pt x 759.28111pt>
 File: q-plate.png Graphic file (type png)
 <use q-plate.png>
-Package pdftex.def Info: q-plate.png  used on input line 2083.
+Package pdftex.def Info: q-plate.png  used on input line 2099.
 (pdftex.def)             Requested size: 170.71393pt x 118.68372pt.
- [41 <./q-plate.png>]
-<qplate(0).png, id=1268, 578.16pt x 433.62pt>
+ [42 <./q-plate.png>]
+<qplate(0).png, id=1293, 578.16pt x 433.62pt>
 File: qplate(0).png Graphic file (type png)
 <use qplate(0).png>
-Package pdftex.def Info: qplate(0).png  used on input line 2171.
+Package pdftex.def Info: qplate(0).png  used on input line 2187.
 (pdftex.def)             Requested size: 102.43225pt x 76.82417pt.
-<qplate(0.5).png, id=1269, 578.16pt x 433.62pt>
+<qplate(0.5).png, id=1294, 578.16pt x 433.62pt>
 File: qplate(0.5).png Graphic file (type png)
 <use qplate(0.5).png>
-Package pdftex.def Info: qplate(0.5).png  used on input line 2178.
+Package pdftex.def Info: qplate(0.5).png  used on input line 2194.
 (pdftex.def)             Requested size: 102.43225pt x 76.82417pt.
-<qplate(1).png, id=1270, 578.16pt x 433.62pt>
+<qplate(1).png, id=1295, 578.16pt x 433.62pt>
 File: qplate(1).png Graphic file (type png)
 <use qplate(1).png>
-Package pdftex.def Info: qplate(1).png  used on input line 2185.
+Package pdftex.def Info: qplate(1).png  used on input line 2201.
 (pdftex.def)             Requested size: 102.43225pt x 76.82417pt.
-<qplate(1,r).png, id=1271, 578.16pt x 433.62pt>
+<qplate(1,r).png, id=1296, 578.16pt x 433.62pt>
 File: qplate(1,r).png Graphic file (type png)
 <use qplate(1,r).png>
-Package pdftex.def Info: qplate(1,r).png  used on input line 2192.
+Package pdftex.def Info: qplate(1,r).png  used on input line 2208.
 (pdftex.def)             Requested size: 102.43225pt x 76.82417pt.
- [42]
-<cgh_l1.png, id=1289, 462.528pt x 346.896pt>
+ [43]
+<cgh_l1.png, id=1312, 462.528pt x 346.896pt>
 File: cgh_l1.png Graphic file (type png)
 <use cgh_l1.png>
-Package pdftex.def Info: cgh_l1.png  used on input line 2211.
+Package pdftex.def Info: cgh_l1.png  used on input line 2228.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<cgh_l2.png, id=1290, 462.528pt x 346.896pt>
+<cgh_l2.png, id=1313, 462.528pt x 346.896pt>
 File: cgh_l2.png Graphic file (type png)
 <use cgh_l2.png>
-Package pdftex.def Info: cgh_l2.png  used on input line 2218.
+Package pdftex.def Info: cgh_l2.png  used on input line 2235.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<cgh_l3.png, id=1291, 462.528pt x 346.896pt>
+<cgh_l3.png, id=1314, 462.528pt x 346.896pt>
 File: cgh_l3.png Graphic file (type png)
 <use cgh_l3.png>
-Package pdftex.def Info: cgh_l3.png  used on input line 2225.
+Package pdftex.def Info: cgh_l3.png  used on input line 2242.
 (pdftex.def)             Requested size: 128.0387pt x 96.02922pt.
-<cgh_hel.png, id=1292, 462.528pt x 346.896pt>
+<cgh_hel.png, id=1315, 462.528pt x 346.896pt>
 File: cgh_hel.png Graphic file (type png)
 <use cgh_hel.png>
-Package pdftex.def Info: cgh_hel.png  used on input line 2236.
-(pdftex.def)             Requested size: 110.9634pt x 83.21968pt.
-<cgh_lin.png, id=1293, 462.528pt x 346.896pt>
+Package pdftex.def Info: cgh_hel.png  used on input line 2253.
+(pdftex.def)             Requested size: 132.30426pt x 99.22632pt.
+<cgh_lin.png, id=1316, 462.528pt x 346.896pt>
 File: cgh_lin.png Graphic file (type png)
 <use cgh_lin.png>
-Package pdftex.def Info: cgh_lin.png  used on input line 2243.
-(pdftex.def)             Requested size: 110.9634pt x 83.21968pt.
-<cgh_mixed.png, id=1294, 462.528pt x 346.896pt>
+Package pdftex.def Info: cgh_lin.png  used on input line 2260.
+(pdftex.def)             Requested size: 132.30426pt x 99.22632pt.
+<cgh_mixed.png, id=1317, 462.528pt x 346.896pt>
 File: cgh_mixed.png Graphic file (type png)
 <use cgh_mixed.png>
-Package pdftex.def Info: cgh_mixed.png  used on input line 2250.
-(pdftex.def)             Requested size: 110.9634pt x 83.21968pt.
- [43 <./qplate(0).png> <./qplate(0.5).png> <./qplate(1).png> <./qplate(1,r).png
+Package pdftex.def Info: cgh_mixed.png  used on input line 2267.
+(pdftex.def)             Requested size: 132.30426pt x 99.22632pt.
+ [44 <./qplate(0).png> <./qplate(0.5).png> <./qplate(1).png> <./qplate(1,r).png
 > <./cgh_l1.png> <./cgh_l2.png> <./cgh_l3.png> <./cgh_hel.png> <./cgh_lin.png> 
-<./cgh_mixed.png>] [44]
+<./cgh_mixed.png>] [45]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-279.
+296.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 2283--2284
+Underfull \hbox (badness 10000) in paragraph at lines 2300--2301
 []\T1/lmtt/m/n/10 Gupta, S.D., Ghosh, N., & Banerjee, A. (2015). Wave Optics: B
 asic Concepts
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2286--2287
+Underfull \hbox (badness 10000) in paragraph at lines 2303--2304
 []\T1/lmtt/m/n/10 Born, Max; Wolf, Emil (1999). Principles of optics: electroma
 gnetic theory
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2286--2287
+Underfull \hbox (badness 10000) in paragraph at lines 2303--2304
 \T1/lmtt/m/n/10 of propagation, interference and diffraction of light (7th expa
 nded ed.).
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2292--2293
+Underfull \hbox (badness 10000) in paragraph at lines 2309--2310
 []\T1/lmtt/m/n/10 Wang Jizhong (1986). A matrix method for describing unpolariz
 ed light and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2295--2296
+Underfull \hbox (badness 10000) in paragraph at lines 2312--2313
 []\T1/lmtt/m/n/10 Simon, B. N.; Simon, S.; Mukunda, N.; Gori, F.; Santarsiero, 
 M.; Borghi,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2295--2296
+Underfull \hbox (badness 10000) in paragraph at lines 2312--2313
 \T1/lmtt/m/n/10 R.; Simon, R. (2010). A complete characterization of pre-Muelle
 r and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2295--2296
+Underfull \hbox (badness 10000) in paragraph at lines 2312--2313
 \T1/lmtt/m/n/10 Mueller matrices in polarization optics. josaa/27/2/josaa-27-2-
 188.pdf,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2298--2299
+Underfull \hbox (badness 10000) in paragraph at lines 2315--2316
 []\T1/lmtt/m/n/10 Hecht, Eugene (1970). Note on an Operational Definition of th
 e
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2298--2299
+Underfull \hbox (badness 10000) in paragraph at lines 2315--2316
 \T1/lmtt/m/n/10 Stokes Parameters. American Journal of Physics, 38(9), 1156^^U.
-
+ doi:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2301--2302
+Underfull \hbox (badness 10000) in paragraph at lines 2321--2322
+[]\T1/lmtt/m/n/10 Goldstein, D.H. (2011). Polarized Light (3rd ed.). CRC Press.
+ doi:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2324--2325
 []\T1/lmtt/m/n/10 Milonni, P.W. and Eberly, J.H. (2010). Laser Physics. Wiley &
  Sons,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2307--2308
+Underfull \hbox (badness 10000) in paragraph at lines 2330--2331
 []\T1/lmtt/m/n/10 Kogelnik, H., & Li, T. (1966). Laser beams and resonators. Ap
 plied optics,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2313--2314
+Underfull \hbox (badness 10000) in paragraph at lines 2336--2337
 []\T1/lmtt/m/n/10 Erikson, W. L.; Singh, S. (1994). Polarization properties of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2313--2314
+Underfull \hbox (badness 10000) in paragraph at lines 2336--2337
 \T1/lmtt/m/n/10 Maxwell-Gaussian laser beams. Physical Review E, 49(6), 5778^^U
 5786. doi:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2322--2323
+Underfull \hbox (badness 10000) in paragraph at lines 2345--2346
 []\T1/lmtt/m/n/10 Conry, J. P. (2012). Polarization Properties of Maxwell-Gauss
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2322--2323
+Underfull \hbox (badness 10000) in paragraph at lines 2345--2346
 \T1/lmtt/m/n/10 Laser Beams. Graduate Theses and Dissertations Retrieved from
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2325--2326
+Underfull \hbox (badness 10000) in paragraph at lines 2348--2349
 []\T1/lmtt/m/n/10 Lewis, W. E.; Vyas, R. (2014). Maxwell-Gaussian beams with cy
 lindrical
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2325--2326
+Underfull \hbox (badness 10000) in paragraph at lines 2348--2349
 \T1/lmtt/m/n/10 polarization. Journal of the Optical Society of America A, 31(7
 ), 1595^^U.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2334--2335
+Underfull \hbox (badness 10000) in paragraph at lines 2357--2358
 []\T1/lmtt/m/n/10 Andrews, D., & Babiker, M. (Eds.). (2012). The Angular Moment
 um of Light.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2338--2339
+Underfull \hbox (badness 10000) in paragraph at lines 2361--2362
 []\T1/lmtt/m/n/10 MW Beijersbergen, L Allen, H Van der Veen, and JP Woerdman (1
 993).
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2338--2339
+Underfull \hbox (badness 10000) in paragraph at lines 2361--2362
 \T1/lmtt/m/n/10 Astigmatic laser mode converters and transfer of orbital angula
 r momentum.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2341--2342
+Underfull \hbox (badness 10000) in paragraph at lines 2364--2365
 []\T1/lmtt/m/n/10 S.J. van Enk; G. Nienhuis (1992). Eigenfunction description o
 f laser
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2341--2342
+Underfull \hbox (badness 10000) in paragraph at lines 2364--2365
 \T1/lmtt/m/n/10 beams and orbital angular momentum of light. 94(1-3), 147^^U158
 . doi:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2344--2345
+Underfull \hbox (badness 10000) in paragraph at lines 2367--2368
 []\T1/lmtt/m/n/10 Allen, L. (1999).The Orbital Angular Momentum of Light. Progr
 ess in Optics.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2347--2348
+Underfull \hbox (badness 10000) in paragraph at lines 2370--2371
+[]\T1/lmtt/m/n/10 Padgett, M., Bowman, R. (2011). Tweezers with a twist. Nature
+ Photonics,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2373--2374
 []\T1/lmtt/m/n/10 Lebedev, N. N. (1972), Special Functions and Their Applicatio
 ns, Dover
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2350--2351
-[]\T1/lmtt/m/n/10 Abramochkin, E. and Volostnikov, V. (1991) Beam Transformatio
-ns and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2356--2357
-[]\T1/lmtt/m/n/10 Haus, Hermann A. (1984). Waves and fields in optoelectronics.
- Englewood
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2357 	
+l.2374 	
          [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2359--2360
+Underfull \hbox (badness 10000) in paragraph at lines 2376--2377
+[]\T1/lmtt/m/n/10 Abramochkin, E. and Volostnikov, V. (1991) Beam Transformatio
+ns and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2382--2383
+[]\T1/lmtt/m/n/10 Haus, Hermann A. (1984). Waves and fields in optoelectronics.
+ Englewood
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2385--2386
 []\T1/lmtt/m/n/10 Barnett, S. & Allen, L. (2010). Orbital angular momentum and 
 nonparaxial
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2362--2363
+Underfull \hbox (badness 10000) in paragraph at lines 2388--2389
 []\T1/lmtt/m/n/10 Cohen-Tannoudji, C., J. Dupont-Roc, and G. Grynberg (1989), P
 hotons and.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2362--2363
+Underfull \hbox (badness 10000) in paragraph at lines 2388--2389
 \T1/lmtt/m/n/10 Atoms, Introduction to Quantum Electrodynamics, John Wiley & So
 ns,. New
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2365--2366
+Underfull \hbox (badness 10000) in paragraph at lines 2391--2392
 []\T1/lmtt/m/n/10 Lax, Melvin; Louisell, William H.; McKnight, William B. (1975
 ). From
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2365--2366
+Underfull \hbox (badness 10000) in paragraph at lines 2391--2392
 \T1/lmtt/m/n/10 Maxwell to paraxial wave optics. Physical Review A, 11(4), 1365
 ^^U1370. doi:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2368--2369
+Underfull \hbox (badness 10000) in paragraph at lines 2394--2395
 []\T1/lmtt/m/n/10 Berry, Michael V.; Soskin, Marat S. (1998). SPIE Proceedings.
 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2368--2369
+Underfull \hbox (badness 10000) in paragraph at lines 2394--2395
 \T1/lmtt/m/n/10 International Conference on Singular Optics - Paraxial beams of
  spinning
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2371--2372
-[]\T1/lmtt/m/n/10 He, H.; Friese, M. E. J.; Heckenberg, N. R.; Rubinsztein-Dunl
-op, H. (1995).
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2371--2372
-\T1/lmtt/m/n/10 Direct Observation of Transfer of Angular Momentum to Absorptiv
-e Particles
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2371--2372
-\T1/lmtt/m/n/10 from a Laser Beam with a Phase Singularity. Physical Review Let
-ters, 75(5),
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2375--2376
+Underfull \hbox (badness 10000) in paragraph at lines 2401--2402
 []\T1/lmtt/m/n/10 Zettili N. (2009). Quantum mechanics : concepts and applicati
 ons (2nd
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2395--2396
+Underfull \hbox (badness 10000) in paragraph at lines 2421--2422
 [][][]\T1/lmtt/m/n/10 Angular momentum, Geometric phase and spin orbit interact
 ion of Light by
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2398--2399
+Underfull \hbox (badness 10000) in paragraph at lines 2424--2425
 []\T1/lmtt/m/n/10 Ross, J. N. (1984). The rotation of the polarization in low b
 irefringence
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2398--2399
+Underfull \hbox (badness 10000) in paragraph at lines 2424--2425
 \T1/lmtt/m/n/10 monomode optical fibres due to geometric effects. Opt Quant Ele
 ctron 16,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2401--2402
+Underfull \hbox (badness 10000) in paragraph at lines 2427--2428
 []\T1/lmtt/m/n/10 Bliokh, K. Y. (2009). Geometrodynamics of polarized light: Be
 rry phase and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2401--2402
+Underfull \hbox (badness 10000) in paragraph at lines 2427--2428
 \T1/lmtt/m/n/10 spin Hall effect in a gradient-index medium. Journal of Optics 
 A: Pure and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2404--2405
+Underfull \hbox (badness 10000) in paragraph at lines 2430--2431
 []\T1/lmtt/m/n/10 Bliokh, K. Y.; Rodríguez-Fortuño, F. J.; Nori, F.; Zayats, A.
  V. (2015).
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2404--2405
+Underfull \hbox (badness 10000) in paragraph at lines 2430--2431
 \T1/lmtt/m/n/10 Spin^^Uorbit interactions of light. Nature Photonics, 9(12), 79
 6^^U808. doi:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2407--2408
+Underfull \hbox (badness 10000) in paragraph at lines 2433--2434
 []\T1/lmtt/m/n/10 Chyba, T. H.; Wang, L. J.; Mandel, L.; Simon, R. (1988). Meas
 urement of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2407--2408
+Underfull \hbox (badness 10000) in paragraph at lines 2433--2434
 \T1/lmtt/m/n/10 the Pancharatnam phase for a light beam. Optics Letters, 13(7),
  562^^U0. doi:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2410--2411
+Underfull \hbox (badness 10000) in paragraph at lines 2436--2437
 []\T1/lmtt/m/n/10 Bliokh, K., Aiello, A., & Alonso, M. (2012). Spin-orbit inter
 actions of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2410--2411
+Underfull \hbox (badness 10000) in paragraph at lines 2436--2437
 \T1/lmtt/m/n/10 light in isotropic media. In D. Andrews & M. Babiker (Eds.), Th
 e Angular
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2410--2411
+Underfull \hbox (badness 10000) in paragraph at lines 2436--2437
 \T1/lmtt/m/n/10 Momentum of Light (pp. 174-245). Cambridge: Cambridge Universit
 y Press.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2413--2414
+Underfull \hbox (badness 10000) in paragraph at lines 2439--2440
 []\T1/lmtt/m/n/10 Marrucci, L.; Manzo, C.; Paparo, D. (2006). Optical Spin-to-O
 rbital Angular
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2413--2414
+Underfull \hbox (badness 10000) in paragraph at lines 2439--2440
 \T1/lmtt/m/n/10 Momentum Conversion in Inhomogeneous Anisotropic Media. Physica
 l Review
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2416--2417
+Underfull \hbox (badness 10000) in paragraph at lines 2442--2443
 []\T1/lmtt/m/n/10 Yao, A.M., and Padgett, M.J. (2011), "Orbital angular momentu
 m:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2416--2417
+Underfull \hbox (badness 10000) in paragraph at lines 2442--2443
 \T1/lmtt/m/n/10 origins, behavior and applications," Adv. Opt. Photon. 3, 161-2
 04, doi:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2422--2423
-[]\T1/lmtt/m/n/10 Beijersbergen, M.W.; Coerwinkel, R.P.C.; Kristensen, M.; Woer
-dman, J.P.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2422--2423
-\T1/lmtt/m/n/10 (1994). Helical-wavefront laser beams produced with a spiral ph
-aseplate. ,
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2424 \end{thebibliography}
-                             [2]pdfTeX warning (ext4): destination with the sam
-e identifier (name{page.iii}) has been already used, duplicate ignored
+l.2447 	  \bibitem{beijer 94}
+                              [2]
+Underfull \hbox (badness 10000) in paragraph at lines 2448--2449
+[]\T1/lmtt/m/n/10 Beijersbergen, M.W.; Coerwinkel, R.P.C.; Kristensen, M.; Woer
+dman, J.P.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2448--2449
+\T1/lmtt/m/n/10 (1994). Helical-wavefront laser beams produced with a spiral ph
+aseplate. ,
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.iii}) ha
+s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2426 \clearpage
+l.2452 \clearpage
                   [3] [4
 
 ] (./REPORT.aux)
 Package rerunfilecheck Info: File `REPORT.out' has not changed.
-(rerunfilecheck)             Checksum: 030DF189047EFD13D52BCE97AD1C3C95;9711.
+(rerunfilecheck)             Checksum: 23180BA4CD3CDBEF605A1ACD4BB31C82;9383.
  ) 
 Here is how much of TeX's memory you used:
- 37705 strings out of 480171
- 846156 string characters out of 5894489
- 1278401 words of memory out of 5000000
- 54519 multiletter control sequences out of 15000+600000
+ 37739 strings out of 480171
+ 846858 string characters out of 5894489
+ 1278900 words of memory out of 5000000
+ 54543 multiletter control sequences out of 15000+600000
  508213 words of font info for 146 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  84i,25n,89p,773b,2152s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1883,10 +1875,10 @@ st/fonts/type1/public/amsfonts/euler/eufb10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
 bols/msbm10.pfb>
-Output written on REPORT.pdf (54 pages, 4394149 bytes).
+Output written on REPORT.pdf (55 pages, 4607114 bytes).
 PDF statistics:
- 2251 PDF objects out of 2487 (max. 8388607)
- 1373 compressed objects within 14 object streams
- 470 named destinations out of 1000 (max. 500000)
- 671 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2275 PDF objects out of 2487 (max. 8388607)
+ 1390 compressed objects within 14 object streams
+ 478 named destinations out of 1000 (max. 500000)
+ 673 words of extra memory for PDF output out of 10000 (max. 10000000)
 
