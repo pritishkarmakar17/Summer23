@@ -3,6 +3,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath,amssymb,makeidx,graphicx,float,indentfirst,color,hyperref,tikz,ifthen, fancyref,pgfplots,verbatim,fancyvrb,caption,subcaption,physics,longtable,mathrsfs, mathtools}
+\usepackage{sectsty}
+\allsectionsfont{\scshape}
 \usepackage{afterpage}
 \newcommand\blankpage{%
 	\null
@@ -370,7 +372,7 @@ Some properties of coherency matrix are
 	\item It is a hermitian matrix \textit{i.e.} $\boldsymbol{C}=\boldsymbol{C}^\dagger$
 	\item Trace and determinant off the matrix are non-negative \textit{i.e.} $\tr(\boldsymbol{C})>0$ \& $\det(\boldsymbol{C})\ge0$.
 	\item $\Tr(\boldsymbol{C}) = \expval{E_x E_x^\ast} +\expval{E_y E_y^\ast}$ is the time averaged intensity of input light.
-	\item let the polarized light (of electric field $\boldsymbol{E}_{in}$ \& coherency matrix $\boldsymbol{C}_{in}$) passes through an optical element (of Jones matrix $\boldsymbol{M}$) then let output electric field be $\boldsymbol{E}_{out}$ by the equation \ref{eq:1.5}, then output coherency matrix $\boldsymbol{C}_{out}$ is given by 
+	\item Let the polarized light (of electric field $\boldsymbol{E}_{in}$ \& coherency matrix $\boldsymbol{C}_{in}$) passes through an optical element (of Jones matrix $\boldsymbol{M}$) then let output electric field be $\boldsymbol{E}_{out}$ by the equation \ref{eq:1.5}, then output coherency matrix $\boldsymbol{C}_{out}$ is given by 
 	\begin{align}
 		\boldsymbol{C}_{out} = \expval{\boldsymbol{E}_{out}\boldsymbol{E}_{out}^\dagger} &= \expval{\left(\boldsymbol{M}\boldsymbol{E}_{in} \right) \left(\boldsymbol{M}\boldsymbol{E}_{in}\right)^\dagger}\nonumber\\
 		&= \expval{\left(\boldsymbol{M}\boldsymbol{E}_{in} \right) \left(\boldsymbol{E}_{in}^\dagger\boldsymbol{M}^\dagger\right)}\nonumber \\
@@ -379,8 +381,8 @@ Some properties of coherency matrix are
 	\end{align}
 \end{enumerate}
 
-\subsubsection{Stokes parameters and Stokes vector}
-Now we see that coherency matrix $\boldsymbol{C}$ of any polarization state in table \ref{table:3} can be written in the linear combination of the 4 basis given below \cite{simon 10}
+\subsubsection{Stokes parameters \& Stokes vector}
+We see that coherency matrix $\boldsymbol{C}$ of any polarization state in table \ref{table:3} can be written in the linear combination of the 4 basis given below \cite{simon 10}
 \begin{align}
 	\beta = \left\{
 	\underbrace{\begin{bmatrix}1 & 0 \\ 0 & 1\\\end{bmatrix}}_{\boldsymbol{V_0}},
@@ -550,7 +552,7 @@ From there one can show that,
 \end{align}
 
 
-\subsubsection{Poincare  and sphere representation}
+\subsubsection{Poincare sphere representation}
 For total intensity normalised Stokes vector is $\boldsymbol{s}= \begin{bmatrix} 1& s_1& s_2& s_3\end{bmatrix}^T$ where $s_i=S_i/S_0$. Observe that $ \boldsymbol{s} $ is a 3-dimensional quantity. Therefore we can write, 
 \begin{align*}
 	\begin{bmatrix} 1\\ s_1\\ s_2\\ s_3\end{bmatrix} \rightarrow 
@@ -598,20 +600,20 @@ which implies that fully un-polarized has the locus at any the centre $(0,0,0)$ 
 
 We define
 \begin{itemize}
-	\item Total degree of polarization, $DOP = \sqrt{s_1^2+s_2^2+s_3^2}$
+	\item Total degree of polarization, $\mathcal{P} = \sqrt{s_1^2+s_2^2+s_3^2}$
 	\item Degree of linear polarization = $\sqrt{s_1^2+s_2^2}$
 	\item Degree of circular polarization = $s_3$
 \end{itemize}
+Note that, $0\le\mathcal{P}\le1$
 
-For any mixed polarization state we can decompose the Stokes vector into fully polarized and un-polarized components,
-
+For any mixed polarization state we can decompose the Stokes vector into polarized and un-polarized components,
 \begin{align}
 	\begin{bmatrix} 1\\ s_1\\ s_2\\ s_3\end{bmatrix} = 
 	\underbrace{\begin{bmatrix} \sqrt{s_1^2+s_2^2+s_3^2}\\ s_1\\ s_2\\ s_3\end{bmatrix}}_{\text{fully polarized, } DOP = 1} +
 	\underbrace{\begin{bmatrix} 1-\sqrt{s_1^2+s_2^2+s_3^2}\\0\\ 0\\ 0\end{bmatrix}}_{\text{un-polarized}}
 \end{align}
 
-\subsubsection{Muller Matrix \& evolution of Stokes vector}
+\subsubsection{Muller matrix \& Evolution of Stokes vector}
 
 Similar to the Jones matrix, \textit{Muller matrix} is a $4\times4$ matrix assigned for a particular optical element. Let $\boldsymbol{\mathfrak{M}}$ be the Muller matrix for an optical element \textit{s.t.} 
 \begin{align*}\boldsymbol{\mathfrak{M}}=
@@ -896,7 +898,7 @@ and putting \ref{eq:2.4} in eq. \ref{eq:2.3} gives \textit{Paraxial wave equatio
 where transverse Laplacian, $\displaystyle\nabla_T = \frac{\partial^2}{\partial x^2}+\frac{\partial^2}{\partial y^2}$ or in cylindrical coordinate, $\displaystyle\nabla_T = \frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial}{\partial r}\right) + \frac{1}{r^2}\frac{\partial^2}{\partial \phi^2}$.
 
 \subsection{Scalar wave solution - Gaussian beam}
-We will solve the paraxial wave equation in cylindrical coordinate $\{r,\phi,z \}$. \cite{cornell}
+We will solve the paraxial wave equation in cylindrical coordinate $\{r,\phi,z \}$. 
 To get a solution for which intensity is of Gaussian like and radially symmetric (\textit{i.e.} no variation with $\phi$), our first ansatz be, \cite{kogelnik 66}\cite{cornell}
 \begin{align}
 	\psi(\boldsymbol{r},z)= A \exp\left[-i\left(p(z) + \frac{kr^2}{2q(z)}\right)\right]
@@ -912,7 +914,7 @@ To satisfy this, for all $r$, we get
 	\frac{dp}{dz}+\frac{i}{q} &=0\label{eq:2.10}
 \end{align}
 
-Lets first calculate eq. \ref{eq:2.9}.
+Let's first calculate eq. \ref{eq:2.9}.
 \begin{align}
 	\frac{dq}{dz}-1 =0 
 	\Rightarrow q(z) = z + q_0 \label{eq:2.11}
@@ -926,7 +928,7 @@ which is a phase factor does not give Gaussian intensity. So to get Gaussian int
 	\boxed{q(z) = z + iz_0} \label{eq:2.13}
 \end{align}
 
-Now, the second term of expression \ref{eq:2.7} at $z=0$ be,
+Now the second term of expression \ref{eq:2.7} at $z=0$ be,
 \begin{align}
 	\exp\left[-\frac{kr^2}{2z_0}\right] = \exp\left[-\frac{r^2}{w_0^2}\right]
 \end{align}
@@ -1150,7 +1152,7 @@ By using ABCD matrix we can understand the change in $q$ parameter of input and 
 \end{align}
 Then relation between $q_{in}$ and $q_{out}$ is
 \begin{align}
-	q_{out}= \frac{Aq_{in}+B}{Cq_{in}+D}
+	q_{out}= \frac{A\:q_{in}+B}{C\:q_{in}+D}
 \end{align}
 
 \subsection{Resonator stability and resonator mode-frequency}
@@ -1295,11 +1297,11 @@ Some characteristics of HG beams are given below,
 \subsubsection{Laguerre-Gaussian beam}
 In the expression \ref{eq:2.30}, we get the radially symmetric Gaussian beam solution. But we now seek higher order solution of Gaussian beam which is not radially symmetric {i.e.} vary with $\phi$.
 
-Lets take the ansatz as,
+Let's take the ansatz as,
 \begin{align}
 	\psi(r,\phi,z)= A \: g\left(\frac{y}{w(z)}\right) \exp\left[-i\left(p(z) + \frac{kr^2}{2q(z)}+l\phi\right)\right]
 \end{align}
-Putting this in Paraxial wave equation \ref{eq:2.6}, and solving the differential equation, \cite{LG}\cite{kogelnik 66} we get,
+Putting this in Paraxial wave equation \ref{eq:2.6}, and solving the differential equation, \cite{LG}\cite{kogelnik 66} we get
 \begin{align}
 	\psi_{p,l}(r,\phi,z)=&A\:\frac{w_0}{w(z)} \left[\frac{r\sqrt{2}}{w(z)}\right]^{|l|} L_p^{|l|}\left(\frac{2r^2}{w^2(z)}\right)\exp(-\frac{r^2}{w^2(z)}) \cdot\nonumber\\ &\exp(-il\phi+i(2p+l+1)\tan[-1](\frac{z}{z_0})-i\frac{kr^2}{2R(z)}) \label{eq:2.58}
 \end{align}
@@ -1369,9 +1371,6 @@ Some characteristics of HG beams are given below,
 	\item 
 	As we will see later section, unlike the HG beam, LG bream carry orbital angular momentum due to its phase variation \textit{w.r.t.} $\phi$ which results helical phase-front of the beam.
 \end{enumerate}
-
-
-
 
 \subsection{Maxwell-Gaussian beam (with polarization)}
 According to \cite{erikson 94}, let us consider electric field $\boldsymbol{E}$ and magnetic field $\boldsymbol{E}$ of a EM wave propagating in z-direction, we write, in Cartesian coordinate,\footnote{For cylindrical coordinate, ref \cite{lewis 14}}
@@ -1503,7 +1502,7 @@ According to \cite{abra 91}, for $n,m = 0,1,2,\dots$
 	\begin{cases}
 		2^{n+m}(-1)^m m! (x+iy)^{n-m}L_m^{n-m}(x^2+y^2),& n\ge m\\
 		2^{n+m}(-1)^n n! (x+iy)^{m-n}L_n^{m-n}(x^2+y^2),& m > n
-	\end{cases}
+	\end{cases}\label{eq:2.96}
 \end{align}
 where
 \begin{align}
@@ -1529,7 +1528,7 @@ and the normalization constants, such that $\iint dx\:dy\: \abs{U}=1$, are
 \end{align}
 Here to get the LG beam representation, use $l=n-m$ and $p=\min(n,m)$ in \ref{eq:2.58}. \cite{allen 99}
 
-Using this identity, the LG beam can be decomposed into various order of HG beam by, \cite{beijers allen 93}
+Using the identity \ref{eq:2.96}, the LG beam can be decomposed into various order of HG beam by, \cite{beijers allen 93}
 \begin{align}
 	U_{m,n}^{LG}= \sum_{k=0}^{n+m}i^k b(n,m,k)\: U_{m+n-k,k}^{HG}
 \end{align}
@@ -1542,9 +1541,11 @@ where,
 
 \section{MOMENTUM OF LIGHT}
 \subsection{Introduction}
-We know EM wave carries energy as well as momentum. Momentum can be two types, linear and angular momentum. The \textit{momentum density} of EM wave is momentum per unit volume.
+We know, in addition to its dual nature as waves and particles, EM wave such as light possesses the capability to carries momentum despite its lack of mass. Here we will briefly discuss about different types of momentum carried by EM wave before going to spin-orbit interaction of light in next chapter.
 
 \subsection{Linear and angular momentum of light}
+ Momentum carried by EM wave can be two types, linear and angular momentum. The \textit{momentum density} of EM wave is momentum per unit volume.
+ 
 If linear momentum density is $\boldsymbol{p}$ and linear momentum is $\boldsymbol{P}$ then,
 \begin{align}
 	\boldsymbol{p} &= \frac{1}{c^2}\boldsymbol{S} = \epsilon_0 \boldsymbol{E} \times \boldsymbol{B}\label{eq:3.1}\\
@@ -1670,7 +1671,7 @@ For the SAM part \ref{eq:3.23},
 	\mathcal{S} &= \frac{\epsilon_0}{2i\omega}\iint r\:dr\:d\phi\: (F_x^\ast F_y + F_y^\ast F_x)\nonumber\\
 	&=\frac{\epsilon_0}{2i\omega} (p_x^\ast p_y- p_y^\ast p_x)2\pi \int r\:dr\: \abs{u(r)}^2
 \end{align}
-let us define a term \textit{polarization helicity} $\sigma$ as 
+Define \textit{polarization helicity}, $\sigma$ as 
 \begin{align}
 	\sigma = 2\Im(p_x^\ast\: p_y) = \frac{1}{i} (p_x^\ast p_y- p_y^\ast p_x)
 \end{align}
@@ -1806,7 +1807,7 @@ We know from the knowledge of waves, there is the phase factor corresponding to 
 \end{enumerate}
 
 \subsubsection{Spin-redirection Berry phase}
-This \textit{Berry phase} associated with adiabatic evolution of wave-vector $\boldsymbol{k}$. When the wave vector complete a adiabatic cycle, we will find a geometric phase arises from it.  As an example, let a polarized light passes through a helical optic fibre with very low (negligible) birefringence and no torsional stress\footnote{Torsional stress produces circular birefringence by elasto-optic effect. \cite{ross 84}}. After one helical patch, the $\boldsymbol{k}$ wave-vector come to the same state, but gives rise of a helicity-dependant geometric phase\footnote{This is a \textit{non-holonomic process}. \cite{anholonomy}} called \textit{spin-redirection Berry phase}. \cite{bliokh 15}
+This \textit{Berry phase} associated with adiabatic evolution of wave-vector $\boldsymbol{k}$. When the wave vector complete a adiabatic cycle, we will find a geometric phase arises from it.  As an example, let a polarized light passes through a helical optic fibre with very low (negligible) birefringence and no torsional stress\footnote{Torsional stress produces circular birefringence by elasto-optic effect. \cite{ross 84}}. After one helical patch, the $\boldsymbol{k}$ wave-vector come to the same state, but gives rise of a helicity-dependant geometric phase\footnote{This is a {non-holonomic process} \textit{i.e.} the final state depends on the path taken by the system. \cite{anholonomy}} called \textit{spin-redirection Berry phase}. \cite{bliokh 15}
 
 For circularly polarized light, we can write Jones vector as 
 \begin{align}
@@ -1959,7 +1960,7 @@ Unlike the previous one, the \textit{Pancharatnam-Berry phase} arises after a cy
 \end{figure}
 
 
-We see that the light with linear polarization state $(\ket{B})$ acquired a additional phase term \textit{i.e.} ${\color{red}\exp(-i\:2\varphi)}$ which only depends on orientation of QP2 \textit{i.e.} $\varphi= \beta+\pi/4$ and does not depend on thickness and refractive index of the birefringent wave-plate, so this phase is purely geometric one. Other all $\phi$'s are all dynamical phase factors. \cite{WO}
+We see that the light with linear polarization state $(\ket{B})$ acquired a additional phase term \textit{i.e.} ${\color{red}\exp(-i\:2\varphi)}$ which only depends on orientation of fast axis of QP2 \textit{i.e.} $\varphi= \beta+\pi/4$ and does not depend on thickness and refractive index of the birefringent wave-plate, so this phase is purely geometric one. Other all $\phi$'s are all dynamical phase factors. \cite{WO}
 
 We see after one cyclic evolution in Poincare sphere in path ARBCLA,
 \begin{align}
@@ -2007,7 +2008,7 @@ let the Jones electric field vector of input light is
  		1\\i\sigma
  	\end{bmatrix}
  \end{align}
-Then the Jones electric field vector of output light is
+then the Jones electric field vector of output light is
 \begin{align}
 	\boldsymbol{E}_{out}(\theta)&=R(-\theta)\boldsymbol{M}_{\lambda/2}R(\theta)\boldsymbol{E}_{in}
 	=R(-\theta)
@@ -2035,6 +2036,7 @@ Then the Jones electric field vector of output light is
 	\end{bmatrix}
 	{\color{blue}\exp(i2\sigma\Omega t)}
 \end{align}
+
 If angular frequency of the input beam is $\omega$, then the angular frequency of output beam be $(\omega + 2\sigma\Omega)$. So change in angular frequency, $\Delta\omega=2\sigma\Omega$. This is spin-dependant \textit{rotational Doppler shift} of SAM carrying light beam. \cite{WO}
 
 %\subsubsection{\color{red}Geometric phase in LG-HG mode transformation}
@@ -2068,7 +2070,7 @@ SAM is associated with degree of circular polarization and also intrinsic in nat
 		\caption{Extrinsic OAM of beam at $\boldsymbol{R}$ away from origin}
 		\label{fig:eoam}
 	\end{subfigure}
-	\caption{Angular momentum of paraxial beam (ref. \cite{bliokh 15})}
+	\caption{Angular momentum of paraxial beam, yellow arrow denotes linear momentum and red arrow denotes angular momentum (ref. \cite{bliokh 15})}
 	\label{fig:am}
 \end{figure}
 
@@ -2280,6 +2282,9 @@ which has helical phase structure resulting non-zero OAM. So change in OAM is,
 $$(l=0)\longrightarrow (l=l)$$
 So, per photon $l\hbar$ OAM is transferred to CGH. Further, this can be used in beam shaping, wavefront shaping, LG-HG beam transformation etc. \cite{yao 11}\cite{allen 99}
 
+\begin{center}
+	\line(1,0){90}
+\end{center}
 %\subsection{SOI in non-paraxial fields}
 %\subsection{Spin Hall effect}
 
